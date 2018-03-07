@@ -1,0 +1,163 @@
+{
+  "questions": [
+    {
+      "type": "confirm",
+      "name": "devServer",
+      "message": "Do you want a dev server?"
+    },
+    {
+      "type": "checkbox",
+      "name": "jsOptions",
+      "message": "Select what options you want for your JavaScript",
+      "choices": [
+        {
+          "name": "Concat",
+          "short": "Concat",
+          "value": "concat"
+        },
+        {
+          "name": "Uglify",
+          "short": "Uglify",
+          "value": "uglify"
+        },
+        {
+          "name": "JSHint",
+          "short": "JSHint",
+          "value": "jshint"
+        },
+        {
+          "name": "Convert ES6 -> ES5",
+          "short": "ES6->ES5",
+          "value": "babel"
+        },
+        {
+          "name": "Compile CoffeeScript",
+          "short": "CoffeeScript",
+          "value": "coffee"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "name": "jsDistSource",
+      "message": "JS source destination",
+      "default": "src/javascript",
+      "filter": "formatDist"
+    },
+    {
+      "type": "input",
+      "name": "jsDistDest",
+      "message": "JS build destination",
+      "default": "dist/javascript",
+      "filter": "formatDist"
+    },
+    {
+      "type": "list",
+      "name": "cssPreProcessorType",
+      "message": "Which pre-processor do you want to use for your CSS?",
+      "choices": [
+        {
+          "name": "None",
+          "short": "None",
+          "value": "none"
+        },
+        {
+          "name": "LESS",
+          "short": "LESS",
+          "value": "less"
+        },
+        {
+          "name": "Sass",
+          "short": "Sass",
+          "value": "sass"
+        },
+        {
+          "name": "Stylus",
+          "short": "Stylus",
+          "value": "stylus"
+        }
+      ]
+    },
+    {
+      "type": "checkbox",
+      "name": "cssOptions",
+      "message": "Select what options you want for your CSS?",
+      "choices": [
+        {
+          "name": "Lint (CSS only)",
+          "short": "Lint",
+          "value": "cssLint"
+        },
+        {
+          "name": "Autoprefix",
+          "short": "Autoprefix",
+          "value": "autoprefixer"
+        },
+        {
+          "name": "Minify",
+          "short": "Minify",
+          "value": "minifyCss"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "name": "cssDistSource",
+      "message": "CSS source destination",
+      "default": "src/css",
+      "filter": "formatDist"
+    },
+    {
+      "type": "input",
+      "name": "cssDistDest",
+      "message": "CSS build destination",
+      "default": "dist/css",
+      "filter": "formatDist"
+    },
+    {
+      "type": "checkbox",
+      "name": "otherOptions",
+      "message": "Select what other options you want",
+      "choices": [
+        {
+          "name": "Minify images",
+          "short": "Minify images",
+          "value": "minifyImage"
+        }
+      ]
+    },
+    {
+      "type": "input",
+      "name": "imageDistSource",
+      "message": "Image source destination",
+      "default": "src/images",
+      "filter": "formatDist",
+      "when": "otherOptions.minifyImage"
+    },
+    {
+      "type": "input",
+      "name": "imageDistDest",
+      "message": "Image build destination",
+      "default": "dist/images",
+      "filter": "formatDist",
+      "when": "otherOptions.minifyImage"
+    },
+    {
+      "type": "list",
+      "name": "outputDependencies",
+      "message": "Select where your dependencies install script should be",
+      "choices": [
+        {
+          "name": "Write dependencies install script to package.json",
+          "short": "to package.json",
+          "value": "toPackageFile"
+        },
+        {
+          "name": "Write dependencies install script to install-dependencies.txt",
+          "short": "to install-dependencies.txt",
+          "value": "toTxtFile"
+        }
+      ]
+    }
+  ]
+}

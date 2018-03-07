@@ -1,0 +1,56 @@
+$hero-height: 74vh;
+$marketing-site-footer-bg: #f5f5f5;
+
+.hero-section {
+
+position: relative;
+height: 600px;
+margin-bottom: 0;
+padding-bottom: 0;
+
+img {
+  background: 50% no-repeat;
+  background-size: cover;
+  height: $hero-height;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.hero-section-text {
+  color: $white;
+  text-shadow: 1px 1px 2px $black;
+  z-index: 1;
+  position: absolute;
+  left: 4%;
+  bottom: 8%;
+}
+}
+.crumbs-container {
+  padding: 0;
+  margin: 0;
+  background-color: $light-gray;
+
+  .breadcrumbs {
+   margin-left: 4.2%;
+   padding: 0;
+   border-bottom: 1 solid $dark-gray;
+
+    li  {
+
+      padding: 1rem 0 0 0;
+
+      a {
+         font-weight: 700;
+      }
+
+    }
+
+  }
+
+}

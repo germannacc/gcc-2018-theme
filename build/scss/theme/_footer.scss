@@ -1,0 +1,149 @@
+$marketing-site-footer-bg: #232323;
+
+.marketing-site-footer {
+  background: $marketing-site-footer-bg;
+  color: lighten($marketing-site-footer-bg, 95%);
+  padding: 2rem 0 0;
+  text-align: center;
+  border-top: 20px solid $dark-gray;
+
+  p {
+    line-height: 1.6rem;
+    text-align: left;
+  }
+
+  h4 {
+    color: $white;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .column-block {
+    margin-bottom: 30px;
+  }
+
+  > .row {
+    margin-bottom: 1rem;
+  }
+
+  @include breakpoint(small only) {
+    .columns {
+      margin-bottom: 0;
+    }
+  }
+  .menu {
+    margin-top: 1rem;
+
+  a {
+    padding: 0 0 1rem 0;
+    font-weight: 600;
+    color: $dark-gray;
+  }
+
+  a:hover {
+    color: $white;
+    text-decoration: underline;
+  }
+
+  }
+
+  .footer-links {
+
+    margin-top: 0;
+    margin-bottom: 0;
+
+
+  ul.menu.vertical {
+
+    padding-top: 0;
+    padding-bottom: 0;
+
+
+  li  {
+    margin-bottom: 0;
+
+      a  {
+        line-height: 1.4rem;
+        font-weight: 700;
+        color: $dark-gray;
+      }
+      a:hover {
+        color: $white;
+        text-decoration: underline;
+      }
+  }
+
+}
+
+}
+
+}
+
+.marketing-site-footer-name {
+  color: $white;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.marketing-site-footer-title {
+  color: $white;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.marketing-site-footer-block {
+  margin-bottom: 2rem;
+  position: relative;
+
+
+  .fas {
+    font-size: 2.5rem;
+    color: darken($marketing-site-footer-bg, 20%);
+    margin-bottom: 1rem;
+  }
+
+  a.button {
+    font-weight: bold;
+  }
+
+  a.button span {
+    font-size: 1.4rem;
+    color: $white;
+    position: absolute;
+    top: .38em;
+    left: 1.5em;
+  }
+
+  p {
+    margin-left: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+}
+
+.marketing-site-footer-bottom {
+  background: darken($marketing-site-footer-bg, 20%);
+  padding: 1.2rem 0;
+
+  @include breakpoint(medium down) {
+    text-align: center;
+  }
+
+  p {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    line-height: 1.6rem;
+    font-size: .8rem;
+    text-align: center;
+
+    a {
+      color: $dark-gray;
+      font-weight: 700;
+    }
+    a:hover {
+      color: $white;
+      text-decoration: underline;
+    }
+  }
+}

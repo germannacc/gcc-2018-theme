@@ -1,0 +1,51 @@
+{
+  "defaultModules": [
+    "gulp",
+    "plumber",
+    "rename"
+  ],
+  "moduleNames": {
+    "autoprefixer": "gulp-autoprefixer",
+    "babel": "gulp-babel",
+    "browserSync": "browser-sync",
+    "cache": "gulp-cache",
+    "coffee": "gulp-coffee",
+    "concat": "gulp-concat",
+    "cssLint": "gulp-csslint",
+    "gulp": "gulp",
+    "jshint": "gulp-jshint",
+    "less": "gulp-less",
+    "minifyCss": "gulp-minify-css",
+    "minifyImage": "gulp-imagemin",
+    "plumber": "gulp-plumber",
+    "rename": "gulp-rename",
+    "sass": "gulp-sass",
+    "stylus": "gulp-stylus",
+    "uglify": "gulp-uglify"
+  },
+  "sortOrders": {
+    "js": [
+      "coffee",
+      "jshint",
+      "concat",
+      "babel",
+      "uglify",
+      "dest",
+      "browserSync"
+    ],
+    "css": [
+      "cssLint",
+      "less",
+      "sass",
+      "stylus",
+      "autoprefixer",
+      "minifyCss",
+      "dest",
+      "browserSync"
+    ],
+    "image": [
+      "minifyImage",
+      "cache"
+    ]
+  }
+}

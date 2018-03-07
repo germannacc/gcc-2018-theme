@@ -1,0 +1,204 @@
+#pathways {
+
+background-color: $light-gray;
+padding:  3rem 1rem 4rem 1rem;
+
+.pathways-content {
+
+  background-color: $light-gray;
+
+h2 {
+
+  margin-bottom: 3rem;
+
+}
+
+.pathways-row-1, .pathways-row-2 {
+  padding: 0 !important;
+
+  .column {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+}
+
+.pathways-row-1 {
+  margin-bottom: .5rem;
+}
+
+.card {
+  position: relative;
+
+  a {
+
+  .card-section {
+
+     position: absolute;
+     bottom: 0;
+     background-color: rgba(163, 10, 53, .6);
+     color: $white;
+
+
+     h3  {
+
+      font-size: 1.2rem;
+
+
+   }
+
+   .more-icon {
+     position: absolute;
+     right: .7rem;
+     top: .5rem;
+   }
+
+  }
+
+.card-section:hover {
+  background-color: rgba(163, 10, 53, .9);
+}
+
+ }
+}
+
+}
+
+}
+
+
+
+#getting-started {
+
+background-color: $white;
+position: relative;
+padding: 4rem 1rem 6rem 1rem;
+margin-top: 0;
+background: url(https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/themes/FoundationGermanna/assets/img/germanna-workforce-large.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+z-index: 0;
+
+.getting-started-content {
+
+  h2 {
+  color: $white;
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
+  margin-bottom: 3rem;
+  }
+
+  .card {
+    position: relative;
+
+    a {
+
+    .card-section {
+
+       position: absolute;
+       bottom: 0;
+       background-color: rgba(163, 10, 53, .6);
+       color: $white;
+
+
+       h3  {
+
+        font-size: 1.4rem;
+
+
+     }
+
+     .more-icon {
+       position: absolute;
+       right: .7rem;
+       top: .5rem;
+     }
+
+    }
+
+  .card-section:hover {
+    background-color: rgba(163, 10, 53, .9);
+  }
+  }
+  }
+
+
+}
+
+}
+
+#highlights {
+
+padding: 3rem 1rem 4rem 1rem;
+
+.highlights-content {
+
+h2 {
+  margin-bottom: 3rem;
+}
+
+/*Event Boxes*/
+.event {
+
+  margin-bottom: 1em;
+
+  .event-date {
+
+  background-color: $primary;
+  color: $white;
+  font-weight: bold;
+  padding: 3rem 0;
+  text-align: center;
+  font-size: 1.4rem;
+
+  }
+
+  .event-content {
+
+  background-color: $light-gray;
+  padding: 1em;
+
+  p.lead.event-title {
+
+    margin-top: 0;
+    margin-bottom: 0;
+    font-weight: bold;
+
+  }
+
+  p.event-description {
+
+    margin-bottom: 0;
+    margin-top: 0;
+
+  }
+
+
+  }
+
+}
+
+/*Trending Sidebar*/
+
+.trending {
+
+h3 {
+
+background-color: $dark-gray;
+color: $white;
+padding: 1rem;
+margin-bottom: 1.2rem;
+
+}
+
+.button {
+  font-weight: bold;
+}
+
+}
+
+
+}
+
+
+}

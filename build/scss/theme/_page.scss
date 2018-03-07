@@ -1,0 +1,61 @@
+.content-area {
+  display: flex;
+  background: $white;
+  padding: 0;
+}
+.entry-content {
+  padding: 1rem 4rem 3rem 4rem !important;
+
+}
+.page-nav {
+  background-color: $light-gray;
+  flex: 1;
+  padding: 0 !important;
+}
+
+//Page Side bar
+
+.widget {
+
+margin-bottom: 0;
+
+h3 {
+  background-color: $black;
+  color: $white;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  margin-bottom: 0;
+}
+
+p {
+  padding: 1rem;
+}
+
+}
+.department-links {
+
+ul.vertical.menu {
+
+
+li {
+
+a {
+
+border-bottom: 1px solid $dark-gray;
+font-weight: bold;
+color: $dark-gray;
+
+}
+
+a:hover {
+
+  background-color: $dark-gray;
+  color: $white;
+}
+}
+
+
+}
+
+}
