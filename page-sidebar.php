@@ -20,31 +20,18 @@ get_header(); ?>
 <?php
   while ( have_posts() ) : the_post(); ?>
 
-    <div class="row gutter-small expanded hero-section">
-
-    <?php  get_template_part( 'template-parts/content', 'page-heading' );
+    <?php //Page Heading
+    get_template_part( 'template-parts/content', 'page-heading' );
  ?>
 
-    </div><!--.page-heading-->
-
-    <div class="row expanded crumbs-container">
-
-          <nav aria-label="You are here:" role="navigation">
-            <ul class="breadcrumbs">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">Features</a></li>
-              <li class="disabled">Gene Splicing test</li>
-              <li><span class="show-for-sr">Current: </span> Cloning</li>
-            </ul>
-          </nav>
-
-    </div>
-
+    <!--Page Content-->
     <div class="row gutter-small expanded content-area">
 
-      <?php get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
+      <?php //Page with Sidebar Template
+      get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
 
-      <?php get_template_part( '/sidebars/default-sidebar' ); ?>
+      <?php //Template Sidebar
+      get_template_part( '/sidebars/default-sidebar' ); ?>
 
     </div><!--.pagecontent-->
 
