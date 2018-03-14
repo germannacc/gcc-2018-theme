@@ -69,7 +69,7 @@
       <?php //Primary Address Text Block
       if( !empty($primary_address) ): ?>
       <div class="marketing-site-footer-block">
-        <span class="fas fa-map-marker-alt" aria-hidden></span>
+        <span class="fa fa-3x fa-map-marker" aria-hidden></span>
         <p><?php echo $primary_address; ?></p>
       </div>
       <?php endif; ?>
@@ -77,7 +77,7 @@
       <?php //Primary Phone Number Text Block
       if( !empty($primary_phone_number) ): ?>
       <div class="marketing-site-footer-block">
-        <span class="fas fa-mobile" aria-hidden></span>
+        <span class="fa fa-3x fa-mobile" aria-hidden></span>
         <p><?php echo $primary_phone_number; ?></p>
       </div>
       <?php endif; ?>
@@ -85,7 +85,7 @@
       <?php //e2Campus Alerts Text Block
       if( !empty($e2campus_button_text) ): ?>
       <div class="marketing-site-footer-block">
-        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fas fa-exclamation-triangle" aria-hidden></span>
+        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle" aria-hidden></span>
       <?php echo $e2campus_button_text; ?></a>
       </div>
       <?php endif; ?>

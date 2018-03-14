@@ -1,0 +1,17 @@
+.alert  {
+  background-color: $light-gray !important;
+  border: 2px solid $primary !important;
+  padding: 1rem 1rem 1rem 4rem;
+  margin-bottom: 0;
+
+  color: $secondary !important;
+
+     .close-button {
+       color: $secondary;
+     }
+
+     .close-button:hover {
+       color: $primary;
+     }
+
+}

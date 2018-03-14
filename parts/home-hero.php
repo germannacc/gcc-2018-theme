@@ -11,7 +11,7 @@
     <h1>Register Now</h1>
     <p>After J. Ting learned to believe in his dreams at Germanna, the sky was the limit.</p>
     <p>Our next session starts March 6 with later start dates available. There’s time to register for Spring Semester 2018.</p>
-    <a class="hollow button large"><span class="fas fa-arrow-right" aria-hidden="true" style="margin-right: 1rem"></span>Get Started</a>
+    <a class="hollow button large"><span class="fa fa-arrow-right" aria-hidden="true" style="margin-right: 1rem"></span>Get Started</a>
 
 </div>
 

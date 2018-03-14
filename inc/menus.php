@@ -1,7 +1,9 @@
 <?php 	// This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
     'main-navigation' => 'Main Navigation', // registers the menu in the WordPress admin menu editor
+    'top-navigation' => 'Top Navigation',
     'quicklinks-bar' => 'Quicklinks Bar',
+    'callto-buttons' => 'Callto Buttons',
     'about-menu' => 'About Menu',// registers the departmental menus in the WordPress admin menu editor
     'about-governance-menu' => 'About Governance Menu',
     'acc-menu' => 'ACC Menu',

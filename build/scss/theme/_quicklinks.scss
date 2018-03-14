@@ -13,6 +13,11 @@
         -moz-box-shadow: 0px 7px 5px -4px rgba(0,0,0,0.55);
         box-shadow: 0px 7px 5px -4px rgba(0,0,0,0.55);
 
+.quicklinks-box {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 ul.dropdown.menu{
 
     background: $light-gray;
@@ -50,103 +55,159 @@ li {
             a::after{
 
               display: none;
-
+              padding-right: 0;
             }
 
 
   }
 }
 
-}
-
-ul.dropdown.menu {
-
-li#menu-item-20465 {
-
-        a {
-          -webkit-text-decoration-skip: objects;
-          padding-left: 3rem;
-          padding-right: 4rem;
-          background-color: $gold;
-          color: $white;
-
-          .fa-user {
-              margin-right: .6rem;
-              font-size: 1rem;
-          }
-
-        }
-
-        a:hover {
-           background-color: $primary;
-        }
-
-        a::selection {
-          background-color: $primary;
-        }
-
- }
 
 }
+
 
 .top-bar-right {
 
-.social-icons {
+  display: inline-block;
 
-li {
 
- a {
+  ul.dropdown.menu {
 
-    padding: .4rem .3rem;
+  li.mygcc {
 
-   span {
-      color: $secondary;
-       padding: .3rem .6rem;
-       border: 1px solid $secondary;
-       border-radius: 100%;
-       text-align: center;
+          a {
+            -webkit-text-decoration-skip: objects;
+            padding: .9rem 3.6rem;
+            background-color: $gold;
+            font-size: 1.2rem;
+            color: $white;
+
+            .fa-user {
+                margin-right: 0;
+                font-size: 1rem;
+                display: inline-block;
+            }
+
+          }
+
+          a:hover {
+             background-color: $primary;
+             color: $white
+          }
+
+          a::selection {
+            background-color: $primary;
+            color: $white;
+          }
+
    }
-
-   span:hover {
-       color: $primary;
-       border: 1px solid $primary;
-
-   }
-
-
-}
-
 
   }
 
+}
+
+.top-bar input {
+	max-width: 300px !important;
+	margin-right: 0;
+  height: 100%;
+  box-shadow: none;
+  border: none;
 }
 
 /*Search Bar*/
-
-$animated-search-form-initial-width: 10rem;
-$animated-search-form-transition-duration: 0.4s;
-
-.animated-search-form[type=search] {
-  width: $animated-search-form-initial-width;
-  border: 0.1rem solid $light-gray;
-  box-shadow: 0 0 .625rem rgba(0,0,0, 0.18);
-  border-radius: $global-radius;
-  padding: 0.75rem 1.25rem 0.75rem 2rem;
-  transition: width $animated-search-form-transition-duration ease-in-out;
-
-  &:focus {
-    width: 100%;
-  }
+/* Search icon by IcoMoon, made with http://icomoon.io/app/ */
+.sb-search {
+	position: relative;
+	margin-top: 0;
+	width: 0%;
+	min-width: 49px;
+	height: 49px;
+	float: right;
+	overflow: hidden;
+	-webkit-transition: width 0.3s;
+	-moz-transition: width 0.3s;
+	transition: width 0.3s;
+	-webkit-backface-visibility: hidden;
 }
 
-#filtersubmit {
-    position: relative;
-    z-index: 1;
-    left: 15px;
-    top: 1px;
-    color: rgba(0, 0, 0, .2);
-    cursor:pointer;
-    width: 0;
+.sb-search-input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: none;
+	outline: none;
+	background: $white;
+	width: 75%;
+	height: 100px;
+	margin: 0;
+	z-index: 10;
+	padding: 20px 35px 20px 20px;
+	font-family: inherit;
+	font-size: 20px;
+	color: #2c3e50;
 }
 
+.sb-search-input::-webkit-input-placeholder, .sb-search-input:-moz-placeholder, .sb-search-input::-moz-placeholder, .sb-search-input:-ms-input-placeholder   {
+	color: $primary;
+}
+
+
+.sb-icon-search,
+.sb-search-submit  {
+	width: 49px;
+	height: 49px;
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 0;
+	margin: 0;
+	line-height: 49px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.sb-search-submit {
+	background: $white; /* IE needs this */
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+    filter: alpha(opacity=0); /* IE 5-7 */
+    opacity: 0;
+	color: transparent;
+	border: none;
+	outline: none;
+	z-index: -1;
+}
+
+.sb-icon-search {
+	color: $white;
+	background: $primary;
+	z-index: 90;
+	font-family: 'FontAwesome';
+	-webkit-font-smoothing: antialiased;
+}
+
+.sb-icon-search:hover {
+  background: $secondary;
+}
+
+.sb-icon-search::before {
+	content: "\f002";
+}
+
+/* Open state */
+.sb-search.sb-search-open,
+.no-js .sb-search {
+	width: 100%;
+}
+
+.sb-search.sb-search-open .sb-icon-search,
+.no-js .sb-search .sb-icon-search {
+	background: $secondary;
+	color: $white;
+	z-index: 11;
+}
+
+.sb-search.sb-search-open .sb-search-submit,
+.no-js .sb-search .sb-search-submit {
+	z-index: 90;
 }

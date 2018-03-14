@@ -1,10 +1,3 @@
-/**
- * Foundation for Sites by ZURB
- * Version 6.4.4-rc1
- * foundation.zurb.com
- * Licensed under MIT Open Source
- */
-
 // Dependencies
 @import '_vendor/normalize-scss/sass/normalize';
 @import '_vendor/sassy-lists/stylesheets/helpers/missing-dependencies';
@@ -14,7 +7,6 @@
 @import '_vendor/sassy-lists/stylesheets/functions/remove';
 @import '_vendor/sassy-lists/stylesheets/functions/replace';
 @import '_vendor/sassy-lists/stylesheets/functions/to-list';
-
 // Settings
 // import your own `settings` here or
 // import and modify the default settings through
@@ -29,17 +21,19 @@
 
 // Components
 @import 'grid/grid';
-@import 'xy-grid/xy-grid';
-@import url('https://use.fontawesome.com/releases/v5.0.6/css/all.css');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import 'typography/typography';
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 //Theme Styles
 @import 'theme/quicklinks';
+@import 'theme/branding';
+@import 'theme/top-bar';
 @import 'theme/sidebar';
 @import 'theme/home';
 @import 'theme/hero';
 @import 'theme/page-heading';
+@import 'theme/alerts';
 @import 'theme/page';
 @import 'theme/slider';
 @import 'theme/blog';
@@ -186,6 +180,17 @@
     }
   }
 
+  .content-area {
+    display: flex;
+  }
+  .entry-content {
+
+  }
+  .page-nav {
+    flex: 1;
+
+  }
+
   .marketing-site-footer,  .marketing-site-footer-title,  .marketing-site-footer-block  {
     text-align: left;
   }
@@ -205,11 +210,6 @@
 /* Large and up */
 @media screen and (min-width: 64em) {
 
-  .gcc-main-content {
-
-  width: 81.33333% !important;
-
-  }
 
 
 
@@ -218,10 +218,6 @@
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
 
-  .gcc-main-content {
 
-  width: 83.33333% !important;
-
-  }
 
 }

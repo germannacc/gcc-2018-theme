@@ -1,0 +1,42 @@
+.branding {
+  background-color: $primary;
+  padding: 0 0 0 1rem;
+}
+
+.calltos {
+   margin-bottom: 0;
+  font-weight: bold;
+
+  a.primary {
+    background-color: #82082A;
+  }
+ a.primary:hover {
+   background-color: $primary;
+ }
+  a.secondary {
+    background-color: $secondary;
+  }
+
+  a.secondary:hover {
+     background-color: $primary;
+  }
+}
+
+a.logo {
+  margin: 1rem .5rem;
+  background: url('../media/germanna-logo-white.png');
+  height: 80px;
+  width: 264px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+
+}
+.tagline {
+  color: $white;
+  font-weight: 600;
+  padding: 0;
+  text-align: center;
+
+}

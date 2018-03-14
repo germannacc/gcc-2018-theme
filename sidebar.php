@@ -13,6 +13,12 @@
   $tips_url = get_field('tips_url ', 'option');
 ?>
 <div  class="off-canvas position-left reveal-for-large" id="main-menu"  data-off-canvas data-position="left">
+
+  <!-- Close button -->
+   <button class="close-button" aria-label="Close menu" type="button" data-close>
+     <span aria-hidden="true">&times;</span>
+   </button>
+
 <div class="row column">
 
 <div id="main-menu" class="off-canvas position-left reveal-for-large" data-off-canvas>
@@ -38,10 +44,14 @@
 gcc_wp_2018_main_navigation(); ?>
 
 <div class="menu-extras">
+
   <?php if( !empty($tips_url) ): ?>
 
       <a href="<?php echo $tips_url;?>" class="tips-logo"><?php echo _e(
         'T.I.P.S.'); ?></a>
+
+        <?php //function location in inc/social-icons.php
+        gcc_wp_2018_social_icons(); ?>
 
  <?php endif; ?>
 </div>

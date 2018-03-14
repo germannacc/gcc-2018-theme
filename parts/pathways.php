@@ -11,7 +11,7 @@
     <div class="card-section">
       <h3>Computer Technology</h3>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fas fa-2x fa-search-plus more-icon"></span>
+      <span class="fa fa-search-plus"></span>
     </div>
     </a>
   </div>

@@ -47,10 +47,9 @@ gulp.task('styles', function(){
     }}))
     .pipe(sass())
     .pipe(autoprefixer('last 2 versions'))
-    .pipe(gulp.dest(''))
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
-    .pipe(gulp.dest(''))
+    .pipe(gulp.dest('dist/css/'))
     .pipe(browserSync.reload({stream:true}))
 });
 

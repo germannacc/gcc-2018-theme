@@ -1,4 +1,5 @@
-<div class="columns small-12 medium-9 entry-content">
+<div class="small-12 medium-9 entry-content">
+
 
   <?php
     the_content();

@@ -1,4 +1,4 @@
-<aside class="columns small-12 medium-3 gutter-small right page-nav">
+<aside class="small-12 medium-3 gutter-small right page-nav" >
 
   <div class="widget">
 
@@ -17,6 +17,6 @@
 </div>
 
 <?php //custom department widgets
-dynamic_sidebar( 'sidebar-widgets' ); ?>  
+dynamic_sidebar( 'sidebar-widgets' ); ?>
 
 </aside>

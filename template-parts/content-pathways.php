@@ -18,7 +18,7 @@
     <div class="card-section">
       <h3>Computer Technology</h3>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fas fa-2x fa-search-plus more-icon"></span>
+      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
     </a>
   </div>
@@ -33,7 +33,7 @@
     <div class="card-section">
       <h3>Public Service</h3>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fas fa-2x fa-search-plus more-icon"></span>
+      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
     </a>
   </div>
@@ -48,7 +48,7 @@
     <div class="card-section">
       <h3>Business</h3>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fas fa-2x fa-search-plus more-icon"></span>
+      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
     </a>
   </div>
@@ -63,7 +63,7 @@
     <div class="card-section">
       <h3>Advanced Manufacturing</h3>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fas fa-2x fa-search-plus more-icon"></span>
+      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
     </a>
   </div>
@@ -86,7 +86,7 @@
     <div class="card-section">
       <h3>Technical Trade</h3>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fas fa-2x fa-search-plus more-icon"></span>
+      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
     </a>
   </div>
@@ -102,7 +102,7 @@
     <div class="card-section">
       <h3>Health Care</h3>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fas fa-2x fa-search-plus more-icon"></span>
+      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
     </a>
   </div>
@@ -117,7 +117,7 @@
     <div class="card-section">
       <h3>Transfer</h3>
       <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fas fa-2x fa-search-plus more-icon"></span>
+      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
   </a>
   </div>

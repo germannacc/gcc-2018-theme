@@ -8,7 +8,6 @@
  *
  * @package gccwp-2018
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -25,16 +24,26 @@
 <div id="skip"><a href="<?php echo esc_html('#main');?>"><?php _e('Skip to Main Content') ?></a></div>
 
     <div class="off-canvas-wrapper">
+
+			<?php  //movile menu
+			get_template_part( 'template-parts/content', 'mobile-nav' );
+			?>
+
+
     <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
 <?php get_sidebar(); ?>
 
-  <div class="off-canvas-content" data-off-canvas-content>
 
-<?php  get_template_part( 'template-parts/content', 'quicklinks' );
+<div class="off-canvas-content" data-off-canvas-content>
+
+<?php  //quicklinks
+get_template_part( 'template-parts/content', 'quicklinks' );
 ?>
 
-<?php  //  get_template_part( 'template-parts/content', 'weather-alert' );
+<?php
+
+//  get_template_part( 'template-parts/content', 'weather-alert' );
 ?>
 
 <!--Main Content-->
