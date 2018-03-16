@@ -42,8 +42,7 @@ get_template_part( 'template-parts/content', 'quicklinks' );
 ?>
 
 <?php
-
-//  get_template_part( 'template-parts/content', 'weather-alert' );
+  get_template_part( 'template-parts/content', 'weather-alert' );
 ?>
 
 <!--Main Content-->

@@ -4,7 +4,8 @@
   padding: 1rem 1rem 1rem 4rem;
   margin-bottom: 0;
 
-  color: $secondary !important;
+     color: $secondary !important;
+
 
      .close-button {
        color: $secondary;
@@ -12,6 +13,43 @@
 
      .close-button:hover {
        color: $primary;
+     }
+
+}
+
+
+.closing  {
+  background-color: $primary;
+  border: none;
+  padding: 1rem 1rem 1rem 4rem;
+
+
+     color: $white;
+
+     p {
+       padding-left: 2rem;
+     }
+
+     p.lead {
+       font-weight: 800;
+       font-size: 1.4rem;
+       margin-top: .4rem;
+       padding-left: 2rem;
+     }
+
+
+    a.button:hover {
+      border: 2px solid $black;
+      background-color: $black;
+      color: $white;
+
+    }
+     .close-button {
+       color: $white;
+     }
+
+     .close-button:hover {
+       color: $secondary;
      }
 
 }

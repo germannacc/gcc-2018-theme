@@ -77,7 +77,7 @@ li {
 
           a {
             -webkit-text-decoration-skip: objects;
-            padding: .9rem 3.6rem;
+            padding: .9rem 3.4rem;
             background-color: $gold;
             font-size: 1.2rem;
             color: $white;
@@ -116,7 +116,7 @@ li {
 
 /*Search Bar*/
 /* Search icon by IcoMoon, made with http://icomoon.io/app/ */
-.sb-search {
+.sb-search, .sb-search-mobile {
 	position: relative;
 	margin-top: 0;
 	width: 0%;
@@ -195,12 +195,12 @@ li {
 }
 
 /* Open state */
-.sb-search.sb-search-open,
+.sb-search.sb-search-open, .sb-search-mobile.sb-search-open
 .no-js .sb-search {
 	width: 100%;
 }
 
-.sb-search.sb-search-open .sb-icon-search,
+.sb-search.sb-search-open .sb-icon-search, .sb-search-mobile.sb-search-open .sb-icon-search,
 .no-js .sb-search .sb-icon-search {
 	background: $secondary;
 	color: $white;

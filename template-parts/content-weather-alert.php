@@ -1,21 +1,40 @@
-<div class="callout alert closing" data-closable>
+<?php
+  $closing_announcement_text = get_field('closing_announcement_text', 'option');
+  $weather_alert_heading = get_field('weather_alert_heading', 'option');
+  $sign_up_for_alerts_text = get_field('sign_up_for_alerts_text', 'option');
+  $alerts_url = get_field('alerts_url', 'option');
+?>
+
+<?php //Column 1 Heading
+if( !empty($closing_announcement_text) ): ?>
+
+<div class="callout closing hide-for-small-only hide-for-medium-only" data-closable>
   <div class="row expanded gutter-small">
 
-    <div class="medium-9 columns">
+      <div class="medium-9 columns">
 
-        <h2>Special Announcement</h2>
-        <p>All locations will be closed on Thursday, Dec 9 due to inclement weather.</p>
+        <?php //Alert Text
+        if( !empty($weather_alert_heading) ): ?>
+        <p class="lead"><?php echo $weather_alert_heading; ?></p>
+        <?php endif; ?>
 
-    </div>
+          <p><?php echo $closing_announcement_text ?></p>
 
-    <div class="medium-3 columns">
+      </div>
 
-      <a class="button hollow large">
-        <span class="fas fa-arrow-right" aria-hidden="true"></span>
-        Sign Up For e2Campus
-      </a>
+      <div class="medium-3 columns">
 
-    </div>
+        <?php //Alert Button
+        if( !empty($sign_up_for_alerts_text) ): ?>
+
+        <a href="<?php echo $alerts_url ?>" class="button hollow large">
+          <span class="fa fa-arrow-right" aria-hidden="true"></span>
+          <?php echo $sign_up_for_alerts_text ?>
+        </a>
+
+          <?php endif; ?>
+
+      </div>
 
    </div>
 
@@ -24,3 +43,4 @@
   </button>
 
 </div>
+<?php endif; ?>

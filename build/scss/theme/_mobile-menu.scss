@@ -1,0 +1,171 @@
+.mobile-menu  {
+
+height: 100% !important;
+overflow: scroll;
+
+.close-mobile {
+  position: relative;
+  height: 50px;
+  background-color: $black;
+}
+
+a.logo {
+  margin: .5rem auto 0 auto;
+  padding: 0;
+  background: url('../media/germanna-logo-white-mobile.png') no-repeat center center;
+  height: 49px;
+  width: 164px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+
+}
+
+.tagline  {
+
+  p.lead {
+  font-size: 1rem;
+
+  }
+}
+
+ul.dropdown.menu {
+
+li.mygcc {
+
+        a {
+          -webkit-text-decoration-skip: objects;
+          padding: .9rem 0;
+          background-color: $gold;
+          font-size: 1rem;
+          color: $white;
+          text-align: center;
+          margin-top: 0;
+          font-weight: 700;
+
+          .fa-user {
+              margin-right: 0;
+              font-size: 1rem;
+              display: inline-block;
+          }
+
+        }
+
+        a:hover {
+           background-color: $secondary;
+           color: $white
+        }
+
+        a::selection {
+          background-color: $secondary;
+          color: $white;
+        }
+
+ }
+
+}
+
+.alert  {
+
+  margin-top: 0;
+  padding: .8rem .2rem .1rem .2rem;
+
+  p.lead {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: .9rem;
+    margin-bottom: .4rem;
+  }
+
+  .alert-button {
+    border: 2px solid $primary;
+    color: $primary;
+    font-weight: 700;
+
+   span {
+  	padding-right: .4rem;
+  	color: $primary;
+  }
+
+  }
+
+}
+
+.mobile-search {
+  margin-top: 1rem;
+}
+
+}
+
+.mobile-nav {
+  position: relative;
+  display: block;
+  margin: 1rem 0 2rem 0;
+
+
+.drilldown .is-drilldown-submenu a, .drilldown a, .menu .menu-text {
+	padding: .4rem 2rem;
+
+}
+
+.drilldown a {
+	background-color: transparent;
+	line-height: inherit;
+	color: $white;
+	cursor: pointer;
+}
+
+}
+
+.mobile-extras {
+  position: relative;
+
+  .social-icons {
+
+    margin: 0 auto 2rem auto;
+    padding: 0 1.7rem;
+
+  li {
+
+   a {
+
+      padding: .4rem .2rem;
+
+     span {
+        color: $white;
+         padding: .3rem .6rem;
+         border: 1px solid $white;
+         border-radius: 100%;
+         text-align: center;
+     }
+
+     span:hover {
+         color: $dark-gray;
+         border: 1px solid $dark-gray;
+
+     }
+
+
+  }
+
+
+    }
+
+  }
+
+
+  .tips-logo {
+    background: url('../media/tipslogo.png');
+    height: 52px;
+    width: 132px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    margin: 0 30% 10% 30%;
+  }
+
+}

@@ -1,9 +1,12 @@
-<!--Getting Started-->
+<?php
+//get started section
+$get_started_heading = get_field('get_started_heading');
+?>
 <div id="getting-started" class="row expanded gutter-small expanded">
 
 <div class="getting-started-content">
 
-  <h2 class="text-center text-shadow">Get Started</h2>
+  <h2 class="text-center text-shadow"><?php the_field('get_started_heading'); ?></h2>
 
   <div class="small-12 medium-6 large-4  columns" data-equalizer-watch>
 
@@ -49,4 +52,4 @@
 
 </div>
 
-</div><!--.gettingstarted-->
+</div>

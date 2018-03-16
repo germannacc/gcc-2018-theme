@@ -1,10 +1,12 @@
-<!--Career Pathways-->
+<?php
+//highlights section
+$pathways_heading = get_field('pathways_heading');
+ ?>
 <div id="pathways" class="row gutter-small expanded">
 
 <div class="pathways-content">
 
-  <h2 class="text-center">Explore Career Pathways</h2>
-
+  <h2 class="text-center"><?php the_field('pathways_heading'); ?></h2>
 
 <div class="row gutter-small pathways-row-1 expanded">
 

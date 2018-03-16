@@ -29,6 +29,7 @@
 @import 'theme/quicklinks';
 @import 'theme/branding';
 @import 'theme/top-bar';
+@import 'theme/mobile-menu';
 @import 'theme/sidebar';
 @import 'theme/home';
 @import 'theme/hero';
@@ -154,12 +155,9 @@
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-  .gcc-main-content {
+  .entry-content {
 
-  margin-right: 0 !important;
-  padding: 0 !important;
-  width: 100% !important;
-
+    padding: 2rem 4rem 3rem 4rem;
 
   }
 

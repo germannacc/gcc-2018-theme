@@ -91,7 +91,7 @@
     'marketing-menu' => 'Marketing Menu',
     'math-menu' => 'Math Menu',
     'motorcycle-transportation-menu' => 'Motorcycle Transportation Menu',
-    'mobile-off-canvas' => 'Mobile',
+    'mobile-offcanvas' => 'Mobile OffCanvas',
     'mobile-quicklinks-menu' => 'Mobile Quicklinks Menu',
     'mobile-administration-menu' => 'Mobile Administration Menu',
     'mobile-main-menu' => 'Mobile Main Menu',
