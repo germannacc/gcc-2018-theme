@@ -10,20 +10,14 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package gccwp-2018
- * Template Name: Home
+  * Template Name: Blog Page
  */
 
 get_header(); ?>
 
-    <?php get_template_part( 'template-parts/content', 'hero-slider' ); ?>
 
-    <?php // get_template_part( 'template-parts/content', 'hero' ); ?>
 
-    <?php get_template_part( 'template-parts/content', 'pathways' );  ?>
 
-    <?php get_template_part( 'template-parts/content', 'getstarted' ); ?>
 
-    <?php get_template_part( 'template-parts/content', 'highlights' ); ?>
-
-    <?php
+<?php
 get_footer();

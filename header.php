@@ -9,41 +9,46 @@
  * @package gccwp-2018
  */
 ?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
+    <!doctype html>
+    <html <?php language_attributes(); ?>>
 
-	<?php wp_head(); ?>
-</head>
+    <head>
+        <meta charset="<?php bloginfo( 'charset' ); ?>">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="profile" href="http://gmpg.org/xfn/11">
 
-<body <?php body_class(); ?>>
+        <?php wp_head(); ?>
+    </head>
 
-<div id="skip"><a href="<?php echo esc_html('#main');?>"><?php _e('Skip to Main Content') ?></a></div>
+    <body <?php body_class(); ?>>
 
-    <div class="off-canvas-wrapper">
+        <div id="skip">
+            <a href="<?php echo esc_html('#main');?>">
+                <?php _e('Skip to Main Content') ?>
+            </a>
+        </div>
 
-			<?php  //movile menu
+        <div class="off-canvas-wrapper">
+
+            <?php  //movile menu
 			get_template_part( 'template-parts/content', 'mobile-nav' );
 			?>
 
 
-    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-<?php get_sidebar(); ?>
+                <?php get_sidebar(); ?>
 
 
-<div class="off-canvas-content" data-off-canvas-content>
+                <div class="off-canvas-content" data-off-canvas-content>
 
-<?php  //quicklinks
+                    <?php  //quicklinks
 get_template_part( 'template-parts/content', 'quicklinks' );
 ?>
 
-<?php
+                    <?php
   get_template_part( 'template-parts/content', 'weather-alert' );
 ?>
 
-<!--Main Content-->
-<main id="main">
+                        <!--Main Content-->
+                        <main id="main">

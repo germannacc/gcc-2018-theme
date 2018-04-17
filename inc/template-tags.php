@@ -12,21 +12,18 @@ if ( ! function_exists( 'gcc_wp_2018_posted_on' ) ) :
 	 * Prints HTML with meta information for the current post-date/time.
 	 */
 	function gcc_wp_2018_posted_on() {
-		$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-		if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-			$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-		}
+		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+
 
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( 'c' ) ),
-			esc_html( get_the_date() ),
-			esc_attr( get_the_modified_date( 'c' ) ),
-			esc_html( get_the_modified_date() )
+			esc_html( get_the_date() )
+
 		);
 
-		$posted_on = sprintf(
+		$posted_on = sprintf (
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'gcc-wp-2018' ),
+			 esc_html_x( ' %s', 'post date', 'gcc-wp-2018' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -62,7 +59,7 @@ if ( ! function_exists( 'gcc_wp_2018_entry_footer' ) ) :
 			$categories_list = get_the_category_list( esc_html__( ', ', 'gcc-wp-2018' ) );
 			if ( $categories_list ) {
 				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'gcc-wp-2018' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+				printf( '<strong><span class="cat-links">' . esc_html__( 'Posted in %1$s', 'gcc-wp-2018' ) . '</span></strong> ', $categories_list ); // WPCS: XSS OK.
 			}
 
 			/* translators: used between list items, there is a space after the comma */
@@ -96,7 +93,7 @@ if ( ! function_exists( 'gcc_wp_2018_entry_footer' ) ) :
 			sprintf(
 				wp_kses(
 					/* translators: %s: Name of current post. Only visible to screen readers */
-					__( 'Edit <span class="screen-reader-text">%s</span>', 'gcc-wp-2018' ),
+					__( ' | Edit <span class="screen-reader-text">%s</span>', 'gcc-wp-2018' ),
 					array(
 						'span' => array(
 							'class' => array(),
@@ -145,3 +142,11 @@ function gcc_wp_2018_post_thumbnail() {
 	<?php endif; // End is_singular().
 }
 endif;
+
+// Replaces the excerpt "Read More" text by a link
+function new_read_more($more) {
+       global $post;
+	return '...<br/>
+	  <a class="moretag" href="'. get_permalink($post->ID) . '">Read the full article</a>';
+}
+add_filter('excerpt_more', 'new_read_more');

@@ -4,7 +4,7 @@ $marketing-site-footer-bg: #f5f5f5;
 .hero-section {
 
 position: relative;
-height: 600px;
+height: 650px;
 margin-bottom: 0;
 padding-bottom: 0;
 
@@ -29,12 +29,29 @@ img {
   position: absolute;
   left: 4%;
   bottom: 8%;
+
+  .entry-meta {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+
+    a {
+          color: $white;
+    }
+
+    a:hover {
+      color: $white;
+      text-decoration: underline;
+
+    }
+  }
+
 }
 }
 .crumbs-container {
   padding: 0;
   margin: 0;
-  background-color: $light-gray;
+  background-color: rgba(255, 255, 255, .6);
 
   .breadcrumbs {
    margin-left: 4.2%;

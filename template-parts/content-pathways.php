@@ -1,130 +1,77 @@
 <?php
 //highlights section
 $pathways_heading = get_field('pathways_heading');
+$pathway_image = get_field('pathway_image');
+$pathway_url = get_field('pathway_url');
  ?>
 <div id="pathways" class="row gutter-small expanded">
 
 <div class="pathways-content">
 
-  <h2 class="text-center"><?php the_field('pathways_heading'); ?></h2>
+<h2 class="text-center"><?php the_field('pathways_heading'); ?></h2>
 
 <div class="row gutter-small pathways-row-1 expanded">
 
 <div class="columns small-12">
 
-<div class="medium-6 large-3 columns" data-equalizer-watch>
+<?php
+$args =  array (
 
-  <div class="card">
-    <img src="https://placeimg.com/640/480/nature">
-    <a href="#">
-    <div class="card-section">
-      <h3>Computer Technology</h3>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fa fa-2x fa-search-plus more-icon"></span>
+'post_type' => 'pathways'
+
+);
+?>
+
+<?php $query = new WP_Query( $args ); ?>
+
+
+<?php if ( $query->have_posts() ) : ?>
+
+	<?php while ( $query->have_posts() ) : $query->the_post();?>
+
+
+    <div class="medium-6 large-3 columns" data-equalizer-watch>
+
+      <div class="card">
+        <a href="<?php the_field('pathway_url');?>">
+
+<?php
+$pathway_image = get_field('pathway_image');
+
+
+if( !empty($pathway_image) ):
+
+	// vars
+	$url = $pathway_image['url'];
+	$alt = $pathway_image['alt'];
+
+	// thumbnail
+	$size = 'large';
+	$thumb = $pathway_image['sizes'][ $size ];
+	$width = $pathway_image['sizes'][ $size . '-width' ];
+	$height = $pathway_image['sizes'][ $size . '-height' ];
+     ?>
+            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>">
+
+<?php endif; ?>
+         <div class="card-section">
+          <?php the_title('<h3>', '</h3>'); ?>
+          <span class="fa fa-2x fa-search-plus more-icon"></span>
+        </div>
+        </a>
+      </div>
+
     </div>
-    </a>
-  </div>
 
-</div>
+<?php endwhile; ?>
 
-<div class="medium-6 large-3 columns" data-equalizer-watch>
+<?php wp_reset_postdata(); ?>
 
-  <div class="card">
-    <img src="https://placeimg.com/640/480/arch">
-    <a href="#">
-    <div class="card-section">
-      <h3>Public Service</h3>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fa fa-2x fa-search-plus more-icon"></span>
-    </div>
-    </a>
-  </div>
+<?php else : ?>
 
-</div>
+	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
 
-<div class="medium-6 large-3 columns" data-equalizer-watch>
-
-  <div class="card">
-    <img src="https://placeimg.com/640/480/tech">
-    <a href="#">
-    <div class="card-section">
-      <h3>Business</h3>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fa fa-2x fa-search-plus more-icon"></span>
-    </div>
-    </a>
-  </div>
-
-</div>
-
-<div class="medium-6 large-3 columns" data-equalizer-watch>
-
-  <div class="card">
-    <img src="https://placeimg.com/640/480/tech">
-    <a href="#">
-    <div class="card-section">
-      <h3>Advanced Manufacturing</h3>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fa fa-2x fa-search-plus more-icon"></span>
-    </div>
-    </a>
-  </div>
-
-</div>
-
-</div>
-
-</div>
-
-<div class="row gutter-small pathways-row-2 expanded">
-
-<div class="columns small-12 large-10 large-offset-1">
-
-<div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
-
-  <div class="card">
-    <img src="https://placeimg.com/640/480/tech">
-    <a href="#">
-    <div class="card-section">
-      <h3>Technical Trade</h3>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fa fa-2x fa-search-plus more-icon"></span>
-    </div>
-    </a>
-  </div>
-
-</div>
-
-
-<div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
-
-  <div class="card">
-    <img src="https://placeimg.com/640/480/tech">
-    <a href="#">
-    <div class="card-section">
-      <h3>Health Care</h3>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fa fa-2x fa-search-plus more-icon"></span>
-    </div>
-    </a>
-  </div>
-
-</div>
-
-<div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
-
-  <div class="card">
-    <img src="https://placeimg.com/640/480/tech">
-      <a href="#">
-    <div class="card-section">
-      <h3>Transfer</h3>
-      <p>It has an easy to override visual style, and is appropriately subdued.</p>
-      <span class="fa fa-2x fa-search-plus more-icon"></span>
-    </div>
-  </a>
-  </div>
-
-</div>
+<?php endif; ?>
 
 </div>
 

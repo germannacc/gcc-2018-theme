@@ -12,9 +12,14 @@
   */
 require get_template_directory() . '/inc/theme-supports.php';
 /**
+ * Custom Post Types.
+ */
+require get_template_directory() . '/inc/custom-post-types.php';
+/**
  * Theme Settings
  */
 require get_template_directory() . '/inc/theme-settings.php';
+
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -61,7 +66,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
-
 /**
  * Customizer additions.
  */

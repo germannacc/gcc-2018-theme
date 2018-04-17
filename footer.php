@@ -22,115 +22,145 @@
   $e2campus_button_url = get_field('e2campus_button_url', 'option');
 
 ?>
-</main><!--.sitemaincontent-->
+    </main>
+    <!--.sitemaincontent-->
 
-<footer class="marketing-site-footer">
+    <footer class="marketing-site-footer">
 
-  <!--Top Footer-->
-  <div class="row expanded gutter-small">
+        <!--Top Footer-->
+        <div class="row expanded gutter-small">
 
-    <!--Footer 1st Half-->
-    <div class="medium-12 large-6 columns">
+            <!--Footer 1st Half-->
+            <div class="medium-12 large-6 columns">
 
-    <!--Footer Column 1-->
-    <div class="medium-6 columns">
+                <!--Footer Column 1-->
+                <div class="medium-6 columns">
 
-      <?php //Column 1 Heading
+                    <?php //Column 1 Heading
       if( !empty($footer_column_1_heading_text) ): ?>
-      <h4><?php echo $footer_column_1_heading_text; ?></h4>
-      <?php endif; ?>
+                    <h4>
+                        <?php echo $footer_column_1_heading_text; ?>
+                    </h4>
+                    <?php endif; ?>
 
-      <?php //Mission Statement
+                    <?php //Mission Statement
       if( !empty($mission_statement_text) ): ?>
-      <p><?php echo $mission_statement_text; ?></p>
-      <?php endif; ?>
+                    <p>
+                        <?php echo $mission_statement_text; ?>
+                    </p>
+                    <?php endif; ?>
 
-      <ul class="menu vertical">
-        <?php //Col 1 Link 1
+                    <ul class="menu vertical">
+                        <?php //Col 1 Link 1
         if( !empty($privacy_link_text ) ): ?>
-        <li><a href="<?php echo $privacy_link_url; ?>"><?php echo $privacy_link_text;  ?></a></li>
-        <?php endif; ?>
+                        <li>
+                            <a href="<?php echo $privacy_link_url; ?>">
+                                <?php echo $privacy_link_text;  ?>
+                            </a>
+                        </li>
+                        <?php endif; ?>
 
-        <?php //Col 2 Link 2
+                        <?php //Col 2 Link 2
         if( !empty($statements_link_text ) ): ?>
-        <li><a href="<?php echo $statements_link_url; ?>"><?php echo $statements_link_text;  ?></a></li>
-        <?php endif; ?>
-      </ul>
-    </div><!--.footercolumn1-->
+                        <li>
+                            <a href="<?php echo $statements_link_url; ?>">
+                                <?php echo $statements_link_text;  ?>
+                            </a>
+                        </li>
+                        <?php endif; ?>
+                    </ul>
+                </div>
+                <!--.footercolumn1-->
 
-    <!--Footer Column 2-->
-    <div class="medium-6 columns">
+                <!--Footer Column 2-->
+                <div class="medium-6 columns">
 
-      <?php //Column 2 Heading
+                    <?php //Column 2 Heading
       if( !empty($footer_column_2_heading_text) ): ?>
-      <h4><?php echo $footer_column_2_heading_text; ?></h4>
-      <?php endif; ?>
+                    <h4>
+                        <?php echo $footer_column_2_heading_text; ?>
+                    </h4>
+                    <?php endif; ?>
 
-      <?php //Primary Address Text Block
+                    <?php //Primary Address Text Block
       if( !empty($primary_address) ): ?>
-      <div class="marketing-site-footer-block">
-        <span class="fa fa-3x fa-map-marker" aria-hidden></span>
-        <p><?php echo $primary_address; ?></p>
-      </div>
-      <?php endif; ?>
+                    <div class="marketing-site-footer-block">
+                        <span class="fa fa-3x fa-map-marker" aria-hidden></span>
+                        <p>
+                            <?php echo $primary_address; ?>
+                        </p>
+                    </div>
+                    <?php endif; ?>
 
-      <?php //Primary Phone Number Text Block
+                    <?php //Primary Phone Number Text Block
       if( !empty($primary_phone_number) ): ?>
-      <div class="marketing-site-footer-block">
-        <span class="fa fa-3x fa-mobile" aria-hidden></span>
-        <p><?php echo $primary_phone_number; ?></p>
-      </div>
-      <?php endif; ?>
+                    <div class="marketing-site-footer-block">
+                        <span class="fa fa-3x fa-mobile" aria-hidden></span>
+                        <p>
+                            <?php echo $primary_phone_number; ?>
+                        </p>
+                    </div>
+                    <?php endif; ?>
 
-      <?php //e2Campus Alerts Text Block
+                    <?php //e2Campus Alerts Text Block
       if( !empty($e2campus_button_text) ): ?>
-      <div class="marketing-site-footer-block">
-        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle" aria-hidden></span>
+                    <div class="marketing-site-footer-block">
+                        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle" aria-hidden></span>
       <?php echo $e2campus_button_text; ?></a>
-      </div>
-      <?php endif; ?>
+                    </div>
+                    <?php endif; ?>
 
-    </div><!--.footercolumn2-->
+                </div>
+                <!--.footercolumn2-->
 
-  </div><!--.footer1sthalf-->
+            </div>
+            <!--.footer1sthalf-->
 
-  <!--Footer 2nd Half-->
-  <div class="medium-12 large-6 columns">
+            <!--Footer 2nd Half-->
+            <div class="medium-12 large-6 columns">
 
-    <!--Footer Column 3-->
-    <div class="medium-6 columns  footer-links">
-        <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
-    </div><!--.footercolumn3-->
+                <!--Footer Column 3-->
+                <div class="medium-6 columns  footer-links">
+                    <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
+                </div>
+                <!--.footercolumn3-->
 
-    <!--Footer Column 4-->
-    <div class="medium-6 columns  footer-links">
-      <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
-    </div><!--.footercolumn4-->
+                <!--Footer Column 4-->
+                <div class="medium-6 columns  footer-links">
+                    <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
+                </div>
+                <!--.footercolumn4-->
 
-  </div><!--.footer2ndthalf-->
+            </div>
+            <!--.footer2ndthalf-->
 
-</div><!--.topfooter-->
+        </div>
+        <!--.topfooter-->
 
-<!--Bottom Footer-->
-  <div class="marketing-site-footer-bottom">
-    <div class="row align-middle">
-      <div class="column" class="text-center">
-        <p>&copy; <?php echo date('Y'); ?>  <?php bloginfo( 'name' ); ?></p>
-<?php if( !empty($bottom_footer_text) ): ?>
-<?php echo $bottom_footer_text; ?>
-<?php endif; ?>
-      </div>
+        <!--Bottom Footer-->
+        <div class="marketing-site-footer-bottom">
+            <div class="row align-middle">
+                <div class="column" class="text-center">
+                    <p>&copy;
+                        <?php echo date('Y'); ?>
+                        <?php bloginfo( 'name' ); ?>
+                    </p>
+                    <?php if( !empty($bottom_footer_text) ): ?>
+                    <?php echo $bottom_footer_text; ?>
+                    <?php endif; ?>
+                </div>
+            </div>
+        </div>
+        <!--.bottomfooter-->
+    </footer>
+
+    <!--Closing Site Divs Do not Remove-->
     </div>
-  </div>
-  <!--.bottomfooter-->
-</footer>
+    </div>
+    </div>
 
-<!--Closing Site Divs Do not Remove-->
-</div>
-</div>
-</div>
+    <?php wp_footer(); ?>
 
-<?php wp_footer(); ?>
+    </body>
 
-</body>
-</html>
+    </html>

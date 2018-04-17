@@ -1,56 +1,75 @@
 <?php
 /**
- * The main template file
+ * The template for displaying all pages
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package gccwp-2018
  */
 
-get_header(); ?>
+ get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-		<?php
-		if ( have_posts() ) :
 
-			if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
+        <div class="row gutter-small expanded hero-section">
 
-			<?php
-			endif;
+            <header class="hero-section">
+                <img src="https://placeimg.com/640/480/nature" alt="page heading" width="640" height="300">
+                <div class="hero-section-text">
+                    <h1 class "screen-reader-text">
+                        <?php single_post_title(); ?>
+                    </h1>
+                </div>
+            </header>
 
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
+        </div>
+        <!--.page-heading-->
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
 
-			endwhile;
+        <div class="row expanded crumbs-container">
 
-			the_posts_navigation();
+            <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+                <ul class="breadcrumbs">
 
-		else :
+                    <?php $home_page = get_the_title( get_option('page_on_front')); ?>
+                    <li role="menuitem">
+                        <a href="<?php echo get_site_url(); ?>">
+                            <?php echo $home_page; ?>
+                        </a>
+                    </li>
+                    <li role="menuitem" class="disabled">
+                        <?php single_post_title(); ?>
+                    </li>
 
-			get_template_part( 'template-parts/content', 'none' );
 
-		endif; ?>
+                </ul>
+            </nav>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        </div>
 
-<?php
-get_sidebar();
-get_footer();
+
+        <!--Page Content-->
+        <div class="row gutter-small expanded content-area">
+
+      <?php //Page with Sidebar Template
+       get_template_part( 'template-parts/content', 'postpage' ); ?>
+
+            <?php //Template Sidebar
+       get_template_part( '/sidebars/default-sidebar' ); ?>
+
+        </div>
+        <!--.pagecontent-->
+
+
+    </article>
+
+
+
+    <?php
+ get_footer();

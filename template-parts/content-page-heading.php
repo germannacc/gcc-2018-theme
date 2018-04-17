@@ -9,7 +9,6 @@
 
 </div><!--.page-heading-->
 
-
 <div class="row expanded crumbs-container">
 
       <nav aria-label="<?php _e('You are here:');?>" role="navigation">

@@ -1,4 +1,5 @@
-<?php if( function_exists('acf_add_options_page') ) {
+<?php
+if( function_exists('acf_add_options_page') ) {
 
 	acf_add_options_page(array(
 		'page_title' 	=> 'Theme General Settings',
@@ -9,4 +10,12 @@
 	));
 
 
-} ?>
+}
+?>
+<?php
+function gcc_pagination() {
+    global $wp_query;
+    echo paginate_links();
+}
+
+ ?>

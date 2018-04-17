@@ -37,19 +37,28 @@ h2 {
      bottom: 0;
      background-color: rgba(163, 10, 53, .6);
      color: $white;
+     display: block;
+     min-width: 100%;
 
 
      h3  {
 
-      font-size: 1.2rem;
+      font-size: 1rem;
+       width: 92%;
 
+   }
+
+   h3, .more-icon {
+     display: inline-block;
 
    }
 
    .more-icon {
      position: absolute;
-     right: .7rem;
-     top: .5rem;
+     right: .4rem;
+     top: .8rem;
+     width: 10%;
+     height: 100%;
    }
 
   }
