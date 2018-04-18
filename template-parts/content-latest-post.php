@@ -19,18 +19,83 @@
 
   <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-    <div class="row">
-    <div class="medium-4 columns">
-    <img src="https://placehold.it/600x370&text=Featured Image" alt="image for article" alt="article preview image">
-    </div>
-    <div class="medium-8 columns">
-    <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <?php if ( has_post_thumbnail() ) : ?>
+      <div class="row entry-content">
+      <div class="medium-5 columns">
 
-    <p><?php the_excerpt(); ?></p>
-    </div>
-    </div>
+          <?php gcc_wp_2018_post_thumbnail(); ?>
 
-    <hr>
+      </div>
+      <div class="medium-7 columns">
+      <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+      <?php if ( 'post' === get_post_type() ) : ?>
+        <div class="entry-meta float-right">
+          <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
+          gcc_wp_2018_posted_on();
+          ?> </strong></p>
+        </div><!-- .entry-meta -->
+     <?php endif; ?>
+      <p><?php the_excerpt(
+        sprintf(
+        			wp_kses(
+        				/* translators: %s: Name of current post. Only visible to screen readers */
+        				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'us_backup' ),
+        				array(
+        					'span' => array(
+        						'class' => array(),
+        					),
+        				)
+        			),
+        			get_the_title()
+        		)
+
+      ); ?></p>
+
+      </div>
+      </div>
+
+      <hr/>
+
+
+    <?php else: ?>
+
+      <div class="row entry-content">
+      <div class="medium-12 columns">
+      <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+      <?php if ( 'post' === get_post_type() ) : ?>
+        <div class="entry-meta float-right">
+          <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
+          gcc_wp_2018_posted_on();
+          ?> </strong></p>
+        </div><!-- .entry-meta -->
+    <?php endif; ?>
+      <p><?php the_excerpt(
+
+        sprintf(
+        			wp_kses(
+        				/* translators: %s: Name of current post. Only visible to screen readers */
+        				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'us_backup' ),
+        				array(
+        					'span' => array(
+        						'class' => array(),
+        					),
+        				)
+        			),
+        			get_the_title()
+        		)
+
+      ); ?></p>
+
+      </div>
+      </div>
+
+      <hr/>
+
+
+    <?php endif; ?>
+
+
+
 
 <?php endwhile; ?>
 
