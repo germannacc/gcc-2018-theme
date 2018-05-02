@@ -10,13 +10,18 @@
 
     <?php //get custom sidebar menu for section
     wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-    'menu' => 'About Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
+    'menu' => 'Programs Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
+
+    <h3><?php _e('Divisions'); ?></h3>
+<?php //get custom sidebar menu for section
+wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
+    'menu' => 'Divisions Menu', 'container' => 'true', 'menu_class' => 'submenu no-bullet' ) ); ?>
 
   </nav>
 
 </div>
 
 <?php //custom department widgets
-dynamic_sidebar( 'sidebar-widgets' ); ?>
+dynamic_sidebar( 'programs-widgets' ); ?>
 
 </aside>

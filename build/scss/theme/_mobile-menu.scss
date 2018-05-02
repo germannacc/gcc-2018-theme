@@ -37,9 +37,9 @@ li.mygcc {
         a {
           -webkit-text-decoration-skip: objects;
           padding: .9rem 0;
-          background-color: $gold;
+          background-color: $medium-gray;
           font-size: 1rem;
-          color: $white;
+          color: $primary;
           text-align: center;
           margin-top: 0;
           font-weight: 700;
@@ -53,7 +53,7 @@ li.mygcc {
         }
 
         a:hover {
-           background-color: $secondary;
+           background-color: $primary;
            color: $white
         }
 
@@ -70,6 +70,7 @@ li.mygcc {
 
   margin-top: 0;
   padding: .8rem .2rem .1rem .2rem;
+  text-align: center;
 
   p.lead {
     font-weight: 700;
@@ -115,7 +116,7 @@ li.mygcc {
 .drilldown a {
 	background-color: transparent;
 	line-height: inherit;
-	color: $white;
+	color: $primary;
 	cursor: pointer;
 }
 
@@ -136,9 +137,9 @@ li.mygcc {
       padding: .4rem .2rem;
 
      span {
-        color: $white;
+        color: $primary;
          padding: .3rem .6rem;
-         border: 1px solid $white;
+         border: 1px solid $primary;
          border-radius: 100%;
          text-align: center;
      }

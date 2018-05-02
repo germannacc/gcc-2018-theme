@@ -1,5 +1,5 @@
-<div class="row column expanded" style="padding: 0; margin: 0;">
+<div class="row column expanded no-gutter">
 
-  <?php putRevSlider( 'highlight-carousel5' );  ?>
+    <?php putRevSlider( 'highlight-carousel5' ); ?>
 
 </div>

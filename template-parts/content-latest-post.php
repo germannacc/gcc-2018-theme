@@ -20,14 +20,14 @@
   <?php while ( $query->have_posts() ) : $query->the_post();?>
 
     <?php if ( has_post_thumbnail() ) : ?>
-      <div class="row entry-content">
+      <div class="row latest-post">
       <div class="medium-5 columns">
 
           <?php gcc_wp_2018_post_thumbnail(); ?>
 
       </div>
       <div class="medium-7 columns">
-      <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+      <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <?php if ( 'post' === get_post_type() ) : ?>
         <div class="entry-meta float-right">
           <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
@@ -39,7 +39,7 @@
         sprintf(
         			wp_kses(
         				/* translators: %s: Name of current post. Only visible to screen readers */
-        				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'us_backup' ),
+        				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
         				array(
         					'span' => array(
         						'class' => array(),
@@ -54,14 +54,11 @@
       </div>
       </div>
 
-      <hr/>
-
-
     <?php else: ?>
 
-      <div class="row entry-content">
+      <div class="row latest-post">
       <div class="medium-12 columns">
-      <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+      <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <?php if ( 'post' === get_post_type() ) : ?>
         <div class="entry-meta float-right">
           <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
@@ -74,7 +71,7 @@
         sprintf(
         			wp_kses(
         				/* translators: %s: Name of current post. Only visible to screen readers */
-        				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'us_backup' ),
+        				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
         				array(
         					'span' => array(
         						'class' => array(),
@@ -89,13 +86,7 @@
       </div>
       </div>
 
-      <hr/>
-
-
-    <?php endif; ?>
-
-
-
+<?php endif; ?>
 
 <?php endwhile; ?>
 
@@ -103,7 +94,7 @@
 
 <?php else : ?>
 
-	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'gcc-wp-2018'); ?></p>
 
 <?php endif; ?>
 

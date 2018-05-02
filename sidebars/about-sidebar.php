@@ -17,6 +17,6 @@
 </div>
 
 <?php //custom department widgets
-dynamic_sidebar( 'sidebar-widgets' ); ?>
+dynamic_sidebar( 'about-widgets' ); ?>
 
 </aside>

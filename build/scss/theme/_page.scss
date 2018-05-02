@@ -5,6 +5,13 @@ article {
   background: $white;
   position: relative;
 }
+.pathways-row-2  {
+  margin: auto;
+  width: 75%;
+}
+#pathways .pathways-content .pathways-row-1 .column, #pathways .pathways-content .pathways-row-1 .columns, #pathways .pathways-content .pathways-row-2 .column, #pathways .pathways-content .pathways-row-2 .columns  {
+  float: left !important;
+}
 .entry-content {
 
  padding: 2rem 4rem;
@@ -32,7 +39,7 @@ article {
 margin-bottom: 0;
 
 h3 {
-  background-color: $black;
+  background-color: $secondary;
   color: $white;
   width: 100%;
   padding: 1rem;
@@ -49,12 +56,10 @@ p {
 
 ul.vertical.menu {
 
-
 li {
 
 a {
-
-border-bottom: 1px solid $dark-gray;
+padding: 1.4rem 1rem;
 font-weight: bold;
 color: $dark-gray;
 
@@ -62,7 +67,7 @@ color: $dark-gray;
 
 a:hover {
 
-  background-color: $dark-gray;
+  background-color: $black;
   color: $white;
 }
 }
@@ -72,7 +77,7 @@ a:hover {
 
 }
 .entry-footer {
-  background-color:  #f5f5f5;
+  background-color:  $medium-gray;
   position: absolute;
   bottom: 0;
   display:  block;

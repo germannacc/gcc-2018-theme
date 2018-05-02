@@ -15,7 +15,7 @@
     <div class="off-canvas position-left reveal-for-large" id="main-menu" data-off-canvas data-position="left">
 
         <!-- Close button -->
-        <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018'); ?>" type="button" data-close>
      <span aria-hidden="true">&times;</span>
    </button>
 
@@ -38,8 +38,8 @@
                         <?php endif; ?>
                     </div>
 
-                    <a href="<?php bloginfo( 'url' ); ?>" class="logo">
-                        <?php bloginfo( 'name' ); ?>
+                    <a href="<?php echo esc_url( home_url() )?>" class="logo">
+                        <?php echo esc_url( home_url() ) ?>
                     </a>
                     <p class="tagline lead">
                         <?php bloginfo( 'description' ); ?>
@@ -57,7 +57,7 @@ gcc_wp_2018_main_navigation(); ?>
 
                         <a href="<?php echo $tips_url;?>" class="tips-logo">
                             <?php echo _e(
-        'T.I.P.S.'); ?>
+        'T.I.P.S.', 'gcc-wp-2018'); ?>
                         </a>
 
                         <?php //function location in inc/social-icons.php

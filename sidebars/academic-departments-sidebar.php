@@ -2,21 +2,21 @@
 
   <div class="widget">
 
-    <h3><?php //gets parent page title
-    echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent );
-    ?></h3>
+      <h3><?php //gets parent page title
+      echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent );
+      ?></h3>
 
-  <nav class="department-links">
+    <nav class="department-links">
 
-    <?php //get custom sidebar menu for section
-    wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-    'menu' => 'About Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
+        <?php //get custom sidebar menu for section
+        wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
+        'menu' => 'Academic Departments Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
 
-  </nav>
+    </nav>
 
-</div>
+  </div>
 
 <?php //custom department widgets
-dynamic_sidebar( 'sidebar-widgets' ); ?>
+dynamic_sidebar( 'academic-departments-widgets' ); ?>
 
 </aside>

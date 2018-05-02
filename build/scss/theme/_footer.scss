@@ -1,11 +1,8 @@
-$marketing-site-footer-bg: #232323;
-
 .marketing-site-footer {
-  background: $marketing-site-footer-bg;
-  color: lighten($marketing-site-footer-bg, 95%);
+  background: $secondary;
+  color: lighten($secondary, 95%);
   padding: 2rem 0 0;
   text-align: center;
-  border-top: 20px solid $dark-gray;
 
   p {
     line-height: 1.6rem;
@@ -37,7 +34,7 @@ $marketing-site-footer-bg: #232323;
   a {
     padding: 0 0 1rem 0;
     font-weight: 600;
-    color: $dark-gray;
+    color: $light-gray;
   }
 
   a:hover {
@@ -65,7 +62,7 @@ $marketing-site-footer-bg: #232323;
       a  {
         line-height: 1.4rem;
         font-weight: 700;
-        color: $dark-gray;
+        color: $light-gray;
       }
       a:hover {
         color: $white;
@@ -99,7 +96,7 @@ $marketing-site-footer-bg: #232323;
 
   .fas {
     font-size: 2.5rem;
-    color: darken($marketing-site-footer-bg, 20%);
+    color: darken($secondary, 20%);
     margin-bottom: 1rem;
   }
 
@@ -123,7 +120,7 @@ $marketing-site-footer-bg: #232323;
 }
 
 .marketing-site-footer-bottom {
-  background: darken($marketing-site-footer-bg, 20%);
+  background: $black;
   padding: 1.2rem 0;
 
   @include breakpoint(medium down) {
@@ -138,7 +135,7 @@ $marketing-site-footer-bg: #232323;
     text-align: center;
 
     a {
-      color: $dark-gray;
+      color: $light-gray;
       font-weight: 700;
     }
     a:hover {

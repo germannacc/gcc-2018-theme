@@ -948,19 +948,19 @@ register_sidebar(array(
 	'id' => 'upcoming-events-widgets',
 	'name' => __( 'Upcoming Events widgets', 'gcc-wp-2018' ),
 	'description' => __( 'Drag widgets to this footer container', 'gcc-wp-2018' ),
-	'before_widget' => '<div class="row column expanded">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3 class="text-center">',
-	'after_title' => '</h3>',
+	'before_widget' => '',
+	'after_widget' => '',
+	'before_title' => '',
+	'after_title' => '',
 	));
 	register_sidebar(array(
 		'id' => 'latest-stories-widgets',
 		'name' => __( 'Latest Stories widgets', 'gcc-wp-2018' ),
 		'description' => __( 'Drag widgets to this footer container', 'gcc-wp-2018' ),
-		'before_widget' => '<div class="row column expanded">',
-		'after_widget' => '</div>',
-		'before_title' => '<h3 class="text-center">',
-		'after_title' => '</h3>',
+		'before_widget' => '',
+		'after_widget' => '',
+		'before_title' => '',
+		'after_title' => '',
 		));
 register_sidebar(array(
 	'id' => 'upcoming-workforceevents-widgets',

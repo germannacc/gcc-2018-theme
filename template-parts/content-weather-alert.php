@@ -3,9 +3,8 @@
   $weather_alert_heading = get_field('weather_alert_heading', 'option');
   $sign_up_for_alerts_text = get_field('sign_up_for_alerts_text', 'option');
   $alerts_url = get_field('alerts_url', 'option');
-?>
 
-<?php //Column 1 Heading
+//Column 1 Heading
 if( !empty($closing_announcement_text) ): ?>
 
 <div class="callout closing hide-for-small-only hide-for-medium-only" data-closable>
@@ -32,7 +31,7 @@ if( !empty($closing_announcement_text) ): ?>
           <?php echo $sign_up_for_alerts_text ?>
         </a>
 
-          <?php endif; ?>
+        <?php endif; ?>
 
       </div>
 

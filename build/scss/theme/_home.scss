@@ -10,6 +10,7 @@ padding:  3rem 1rem 4rem 1rem;
 h2 {
 
   margin-bottom: 3rem;
+  color: $secondary;
 
 }
 
@@ -35,7 +36,7 @@ h2 {
 
      position: absolute;
      bottom: 0;
-     background-color: rgba(163, 10, 53, .6);
+     background-color: rgba(51, 51, 51, .6);
      color: $white;
      display: block;
      min-width: 100%;
@@ -43,7 +44,7 @@ h2 {
 
      h3  {
 
-      font-size: 1rem;
+      font-size: 1.2rem;
        width: 92%;
 
    }
@@ -64,7 +65,7 @@ h2 {
   }
 
 .card-section:hover {
-  background-color: rgba(163, 10, 53, .9);
+  background-color: rgba(51, 51, 51, .9);
 }
 
  }
@@ -75,26 +76,52 @@ h2 {
 }
 
 
+$hero-height: 100vh;
 
 #getting-started {
 
-background-color: $white;
-position: relative;
-padding: 4rem 1rem 6rem 1rem;
-margin-top: 0;
-background: url(https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/themes/FoundationGermanna/assets/img/germanna-workforce-large.jpg) no-repeat center center fixed;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-z-index: 0;
+  padding: 2rem 0  8rem 0;
+  position: relative;
 
+  img.background  {
+    background:  no-repeat;
+    background-size: cover;
+    height: $hero-height;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    margin-bottom: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+img.background::after {
+  /* Display and position the pseudo-element */
+  content: "";
+  position: absolute;
+
+
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+}
 .getting-started-content {
 
   h2 {
   color: $white;
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
-  margin-bottom: 3rem;
+   margin: 3rem 0;
   }
 
   .card {
@@ -106,13 +133,15 @@ z-index: 0;
 
        position: absolute;
        bottom: 0;
-       background-color: rgba(163, 10, 53, .6);
+       background-color: rgba(51, 51, 51, .6);
        color: $white;
-
+       display: block;
+       text-align: center;
+       width: 100%;
 
        h3  {
 
-        font-size: 1.4rem;
+        font-size: 1.6rem;
 
 
      }
@@ -126,7 +155,7 @@ z-index: 0;
     }
 
   .card-section:hover {
-    background-color: rgba(163, 10, 53, .9);
+    background-color: rgba(51, 51, 51, .9);
   }
   }
   }
@@ -138,12 +167,22 @@ z-index: 0;
 
 #highlights {
 
-padding: 3rem 1rem 4rem 1rem;
+position: relative;
+border-top: 10px solid $secondary;
+background-color: $white;
+padding: 8rem 3rem 4rem 3rem;
 
 .highlights-content {
-
+  overflow: visible;
 h2 {
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
+  top: -2.4%;
+  background-color:  $secondary;
+  color: $white;
+  margin: 0 20% 6rem 20%;
+  position: absolute;
+  padding: 1.5rem 0;
+  width: 60%;
 }
 
 /*Event Boxes*/
@@ -187,13 +226,16 @@ h2 {
 
 }
 
+.ytp-watermark {
+  display: none !important;
+}
 /*Trending Sidebar*/
 
 .trending {
 
 h3 {
 
-background-color: $dark-gray;
+background-color: $secondary;
 color: $white;
 padding: 1rem;
 margin-bottom: 1.2rem;
@@ -205,7 +247,14 @@ margin-bottom: 1.2rem;
 }
 
 }
-
+.post-title:after {
+    content: ""; /* This is necessary for the pseudo element to work. */
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0; /* This will center the border. */
+    width: 45%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 5px solid $black; /* This creates the border. Replace black with whatever color you want. */
+}
 
 }
 

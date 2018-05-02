@@ -70,19 +70,20 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
 primary: #a30a36,
-secondary: #232323,
-success: #3adb76,
-warning: #ffae00,
+secondary: #4c4c4c,
+success: #0d6d2e,
+warning: #a05d00,
 alert: #a30a35,
 );
-$primary: #a30a35;
-$secondary: #232323;
-$gold: #f47c04;
-$light-gray: #f5f5f5;
-$medium-gray: #cacaca;
-$dark-gray: #8a8a8a;
-$black: #0a0a0a;
-$white: #fefefe;
+$primary: #a30a36;
+$secondary: #3f3f3f;
+$gold: #a05d00;
+$success: #0d6d2e;
+$light-gray: #f9f9f9;
+$medium-gray: #e2e2e2;
+$dark-gray: #262626;
+$black: #2a2a2a;
+$white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
 $body-font-family: 'Open Sans', sans-serif;
@@ -133,13 +134,13 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: $body-font-family;
+$header-font-family: 'Muli', sans-serif;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
-$font-family-monospace: 'Open Sans', sans-serif;
+$font-family-monospace: 'Muli', sans-serif;
 $header-color: inherit;
 $header-lineheight: 1.2;
-$header-margin-bottom: 0.4rem;
+$header-margin-bottom: 0.8rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 36),
@@ -161,8 +162,8 @@ $header-styles: (
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
 $header-small-font-color: $medium-gray;
-$paragraph-lineheight: 1.4;
-$paragraph-margin-bottom: .8rem;
+$paragraph-lineheight: 1.6;
+$paragraph-margin-bottom: 1rem;
 $paragraph-text-rendering: optimizeLegibility;
 $code-color: $black;
 $code-font-family: $font-family-monospace;
@@ -171,7 +172,7 @@ $code-background: $light-gray;
 $code-border: 1px solid $medium-gray;
 $code-padding: rem-calc(2 5 1);
 $anchor-color: $primary-color;
-$anchor-color-hover: $secondary;
+$anchor-color-hover: $black;
 $anchor-text-decoration: none;
 $anchor-text-decoration-hover: none;
 $hr-width: $global-width;
@@ -365,9 +366,9 @@ $drilldown-transition: transform 0.15s linear;
 $drilldown-arrows: true;
 $drilldown-padding: $global-menu-padding;
 $drilldown-nested-margin: 0;
-$drilldown-background: $secondary;
+$drilldown-background: $light-gray;
 $drilldown-submenu-padding: $drilldown-padding;
-$drilldown-submenu-background: $secondary;
+$drilldown-submenu-background: $light-gray;
 $drilldown-arrow-color: $white;
 $drilldown-arrow-size: 6px;
 
@@ -378,7 +379,7 @@ $dropdown-padding: 1rem;
 $dropdown-background: $body-background;
 $dropdown-border: none;
 $dropdown-font-size: 1rem;
-$dropdown-width: 300px;
+$dropdown-width: 320px;
 $dropdown-radius: $global-radius;
 $dropdown-sizes: (
   tiny: 100px,
@@ -393,7 +394,7 @@ $dropdownmenu-arrows: false;
 $dropdownmenu-arrow-color: $white;
 $dropdownmenu-arrow-size: 6px;
 $dropdownmenu-arrow-padding: 3rem;
-$dropdownmenu-min-width: 200px;
+$dropdownmenu-min-width: 220px;
 $dropdownmenu-background: $black;
 $dropdownmenu-submenu-background: $dropdownmenu-background;
 $dropdownmenu-padding: $global-menu-padding;
@@ -777,20 +778,20 @@ $switch-paddle-transition: all 0.25s ease-out;
 
 $table-background: $white;
 $table-color-scale: 5%;
-$table-border: 1px solid smart-scale($table-background, $table-color-scale);
+$table-border: 1px solid smart-scale($dark-gray, $table-color-scale);
 $table-padding: rem-calc(8 10 10);
 $table-hover-scale: 2%;
 $table-row-hover: darken($table-background, $table-hover-scale);
-$table-row-stripe-hover: darken($table-background, $table-color-scale + $table-hover-scale);
+$table-row-stripe-hover: darken($dark-gray, $table-color-scale + $table-hover-scale);
 $table-is-striped: true;
 $table-striped-background: smart-scale($table-background, $table-color-scale);
 $table-stripe: even;
-$table-head-background: smart-scale($table-background, $table-color-scale / 2);
+$table-head-background: smart-scale($primary, $table-color-scale / 2);
 $table-head-row-hover: darken($table-head-background, $table-hover-scale);
-$table-foot-background: smart-scale($table-background, $table-color-scale);
+$table-foot-background: smart-scale($secondary, $table-color-scale);
 $table-foot-row-hover: darken($table-foot-background, $table-hover-scale);
-$table-head-font-color: $body-font-color;
-$table-foot-font-color: $body-font-color;
+$table-head-font-color: $white;
+$table-foot-font-color: $white;
 $show-header-for-stacked: false;
 $table-stack-breakpoint: medium;
 

@@ -9,14 +9,20 @@
   <nav class="department-links">
 
     <?php //get custom sidebar menu for section
+     wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
+    'menu' => 'Nursing Program Main Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
+
+    <h3>
+    <?php echo esc_html('Important Information'); ?></h3>
+    <?php //get custom sidebar menu for section
     wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-    'menu' => 'About Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
+    'menu' => 'Nursing Menu', 'container' => 'true', 'menu_class' => 'submenu no-bullet' ) ); ?>
 
   </nav>
 
 </div>
 
 <?php //custom department widgets
-dynamic_sidebar( 'sidebar-widgets' ); ?>
+dynamic_sidebar( 'nursing-widgets' ); ?>
 
 </aside>

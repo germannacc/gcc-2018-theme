@@ -1,6 +1,7 @@
 .branding {
-  background-color: $primary;
+  background-color: $secondary;
   padding: 0 0 0 1rem;
+  max-width: 315px !important;
 }
 
 .calltos {
@@ -11,19 +12,19 @@
     background-color: #82082A;
   }
  a.primary:hover {
-   background-color: $primary;
+   background-color: $secondary;
  }
   a.secondary {
-    background-color: $secondary;
+    background-color: $primary;
   }
 
   a.secondary:hover {
-     background-color: $primary;
+     background-color: $secondary;
   }
 }
 
 a.logo {
-  margin: 1rem .5rem;
+  margin: 1rem 1.2rem;
   background: url('../media/germanna-logo-white.png');
   height: 80px;
   width: 264px;
@@ -36,7 +37,7 @@ a.logo {
 .tagline {
   color: $white;
   font-weight: 600;
-  padding: 0;
+  padding: 0 0 0 .4rem;
   text-align: center;
-
+  font-size: 1rem !important;
 }

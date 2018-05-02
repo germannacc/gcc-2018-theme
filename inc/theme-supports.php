@@ -36,8 +36,18 @@ add_filter('show_admin_bar', '__return_false');
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_theme_support( 'align-wide' );
 
-		// without parameter -> Post Thumbnail (as set by theme using set_post_thumbnail_size())
+		//add colors to the gutenberg color palette
+		add_theme_support( 'editor-color-palette',
+    '#a156b4',
+    '#d0a5db',
+    '#eee',
+    '#444'
+);
+
+
+// without parameter -> Post Thumbnail (as set by theme using set_post_thumbnail_size())
 the_post_thumbnail('thumbnail');       // Thumbnail (default 150px x 150px max)
 the_post_thumbnail('medium');          // Medium resolution (default 300px x 300px max)
 the_post_thumbnail('medium_large');    // Medium Large resolution (default 768px x 0px max)
@@ -45,9 +55,7 @@ the_post_thumbnail('large');           // Large resolution (default 1024px x 102
 the_post_thumbnail('full');            // Original image resolution (unmodified)
 
 the_post_thumbnail( array(100,100) );  // Other resolutions
-
-
-	/*
+/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
 		 */

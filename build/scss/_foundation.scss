@@ -24,6 +24,7 @@
 @import 'typography/typography';
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Muli:800');
 
 //Theme Styles
 @import 'theme/quicklinks';
@@ -31,12 +32,13 @@
 @import 'theme/top-bar';
 @import 'theme/mobile-menu';
 @import 'theme/sidebar';
+@import 'theme/helpers';
 @import 'theme/home';
 @import 'theme/hero';
 @import 'theme/page-heading';
 @import 'theme/alerts';
 @import 'theme/page';
-@import 'theme/slider';
+@import 'theme/wp-styles';
 @import 'theme/blog';
 @import 'theme/footer';
 
@@ -149,46 +151,26 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
 
-
+  .entry-content {
+padding: 1rem 1rem 10rem 1.2rem;
+  }
 
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {
-  .entry-content {
 
-padding: 3rem 4rem;
-
-}
-
-  .hero-extras {
-    .tiny-post {
-      padding: 0 0 0 1rem;
-    }
-    .one {
-      padding-right: 1rem;
-      padding-left: 0;
-    }
-    .two {
-      padding-left: 1rem;
-      padding-right: 0;
-    }
-    .sticky-post {
-      padding-left: 0;
-    }
-  }
 
   .content-area {
     display: flex;
   }
   .entry-content {
-padding: 3rem 4rem;
+padding: 1rem 4rem 10rem 3rem;
   }
   .page-nav {
     flex: 1;
 
   }
-
   .marketing-site-footer,  .marketing-site-footer-title,  .marketing-site-footer-block  {
     text-align: left;
   }

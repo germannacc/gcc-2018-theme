@@ -4,14 +4,12 @@
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Germanna Community College</title>
+    <title><?php wp_head(); ?></title>
     <link rel="stylesheet" href="dist/css/style.min.css">
   </head>
   <body  data-smooth-scroll>
 
-
-
-    <div id="skip"><a href="#main">Skip to Main Content</a></div>
+    <div id="skip"><a href="<?php esc_html('#main', 'gcc-wp-2018'); ?>"><?php _e('Skip to Main Content', 'gcc-wp-2018') ?></a></div>
 
 
     <!--.mainnavigation-->

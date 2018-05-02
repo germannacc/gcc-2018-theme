@@ -12,12 +12,9 @@
  * @package gccwp-2018
  * Template Name: Home
  */
-
 get_header(); ?>
 
     <?php get_template_part( 'template-parts/content', 'hero-slider' ); ?>
-
-    <?php // get_template_part( 'template-parts/content', 'hero' ); ?>
 
     <?php get_template_part( 'template-parts/content', 'pathways' );  ?>
 
@@ -26,4 +23,4 @@ get_header(); ?>
     <?php get_template_part( 'template-parts/content', 'highlights' ); ?>
 
     <?php
-get_footer();
+    get_footer();

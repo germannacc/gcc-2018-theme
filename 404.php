@@ -1,60 +1,78 @@
 <?php
 /**
- * The template for displaying 404 pages (not found)
+ * The template for displaying 404 pages (Not Found)
  *
- * @link https://codex.wordpress.org/Creating_an_Error_404_Page
- *
- * @package gccwp-2018
+ * @package WordPress
  */
-
 get_header(); ?>
+<?php
+if ( have_posts() ) :
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+else : ?>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'gcc-wp-2018' ); ?></h1>
-				</header><!-- .page-header -->
+<div class="row expanded hero-section">
 
-				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'gcc-wp-2018' ); ?></p>
+<header class="hero-section">
+  <img src="https://placeimg.com/640/480/nature" alt="page heading" width="640" height="300" style="height: 100%;">
 
-					<?php
-						get_search_form();
+  <div class="row expanded" style="text-align: center; padding: 12% 0 14% 0; color: #ffffff; background-color: rgba(0, 0, 0, .6);">
+		<div class="small-6 small-offset-3 columns">
 
-						the_widget( 'WP_Widget_Recent_Posts' );
-					?>
+    <h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'gcc-wp-2018' ); ?></h1>
 
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'gcc-wp-2018' ); ?></h2>
-						<ul>
-						<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-						?>
-						</ul>
-					</div><!-- .widget -->
+		<?php
+		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 
-					<?php
+			<p><?php
+				printf(
+					wp_kses(
+						/* translators: 1: link to WP admin new post page. */
+						__( 'Ready to publish your first post? <a href="%1$s">Get started here</a>.', 'gcc-wp-2018' ),
+						array(
+							'a' => array(
+								'href' => array(),
+							),
+						)
+					),
+					esc_url( admin_url( 'post-new.php' ) )
+				);
+			?></p>
 
-						/* translators: %1$s: smiley */
-						$archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'gcc-wp-2018' ), convert_smilies( ':)' ) ) . '</p>';
-						the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$archive_content" );
+		<?php elseif ( is_search() ) : ?>
 
-						the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
+			<p><?php esc_html_e( 'Sorry, but nothing matched your search terms. Please try again with some different keywords.', 'gcc-wp-2018' ); ?></p>
+			<?php
+				get_search_form();
 
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
+		else : ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			<p><?php esc_html_e( 'It seems the information you are looking for can&rsquo;t be found. Please use the search box below and try again.', 'gcc-wp-2018' ); ?></p>
 
+			<p><?php esc_html_e('Still having trouble?', 'gcc-wp-2018' );?></p>
+			<p><a href="" class="button primary"><?php esc_html_e('Send us a question.', 'gcc-wp-2018' ); ?></a>
+		  </p>
+
+			<form role="search" method="get" id="searchform" style="position: relative; margin-top: 2rem;" action="<?php esc_html('/search_gcse/', 'gcc-wp-2018')?>">
+					<input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
+					<input type="hidden" name="ie" value="utf8" title="hidden" />
+					<input type="hidden" name="oe" value="utf8" title="hidden" />
+					<input type="text" name="q" id="search" title="search input" style="height: 49px;" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018');?>'">
+					<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
+					<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home" />
+					<input id="searchsubmit" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit')?>">
+					<span class="sb-icon-search"></span>
+			</form>
+
+      </div>
+		</div>
+
+  </header>
+</div>
+			<?php
+
+	endif; ?>
+
+<?php endif;
+?>
 <?php
 get_footer();

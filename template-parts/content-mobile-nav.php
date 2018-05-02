@@ -11,7 +11,7 @@
 
 <div class="row expanded columns close-mobile">
 
-    <button class="close-button" aria-label="Close menu" type="button" data-close style="right: 0; color: #ffffff; display: block; width: 100%; text-align: right; padding-right: 1rem; padding-top: .3rem; font-size: 1.2rem;">
+    <button class="close-button" aria-label="<?php _e('Close menu'); ?>" type="button" data-close style="right: 0; color: #ffffff; display: block; width: 100%; text-align: right; padding-right: 1rem; padding-top: .3rem; font-size: 1.2rem;">
                Close <span class="fa fa-close" aria-hidden="true"></span>
   </button>
 
@@ -23,7 +23,7 @@
 
          <div class="small-12 columns">
 
-              <a href="<?php bloginfo( 'url' ); ?>" class="logo"><?php bloginfo( 'name' ); ?></a>
+              <a href="<?php echo esc_url( home_url() )  ?>" class="logo"><?php bloginfo( 'name' ); ?></a>
 
          </div>
 

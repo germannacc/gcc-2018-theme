@@ -14,6 +14,7 @@ $highlights_heading = get_field('highlights_heading');
 
   <?php get_template_part( 'template-parts/content', 'latest-post' );
   ?>
+  
 </div>
 
 <div class="large-4 columns">

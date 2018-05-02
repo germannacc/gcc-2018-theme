@@ -15,7 +15,7 @@
 
   <div class="small-12 medium-3 columns">
 
-  <a href="<?php bloginfo( 'url' ); ?>" class="logo"><?php bloginfo( 'name' ); ?></a>
+  <a href="<?php echo esc_url( home_url() ) ?>" class="logo"><?php bloginfo( 'name' ); ?></a>
   <p class="tagline lead"><?php bloginfo( 'description' ); ?></p>
 
 </div>

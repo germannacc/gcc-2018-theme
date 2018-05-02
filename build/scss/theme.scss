@@ -1,10 +1,13 @@
 /*
 Theme Name: GCC WP 2018
-Theme URI: https://www.germanna.edu
+Theme URI: https://www.germanna.edu/marketing
 Author: Germanna Marketing
 Author URI: https://www.germanna.edu
 Description: Germanna WordPress theme for 2018 built with Foundation Zurb 6
-Version: 1.1
+Version: 2.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: red, navy blue, orange, black, gray, white, light, left-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
 Text Domain: gcc_wp_2018
 */
 
@@ -15,7 +18,6 @@ Text Domain: gcc_wp_2018
   background: $white;
   padding: 0;
 }
-
 
 @include foundation-global-styles;
 //@include foundation-xy-grid-classes;

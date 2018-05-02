@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying all pages
+ * The template for displaying all default page template.
  *
  * This is the template that displays all pages by default.
  * Please note that this is the WordPress construct of pages
@@ -11,8 +11,7 @@
  *
  * @package gccwp-2018
  */
-
- get_header(); ?>
+get_header(); ?>
 
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -21,18 +20,19 @@
 
      <?php //Page Heading
      get_template_part( 'template-parts/content', 'page-heading' );
-  ?>
+     ?>
 
-     <!--Page Content-->
-     <div class="row gutter-small expanded content-area">
+    <!--Page Content-->
+       <div class="row gutter-small expanded content-area">
 
-       <?php //Page with Sidebar Template
-       get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
+           <?php //Page with Sidebar Template
+           get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
 
-       <?php //Template Sidebar
-       get_template_part( '/sidebars/default-sidebar' ); ?>
+           <?php //Template Sidebar
+           get_template_part( '/sidebars/default-sidebar' ); ?>
 
-     </div><!--.pagecontent-->
+       </div>
+     <!--.pagecontent-->
 
  <?php endwhile; // End of the loop. ?>
 

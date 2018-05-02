@@ -24,44 +24,42 @@ $args =  array (
 
 <?php $query = new WP_Query( $args ); ?>
 
-
 <?php if ( $query->have_posts() ) : ?>
 
-	<?php while ( $query->have_posts() ) : $query->the_post();?>
+<?php while ( $query->have_posts() ) : $query->the_post();?>
 
+<div class="medium-6 large-3 columns" data-equalizer-watch>
 
-    <div class="medium-6 large-3 columns" data-equalizer-watch>
+  <div class="card">
+    <a href="<?php the_field('pathway_url');?>">
 
-      <div class="card">
-        <a href="<?php the_field('pathway_url');?>">
+        <?php
+        $pathway_image = get_field('pathway_image');
 
-<?php
-$pathway_image = get_field('pathway_image');
+        if( !empty($pathway_image) ):
 
+        	// vars
+        	$url = $pathway_image['url'];
+        	$alt = $pathway_image['alt'];
 
-if( !empty($pathway_image) ):
+        	// thumbnail
+        	$size = 'large';
+        	$thumb = $pathway_image['sizes'][ $size ];
+        	$width = $pathway_image['sizes'][ $size . '-width' ];
+        	$height = $pathway_image['sizes'][ $size . '-height' ];
+             ?>
+                    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>">
 
-	// vars
-	$url = $pathway_image['url'];
-	$alt = $pathway_image['alt'];
+      <?php endif; ?>
 
-	// thumbnail
-	$size = 'large';
-	$thumb = $pathway_image['sizes'][ $size ];
-	$width = $pathway_image['sizes'][ $size . '-width' ];
-	$height = $pathway_image['sizes'][ $size . '-height' ];
-     ?>
-            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>">
-
-<?php endif; ?>
-         <div class="card-section">
-          <?php the_title('<h3>', '</h3>'); ?>
-          <span class="fa fa-2x fa-search-plus more-icon"></span>
-        </div>
-        </a>
-      </div>
-
+     <div class="card-section">
+      <?php the_title('<h3>', '</h3>'); ?>
+      <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>
+    </a>
+  </div>
+
+</div>
 
 <?php endwhile; ?>
 
@@ -69,7 +67,7 @@ if( !empty($pathway_image) ):
 
 <?php else : ?>
 
-	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
+	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'gcc-wp-2018' ); ?></p>
 
 <?php endif; ?>
 
@@ -79,4 +77,4 @@ if( !empty($pathway_image) ):
 
 </div>
 
-</div><!--.careerpathways-->
+</div>

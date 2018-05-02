@@ -1,11 +1,11 @@
 //Branding and Main Navigation
 #main-menu {
-  background-color: $secondary;
-  overflow: visible;
+  background-color: $light-gray;
+ overflow: visible;
 
   .gcc-main-nav {
 
-   background-color: $secondary !important;
+   background-color: $light-gray !important;
    margin: 1rem 0;
 
 li {
@@ -14,7 +14,7 @@ a {
 	background-color: transparent;
 	-webkit-text-decoration-skip: objects;
 	line-height: inherit;
-	color: $white;
+	color: $primary;
 	cursor: pointer;
   padding-left: 1.2rem;
   padding-right: 2rem;
@@ -29,30 +29,30 @@ a {
 }
 
 a:hover {
-  background-color: $black;
+  background-color: $medium-gray;
 }
 a::selection {
-  background-color: $black;
+  background-color: $medium-gray;
 }
 
 ul.nested {
-  width: 300px;
+  width: 320px;
   padding: 1rem;
-  background-color: $black;
+  background-color: $medium-gray;
 
   a {
     transition: all .25s ease-in;
 
   }
   a:hover {
-    background-color: $secondary;
+    background-color: $light-gray;
   }
 }
 
 }
 
 li:hover a {
-  background-color: $black;
+  background-color: $medium-gray;
 }
 
   }
@@ -75,9 +75,9 @@ li:hover a {
       padding: .4rem .2rem;
 
      span {
-        color: $white;
+        color: $primary;
          padding: .3rem .6rem;
-         border: 1px solid $white;
+         border: 1px solid $primary;
          border-radius: 100%;
          text-align: center;
      }
