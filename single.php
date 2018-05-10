@@ -18,8 +18,7 @@ get_header(); ?>
       get_template_part( 'template-parts/content', 'single-heading' );
       ?>
 
-
-   	<?php //Single Post Content
+   	  <?php //Single Post Content
       get_template_part( 'template-parts/content', 'single' );
       ?>
 

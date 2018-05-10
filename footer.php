@@ -85,7 +85,7 @@
                     <?php //Primary Address Text Block
       if( !empty($primary_address) ): ?>
                     <div class="marketing-site-footer-block">
-                        <span class="fa fa-3x fa-map-marker" aria-hidden></span>
+                        <span class="fa fa-3x fa-map-marker" aria-hidden="true"></span>
                         <p>
                             <?php echo $primary_address; ?>
                         </p>
@@ -95,7 +95,7 @@
                     <?php //Primary Phone Number Text Block
       if( !empty($primary_phone_number) ): ?>
                     <div class="marketing-site-footer-block">
-                        <span class="fa fa-3x fa-mobile" aria-hidden></span>
+                        <span class="fa fa-3x fa-mobile"  aria-hidden="true"></span>
                         <p>
                             <?php echo $primary_phone_number; ?>
                         </p>
@@ -105,7 +105,7 @@
                     <?php //e2Campus Alerts Text Block
       if( !empty($e2campus_button_text) ): ?>
                     <div class="marketing-site-footer-block">
-                        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle" aria-hidden></span>
+                        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle"  aria-hidden="true"></span>
       <?php echo $e2campus_button_text; ?></a>
                     </div>
                     <?php endif; ?>
@@ -140,7 +140,7 @@
         <!--Bottom Footer-->
         <div class="marketing-site-footer-bottom">
             <div class="row align-middle">
-                <div class="column" class="text-center">
+                <div class="column text-center">
                     <p>&copy;
                         <?php echo date('Y'); ?>
                         <?php bloginfo( 'name' ); ?>

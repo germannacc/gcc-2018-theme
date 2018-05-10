@@ -69,14 +69,14 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-primary: #a30a36,
+primary: #9d263a,
 secondary: #4c4c4c,
 success: #0d6d2e,
 warning: #a05d00,
-alert: #a30a35,
+alert: #9d263a,
 );
-$primary: #a30a36;
-$secondary: #3f3f3f;
+$primary: #9d263a;
+$secondary: #444444;
 $gold: #a05d00;
 $success: #0d6d2e;
 $light-gray: #f9f9f9;
@@ -143,20 +143,20 @@ $header-lineheight: 1.2;
 $header-margin-bottom: 0.8rem;
 $header-styles: (
   small: (
+    'h1': ('font-size': 28),
+    'h2': ('font-size': 26),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 22),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 18),
+  ),
+  medium: (
     'h1': ('font-size': 36),
     'h2': ('font-size': 32),
     'h3': ('font-size': 28),
-    'h4': ('font-size': 26),
-    'h5': ('font-size': 24),
-    'h6': ('font-size': 22),
-  ),
-  medium: (
-    'h1': ('font-size': 42),
-    'h2': ('font-size': 36),
-    'h3': ('font-size': 28),
     'h4': ('font-size': 24),
     'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h6': ('font-size': 18),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -226,15 +226,15 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $white;
+$accordion-background: $dark-gray;
 $accordion-plusminus: true;
-$accordion-title-font-size: rem-calc(12);
-$accordion-item-color: $primary-color;
-$accordion-item-background-hover: $light-gray;
+$accordion-title-font-size: rem-calc(18);
+$accordion-item-color: $white;
+$accordion-item-background-hover: $medium-gray;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: $body-font-color;
+$accordion-content-color: $white;
 $accordion-content-padding: 1rem;
 
 // 8. Accordion Menu

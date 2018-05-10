@@ -17,7 +17,8 @@ $pathway_url = get_field('pathway_url');
 <?php
 $args =  array (
 
-'post_type' => 'pathways'
+'post_type' => 'pathways',
+'posts_per_page' => -1
 
 );
 ?>

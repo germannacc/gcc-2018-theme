@@ -6,6 +6,8 @@
     'callto-buttons' => 'Callto Buttons',
     'about-menu' => 'About Menu',// registers the departmental menus in the WordPress admin menu editor
     'about-governance-menu' => 'About Governance Menu',
+    'archive-menu' => 'Archive Menu',
+    'single-post-menu' => 'Single Post Menu',
     'acc-menu' => 'ACC Menu',
     'academic-calendar-menu' => 'Academic Calendar Menu',
     'academic-departments-menu' => 'Academic Departments Menu',

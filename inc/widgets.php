@@ -4,9 +4,9 @@
 		'id'            => 'sidebar-1',
 		'description'   => esc_html__( 'Add widgets here.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
 	) );
 register_sidebar(array(//default sidebar widget for page.php(default template)
 	'id' => 'sidebar-widgets', //used to call widget on page template.
@@ -18,13 +18,40 @@ register_sidebar(array(//default sidebar widget for page.php(default template)
 	'after_title' => '</h3>',
 ));
 register_sidebar(array(
+	'id' => 'blog-widgets',
+	'name' => __( 'Blog Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
+	'id' => 'archive-widgets',
+	'name' => __( 'Archive Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+	register_sidebar(array(
+		'id' => 'single-widgets',
+		'name' => __( 'Single Sidebar widgets', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+));
+register_sidebar(array(
 	'id' => 'global-widgets',
 	'name' => __( 'Global Widget', 'gcc-wp-2018' ),
 	'description' => __( 'Drag widgets to this footer container', 'gcc-wp-2018' ),
-	'before_widget' => '<article id="%1$s" class="row widget %2$s">',
-	'after_widget' => '</article>',
-	'before_title' => '<h4>',
-	'after_title' => '</h4>',
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
 	));
 register_sidebar(array(
 	'id' => 'footer-col1-widgets',

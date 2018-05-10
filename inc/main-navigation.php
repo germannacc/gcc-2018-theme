@@ -23,7 +23,7 @@ function gcc_wp_2018_quicklinks_bar() {
         'container' => true,             // remove menu container
         'container_class' => '',          // class of container
         'menu' => '',
-        'items_wrap' => '<ul class="dropdown menu align-right" data-dropdown-menu>%3$s</ul>' ,                  // menu name
+        'items_wrap' => '<ul class="dropdown menu align-center" data-dropdown-menu >%3$s</ul>' ,                  // menu name
         'menu_class' => '',        // adding custom nav class
         'theme_location' => 'quicklinks-bar',  // where it's located in the theme
         'before' => '',                   // before each link <a>

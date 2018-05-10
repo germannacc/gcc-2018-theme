@@ -40,7 +40,7 @@
 </div>
 
 <?php //Template Sidebar
-get_template_part( '/sidebars/about-sidebar' ); ?>
+get_template_part( '/sidebars/single-sidebar' ); ?>
 
 
 </div><!--.pagecontent-->

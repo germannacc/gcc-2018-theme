@@ -37,8 +37,6 @@
   <?php  //function located in inc/main-navigation.php
   gcc_wp_2018_calltos(); ?>
 
-
-
 </div>
 
 </div>

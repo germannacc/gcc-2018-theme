@@ -14,9 +14,33 @@ article {
 }
 .entry-content {
 
- padding: 2rem 4rem;
+ padding: 2rem 1rem;
  overflow: hidden;
  max-width: 98%;
+ border: none;
+
+ h2 {
+   color: $secondary;
+   margin-top: 2rem 0;
+
+ }
+
+ h2:after {
+     content: ""; /* This is necessary for the pseudo element to work. */
+     display: block; /* This will put the pseudo element on its own line. */
+     margin: 0 0 1rem 0; /* This will center the border. */
+     width: 10%; /* Change this to whatever width you want. */
+     padding-top: 10px; /* This creates some space between the element and the border. */
+     border-bottom: 2px solid $primary; /* This creates the border. Replace black with whatever color you want. */
+ }
+
+ a {
+   font-weight: 600;
+ }
+
+ a:hover {
+   text-decoration: underline;
+ }
 
 }
 .entry-meta {
@@ -32,11 +56,13 @@ article {
 }
 .page-nav {
   background-color: $light-gray;
+  padding: 1rem;
 }
 
 //Page Side bar
 .widget {
 margin-bottom: 0;
+
 
 h3 {
   background-color: $secondary;
@@ -44,11 +70,11 @@ h3 {
   width: 100%;
   padding: 1rem;
   font-size: 1.4rem;
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 }
 
 p {
-  padding: 1rem;
+  padding: 1rem 0;
 }
 
 }
@@ -56,12 +82,15 @@ p {
 
 ul.vertical.menu {
 
+  margin: 1rem 0;
+
 li {
 
 a {
-padding: 1.4rem 1rem;
+padding: .5rem 1rem;
 font-weight: bold;
 color: $dark-gray;
+line-height: 1.8rem;
 
 }
 
@@ -77,7 +106,6 @@ a:hover {
 
 }
 .entry-footer {
-  background-color:  $medium-gray;
   position: absolute;
   bottom: 0;
   display:  block;

@@ -12,27 +12,23 @@ get_header(); ?>
 	<?php
 		if ( have_posts() ) : ?>
 
+		<?php // if the page has a featured image
+		if  (has_post_thumbnail( $post->post_parent ) )  { ?>
 
-		<div class="row gutter-small expanded hero-section">
+		<header class="hero-section">
 
-		    <header class="hero-section">
-		        <img src="https://placeimg.com/640/480/nature" alt="page heading" width="640" height="300">
-		        <div class="hero-section-text">
+		<?php the_post_thumbnail();  ?>
 
-							<?php
-								the_archive_title( '<h1 class="page-title screen-reader-text">', '</h1>' );
-								the_archive_description( '<div class="archive-description">', '</div>' );
-							?>
+		  <div class="hero-section-text">
+				<?php
+				  the_archive_title('<h1>', '</h1>');
+					the_archive_description( '<div class="archive-description">', '</div>' );
+				?>
+			</div>
 
-		        </div>
-		    </header>
+		  <div class="row expanded crumbs-container">
 
-		</div>
-		<!--.page-heading-->
-
-		<div class="row expanded crumbs-container">
-
-		    <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+				<nav aria-label="<?php esc_html_e('You are here:', 'gcc-wp-2018');?>" role="navigation">
 		        <ul class="breadcrumbs">
 
 		            <?php $home_page = get_the_title( get_option('page_on_front'));
@@ -50,20 +46,72 @@ get_header(); ?>
 										</a>
 								</li>
 		            <li role="menuitem" class="disabled">
-		                <?php 	the_archive_title(); ?>
+		                <?php the_title(); ?>
 		            </li>
 
 
 		        </ul>
 		    </nav>
 
-		</div>
+		  </div>
+
+		</header>
+
+>
+
+<?php  }  else {  //.pagesubbanner
+// if page doesn't have a featured image
+?>
+
+<header class="hero-section-plain">
+
+<?php the_post_thumbnail();  ?>
+
+	<div class="hero-section-text">
+		<?php
+		the_archive_title('<h1>', '</h1>');
+		the_archive_description( '<div class="archive-description">', '</div>' );
+		?>
+	</div>
+
+	<div class="row expanded crumbs-container-plain">
+
+		<nav aria-label="<?php esc_html_e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+				<ul class="breadcrumbs">
+
+						<?php $home_page = get_the_title( get_option('page_on_front'));
+						$post_title = get_the_title( get_option('page_for_posts', true) );
+
+						 ?>
+						<li role="menuitem">
+								<a href="<?php echo get_site_url(); ?>">
+										<?php echo $home_page; ?>
+								</a>
+						</li>
+						<li role="menuitem">
+								<a href="<?php  echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
+										<?php echo $post_title; ?>
+								</a>
+						</li>
+						<li role="menuitem">
+								<?php the_title(); ?>
+						</li>
 
 
-				 <!--Page Content-->
+				</ul>
+		</nav>
+
+	</div>
+
+</header>
+
+<?php } ?>
+
+
+ <!--Page Content-->
 				 <div class="row gutter-small expanded content-area">
 
-				 <div class="small-12 medium-9  entry-content">
+				 <div class="small-12 medium-9 entry-content">
 
 								<?php
 								/* Start the Loop */
@@ -77,7 +125,13 @@ get_header(); ?>
 
 								?>
 
+  		<div class="row latest-post">
+				<div class="medium-12 columns">
+
+
 	    <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
+
+			<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
 			<?php if ( 'post' === get_post_type() ) : ?>
 	      <div class="entry-meta float-right">
@@ -85,15 +139,34 @@ get_header(); ?>
 	        gcc_wp_2018_posted_on();
 	        ?> </strong></p>
 	      </div><!-- .entry-meta -->
-	  <?php endif; ?>
+	  	<?php endif; ?>
+			<p><?php the_excerpt(
 
-				 <?php
-				     the_excerpt();
-				 ?>
+				sprintf(
+						 wp_kses(
+							 /* translators: %s: Name of current post. Only visible to screen readers */
+							 __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
+							 array(
+								 'span' => array(
+									 'class' => array(),
+								 ),
+							 )
+						 ),
+						 get_the_title()
+					 )
+
+			); ?>
+		</p>
+			 </div>
+			 </div>
 
 			<?php endwhile;
 
 			the_posts_navigation(); ?>
+
+		</div>
+	 </div>
+
 
 		<?php	else :
 
@@ -101,21 +174,13 @@ get_header(); ?>
 
 		endif; ?>
 
-
-
-				 </div>
-
-
-
-		<?php //Template Sidebar
- 	 get_template_part( '/sidebars/default-sidebar' ); ?>
+  <?php //Template Sidebar
+ 	 get_template_part( '/sidebars/archive-sidebar' ); ?>
 
 	 <footer class="entry-footer">
 		 <?php gcc_wp_2018_entry_footer(); ?>
 	 </footer><!-- .entry-footer -->
 
-
-	 </div>
 
 <?php
 get_footer();

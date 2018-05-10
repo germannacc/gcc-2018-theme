@@ -75,9 +75,6 @@ h2 {
 
 }
 
-
-$hero-height: 100vh;
-
 #getting-started {
 
   padding: 2rem 0  8rem 0;
@@ -86,7 +83,7 @@ $hero-height: 100vh;
   img.background  {
     background:  no-repeat;
     background-size: cover;
-    height: $hero-height;
+    height: 100vh;
     text-align: center;
     display: flex;
     align-items: center;
@@ -170,19 +167,19 @@ img.background::after {
 position: relative;
 border-top: 10px solid $secondary;
 background-color: $white;
-padding: 8rem 3rem 4rem 3rem;
+padding: 8rem 1rem 4rem 1rem;
 
 .highlights-content {
   overflow: visible;
 h2 {
-  margin-bottom: 6rem;
-  top: -2.4%;
+  top: -.5%;
+  left: 0;
   background-color:  $secondary;
   color: $white;
-  margin: 0 20% 6rem 20%;
+  margin: 0 -1rem 2rem auto;
   position: absolute;
-  padding: 1.5rem 0;
-  width: 60%;
+  padding: 1rem 0;
+  width: 100%;
 }
 
 /*Event Boxes*/

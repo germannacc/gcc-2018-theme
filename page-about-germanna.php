@@ -12,9 +12,8 @@ get_header(); ?>
 
 		<?php //Page Heading
 		get_template_part( 'template-parts/content', 'page-heading' );
- ?>
+ 		?>
 
-		<!--Page Content-->
 		<div class="row gutter-small expanded content-area">
 
 			<?php //Page with Sidebar Template
@@ -23,7 +22,7 @@ get_header(); ?>
 			<?php //Template Sidebar
 			get_template_part( '/sidebars/about-sidebar' ); ?>
 
-		</div><!--.pagecontent-->
+		</div>
 
 <?php endwhile; // End of the loop. ?>
 

@@ -8,9 +8,13 @@
  */
 
 ?>
+<div class="row gutter-small expanded content-area">
+
+<div class="columns small-12 medium-9">
+
+	<div class="entry-content">
 
 <h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'gcc-wp-2018' ); ?></h1>
-
 
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
@@ -40,6 +44,12 @@
 
 			<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'gcc-wp-2018' ); ?></p>
 			<?php
-	
+
 
 		endif; ?>
+
+	</div>
+	</div>
+
+
+</div>

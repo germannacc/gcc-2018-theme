@@ -7,7 +7,7 @@
 function my_jquery_enqueue() {
    wp_deregister_script('jquery');
   wp_enqueue_script( 'gcc-wp-2018-jquery', get_template_directory_uri() . '/dist/scripts/jquery.min.js', array(), '201831', false );
-   wp_enqueue_script('jquery');
+
 }
 
 wp_enqueue_script( 'gcc-wp-2018-foundation', get_template_directory_uri() . '/dist/scripts/foundation.min.js', array(), '201831', true );

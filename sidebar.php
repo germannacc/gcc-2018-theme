@@ -55,7 +55,7 @@ gcc_wp_2018_main_navigation(); ?>
 
                         <?php if( !empty($tips_url) ): ?>
 
-                        <a href="<?php echo $tips_url;?>" class="tips-logo">
+                        <a href="<?php echo $tips_url;?>" class="tips-logo"  aria-hidden="true">
                             <?php echo _e(
         'T.I.P.S.', 'gcc-wp-2018'); ?>
                         </a>
