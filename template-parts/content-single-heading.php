@@ -30,24 +30,24 @@ if  (has_post_thumbnail( $post->ID ) )  { ?>
   <div class="row expanded crumbs-container">
 
     <nav aria-label="<?php _e('You are here:');?>" role="navigation">
-        <ul class="breadcrumbs">
-            <?php $home_page = get_the_title( get_option('page_on_front'));
-                $post_title = get_the_title( get_option('page_for_posts', true) );
-             ?>
-            <li role="menuitem">
-                <a href="<?php echo get_site_url(); ?>">
-                    <?php echo $home_page; ?>
-                </a>
-            </li>
-            <li role="menuitem">
-                <a href="<?php echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
-                    <?php echo $post_title; ?>
-                </a>
-            </li>
-            <li role="menuitem">
-                <?php the_title(); ?>
-            </li>
-        </ul>
+      <ul class="breadcrumbs">
+          <?php $home_page = get_the_title( get_option('page_on_front'));
+          $post_title = get_the_title( get_option('page_for_posts'));
+           ?>
+          <li role="menuitem">
+              <a href="<?php echo get_site_url(); ?>">
+                  <?php echo $home_page; ?>
+              </a>
+          </li>
+          <li role="menuitem">
+              <a href="<?php  echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
+                  <?php echo $post_title; ?>
+              </a>
+          </li>
+          <li role="menuitem">
+              <?php the_title(); ?>
+          </li>
+      </ul>
     </nav>
 
   </div>
@@ -82,7 +82,7 @@ if  (has_post_thumbnail( $post->ID ) )  { ?>
     <nav aria-label="<?php _e('You are here:');?>" role="navigation">
         <ul class="breadcrumbs">
             <?php $home_page = get_the_title( get_option('page_on_front'));
-                $post_title = get_the_title( get_option('page_for_posts', true) );
+            $post_title = get_the_title( get_option('page_for_posts'));
              ?>
             <li role="menuitem">
                 <a href="<?php echo get_site_url(); ?>">

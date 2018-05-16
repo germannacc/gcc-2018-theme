@@ -42,7 +42,7 @@ $paying_box_url = get_field('paying_box_url');
 <?php endif; ?>
 
 
-<div class="getting-started-content">
+<div class="getting-started-content"  data-aos="fade-up" data-aos-anchor-placement="top-center"  data-aos-once="true">
 
   <h2 class="text-center text-shadow"><?php the_field('get_started_heading'); ?></h2>
 

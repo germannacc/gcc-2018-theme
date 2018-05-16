@@ -114,3 +114,11 @@ function new_read_more($more) {
 	  <a class="moretag" href="'. get_permalink($post->ID) . '">Read the full article</a>';
 }
 add_filter('excerpt_more', 'new_read_more');
+
+//custom previous/next links
+add_filter('next_posts_link_attributes', 'posts_link_attributes');
+add_filter('previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+    return 'class="button hollow rounded"';
+}

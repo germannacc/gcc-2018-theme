@@ -24,6 +24,7 @@ get_header(); ?>
 
 <?php endwhile; // End of the loop. ?>
 
+
 </article>
 
 <?php

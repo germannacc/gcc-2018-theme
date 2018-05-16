@@ -1,3 +1,9 @@
+//Plugins
+@import 'plugins/revslider';
+@import 'plugins/cf7_conditional_styles';
+
+
+
 // Dependencies
 @import '_vendor/normalize-scss/sass/normalize';
 @import '_vendor/sassy-lists/stylesheets/helpers/missing-dependencies';
@@ -7,6 +13,7 @@
 @import '_vendor/sassy-lists/stylesheets/functions/remove';
 @import '_vendor/sassy-lists/stylesheets/functions/replace';
 @import '_vendor/sassy-lists/stylesheets/functions/to-list';
+@import '_vendor/aos/aos';
 // Settings
 // import your own `settings` here or
 // import and modify the default settings through
@@ -25,22 +32,6 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url('https://fonts.googleapis.com/css?family=Muli:800');
-
-//Theme Styles
-@import 'theme/quicklinks';
-@import 'theme/branding';
-@import 'theme/top-bar';
-@import 'theme/mobile-menu';
-@import 'theme/sidebar';
-@import 'theme/helpers';
-@import 'theme/home';
-@import 'theme/hero';
-@import 'theme/page-heading';
-@import 'theme/alerts';
-@import 'theme/page';
-@import 'theme/wp-styles';
-@import 'theme/blog';
-@import 'theme/footer';
 
 //Forms
 @import 'forms/forms';
@@ -81,6 +72,23 @@
 @import 'components/thumbnail';
 //@import 'components/tooltip';
 @import 'prototype/prototype';
+
+//Theme Styles
+@import 'theme/quicklinks';
+@import 'theme/branding';
+@import 'theme/top-bar';
+@import 'theme/mobile-menu';
+@import 'theme/sidebar';
+@import 'theme/helpers';
+@import 'theme/home';
+@import 'theme/hero';
+@import 'theme/page-heading';
+@import 'theme/alerts';
+@import 'theme/buttons';
+@import 'theme/page';
+@import 'theme/wp-styles';
+@import 'theme/blog';
+@import 'theme/footer';
 
 
 @mixin foundation-everything(

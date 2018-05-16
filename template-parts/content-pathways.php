@@ -6,7 +6,7 @@ $pathway_url = get_field('pathway_url');
  ?>
 <div id="pathways" class="row gutter-small expanded">
 
-<div class="pathways-content">
+<div class="pathways-content"  data-aos="fade-up" data-aos-anchor-placement="top-center"  data-aos-once="true">
 
 <h2 class="text-center"><?php the_field('pathways_heading'); ?></h2>
 

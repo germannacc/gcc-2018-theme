@@ -32,7 +32,7 @@ get_header(); ?>
 		        <ul class="breadcrumbs">
 
 		            <?php $home_page = get_the_title( get_option('page_on_front'));
-								$post_title = get_the_title( get_option('page_for_posts', true) );
+								$post_title = get_the_archive_title();
 
 								 ?>
 		            <li role="menuitem">
@@ -80,8 +80,7 @@ get_header(); ?>
 				<ul class="breadcrumbs">
 
 						<?php $home_page = get_the_title( get_option('page_on_front'));
-						$post_title = get_the_title( get_option('page_for_posts', true) );
-
+						$post_title = get_the_archive_title();
 						 ?>
 						<li role="menuitem">
 								<a href="<?php echo get_site_url(); ?>">

@@ -1,14 +1,19 @@
 //Branding and Main Navigation
 #main-menu {
   background-color: $light-gray;
- overflow: visible;
+  overflow: visible;
+
 
   .gcc-main-nav {
 
    background-color: $light-gray !important;
    margin: 1rem 0;
+   position: relative;
+
 
 li {
+
+
 
 a {
 	background-color: transparent;
@@ -16,8 +21,7 @@ a {
 	line-height: inherit;
 	color: $primary;
 	cursor: pointer;
-  padding-left: 1.2rem;
-  padding-right: 2rem;
+  padding: .2rem 2rem .4rem 1.2rem;
   font-weight: 600;
   transition: all .25s ease-in;
 
@@ -36,9 +40,20 @@ a::selection {
 }
 
 ul.nested {
-  width: 320px;
+  width: 700px;
   padding: 1rem;
   background-color: $medium-gray;
+  top: 0;
+
+
+ li{
+    width: 100% !important;
+    width: 33%;
+    max-width: 330px !important;
+    /*Adjust width of columnes*/
+    position: relative;
+    display: inline-block;
+  }
 
   a {
     transition: all .25s ease-in;
@@ -47,20 +62,30 @@ ul.nested {
   a:hover {
     background-color: $light-gray;
   }
-}
+
+  ul.nested {
+    width: 700px;
+    padding: 1rem;
+    background-color: $dark-gray;
+    top: 0;
 
 }
 
+}
 li:hover a {
   background-color: $medium-gray;
 }
 
   }
+
+}
+
 }
 
 .menu-extras {
-  position: absolute;
-  bottom: 0;
+
+position: absolute;
+bottom: 0;
 
 
   .social-icons {
@@ -97,6 +122,7 @@ li:hover a {
   }
 
 }
+
 .tips-logo {
   background: url('../media/tipslogo.png');
   height: 52px;

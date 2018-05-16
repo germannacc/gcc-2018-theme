@@ -10,7 +10,7 @@
 
 <div class="small-12 medium-7 columns quicklinks-box">
 
-  <div class="top-bar-left">
+  <div class="top-bar-left collapse">
 
     <?php  //function located in inc/main-navigation.php
     gcc_wp_2018_quicklinks_bar(); ?>
@@ -29,7 +29,7 @@
 
 </div>
 
-<div class="small-12 medium-2 columns quicklinks-box">
+<div class="small-12 medium-2 columns quicklinks-box collapse">
 
 
 <div class="top-bar-right float-right">

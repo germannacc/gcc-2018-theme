@@ -69,20 +69,28 @@ function gcc_wp_2018_deregister_style() {
 		wp_deregister_style( 'wgs3' );
 		wp_deregister_style( 'wgs2-css' );
 		wp_deregister_style( 'cdaily-style' );
+		wp_deregister_style( 'cf7cf-style' );
 		wp_deregister_style( 'dashicons' );
 		wp_deregister_style( 'fb_data_style' );
 		wp_deregister_style( 'contact-form-7' );
+		wp_deregister_style( 'jquery-ui-css' );
 		wp_deregister_style( 'wpah-front-styles'  );
 		wp_deregister_style( 'UserAccessManagerLoginForm'  );
 		wp_deregister_style( 'yoast-seo-adminbar' );
-		wp_deregister_style( 'jquery-ui-css' );
-
-
+		wp_deregister_style( 'rs-plugin-settings' );
 
 }
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_style' );
 endif;
 
+if ( ! function_exists( 'gcc_wp_2018_deregister_script' ) ) :
+	 function gcc_wp_2018_deregister_script() {
+
+				wp_deregister_script('google_cse_v2');
+
+}
+add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_script' );
+endif;
 
 // remove WP version from RSS
 if ( ! function_exists( 'gcc_wp_2018_remove_rss_version' ) ) :

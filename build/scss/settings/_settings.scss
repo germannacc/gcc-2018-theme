@@ -151,12 +151,12 @@ $header-styles: (
     'h6': ('font-size': 18),
   ),
   medium: (
-    'h1': ('font-size': 36),
-    'h2': ('font-size': 32),
-    'h3': ('font-size': 28),
-    'h4': ('font-size': 24),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 18),
+    'h1': ('font-size': 38),
+    'h2': ('font-size': 34),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 16),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -229,12 +229,12 @@ $input-error-font-weight: $global-weight-bold;
 $accordion-background: $dark-gray;
 $accordion-plusminus: true;
 $accordion-title-font-size: rem-calc(18);
-$accordion-item-color: $white;
+$accordion-item-color: $light-gray;
 $accordion-item-background-hover: $medium-gray;
 $accordion-item-padding: 1.25rem 1rem;
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $light-gray;
-$accordion-content-color: $white;
+$accordion-content-color: $secondary;
 $accordion-content-padding: 1rem;
 
 // 8. Accordion Menu

@@ -24,8 +24,8 @@ ul.dropdown.menu{
     z-index: 10000;
     margin-left: 1rem;
 
-
 li {
+
 
     a  {
 
@@ -34,7 +34,6 @@ li {
         font-weight: bold;
         transition: all .06s ease-in;
         display: block;
-        width: 100%;
 
         span {
             margin-right: 1rem;
@@ -61,8 +60,22 @@ li {
               padding-right: 0;
             }
 
-          
+
   }
+
+ul.vertical:after {
+
+  li.opens-right>.vertical:nth-child(odd) + li:before {
+      float: left;
+  }
+
+  li.opens-right>.is-dropdown-submenu:nth-child(even) + li:before {
+      float: right;
+  }
+
+}
+
+
 }
 
 }
@@ -79,7 +92,7 @@ li {
 
           a {
             -webkit-text-decoration-skip: objects;
-            padding: .9rem 3.4rem;
+            padding: .9rem 3rem;
             background-color: $secondary;
             font-size: 1.2rem;
             color: $white;
