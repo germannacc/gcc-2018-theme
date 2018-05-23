@@ -86,7 +86,7 @@ $black: #2a2a2a;
 $white: #ffffff;
 $body-background: $white;
 $body-font-color: $black;
-$body-font-family: 'Open Sans', sans-serif;
+$body-font-family: 'Roboto', sans-serif;
 $body-antialiased: true;
 $global-margin: 1rem;
 $global-padding: 1rem;
@@ -134,10 +134,10 @@ $block-grid-max: 8;
 // 4. Base Typography
 // ------------------
 
-$header-font-family: 'Muli', sans-serif;
+$header-font-family: 'Roboto', sans-serif;
 $header-font-weight: $global-weight-bold;
 $header-font-style: normal;
-$font-family-monospace: 'Muli', sans-serif;
+$font-family-monospace: 'Roboto', sans-serif;
 $header-color: inherit;
 $header-lineheight: 1.2;
 $header-margin-bottom: 0.8rem;
@@ -151,8 +151,8 @@ $header-styles: (
     'h6': ('font-size': 18),
   ),
   medium: (
-    'h1': ('font-size': 38),
-    'h2': ('font-size': 34),
+    'h1': ('font-size': 42),
+    'h2': ('font-size': 38),
     'h3': ('font-size': 24),
     'h4': ('font-size': 20),
     'h5': ('font-size': 18),
@@ -799,16 +799,16 @@ $table-stack-breakpoint: medium;
 // --------
 
 $tab-margin: 0;
-$tab-background: $white;
+$tab-background: $secondary;
 $tab-color: $primary-color;
 $tab-background-active: $light-gray;
 $tab-active-color: $primary-color;
 $tab-item-font-size: rem-calc(12);
-$tab-item-background-hover: $white;
+$tab-item-background-hover: $light-gray;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
 $tab-content-background: $white;
-$tab-content-border: $light-gray;
+$tab-content-border: $secondary;
 $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem;
 

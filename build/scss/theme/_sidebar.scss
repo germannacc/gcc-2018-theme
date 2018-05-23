@@ -2,28 +2,31 @@
 #main-menu {
   background-color: $light-gray;
   overflow: visible;
-
+  height: 100%;
+  overflow-y: visible;
+  position: absolute;
+  z-index: 99999;
+  width: 300px;
 
   .gcc-main-nav {
 
-   background-color: $light-gray !important;
-   margin: 1rem 0;
+   background-color: $light-gray;
+   margin: 1rem 0 4rem 0;
    position: relative;
 
 
-li {
 
+  li {
 
-
-a {
-	background-color: transparent;
-	-webkit-text-decoration-skip: objects;
-	line-height: inherit;
-	color: $primary;
-	cursor: pointer;
-  padding: .2rem 2rem .4rem 1.2rem;
-  font-weight: 600;
-  transition: all .25s ease-in;
+    a {
+    	background-color: transparent;
+    	-webkit-text-decoration-skip: objects;
+    	line-height: inherit;
+    	color: $primary;
+    	cursor: pointer;
+      padding: .2rem 2rem .2rem 1.2rem;
+      font-weight: 600;
+      transition: all .25s ease-in;
 
     span {
       position: absolute;
@@ -40,42 +43,53 @@ a::selection {
 }
 
 ul.nested {
-  width: 700px;
+  width: 830px;
   padding: 1rem;
   background-color: $medium-gray;
-  top: 0;
+  top: -50px;
+  left: 300px;
 
 
- li{
+ li {
     width: 100% !important;
-    width: 33%;
-    max-width: 330px !important;
+    width: 36%;
+    max-width: 360px !important;
     /*Adjust width of columnes*/
     position: relative;
     display: inline-block;
+    margin: 0 1rem;
   }
 
   a {
     transition: all .25s ease-in;
+    border-bottom: 1px solid rgba(0,0,0, .2);
+    padding: .5rem;
+    color: $secondary;
 
   }
   a:hover {
     background-color: $light-gray;
+    color: $primary;
   }
 
-  ul.nested {
-    width: 700px;
-    padding: 1rem;
-    background-color: $dark-gray;
-    top: 0;
+  a::before {
+    font-family: 'FontAwesome';
+    content: "\f054";
+    left: 0;
+    padding-right: .8rem;
+    font-size: .5rem;
 
-}
+  }
+
 
 }
 li:hover a {
   background-color: $medium-gray;
 }
 
+  }
+  li:hover a {
+    background-color: $medium-gray;
   }
 
 }
@@ -84,8 +98,7 @@ li:hover a {
 
 .menu-extras {
 
-position: absolute;
-bottom: 0;
+position: relative;
 
 
   .social-icons {

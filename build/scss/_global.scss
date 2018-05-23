@@ -8,6 +8,21 @@
 /// @group global
 ////
 
+#skip a {
+     position:absolute;
+     left:-10000px;
+     top:auto;
+     width:1px;
+     height:1px;
+     overflow:hidden;
+ }
+
+ #skip a:focus {
+     position:static;
+     width:auto;
+     height:auto;
+ }
+
 @import 'util/util';
 
 /// Font size attribute applied to `<html>` and `<body>`. We use 100% by default so the value is inherited from the user's browser settings.

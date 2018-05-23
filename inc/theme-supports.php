@@ -89,4 +89,9 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 		) );
 	}
 endif;
-add_action( 'after_setup_theme', 'gcc_wp_2018_setup' ); ?>
+add_action( 'after_setup_theme', 'gcc_wp_2018_setup' );
+
+//add editor style
+add_editor_style( 'dist/css/editor-style.css' );
+
+?>

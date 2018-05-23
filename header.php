@@ -9,26 +9,30 @@
  * @package gccwp-2018
  */
 ?>
-<!DOCTYPE html>
-<html <?php language_attributes(); ?>>
+    <!DOCTYPE html>
+    <html <?php language_attributes(); ?>>
+
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="profile" href="http://gmpg.org/xfn/11">
         <?php wp_head(); ?>
     </head>
+
     <body <?php body_class(); ?>>
+
+        <div id="skip"><a href="#main" class="show-on-focus"><?php esc_html_e('Skip to Main Content', 'gcc-wp-2018') ?></a></div>
+
 
         <div class="off-canvas-wrapper">
 
-            <?php  //movile menu
+            <?php  //movile menu hidden
 			       get_template_part( 'template-parts/content', 'mobile-nav' );
 			      ?>
 
             <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
 
-                <?php get_sidebar(); ?>
-
+                <?php get_sidebar(); //main sidebar navigation ?>
 
                 <div class="off-canvas-content" data-off-canvas-content>
 
@@ -40,5 +44,4 @@
                      get_template_part( 'template-parts/content', 'weather-alert' );
                     ?>
 
-                        <!--Main Content-->
-                        <main id="main">
+                        <main id="main" role="main" tabindex="0">

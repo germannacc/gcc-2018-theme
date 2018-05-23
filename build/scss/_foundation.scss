@@ -1,9 +1,3 @@
-//Plugins
-@import 'plugins/revslider';
-@import 'plugins/cf7_conditional_styles';
-
-
-
 // Dependencies
 @import '_vendor/normalize-scss/sass/normalize';
 @import '_vendor/sassy-lists/stylesheets/helpers/missing-dependencies';
@@ -25,13 +19,11 @@
 // Global variables and styles
 @import 'global';
 
-
 // Components
 @import 'grid/grid';
 @import 'typography/typography';
-@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
-@import url('https://fonts.googleapis.com/css?family=Muli:800');
+@import url('../../fonts/font-awesome/css/font-awesome.min.css');
+@import 'theme/google-fonts';
 
 //Forms
 @import 'forms/forms';
@@ -53,18 +45,18 @@
 @import 'components/dropdown';
 @import 'components/flex';
 @import 'components/responsive-embed';
-//@import 'components/label';
+@import 'components/label';
 @import 'components/media-object';
 @import 'components/menu';
 @import 'components/menu-icon';
 @import 'components/off-canvas';
-//@import 'components/orbit';
+@import 'components/orbit';
 @import 'components/pagination';
-//@import 'components/progress-bar';
-//@import 'components/reveal';
-//@import 'components/slider';
+@import 'components/progress-bar';
+@import 'components/reveal';
+@import 'components/slider';
 @import 'components/sticky';
-//@import 'components/switch';
+@import 'components/switch';
 @import 'components/table';
 @import 'components/tabs';
 @import 'components/title-bar';
@@ -74,21 +66,26 @@
 @import 'prototype/prototype';
 
 //Theme Styles
-@import 'theme/quicklinks';
-@import 'theme/branding';
 @import 'theme/top-bar';
-@import 'theme/mobile-menu';
-@import 'theme/sidebar';
-@import 'theme/helpers';
-@import 'theme/home';
+@import 'theme/branding';
 @import 'theme/hero';
-@import 'theme/page-heading';
-@import 'theme/alerts';
-@import 'theme/buttons';
-@import 'theme/page';
-@import 'theme/wp-styles';
+@import 'theme/quicklinks';
+@import 'theme/sidebar';
+@import 'theme/home';
+@import 'theme/workforce';
 @import 'theme/blog';
+@import 'theme/page-heading';
+@import 'theme/page';
+@import 'theme/helpers';
+@import 'theme/wp-styles';
+@import 'theme/buttons';
+@import 'theme/alerts';
 @import 'theme/footer';
+@import 'theme/mobile-menu';
+
+//Plugins
+@import 'plugins/revslider';
+@import 'plugins/cf7_conditional_styles';
 
 
 @mixin foundation-everything(
@@ -155,250 +152,8 @@
     @include foundation-prototype-classes;
   }
 }
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-
-  $hero-height: 15vh;
-
-  .hero-section {
-    height: 220px;
-
-    img {
-      height: $hero-height;
-      background-color: $medium-gray;
-    }
-
-  .hero-section-text {
-        bottom: 20%;
-        text-shadow:  none;
-
-        .entry-title {
-          color: $secondary;
-          font-size: 1.4rem;
-        }
-  }
-
-  .crumbs-container {
-
-    border-bottom: 5px solid $primary;
-
-    .breadcrumbs {
-     margin-left: 4.2%;
-     padding: 0;
-     font-size: 1rem;
-
-
-      li  {
-
-        padding: 0;
-
-        a {
-           font-weight: 700;
-        }
-
-      }
-
-    }
-  }
-
-  }
-
-  .entry-content {
-padding: 1rem 1rem 10rem 1.2rem;
-  }
-
-  .highlights-content {
-
-  h2 {
-    margin-bottom: 3rem;
-    top: 1%;
-    margin: 0 5% 6rem 5%;
-    padding: 1.5rem 0;
-    width: 90%;
-  }
-
-
-}
-
-}
-
-/* Medium and up */
-@media screen and (min-width: 40em) {
-
-$hero-height: 40vh;
-
-.hero-section {
-  height: 300px;
-
-  img {
-    height: $hero-height;
-  }
-
-  .hero-section-text {
-        bottom: 25%;
-
-        .entry-title {
-          color: $white;
-          font-size: 2.8rem;
-        }
-
-}
-
-}
-  .content-area {
-    display: flex;
-  }
-  .entry-content {
-padding: 1rem 4rem 10rem 3rem;
-  }
-  .page-nav {
-    flex: 1;
-
-  }
-  .marketing-site-footer,  .marketing-site-footer-title,  .marketing-site-footer-block  {
-    text-align: left;
-  }
-
-  .marketing-site-footer-block {
-      display: flex;
-      p {
-        text-align: left;
-      }
-  }
-
-}
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  $hero-height: 22vh;
-
-  .hero-section {
-    height: 300px;
-
-    img {
-      height: $hero-height;
-    }
-
-  }
-
-    .hero-section-text {
-          bottom: 30%;
-
-          .entry-title {
-            color: $white;
-            font-size: 2.4rem;
-          }
-
-  }
-
-  #getting-started {
-
-    padding: 1rem 0  4rem 0;
-
-    img.background  {
-
-      height: 100vh;
-        object-fit: fit;
-
-    }
-  }
-
-  }
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-
-  $hero-height: 38vh;
-
-  .hero-section {
-    height: 380px;
-
-    img {
-      height: $hero-height;
-    }
-
-  }
-
-  #highlights {
-  padding: 8rem 3rem 4rem 3rem;
-
-  .highlights-content {
-
-  h2 {
-    margin-bottom: 6rem;
-    top: -1.4%;
-    margin: 0 20% 6rem 20%;
-    padding: 1.5rem 0;
-    width: 60%;
-  }
-
-}
-
-}
-
-}
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
-  $hero-height: 22vh;
-
-  .hero-section {
-    height: 300px;
-
-    img {
-      height: $hero-height;
-    }
-
-  }
-
-  #getting-started {
-
-    padding: 1rem 0  4rem 0;
-
-    img.background  {
-
-      height: 65vh;
-
-    }
-  }
-
-  .getting-started-content {
-
-    h2 {
-     margin: 2rem 0;
-    }
-
-    .card {
-
-
-      a {
-
-      .card-section {
-
-         h3  {
-
-          font-size: 1.2rem;
-       }
-      }
-
-    }
-    }
-  }
-
-  #highlights {
-  padding: 4rem 1rem;
-
-  .highlights-content {
-
-  h2 {
-    top: -1%;
-    width: 60%;
-  }
-
-}
-
-}
-
-
-}
+@import 'small-only';
+@import 'medium-only';
+@import 'medium-and-up';
+@import 'large-only.scss';
+@import 'large-and-up.scss';

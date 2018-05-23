@@ -29,7 +29,7 @@ get_header(); ?>
 
     <div class="row expanded crumbs-container">
 
-      <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+      <nav aria-label="<?php _e('You are here:', 'gccwp-2018');?>" role="navigation">
         <ul class="breadcrumbs">
             <?php $home_page = get_the_title( get_option('page_on_front'));
             $post_title = get_the_title( get_option('page_for_posts'));

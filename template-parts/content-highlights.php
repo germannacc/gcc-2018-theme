@@ -15,7 +15,7 @@ $highlights_heading = get_field('highlights_heading');
   <?php get_template_part( 'template-parts/content', 'latest-post' );
   ?>
 
-  <a href="<?php esc_html_e('/highlights/'); ?>" class="button expanded"><?php esc_html_e('View All Highlights'); ?></a>
+  <a href="<?php esc_html_e('/highlights/', 'gcc-wp-2018' ); ?>" class="button expanded"><?php esc_html_e('View All Highlights', 'gcc-wp-2018' ); ?></a>
 
 
 </div>

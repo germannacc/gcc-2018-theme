@@ -12,7 +12,7 @@
     wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
     'menu' => 'Contact Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
 
-    <h3><?php _e('Locations'); ?></h3>
+    <h3><?php _e('Locations',  'gcc-wp-2018' ); ?></h3>
       <?php //get custom sidebar menu for section
       wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
     'menu' => 'Locations Menu', 'container' => 'true', 'menu_class' => 'submenu no-bullet' ) ); ?>

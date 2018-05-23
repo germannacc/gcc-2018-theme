@@ -11,8 +11,8 @@
 
 <div class="row expanded columns close-mobile">
 
-    <button class="close-button" aria-label="<?php _e('Close menu'); ?>" type="button" data-close style="right: 0; color: #ffffff; display: block; width: 100%; text-align: right; padding-right: 1rem; padding-top: .3rem; font-size: 1.2rem;">
-               Close <span class="fa fa-close" aria-hidden="true"></span>
+    <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018' ); ?>" type="button" data-close>
+              <?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
   </button>
 
 </div>
@@ -27,7 +27,7 @@
 
          </div>
 
-         <div class="small-12 columns tagline" style="padding-top: 2rem;">
+         <div class="small-12 columns tagline">
 
               <p class="lead"><?php bloginfo( 'description' ); ?></p>
 
@@ -66,7 +66,7 @@
         <input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
     			<input type="hidden" name="ie" value="utf8" title="hidden" />
     			<input type="hidden" name="oe" value="utf8" title="hidden" />
-    		<input type="text" name="q" id="search" title="search input" class="sb-search-input" placeholder="<?php _e('Search Germanna...');?>'">
+    		<input type="text" name="q" id="search" title="search input" class="sb-search-input" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018' );?>'">
     		<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
     			<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
     		<input id="searchsubmit" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit')?>">
@@ -90,7 +90,7 @@
    <?php if( !empty($tips_url) ): ?>
 
        <a href="<?php echo $tips_url;?>" class="tips-logo"><?php echo _e(
-         'T.I.P.S.'); ?></a>
+         'T.I.P.S.', 'gcc-wp-2018' ); ?></a>
 
          <?php //function location in inc/social-icons.php
          gcc_wp_2018_social_icons(); ?>

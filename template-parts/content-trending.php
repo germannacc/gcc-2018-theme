@@ -20,7 +20,9 @@
 
       <h3 class="text-center"><?php esc_html_e('Latest Tweets', 'gcc-wp-2018') ?></h3>
 
-      <a class="twitter-timeline" data-lang="en" data-tweet-limit="2" data-link-color="#a30a36" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw"><?php _e('Germanna Tweets - Curated tweets by TwitterDev') ?></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+      <a class="twitter-timeline" data-lang="en" data-tweet-limit="3" data-link-color="#a30a36" href="https://twitter.com/germannacc?ref_src=twsrc%5Etfw"><?php _e('Germanna Tweets - Curated tweets by TwitterDev', 'gcc-wp-2018') ?></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
 
 </div>
 

@@ -8,7 +8,7 @@
  */
 ?>
 <?php // if the page has a featured image
-if  (has_post_thumbnail( $post->ID ) )  { ?>
+if  (has_post_thumbnail( ) )  {?>
 
 <div class="row gutter-small expanded">
 

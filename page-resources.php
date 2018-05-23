@@ -21,7 +21,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
 
 			<?php //Template Sidebar
-			get_template_part( '/sidebars/default-sidebar' ); ?>
+			get_template_part( '/sidebars/resources-sidebar' ); ?>
 
 		</div><!--.pagecontent-->
 

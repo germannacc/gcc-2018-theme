@@ -10,7 +10,7 @@
 
  }
 
-  if ( is_front_page() ){
+  if ( is_front_page() || is_page('workforce') ){
   		wp_enqueue_script( 'gcc-wp-2018-animations', get_template_directory_uri() . '/dist/scripts/aos.js', array(), '201831', true);
   }
 

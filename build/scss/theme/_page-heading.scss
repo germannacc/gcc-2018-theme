@@ -1,10 +1,10 @@
-$hero-height: 20vh;
+$hero-height: 44vh;
 $marketing-site-footer-bg: $light-gray;
 
 .hero-section {
 
 position: relative;
-height: 180px;
+height: 280px;
 margin-bottom: 1rem;
 padding-bottom: 0;
 width: 100%;
@@ -24,6 +24,7 @@ img {
   z-index: -1;
   width: 100%;
   margin-bottom: 0;
+
 }
 
 .hero-section-text {

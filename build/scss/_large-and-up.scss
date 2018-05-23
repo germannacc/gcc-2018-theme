@@ -1,0 +1,129 @@
+/* Large and up */
+@media screen and (min-width: 64em) {
+
+  ul.dropdown.menu {
+
+  li.mygcc {
+
+          a {
+            padding: .9rem 3rem;
+            font-size: 1.2rem;
+          }
+   }
+
+  }
+  a.logo {
+    margin: 1rem;
+    background: url('../media/germanna-logo-white.png') no-repeat;
+    height: 79px;
+    width: 264px;
+
+  }
+  .tagline {
+    font-weight: 600;
+    padding: 0 0 0 .4rem;
+    font-size: 1rem;
+  }
+#main-menu {
+  .gcc-main-nav {
+
+   background-color: $light-gray;
+   margin: 1rem 0;
+   position: relative;
+
+  li {
+
+    a {
+
+      font-size: 1.6rem;
+      padding: .3rem 2rem .3rem 1.2rem;
+
+    }
+
+    ul.nested {
+
+      li {
+        a {
+          font-size: 1.2rem;
+        }
+      }
+
+  }
+}
+}
+
+
+
+$hero-height: 60vh;
+
+.hero-section {
+  height: $hero-height;
+
+  img {
+    height: $hero-height;
+  }
+
+  }
+
+  #pathways {
+  .pathways-content {
+
+
+  h2 {
+
+    font-size: 3.2rem;
+
+  }
+  }
+  }
+
+  #getting-started {
+
+    .getting-started-content {
+
+    h2 {
+
+      font-size: 3rem;
+
+    }
+}
+
+}
+  #highlights {
+  padding: 8rem 3rem 4rem 3rem;
+
+  .highlights-content {
+
+  h2 {
+    left: 35%;
+    margin: 0 -1rem 2rem auto;
+    padding: 1rem 0;
+    width: 60%;
+  }
+
+}
+
+}
+
+}
+.workforce-explore-content {
+
+  background-color: $light-gray;
+
+.callout {
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  img {
+
+    margin-bottom: 1rem;
+
+  }
+
+}
+
+}
+
+}

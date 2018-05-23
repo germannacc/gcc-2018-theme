@@ -11,6 +11,9 @@ h2 {
 
   margin-bottom: 3rem;
   color: $secondary;
+  width: 75%;
+  margin: 0 auto 2rem auto;
+  position: relative;
 
 }
 
@@ -79,6 +82,7 @@ h2 {
 
   padding: 2rem 0  8rem 0;
   position: relative;
+  background-color: rgba(0,0,0, .4);
 
   img.background  {
     background:  no-repeat;
@@ -96,6 +100,7 @@ h2 {
     right: 0;
     bottom: 0;
     left: 0;
+
 }
 
 img.background::after {
@@ -130,7 +135,7 @@ img.background::after {
 
        position: absolute;
        bottom: 0;
-       background-color: rgba(51, 51, 51, .6);
+       background-color: rgba(150,34,56, .4);
        color: $white;
        display: block;
        text-align: center;
@@ -152,7 +157,7 @@ img.background::after {
     }
 
   .card-section:hover {
-    background-color: rgba(51, 51, 51, .9);
+    background-color: rgba(150,34,56, .9);
   }
   }
   }
@@ -165,7 +170,7 @@ img.background::after {
 #highlights {
 
 position: relative;
-border-top: 10px solid $secondary;
+border-top: 2xpx solid $secondary;
 background-color: $white;
 padding: 8rem 1rem 4rem 1rem;
 

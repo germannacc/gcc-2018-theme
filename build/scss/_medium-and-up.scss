@@ -1,0 +1,179 @@
+/* Medium and up */
+@media screen and (min-width: 40em) {
+
+  ul.dropdown.menu {
+
+  li.mygcc {
+
+    padding: 0;
+
+          a {
+
+            padding: .9rem 5rem;
+            font-size: 1.2rem;
+
+          }
+
+   }
+
+  }
+#main-menu {
+  .gcc-main-nav {
+
+   background-color: $light-gray !important;
+   margin: 1rem 0;
+   position: relative;
+
+  li {
+
+    a {
+      padding: .2rem 2rem .2rem 1.2rem;
+      font-size: 1.6rem;
+    }
+
+  }
+
+
+    ul.vertical.menu {
+
+      top: -100px;
+
+    }
+
+}
+}
+
+
+$hero-height: 60vh;
+
+.hero-section {
+  height: $hero-height;
+
+  img {
+    height: $hero-height;
+  }
+
+  .hero-section-text {
+        bottom: 20%;
+
+        .entry-title {
+          color: $white;
+          font-size: 3.6rem;
+        }
+
+}
+
+}
+
+#pathways {
+.pathways-content {
+
+
+h2 {
+
+  font-size: 3.2rem;
+
+}
+}
+}
+#getting-started {
+
+  .getting-started-content {
+
+  h2 {
+
+    font-size: 4rem;
+
+  }
+}
+
+}
+#highlights {
+padding: 6rem 1rem 4rem 1rem;
+
+.highlights-content {
+
+h2 {
+  top: -2%;
+  left: 20%;
+  margin: 0 -1rem 3rem auto;
+  padding: 1rem 0;
+  width: 60%;
+  font-size: 3.2rem;
+}
+
+}
+
+}
+  .content-area {
+    display: flex;
+  }
+  h2 {
+      margin-top: 2rem;
+     }
+  .entry-content {
+padding: 1rem 3rem 8rem 3rem;
+
+  p {
+    font-size: 1.31rem;
+  }
+  ul, ol {
+    li {
+      font-size: 1.4rem;
+
+      strong {
+        font-size: 1.4rem;
+
+      }
+    }
+  }
+  }
+.latest-post {
+
+  h3.post-title {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+}
+  .page-nav {
+    flex: 1;
+
+  }
+  .marketing-site-footer,  .marketing-site-footer-title,  .marketing-site-footer-block  {
+    text-align: left;
+  }
+
+  .marketing-site-footer-block {
+      display: flex;
+      p {
+        text-align: left;
+      }
+  }
+
+  .workforce-explore-content {
+
+    background-color: $light-gray;
+
+  h1 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+  }
+  .callout {
+
+    h2 {
+      font-size: 1.4rem;
+    }
+
+    img {
+
+      margin-bottom: 1rem;
+
+    }
+
+  }
+
+  }
+
+}

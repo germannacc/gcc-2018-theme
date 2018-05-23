@@ -23,17 +23,13 @@
 
 ?>
     </main>
-    <!--.sitemaincontent-->
 
     <footer class="marketing-site-footer">
 
-        <!--Top Footer-->
         <div class="row expanded gutter-small">
 
-            <!--Footer 1st Half-->
             <div class="medium-12 large-6 columns">
 
-                <!--Footer Column 1-->
                 <div class="medium-6 columns">
 
                     <?php //Column 1 Heading
@@ -70,9 +66,7 @@
                         <?php endif; ?>
                     </ul>
                 </div>
-                <!--.footercolumn1-->
 
-                <!--Footer Column 2-->
                 <div class="medium-6 columns">
 
                     <?php //Column 2 Heading
@@ -95,7 +89,7 @@
                     <?php //Primary Phone Number Text Block
       if( !empty($primary_phone_number) ): ?>
                     <div class="marketing-site-footer-block">
-                        <span class="fa fa-3x fa-mobile"  aria-hidden="true"></span>
+                        <span class="fa fa-3x fa-mobile" aria-hidden="true"></span>
                         <p>
                             <?php echo $primary_phone_number; ?>
                         </p>
@@ -105,39 +99,29 @@
                     <?php //e2Campus Alerts Text Block
       if( !empty($e2campus_button_text) ): ?>
                     <div class="marketing-site-footer-block">
-                        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle"  aria-hidden="true"></span>
+                        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle show-for-large-only"  aria-hidden="true"></span>
       <?php echo $e2campus_button_text; ?></a>
                     </div>
                     <?php endif; ?>
 
                 </div>
-                <!--.footercolumn2-->
 
             </div>
-            <!--.footer1sthalf-->
 
-            <!--Footer 2nd Half-->
             <div class="medium-12 large-6 columns">
 
-                <!--Footer Column 3-->
                 <div class="medium-6 columns  footer-links">
                     <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
                 </div>
-                <!--.footercolumn3-->
 
-                <!--Footer Column 4-->
                 <div class="medium-6 columns  footer-links">
                     <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
                 </div>
-                <!--.footercolumn4-->
 
             </div>
-            <!--.footer2ndthalf-->
 
         </div>
-        <!--.topfooter-->
 
-        <!--Bottom Footer-->
         <div class="marketing-site-footer-bottom">
             <div class="row align-middle">
                 <div class="column text-center">
@@ -151,7 +135,6 @@
                 </div>
             </div>
         </div>
-        <!--.bottomfooter-->
     </footer>
 
     <!--Closing Site Divs Do not Remove-->
@@ -160,6 +143,13 @@
     </div>
 
     <?php wp_footer(); ?>
+
+    <script type="text/javascript">
+         var _monsido = _monsido || [];
+         _monsido.push(['_setDomainToken', '_zbPflN9VdD6OgWB_h7F4Q']);
+         _monsido.push(['_withStatistics', 'true']);
+     </script>
+     <script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
 
     </body>
 

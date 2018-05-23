@@ -14,14 +14,13 @@
 ?>
     <div class="off-canvas position-left reveal-for-large" id="main-menu" data-off-canvas data-position="left">
 
-        <!-- Close button -->
         <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018'); ?>" type="button" data-close>
      <span aria-hidden="true">&times;</span>
    </button>
 
         <div class="row column">
 
-            <div id="main-menu" class="off-canvas position-left reveal-for-large" data-off-canvas>
+            <div id="main-menu" class="off-canvas position-left reveal-for-large" data-off-canvas >
 
                 <div class="row branding">
 
@@ -51,13 +50,23 @@
 //function located in inc/main-navigation.php
 gcc_wp_2018_main_navigation(); ?>
 
+<div class="row collapsed" style="padding: 0 1rem; margin-bottom: 2rem;">
+
+  <?php //Start of Important Links Widget Container
+    if ( is_active_sidebar( 'quicklinks-widgets' ) ) : ?>
+    <?php dynamic_sidebar( 'quicklinks-widgets' ); ?>
+    <?php endif; //End of Important Links Widget Container
+   ?>
+
+</div>
+
                     <div class="menu-extras">
 
                         <?php if( !empty($tips_url) ): ?>
 
-                        <a href="<?php echo $tips_url;?>" class="tips-logo"  aria-hidden="true">
+                        <a href="<?php echo $tips_url;?>" class="tips-logo" aria-hidden="true">
                             <?php echo _e(
-        'T.I.P.S.', 'gcc-wp-2018'); ?>
+        'T.I.P.S.', 'gcc-wp-2018' ); ?>
                         </a>
 
                         <?php //function location in inc/social-icons.php

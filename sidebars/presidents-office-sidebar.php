@@ -12,7 +12,7 @@
     wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
     'menu' => 'Presidents Office Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
 
-    <h3><?php _e('Local College Board'); ?></h3>
+    <h3><?php _e('Local College Board', 'gcc-wp-2018' ); ?></h3>
     <?php //get custom sidebar menu for section
     wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
     'menu' => 'College Board Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
