@@ -1,7 +1,7 @@
 <?php
 //Getting Started Section
 $get_started_heading = get_field('get_started_heading');
-$get_started_background_image = get_field('get_started_background_image');
+
 //Apply Box
 $apply_box_heading = get_field('apply_box_heading');
 $apply_box_description = get_field('apply_box_description');
@@ -20,27 +20,6 @@ $paying_box_url = get_field('paying_box_url');
 
 ?>
 <div id="getting-started" class="row expanded gutter-small expanded">
-
-  <?php
-  $get_started_background_image = get_field('get_started_background_image');
-
-  if( !empty($get_started_background_image) ):
-
-    // vars
-    $url = $get_started_background_image['url'];
-    $alt = $get_started_background_image['alt'];
-
-    // thumbnail
-    $size = 'large';
-    $thumb = $get_started_background_image['sizes'][ $size ];
-    $width = $get_started_background_image['sizes'][ $size . '-width' ];
-    $height = $get_started_background_image['sizes'][ $size . '-height' ];
-       ?>
-
-              <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>" class="background parallax">
-
-<?php endif; ?>
-
 
 <div class="getting-started-content"  data-aos="fade-up" data-aos-anchor-placement="top-center"  data-aos-once="true">
 

@@ -111,7 +111,7 @@ endif;
 function new_read_more($more) {
        global $post;
 	return '...<br/>
-	  <a class="moretag" href="'. get_permalink($post->ID) . '">Read the full article</a>';
+	  <a class="button primary" href="'. get_permalink($post->ID) . '">Read the full article</a>';
 }
 add_filter('excerpt_more', 'new_read_more');
 
@@ -139,8 +139,8 @@ function the_breadcrumb() {
 				<a href="';
         echo get_option('home');
         echo '">';
-        bloginfo('name');
-        echo '</a></li>' . $sep;
+        _e('Home', 'gcc-wp-2018');
+        echo '</a></li>';
 
 	// Check if the current page is a category, an archive or a single page. If so show the category or archive name.
         if (is_category() || is_single() ){
@@ -159,13 +159,17 @@ function the_breadcrumb() {
 
 	// If the current page is a single post, show its title with the separator
         if (is_single()) {
-            echo $sep;
-            the_title();
+            echo '<li>';
+						the_title();
+						echo '</li>';
+
         }
 
 	// If the current page is a static page, show its title.
         if (is_page()) {
-            echo the_title();
+					echo '<li>';
+					the_title();
+					echo '</li>';
         }
 
 	// if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog

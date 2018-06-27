@@ -1,183 +1,186 @@
-.mobile-menu  {
-
-height: 100% !important;
-overflow: scroll;
-
-.close-mobile {
-  position: relative;
-  height: 50px;
-  background-color: $black;
-}
-
-button.close-button {
-  right: 0;
-  color: $white;
-  display: block;
-  width: 100%;
-  text-align: right;
-  padding-right: 1rem;
-  padding-top: .3rem;
-  font-size: 1.2rem;
-}
-
-a.logo {
-  margin: .5rem auto 0 auto;
+.title-bar-left {
+  margin: 0;
   padding: 0;
-  background: url('../media/germanna-logo-white-mobile.png') no-repeat center center;
-  height: 49px;
-  width: 164px;
-  text-indent: -9999px;
-  overflow: hidden;
-  display: block;
   position: relative;
 
-}
+  a.logo {
+    padding: 0;
+    background: url("../media/germanna-logo-white-mobile.png") no-repeat center center;
+    height: 49px;
+    width: 164px;
+    text-indent: -9999px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+    margin: 0.5rem 1rem;
+  }
 
-.tagline  {
+  button span {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    width: 50px;
+    height: 50px;
+    color: $white;
+    font-size: 2.8rem;
+    font-weight: 100;
+  }
 
-  p.lead {
-  font-size: 1rem;
-
+  button span:hover {
+    cursor: pointer;
+    color: $dark-gray;
   }
 }
 
-ul.dropdown.menu {
+.mobile-menu {
+  height: 100% !important;
+  overflow: scroll;
 
-li.mygcc {
+  .button-group {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
 
-        a {
-          -webkit-text-decoration-skip: objects;
-          padding: .9rem 0;
-          background-color: $medium-gray;
+  .close-mobile {
+    position: relative;
+    height: 50px;
+    background-color: $secondary;
+  }
+
+  button.close-button {
+    right: 0;
+    color: $white;
+    display: block;
+    width: 100%;
+    text-align: right;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    font-size: 1.2rem;
+  }
+
+  .tagline {
+    p.lead {
+      font-size: 1rem;
+      margin-top: 1rem;
+    }
+  }
+
+
+  [type=text] {
+
+    width: 100%;
+    height: 49.8px;
+
+  }
+
+  ul.dropdown.menu {
+    li.mygcc {
+      a {
+        -webkit-text-decoration-skip: objects;
+        padding: 0.9rem 0;
+        background-color: $medium-gray;
+        font-size: 1rem;
+        color: $primary;
+        text-align: center;
+        margin: 0 auto 1rem;
+        font-weight: 700;
+
+        .fa-user {
+          margin-right: 0;
           font-size: 1rem;
-          color: $primary;
-          text-align: center;
-          margin-top: 0;
-          font-weight: 700;
-
-          .fa-user {
-              margin-right: 0;
-              font-size: 1rem;
-              display: inline-block;
-          }
-
+          display: inline-block;
         }
+      }
 
-        a:hover {
-           background-color: $primary;
-           color: $white
-        }
+      a:hover {
+        background-color: $primary;
+        color: $white;
+      }
 
-        a::selection {
-          background-color: $secondary;
-          color: $white;
-        }
-
- }
-
-}
-
-.alert  {
-
-  margin-top: 0;
-  padding: .8rem .2rem .1rem .2rem;
-  text-align: center;
-
-  p.lead {
-    font-weight: 700;
-    font-size: 1.1rem;
+      a::selection {
+        background-color: $secondary;
+        color: $white;
+      }
+    }
   }
 
-  p {
-    font-size: .9rem;
-    margin-bottom: .4rem;
+  .alert {
+    margin-top: 0;
+    padding: 0.8rem 0.2rem 0.1rem;
+    text-align: center;
+
+    p.lead {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    p {
+      font-size: 0.9rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .alert-button {
+      border: 2px solid $primary;
+      color: $primary;
+      font-weight: 700;
+
+      span {
+        padding-right: 0.4rem;
+        color: $primary;
+      }
+    }
   }
 
-  .alert-button {
-    border: 2px solid $primary;
-    color: $primary;
-    font-weight: 700;
-
-   span {
-  	padding-right: .4rem;
-  	color: $primary;
+  .mobile-search {
+    margin-top: 0;
   }
-
-  }
-
-}
-
-.mobile-search {
-  margin-top: 1rem;
-}
-
 }
 
 .mobile-nav {
   position: relative;
   display: block;
-  margin: 1rem 0 2rem 0;
-
-
-.drilldown .is-drilldown-submenu a, .drilldown a, .menu .menu-text {
-	padding: .4rem 2rem;
-
-}
-
-.drilldown a {
-	background-color: transparent;
-	line-height: inherit;
-	color: $primary;
-	cursor: pointer;
-}
-
+  margin: 1rem 0 2rem;
 }
 
 .mobile-extras {
   position: relative;
 
   .social-icons {
-
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 2rem;
     padding: 0 1.7rem;
+    width: 86%;
 
-  li {
+    li {
+      a {
+        padding: 0.4rem 0.2rem;
 
-   a {
+        span {
+          color: $primary;
+          padding: 0.3rem 0.6rem;
+          border: 1px solid $primary;
+          border-radius: 100%;
+          text-align: center;
 
-      padding: .4rem .2rem;
+          span {
+            display: none;
+          }
+        }
 
-     span {
-        color: $primary;
-         padding: .3rem .6rem;
-         border: 1px solid $primary;
-         border-radius: 100%;
-         text-align: center;
-     }
-
-     span:hover {
-         color: $dark-gray;
-         border: 1px solid $dark-gray;
-
-     }
-
-
-  }
-
-
+        span:hover {
+          color: $dark-gray;
+          border: 1px solid $dark-gray;
+        }
+      }
     }
-
   }
-
 
   .tips-logo {
-    background: url('../media/tipslogo.png');
+    background: url("../media/tipslogo.png");
     height: 52px;
     width: 132px;
     text-indent: -9999px;
     overflow: hidden;
     display: block;
-    margin: 0 30% 10% 30%;
+    margin: 0 30% 10%;
   }
-
 }

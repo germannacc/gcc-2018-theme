@@ -11,6 +11,14 @@
   */
 require get_template_directory() . '/inc/theme-supports.php';
 /**
+ * Enqueue scripts and styles.
+ */
+require get_template_directory() . '/inc/enqueue-scripts.php';
+/**
+ * Foundation Menus.
+ */
+require get_template_directory() . '/inc/main-navigation.php';
+/**
  * Custom Post Types.
  */
 require get_template_directory() . '/inc/custom-post-types.php';
@@ -31,10 +39,6 @@ require get_template_directory() . '/inc/content-width.php';
  */
 require get_template_directory() . '/inc/menus.php';
 /**
- * Foundation Menus.
- */
-require get_template_directory() . '/inc/main-navigation.php';
-/**
  * Social Icons.
  */
 require get_template_directory() . '/inc/social-icons.php';
@@ -44,10 +48,6 @@ require get_template_directory() . '/inc/social-icons.php';
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
 require get_template_directory() . '/inc/widgets.php';
-/**
- * Enqueue scripts and styles.
- */
-require get_template_directory() . '/inc/enqueue-scripts.php';
 /**
  * Implement the Custom Header feature.
  */

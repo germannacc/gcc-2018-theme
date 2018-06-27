@@ -17,6 +17,6 @@
 </div>
 
 <?php //custom department widgets
-dynamic_sidebar( 'scholars-widgets' ); ?>
+dynamic_sidebar( 'dual-enrollment-widgets' ); ?>
 
 </aside>

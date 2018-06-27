@@ -18,9 +18,9 @@ get_header(); ?>
  <?php
    while ( have_posts() ) : the_post(); ?>
 
-     <?php //Page Heading
-     get_template_part( 'template-parts/content', 'page-heading' );
-     ?>
+        <?php //Page Heading
+        get_template_part( 'template-parts/content', 'page-heading' );
+        ?>
 
     <!--Page Content-->
        <div class="row gutter-small expanded content-area">

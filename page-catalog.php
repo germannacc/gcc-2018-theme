@@ -12,7 +12,30 @@ get_header(); ?>
 
 		<?php //Page Heading
 		get_template_part( 'template-parts/content', 'page-heading' );
- ?>
+		?>
+
+		<?php // Gets the alert custom post type id for each sub page needing special announcement
+		$post_id = 5452;
+		$queried_post = get_post($post_id);
+		$content = $queried_post->post_content;
+		$content = apply_filters('the_content', $content);
+		if ($content) { ?>
+			<div class="row expanded page-alert">
+
+				<div class='callout alert' data-closable>
+					<?php echo "$content"; ?>
+					<a href='#' class='close' aria-hidden="true" role="button"><span class='icon-remove-circle'></span></a>
+					<button class="close-button" aria-label="<?php esc_html_e('Dismiss alert', 'gcc-wp-2018'); ?>" type="button" data-close>
+						 <span aria-hidden="true">&times;</span>
+				 </button>
+			 </div>
+
+	 </div>
+			<?php
+			}
+			else {
+			}
+			?>
 
 		<!--Page Content-->
 		<div class="row gutter-small expanded content-area">

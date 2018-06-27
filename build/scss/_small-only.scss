@@ -30,25 +30,39 @@
   }
 
 }
-  $hero-height: 15vh;
 
   .hero-section {
-    height: 260px;
+    height: 22vh;
 
     img {
-      height: $hero-height;
+      height: 40vh;
       background-color: $medium-gray;
+      background-position: bottom;
     }
 
   .hero-section-text {
-        bottom: 20%;
+        bottom: 10%;
         text-shadow:  none;
 
         .entry-title {
-          color: $secondary;
-          font-size: 1.4rem;
+          font-size: 1.8rem;
         }
   }
+
+  .hero-section-single {
+
+      img  {
+
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+      .hero-section-text {
+        bottom: 10%;
+        padding: 0;
+  }
+}
 
   .crumbs-container {
 

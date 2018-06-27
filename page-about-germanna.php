@@ -14,6 +14,7 @@ get_header(); ?>
 		get_template_part( 'template-parts/content', 'page-heading' );
  		?>
 
+
 		<div class="row gutter-small expanded content-area">
 
 			<?php //Page with Sidebar Template

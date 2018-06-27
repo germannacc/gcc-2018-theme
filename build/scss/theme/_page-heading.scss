@@ -1,29 +1,18 @@
-$hero-height: 44vh;
+$hero-height: 34vh;
 $marketing-site-footer-bg: $light-gray;
 
 .hero-section {
-
 position: relative;
-height: 280px;
-margin-bottom: 1rem;
+height: 44vh;
+margin-bottom: 0;
 padding-bottom: 0;
 width: 100%;
+background-color: rgba(0,0,0, .8);
 
-img {
+img  {
   background:  no-repeat;
   background-size: cover;
-  height: $hero-height;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: $hero-height;
-  object-fit: fit;
-  position: absolute;
-  left: 0;
-  z-index: -1;
-  width: 100%;
-  margin-bottom: 0;
+  height: 34vh;
 
 }
 
@@ -35,6 +24,65 @@ img {
   bottom: 15%;
   text-shadow: 0px 5px 7px rgba(0, 0, 0, 1);
   letter-spacing: .2rem;
+
+  .entry-title {
+    color: $white;
+  }
+  .entry-meta {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+
+    a {
+          color: $white;
+    }
+
+    a:hover {
+      color: $white;
+      text-decoration: underline;
+
+    }
+  }
+
+}
+}
+.hero-section-single {
+  height:50vh;
+  position: relative;
+  padding: 2rem 0 8rem 0;
+
+  img  {
+    background:  no-repeat;
+    background-size: cover;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+
+}
+    .hero-section-text {
+      bottom: 10%;
+      padding: 0 0 4rem 0;
+
+      p {
+        color: $white;
+      }
+
+
+}
+.hero-section-text {
+  color: $secondary;
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom:0;
+  text-shadow: 0px 5px 7px rgba(0, 0, 0, 1);
+  letter-spacing: .2rem;
+  padding: 4rem 2rem 1rem 2rem;
+  background-color: rgba(0,0,0, .6);
+  height: 100%;
+
   .entry-title {
     color: $white;
   }
@@ -101,6 +149,8 @@ border-bottom: 10px solid $primary;
   position: absolute;
   left: 4%;
   bottom: 10%;
+  background-color:  rgba(0,0,0, .4);
+  display: flex;
 
   .entry-meta {
     display: block;
@@ -146,5 +196,38 @@ border-bottom: 10px solid $primary;
     }
 
   }
+
+}
+
+.hero-section-404 {
+position: relative;
+height: 100vh;
+margin-bottom: 0;
+padding: 0;
+width: 100%;
+background: rgba(0,0,0,.6);
+color: $white;
+text-align: center;
+
+img  {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: -1;
+  width: 88%;
+  margin-bottom: 0;
+  margin-left: 300px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+}
+
+.hero-section-404-text {
+  padding: 12% 0;
+}
 
 }

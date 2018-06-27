@@ -11,7 +11,7 @@ if  (has_post_thumbnail( ) )  { ?>
 
   <div class="row expanded crumbs-container">
 
-        <nav aria-label="<?php _e('You are here:');?>" aria-label="Breadcrumb">
+        <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" aria-label="Breadcrumb">
           <?php the_breadcrumb() ?>
         </nav>
 
@@ -36,7 +36,7 @@ if  (has_post_thumbnail( ) )  { ?>
      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   </div>
 
-  <div class="crumbs-container">
+  <div class="crumbs-container  show-for-medium">
 
         <nav aria-label="<?php _e('You are here:');?>" aria-label="Breadcrumb">
           <?php the_breadcrumb() ?>

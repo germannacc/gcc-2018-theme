@@ -13,7 +13,6 @@ get_header(); ?>
 		<?php //Page Heading
 		get_template_part( 'template-parts/content', 'page-heading' );
  ?>
-
 		<!--Page Content-->
 		<div class="row gutter-small expanded content-area">
 
@@ -21,7 +20,7 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
 
 			<?php //Template Sidebar
-			get_template_part( '/sidebars/default-sidebar' ); ?>
+			get_template_part( '/sidebars/acc-sidebar' ); ?>
 
 		</div><!--.pagecontent-->
 

@@ -10,12 +10,11 @@ if ( have_posts() ) :
 
 else : ?>
 
-<div class="row expanded hero-section">
+<div class="row expanded hero-section-404">
 
-<header class="hero-section">
-  <img src="https://placeimg.com/640/480/nature" alt="page heading" width="640" height="300" style="height: 100%;">
+  <img src="https://germannacc.staging.wpengine.com/wp-content/uploads/2018/05/gcc-fac-rooftop-featured-image.jpg" alt="page heading" width="640" height="300">
 
-  <div class="row expanded" style="text-align: center; padding: 12% 0 14% 0; color: #ffffff; background-color: rgba(0, 0, 0, .6);">
+  <div class="row expanded" style="padding: 20% 0;">
 		<div class="small-6 small-offset-3 columns">
 
     <h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'gcc-wp-2018' ); ?></h1>
@@ -66,7 +65,6 @@ else : ?>
       </div>
 		</div>
 
-  </header>
 </div>
 			<?php
 

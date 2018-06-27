@@ -1,4 +1,3 @@
-<article>
 
   <?php
 
@@ -6,7 +5,7 @@
 
   'post_type' => 'post',
   'paged' => get_query_var('paged'),
-  'posts_per_page'=>6,
+  'posts_per_page'=>5,
 
   );
   ?>
@@ -97,5 +96,3 @@
 	<p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'gcc-wp-2018'); ?></p>
 
 <?php endif; ?>
-
-</article>

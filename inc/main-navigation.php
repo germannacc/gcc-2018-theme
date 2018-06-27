@@ -40,7 +40,7 @@ function gcc_wp_2018_mobile_offcanvas() {
         'container' => true,             // remove menu container
         'container_class' => '',          // class of container
         'menu' => '',
-        'items_wrap' => '<ul class="vertical menu align-center"  data-drilldown>%3$s</ul>' ,                  // menu name
+        'items_wrap' => '<ul class="vertical dropdown menu gcc-main-nav" data-dropdown-menu>%3$s</ul>' ,                  // menu name
         'menu_class' => '',        // adding custom nav class
         'theme_location' => 'mobile-offcanvas',  // where it's located in the theme
         'before' => '',                   // before each link <a>

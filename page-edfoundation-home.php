@@ -12,13 +12,29 @@ get_header(); ?>
 
 		<?php //Page Heading
 		get_template_part( 'template-parts/content', 'page-heading' );
- ?>
+		?>
 
 		<!--Page Content-->
 		<div class="row gutter-small expanded content-area">
 
-			<?php //Page with Sidebar Template
-			get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
+			<div class="small-12 medium-8 large-9 entry-content">
+
+			<?php
+			    the_content();
+			?>
+
+			
+
+			</div>
+
+
+			<footer class="entry-footer">
+			  <?php gcc_wp_2018_entry_footer(); ?>
+			</footer><!-- .entry-footer -->
+
+
+
+
 
 			<?php //Template Sidebar
 			get_template_part( '/sidebars/edfoundation-sidebar' ); ?>

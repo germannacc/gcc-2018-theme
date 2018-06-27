@@ -1,147 +1,155 @@
 //Branding and Main Navigation
-#main-menu {
+#main-menu {//main sidebar styles
   background-color: $light-gray;
+  width: 300px;
+  //do not change these styles
   overflow: visible;
   height: 100%;
   overflow-y: visible;
   position: absolute;
   z-index: 99999;
-  width: 300px;
-
-  .gcc-main-nav {
-
-   background-color: $light-gray;
-   margin: 1rem 0 4rem 0;
-   position: relative;
 
 
-
-  li {
-
-    a {
-    	background-color: transparent;
-    	-webkit-text-decoration-skip: objects;
-    	line-height: inherit;
-    	color: $primary;
-    	cursor: pointer;
-      padding: .2rem 2rem .2rem 1.2rem;
-      font-weight: 600;
-      transition: all .25s ease-in;
-
-    span {
-      position: absolute;
-      right: 10px;
-      font-size: 1.4rem;
-    }
-}
-
-a:hover {
-  background-color: $medium-gray;
-}
-a::selection {
-  background-color: $medium-gray;
-}
-
-ul.nested {
-  width: 830px;
-  padding: 1rem;
-  background-color: $medium-gray;
-  top: -50px;
-  left: 300px;
-
-
- li {
-    width: 100% !important;
-    width: 36%;
-    max-width: 360px !important;
-    /*Adjust width of columnes*/
-    position: relative;
-    display: inline-block;
-    margin: 0 1rem;
-  }
-
-  a {
-    transition: all .25s ease-in;
-    border-bottom: 1px solid rgba(0,0,0, .2);
-    padding: .5rem;
-    color: $secondary;
-
-  }
-  a:hover {
+  .gcc-main-nav { //sidebar navigation styles
     background-color: $light-gray;
-    color: $primary;
+    margin: 1rem 0;
+    position: relative;
+     //top menu
+    li {
+      a {
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+        line-height: inherit;
+        color: $primary;
+        cursor: pointer;
+        padding: 0.5rem 2rem 0.5rem 1.2rem;
+        font-weight: 600;
+        transition: all 0.25s ease-in;
+        font-size: 1.2rem;
+
+        span {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          font-size: 1.2rem;
+        }
+      }
+
+      a:hover {
+        background-color: $medium-gray;
+      }
+
+      a::selection { //keeps top menu item highlighted when over pop out menu
+        background-color: $medium-gray;
+      }
+      //pop out menu
+      ul.nested {
+        width: 830px;
+        padding: 1rem;
+        background-color: $medium-gray;
+        top: -50px;
+        left: 300px;
+
+        li {  //puts menu items into columns
+          width: 100% !important;
+          width: 36%;
+          max-width: 360px !important;
+          /*Adjust width of columnes*/
+          position: relative;
+          display: inline-block;
+          margin: 0 1rem;
+
+          a {
+            transition: all 0.25s ease-in;
+            border-bottom: 1px solid rgba(0,0,0, .2);
+            padding: 0.5rem;
+            color: $black;
+          }
+
+          a:hover {
+            background-color: $light-gray;
+            color: $primary;
+          }
+
+          a::before {
+            font-family: 'FontAwesome';
+            content: "\f054";
+            left: 0;
+            padding-right: 0.8rem;
+            font-size: 0.5rem;
+          }
+        }
+      }
+
+      li:hover a { //popout menu hover
+        background-color: $medium-gray;
+      }
+    }
+
+    li:hover a {//top menu hover
+      background-color: $medium-gray;
+    }
   }
+}
 
-  a::before {
-    font-family: 'FontAwesome';
-    content: "\f054";
-    left: 0;
-    padding-right: .8rem;
-    font-size: .5rem;
+.menu-extras {//items that appear under main navigation
+  position: relative;
 
+  a.menu-banner {//sidebar ad
+    display: block;
+    text-indent: -9999px;
+    background: url("../media/alumni-menu-banner.jpg") center center no-repeat;
+    width: 280px;
+    height: 560px;
+    margin: 0 auto 1rem auto;
   }
-
-
-}
-li:hover a {
-  background-color: $medium-gray;
-}
-
+  a.career-coach {//sidebar ad
+    display: block;
+    text-indent: -9999px;
+    background: url("../media/career-search-callto.jpg") center center no-repeat;
+    width: 280px;
+    height: 280px;
+    margin: 0 auto 1rem auto;
   }
-  li:hover a {
-    background-color: $medium-gray;
-  }
-
-}
-
-}
-
-.menu-extras {
-
-position: relative;
-
 
   .social-icons {
-
-    margin: 0 auto 2rem auto;
+    margin: 0 auto 2rem;
     padding: 0 1.7rem;
+    width: 86%;
 
-  li {
+    li {
+      a {
+        padding: 0.4rem 0.2rem;
 
-   a {
+        span {
+          color: $primary;
+          padding: 0.3rem 0.6rem;
+          border: 1px solid $primary;
+          border-radius: 100%;
+          text-align: center;
+        }
 
-      padding: .4rem .2rem;
+        span:hover {
+          color: $dark-gray;
+          border: 1px solid $dark-gray;
+        }
+        span.icon-text {
+          display: block;
+          text-indent: -99999px;
+          display: none;
+        }
 
-     span {
-        color: $primary;
-         padding: .3rem .6rem;
-         border: 1px solid $primary;
-         border-radius: 100%;
-         text-align: center;
-     }
-
-     span:hover {
-         color: $dark-gray;
-         border: 1px solid $dark-gray;
-
-     }
-
-
-  }
-
-
+      }
     }
-
   }
-
 }
 
 .tips-logo {
-  background: url('../media/tipslogo.png');
+  background: url("../media/tipslogo.png");
   height: 52px;
   width: 132px;
   text-indent: -9999px;
   overflow: hidden;
   display: block;
-  margin: 0 30% 10% 30%;
+  margin: 0 30% 10%;
 }

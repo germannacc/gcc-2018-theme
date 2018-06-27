@@ -1,11 +1,10 @@
 #pathways {
 
-background-color: $light-gray;
+background-color: $white;
 padding:  3rem 1rem 4rem 1rem;
 
 .pathways-content {
 
-  background-color: $light-gray;
 
 h2 {
 
@@ -14,6 +13,9 @@ h2 {
   width: 75%;
   margin: 0 auto 2rem auto;
   position: relative;
+  font-size: 2rem;
+  font-weight: 400;
+
 
 }
 
@@ -80,50 +82,19 @@ h2 {
 
 #getting-started {
 
-  padding: 2rem 0  8rem 0;
+  padding: 4rem 2rem;
   position: relative;
-  background-color: rgba(0,0,0, .4);
-
-  img.background  {
-    background:  no-repeat;
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    margin-bottom: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-}
-
-img.background::after {
-  /* Display and position the pseudo-element */
-  content: "";
-  position: absolute;
+  background-color: $medium-gray;
 
 
-  /* Move the pseudo-element back away from the camera,
-   * then scale it back up to fill the viewport.
-   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
-}
+
 .getting-started-content {
 
   h2 {
-  color: $white;
-  text-shadow: 0px 1px 4px rgba(0, 0, 0, 1);
-   margin: 3rem 0;
+   color: $secondary;
+   margin: 0 0 3rem 0;
+  font-weight: 400;
+
   }
 
   .card {
@@ -172,19 +143,17 @@ img.background::after {
 position: relative;
 border-top: 2xpx solid $secondary;
 background-color: $white;
-padding: 8rem 1rem 4rem 1rem;
+padding: 4rem 1rem;
 
 .highlights-content {
-  overflow: visible;
+
 h2 {
-  top: -.5%;
-  left: 0;
-  background-color:  $secondary;
-  color: $white;
-  margin: 0 -1rem 2rem auto;
-  position: absolute;
-  padding: 1rem 0;
+
+  color: $secondary;
+  text-align: center;
+  margin-bottom: 4rem;
   width: 100%;
+  font-weight: 400;
 }
 
 /*Event Boxes*/
@@ -259,6 +228,21 @@ margin-bottom: 1.2rem;
 }
 
 }
+
+.events-calendar {
+  background: url("../media/event-calendar-ad.jpg") no-repeat center center;
+  background-clip: inherit;
+  height: 400px;
+  width: 100%;
+  min-width: 400px;
+  background-size: 100%;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
 
 
 }

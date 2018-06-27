@@ -12,12 +12,9 @@ get_header(); ?>
 	<?php
 		if ( have_posts() ) : ?>
 
-		<?php // if the page has a featured image
-		if  (has_post_thumbnail( $post->post_parent ) )  { ?>
-
 		<header class="hero-section">
 
-		<?php the_post_thumbnail();  ?>
+		      <img width="3333" height="2500" src="<?php esc_html_e('https://germannacc.staging.wpengine.com/wp-content/uploads/2018/05/gcc-fac-rooftop-featured-image.jpg', 'gcc-wp-2018'); ?>" alt="<?php the_title(); ?>" sizes="(max-width: 3333px) 100vw, 3333px"   />
 
 		  <div class="hero-section-text">
 				<?php
@@ -41,6 +38,11 @@ get_header(); ?>
 		                </a>
 		            </li>
 								<li role="menuitem">
+										<a href="<?php esc_html_e('/highlights/', 'gcc-wp-2018');?>">
+												<?php _e('Highlights', 'gcc-wp-2018'); ?>
+										</a>
+								</li>
+								<li role="menuitem">
 										<a href="<?php  echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
 												<?php echo $post_title; ?>
 										</a>
@@ -56,55 +58,6 @@ get_header(); ?>
 		  </div>
 
 		</header>
-
->
-
-<?php  }  else {  //.pagesubbanner
-// if page doesn't have a featured image
-?>
-
-<header class="hero-section-plain">
-
-<?php the_post_thumbnail();  ?>
-
-	<div class="hero-section-text">
-		<?php
-		the_archive_title('<h1>', '</h1>');
-		the_archive_description( '<div class="archive-description">', '</div>' );
-		?>
-	</div>
-
-	<div class="row expanded crumbs-container-plain">
-
-		<nav aria-label="<?php esc_html_e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-				<ul class="breadcrumbs">
-
-						<?php $home_page = get_the_title( get_option('page_on_front'));
-						$post_title = get_the_archive_title();
-						 ?>
-						<li role="menuitem">
-								<a href="<?php echo get_site_url(); ?>">
-										<?php echo $home_page; ?>
-								</a>
-						</li>
-						<li role="menuitem">
-								<a href="<?php  echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
-										<?php echo $post_title; ?>
-								</a>
-						</li>
-						<li role="menuitem">
-								<?php the_title(); ?>
-						</li>
-
-
-				</ul>
-		</nav>
-
-	</div>
-
-</header>
-
-<?php } ?>
 
 
  <!--Page Content-->

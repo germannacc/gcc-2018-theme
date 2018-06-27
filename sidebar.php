@@ -38,7 +38,7 @@
                     </div>
 
                     <a href="<?php echo esc_url( home_url() )?>" class="logo">
-                        <?php echo esc_url( home_url() ) ?>
+                        <?php bloginfo( 'name' ); ?>
                     </a>
                     <p class="tagline lead">
                         <?php bloginfo( 'description' ); ?>
@@ -50,17 +50,13 @@
 //function located in inc/main-navigation.php
 gcc_wp_2018_main_navigation(); ?>
 
-<div class="row collapsed" style="padding: 0 1rem; margin-bottom: 2rem;">
-
-  <?php //Start of Important Links Widget Container
-    if ( is_active_sidebar( 'quicklinks-widgets' ) ) : ?>
-    <?php dynamic_sidebar( 'quicklinks-widgets' ); ?>
-    <?php endif; //End of Important Links Widget Container
-   ?>
-
-</div>
 
                     <div class="menu-extras">
+
+                        <a href="<?php echo esc_url( 'https://jtcc.emsicc.com/?region=Richmond%20Metro%20Area&radius=', 'gcc-wp-2018'); ?>" class="career-coach"><?php esc_html_e('Pathways Career Coach', 'gcc-wp-2018'); ?></a>
+
+                          <a href="<?php echo esc_url( home_url( '/alumni/alumni-membership-form/', 'gcc-wp-2018' ) ); ?>" class="menu-banner"><?php esc_html_e('Germanna Alumni', 'gcc-wp-2018'); ?></a>
+
 
                         <?php if( !empty($tips_url) ): ?>
 

@@ -17,16 +17,40 @@
 
 }
 
-  $hero-height: 32vh;
 
   .hero-section {
-    height: 320px;
+    height: 34vh;
 
     img {
-      height: $hero-height;
+      width: 84%;
+      margin-left: 300px;
+      height: 34vh;
     }
 
   }
+
+  .hero-section-single {
+
+    height: 80vh;
+
+      img  {
+
+        width: 100%;
+        margin-left: 0;
+        height: 80vh;
+
+    }
+
+      .hero-section-text {
+        bottom: 5%;
+        padding: 0;
+
+        .entry-title {
+          font-size: 1.8rem;
+        }
+
+  }
+}
 
   #getting-started {
 

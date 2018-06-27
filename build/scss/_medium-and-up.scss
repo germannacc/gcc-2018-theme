@@ -1,179 +1,284 @@
 /* Medium and up */
 @media screen and (min-width: 40em) {
-
   ul.dropdown.menu {
+    li.mygcc {
+      padding: 0;
 
-  li.mygcc {
-
-    padding: 0;
-
-          a {
-
-            padding: .9rem 5rem;
-            font-size: 1.2rem;
-
-          }
-
-   }
-
-  }
-#main-menu {
-  .gcc-main-nav {
-
-   background-color: $light-gray !important;
-   margin: 1rem 0;
-   position: relative;
-
-  li {
-
-    a {
-      padding: .2rem 2rem .2rem 1.2rem;
-      font-size: 1.6rem;
-    }
-
-  }
-
-
-    ul.vertical.menu {
-
-      top: -100px;
-
-    }
-
-}
-}
-
-
-$hero-height: 60vh;
-
-.hero-section {
-  height: $hero-height;
-
-  img {
-    height: $hero-height;
-  }
-
-  .hero-section-text {
-        bottom: 20%;
-
-        .entry-title {
-          color: $white;
-          font-size: 3.6rem;
-        }
-
-}
-
-}
-
-#pathways {
-.pathways-content {
-
-
-h2 {
-
-  font-size: 3.2rem;
-
-}
-}
-}
-#getting-started {
-
-  .getting-started-content {
-
-  h2 {
-
-    font-size: 4rem;
-
-  }
-}
-
-}
-#highlights {
-padding: 6rem 1rem 4rem 1rem;
-
-.highlights-content {
-
-h2 {
-  top: -2%;
-  left: 20%;
-  margin: 0 -1rem 3rem auto;
-  padding: 1rem 0;
-  width: 60%;
-  font-size: 3.2rem;
-}
-
-}
-
-}
-  .content-area {
-    display: flex;
-  }
-  h2 {
-      margin-top: 2rem;
-     }
-  .entry-content {
-padding: 1rem 3rem 8rem 3rem;
-
-  p {
-    font-size: 1.31rem;
-  }
-  ul, ol {
-    li {
-      font-size: 1.4rem;
-
-      strong {
-        font-size: 1.4rem;
-
+      a {
+        padding: 0.9rem 5rem;
+        font-size: 1.2rem;
       }
     }
   }
-  }
-.latest-post {
+  #main-menu {
+    .gcc-main-nav {
+      background-color: $light-gray !important;
+      margin: 1rem 0;
+      position: relative;
 
-  h3.post-title {
-    font-size: 1.6rem;
+      li {
+        a {
+          padding: 0.4rem 2rem 0.4rem 1.2rem;
+          font-size: 1.2rem;
+        }
+      }
+
+      ul.vertical.menu {
+        top: -100px;
+      }
+    }
   }
-  p {
-    font-size: 1.4rem;
+
+  .hero-section {
+
+  height: 64vh;
+  background: rgba(0, 0, 0, .1);
+  position: relative;
+
+  img  {
+    height: 68vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: -1;
+    width: 88%;
+    margin-bottom: 0;
+    margin-left: 300px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+  }
+
+  img.background::after {
+  /* Display and position the pseudo-element */
+  content: "";
+  position: relative;
+  /* Move the pseudo-element back away from the camera,
+   * then scale it back up to fill the viewport.
+   * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  background-size: 100%;
+  /* Keep the image from overlapping sibling elements. */
+  z-index: -1;
+  }
+
+    .hero-section-text {
+      bottom: 14%;
+
+      .entry-title {
+        color: $white;
+        font-size: 2.8rem;
+      }
+    }
+
+
+  }
+
+  .hero-section-single {
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color:  rgba(0,0,0, .4);
+
+    img  {
+      background:  no-repeat;
+      background-size: cover;
+      height: 100vh;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      z-index: -1;
+      width: 100%;
+      margin-bottom: 0;
+      margin-left: 300px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+  }
+
+  img.background::after {
+    /* Display and position the pseudo-element */
+    content: "";
+    position: relative;
+    /* Move the pseudo-element back away from the camera,
+     * then scale it back up to fill the viewport.
+     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: 100%;
+    /* Keep the image from overlapping sibling elements. */
+    z-index: -1;
+  }
+
+      .hero-section-text {
+        bottom: 10%;
+        padding: 0;
   }
 }
+  #pathways {
+    .pathways-content {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  #getting-started {
+    .getting-started-content {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  #highlights {
+
+    .highlights-content {
+      h2 {
+        font-size: 2.8rem;
+      }
+    }
+  }
+
+  .content-area {
+    display: flex;
+  }
+
+  h2 {
+    margin-top: 2rem;
+  }
+
+  .entry-content {
+    padding: 2rem 3rem 4rem 3rem;
+
+    p {
+      font-size: 1.31rem;
+    }
+
+    ol,
+    ul {
+      li {
+        font-size: 1.4rem;
+
+        strong {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .latest-post {
+    h3.post-title {
+      font-size: 1.6rem;
+    }
+
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
   .page-nav {
     flex: 1;
 
+    .widget p {
+      padding: 0 0;
+
+    }
+
+    p
+    {
+      margin-bottom: 1rem;
+    }
   }
-  .marketing-site-footer,  .marketing-site-footer-title,  .marketing-site-footer-block  {
+
+  .marketing-site-footer,
+  .marketing-site-footer-block,
+  .marketing-site-footer-title {
     text-align: left;
   }
 
   .marketing-site-footer-block {
-      display: flex;
-      p {
-        text-align: left;
-      }
+    display: flex;
+
+    p {
+      text-align: left;
+    }
   }
-
+#workforce {
   .workforce-explore-content {
-
     background-color: $light-gray;
 
-  h1 {
-    font-size: 2.8rem;
-    margin-bottom: 2rem;
-  }
-  .callout {
-
-    h2 {
-      font-size: 1.4rem;
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 2rem;
     }
 
-    img {
+    .callout {
+      h2 {
+        font-size: 1.6rem;
+      }
 
-      margin-bottom: 1rem;
+      img {
+        margin-bottom: 1rem;
+      }
+    }
+    //workforce Small Page Panels
+    .callout.small {
+      padding: 0 2rem;
+      h2 {
+        font-size: 1.6rem;
+      }
+      h3 {
+        font-size: 1.6rem;
+      }
+  }
+}
+}
+.callout-small {
+  min-height: auto;
+}
+.callout.primary {
+  h3 {
+    font-size: 1.6rem;
+  }
 
+  p {
+    padding: 0 1.2rem 1rem 1.2rem;
+  }
+  a.button.primary {
+    font-size: 1.6rem;
+    padding: 0 1rem;
+  }
+}
+
+.medium-6.columns {
+
+  .callout.primary {
+    min-height: 100%;
+  }
+
+}
+
+.large-4.columns {
+  .callout.small {
+    h3 {
+      font-size: 1.2rem;
     }
 
+  a.button.primary {
+    padding-left: .5rem;
   }
 
-  }
+}
+
+}
 
 }

@@ -45,11 +45,10 @@ function gcc_wp_2018_cleanup_head() {
 	remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 	// WP version
 	remove_action( 'wp_head', 'wp_generator' );
-
 	remove_action( 'wp_head', 'rsd_link' );
-remove_action( 'wp_head', 'wlwmanifest_link' );
+	remove_action( 'wp_head', 'wlwmanifest_link' );
 	remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
-remove_action( 'wp_print_styles', 'print_emoji_styles' );
+	remove_action( 'wp_print_styles', 'print_emoji_styles' );
 	// Remove WP version from css
 	add_filter( 'style_loader_src', 'gcc_wp_2018_remove_wp_ver_css_js', 9999 );
 	// Remove WP version from scripts
@@ -78,6 +77,8 @@ function gcc_wp_2018_deregister_style() {
 		wp_deregister_style( 'UserAccessManagerLoginForm'  );
 		wp_deregister_style( 'yoast-seo-adminbar' );
 		wp_deregister_style( 'rs-plugin-settings' );
+		wp_deregister_style( 'foundation-icon' );
+
 
 }
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_style' );
@@ -122,5 +123,20 @@ function gcc_wp_2018_remove_recent_comments_style() {
 }
 endif;
 
+if ( ! function_exists( 'gcc_wp_2018_clean_shortcodes' ) ) :
 
+function gcc_wp_2018_clean_shortcodes( $content ) {
+
+    $array = array (
+        '<p>[' => '[',
+        ']</p>' => ']',
+        ']<br />' => ']'
+    );
+
+    $content = strtr( $content, $array );
+
+    return $content;
+}
+add_filter('the_content', 'gcc_wp_2018_clean_shortcodes');
+endif;
 ?>

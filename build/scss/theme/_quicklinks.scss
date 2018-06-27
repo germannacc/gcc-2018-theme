@@ -23,7 +23,7 @@ ul.dropdown.menu {
   li {
     a {
       padding: 1rem .5rem;
-      color: $secondary;
+      color: $black;
       transition: all .25s ease-in;
       font-size: 1rem;
       font-weight: 600;
@@ -65,7 +65,7 @@ ul.dropdown.menu {
 
       a  {
 
-          color: $secondary;
+          color: $black;
           padding: .8rem 1rem;
           font-weight: bold;
           transition: all .06s ease-in;
@@ -162,11 +162,15 @@ ul.dropdown.menu {
 }
 
 .top-bar input {
-	max-width: 300px !important;
-	margin-right: 0;
+	max-width: 400px !important;
+	margin-right: 0 !important;
   height: 100%;
-  box-shadow: none;
-  border: none;
+  box-shadow: inset 0px 0px 4px 0px $secondary,5px 5px 5px 1px $light-gray;
+  -webkit-box-shadow: inset 0px 0px 4px 0px $secondary,5px 5px 5px 1px $light-gray;
+  -moz-box-shadow: inset 0px 0px 4px 0px $secondary,5px 5px 5px 1px $light-gray;
+  -o-box-shadow: inset 0px 0px 4px 0px $secondary,5px 5px 5px 1px $light-gray;
+    border: none;
+    width: 96%;
 }
 
 /*Search Bar*/
@@ -174,15 +178,16 @@ ul.dropdown.menu {
 .sb-search, .sb-search-mobile {
 	position: relative;
 	margin-top: 0;
-	width: 0%;
+	width: 44%;
 	min-width: 49px;
 	height: 49px;
 	float: right;
 	overflow: hidden;
-	-webkit-transition: width 0.3s;
-	-moz-transition: width 0.3s;
-	transition: width 0.3s;
 	-webkit-backface-visibility: hidden;
+}
+
+.sb-search {
+  width: 100%;
 }
 
 .sb-search-input {
@@ -192,14 +197,15 @@ ul.dropdown.menu {
 	border: none;
 	outline: none;
 	background: $white;
-	width: 75%;
+	width: 98%;
 	height: 100px;
 	margin: 0;
 	z-index: 10;
 	padding: 20px 35px 20px 20px;
 	font-family: inherit;
 	font-size: 20px;
-	color: #2c3e50;
+	color: $dark-gray;
+  border: 1px inset $dark-gray;
 }
 
 .sb-search-input::-webkit-input-placeholder, .sb-search-input:-moz-placeholder, .sb-search-input::-moz-placeholder, .sb-search-input:-ms-input-placeholder   {
@@ -226,7 +232,7 @@ ul.dropdown.menu {
 	background: $white; /* IE needs this */
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
     filter: alpha(opacity=0); /* IE 5-7 */
-    opacity: 0;
+  opacity: 0;
 	color: transparent;
 	border: none;
 	outline: none;
@@ -265,4 +271,28 @@ ul.dropdown.menu {
 .sb-search.sb-search-open .sb-search-submit,
 .no-js .sb-search .sb-search-submit {
 	z-index: 90;
+}
+
+li.give-button {//sidebar ad
+  display: inline-block;
+  text-indent: -9999px;
+  background: url("../media/foundation-give-button.png") center center no-repeat;
+  width: 157px;
+  height: 50px;
+  margin-left: 1rem;
+  position: relative;
+
+
+
+  a {
+      min-width: 157px;
+      transition: all 0.25s ease-in;
+
+
+  }
+  a:hover {
+    background-color: rgba(0,0,0, 0) !important;
+    background: url("../media/foundation-give-button-hover.png") center center no-repeat;
+
+  }
 }

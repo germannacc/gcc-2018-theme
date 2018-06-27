@@ -12,7 +12,7 @@ get_header(); ?>
 
     <?php //Page Heading
     get_template_part( 'template-parts/content', 'page-heading' );
- ?>
+    ?>
 
     <!--Page Content-->
     <div class="row gutter-small expanded content-area">

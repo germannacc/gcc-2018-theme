@@ -1,15 +1,16 @@
 <!--Page Content-->
 <div class="row gutter-small expanded content-area">
 
-<div class="small-12 medium-9  entry-content">
+<div class="small-12 medium-9 entry-content">
 
   <?php
+  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
   $args =  array (
 
   'post_type' => 'post',
-  'posts_per_page'=>10,
-
+  'posts_per_page'=>-5,
+  'paged'          => $paged
   );
   ?>
 
@@ -36,7 +37,6 @@
           <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
           gcc_wp_2018_posted_on();
           ?> </strong>  | <?php gcc_wp_2018_entry_footer(); ?></p>
-          <?php  gcc_wp_2018_entry_footer(); ?>
         </div><!-- .entry-meta -->
      <?php endif; ?>
       <p><?php the_excerpt(

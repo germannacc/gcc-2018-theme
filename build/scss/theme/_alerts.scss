@@ -1,11 +1,97 @@
-.alert  {
+.callout {
+  position: relative;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+
+.callout.announcement {
+
+   background: $primary;
+   color: $white;
+   margin: 0 0 1rem 0;
+   padding: 1rem 4rem;
+   font-size: 1.4rem;
+
+}
+//Small Page Panels
+.callout.small {
+  padding: 0 2rem;
+  h3 {
+    font-size: 1rem;
+  }
+  a.button.primary {
+    background: $light-gray;
+    color: $primary;
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin: 0;
+    text-align: left;
+    line-height: 1.8rem;
+    display: block;
+  }
+  a.button.primary:hover {
+    background: $light-gray;
+    color: $secondary;
+
+  }
+  a.button.primary::after {
+    font-family: FontAwesome;
+    content: "\f061";
+    border-radius: 100%;
+    color: $primary;
+    right: -2;
+    position: absolute;
+    margin-left: .4rem;
+    margin-top: -.4rem;
+    padding: .4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+  }
+   a.button.primary:hover::after {
+    background-color: $secondary;
+    color: $white;
+    padding: .4rem;
+  }
+  p {
+    padding: 1rem;
+  }
+
+}
+//Page Panels
+.callout.primary  {
   background-color: $light-gray !important;
   border: 2px solid $primary !important;
-  padding: 1rem 1rem 1rem 4rem;
-  margin-bottom: 0;
+  padding: 1rem 2rem;
+  color: $secondary !important;
 
-     color: $secondary !important;
+  h3 {
+    padding: 1rem;
+    margin: 1rem auto;
+    display: block;
+    width: 98%;
+    background-color:  $primary;
+    color: $white;
+    font-size: 1rem;
 
+    h4 {
+      padding-left: 1rem;
+    }
+
+    p {
+      padding: 0 1rem 1rem 1rem;
+    }
+
+    a {
+      color: $medium-gray;
+    }
+
+    a:hover {
+      color: $white;
+    }
+
+  }
 
      .close-button {
        color: $secondary;
@@ -15,16 +101,54 @@
        color: $primary;
      }
 
+     p a {
+       position: relative;
+       text-align: right;
+     }
+     p {
+       padding: 0 .5rem;
+     }
+
+     .medium-8.columns {
+
+       a.button {
+         padding-left: 1rem;
+       }
+     }
+
+
+}
+
+//
+
+.callout.alert  {
+  background-color: $light-gray !important;
+  border: 2px solid $primary !important;
+  padding: 1rem;
+  color: $secondary !important;
+
+     .close-button {
+       color: $secondary;
+     }
+
+     .close-button:hover {
+       color: $primary;
+     }
+
+     h3 {
+       margin-top: 0;
+       padding-top: 0;
+       }
+
 }
 
 
+//Closing Announcement
 .closing  {
   background-color: $primary;
   border: none;
   padding: 1rem 1rem 1rem 4rem;
-
-
-     color: $white;
+  color: $white;
 
      p {
        padding-left: 2rem;
@@ -36,7 +160,6 @@
        margin-top: .4rem;
        padding-left: 2rem;
      }
-
 
     a.button:hover {
       border: 2px solid $black;
@@ -52,4 +175,13 @@
        color: $secondary;
      }
 
+}
+
+.medium-6.columns {
+  margin-bottom: 1rem;
+  .callout.small {
+    a.button {
+      padding-left: 1rem;
+    }
+  }
 }

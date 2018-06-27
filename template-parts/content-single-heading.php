@@ -8,11 +8,11 @@
  */
 ?>
 <?php // if the page has a featured image
-if  (has_post_thumbnail( $post->ID ) )  { ?>
+if  ( has_post_thumbnail())  { ?>
 
 <div class="row gutter-small expanded">
 
-<header class="hero-section">
+<header class="hero-section-single">
 
     <?php the_post_thumbnail(); ?>
 
@@ -27,7 +27,7 @@ if  (has_post_thumbnail( $post->ID ) )  { ?>
      <?php endif; ?>
     </div>
 
-  <div class="row expanded crumbs-container">
+  <div class="row expanded crumbs-container show-for-medium">
 
     <nav aria-label="<?php _e('You are here:');?>" role="navigation">
       <ul class="breadcrumbs">
@@ -64,7 +64,9 @@ if  (has_post_thumbnail( $post->ID ) )  { ?>
 
 <div class="row gutter-small expanded">
 
-<header class="hero-section-plain">
+<header class="hero-section-single">
+
+      <img width="3333" height="2500" src="<?php esc_html_e('https://germannacc.staging.wpengine.com/wp-content/uploads/2018/05/gcc-fac-rooftop-featured-image.jpg', 'gcc-wp-2018'); ?>" alt="<?php the_title(); ?>" sizes="(max-width: 3333px) 100vw, 3333px"   />
 
   <div class="hero-section-text">
      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

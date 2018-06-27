@@ -69,6 +69,7 @@
 @import 'theme/top-bar';
 @import 'theme/branding';
 @import 'theme/hero';
+@import 'theme/slider';
 @import 'theme/quicklinks';
 @import 'theme/sidebar';
 @import 'theme/home';
@@ -76,12 +77,13 @@
 @import 'theme/blog';
 @import 'theme/page-heading';
 @import 'theme/page';
+@import 'theme/custom-wpforms';
 @import 'theme/helpers';
 @import 'theme/wp-styles';
 @import 'theme/buttons';
 @import 'theme/alerts';
 @import 'theme/footer';
-@import 'theme/mobile-menu';
+
 
 //Plugins
 @import 'plugins/revslider';
@@ -157,3 +159,5 @@
 @import 'medium-and-up';
 @import 'large-only.scss';
 @import 'large-and-up.scss';
+
+@import 'theme/mobile-menu';

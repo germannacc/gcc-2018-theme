@@ -26,9 +26,11 @@ $box_3_url= get_field('box_3_url');
 $box_3_button_text = get_field('box_3_button_text');
 $box_4_heading = get_field('box_4_heading');
 $box_4_description = get_field('box_4_description');
+$box_4_button_text = get_field('box_4_button_text');
 $box_4_url= get_field('box_4_url');
 $box_5_heading = get_field('box_5_heading');
 $box_5_description = get_field('box_5_description');
+$box_5_button_text = get_field('box_5_button_text');
 $box_5_url= get_field('box_5_url');
 /*social media*/
 $facebook_url = get_field('facebook_url');
@@ -54,7 +56,6 @@ get_header(); ?>
 
 	</div>
 
-
 <?php
 	while ( have_posts() ) : the_post(); ?>
 
@@ -66,9 +67,9 @@ get_header(); ?>
 
 	<div class="row expanded" data-equalizer data-equalize-on="medium">
 
-	 <div class="small-12 medium-4 columns" data-equalizer-watch>
+	 <div class="small-12 medium-4 columns">
 
-		 <div class="callout alert text-center" >
+		 <div class="callout alert text-center" data-equalizer-watch>
 			 <?php //apprentice box
 							 if( !empty($box_1_image) ): ?>
 							 <img src="<?php echo $box_1_image['url']; ?>" alt="<?php echo $box_1_image['alt']; ?>" height="220" width="330" class="responsive" />
@@ -77,15 +78,15 @@ get_header(); ?>
 							 <h2><?php echo $box_1_heading; ?></h2>
 							 <p class="description"><?php echo $box_1_description; ?></p>
 
-							 <a href="<?php the_field('box_1_url');?>" class="button expanded" ><?php esc_html_e('View ', 'gcc-wp-2018');  the_field('box_1_heading'); ?></a>
+							 <a href="<?php the_field('box_1_url');?>" class="button expanded" ><?php the_field('box_1_button_text'); ?></a>
 
 		 </div>
 
 	 </div>
 
-	 <div class="small-12 medium-4 gutter-small columns"  data-equalizer-watch>
+	 <div class="small-12 medium-4 gutter-small columns" >
 
-		 <div class="callout alert text-center" >
+		 <div class="callout alert text-center" data-equalizer-watch>
 			 <?php //credentials box
 				 if( !empty($box_2_image) ): ?>
 				 <img src="<?php echo $box_2_image['url']; ?>" alt="<?php echo $box_1_image['alt']; ?>" height="220" width="330" class="responsive" />
@@ -95,14 +96,14 @@ get_header(); ?>
 
 				 <p class="description"><?php echo $box_2_description; ?></p>
 
-				 <a href="<?php the_field('box_2_url');?>" class="button expanded" ><?php  esc_html_e('View ', 'gcc-wp-2018');  the_field('box_2_heading'); ?></a>
+				 <a href="<?php the_field('box_2_url');?>" class="button expanded" ><?php the_field('box_2_button_text'); ?></a>
 		 </div>
 
 	</div>
 
-	<div class="small-12 medium-4 columns"  data-equalizer-watch>
+	<div class="small-12 medium-4 columns">
 
-		<div class="callout alert  text-center" >
+		<div class="callout alert  text-center" data-equalizer-watch>
 			<?php //tuition assistance box
 				if( !empty($box_3_image) ): ?>
 				<img src="<?php echo $box_3_image['url']; ?>" alt="<?php echo $box_1_image['alt']; ?>" height="220" width="330" class="responsive" />
@@ -111,19 +112,19 @@ get_header(); ?>
 				<h2><?php echo $box_3_heading; ?></h2>
 				<p class="description"><?php echo $box_3_description; ?></p>
 
-			 <a href="<?php the_field('box_3_url');?>" class="button expanded" ><?php  esc_html_e('Learn more about ', 'gcc-wp-2018'); the_field('box_3_heading'); ?></a>
+			 <a href="<?php the_field('box_3_url');?>" class="button expanded" ><?php the_field('box_3_button_text'); ?></a>
 		</div>
 
 	</div>
 
 </div>
 
-<div class="row expanded">
+<div class="row expanded"  data-equalizer data-equalize-on="medium">
 
 
 	<div class="small-12 medium-8 columns" >
 
-		<div class="callout alert  text-center">
+		<div class="callout alert  text-center" data-equalizer-watch>
 			<?php //online training box
 			if( !empty($box_4_image) ): ?>
 			<img src="<?php echo $box_4_image['url']; ?>" alt="<?php echo $box_1_image['alt']; ?>" height="64" width="94" class="img-responsive" />
@@ -132,13 +133,13 @@ get_header(); ?>
 			<h2><?php echo $box_4_heading; ?></h2>
 			<p class="description"><?php echo $box_4_description; ?></p>
 
-		 <a href="<?php the_field('box_4_url');?>" class="button expanded" ><?php  esc_html_e('View ', 'gcc-wp-2018');  the_field('box_4_heading'); ?></a>
+		 <a href="<?php the_field('box_4_url');?>" class="button expanded" ><?php  the_field('box_4_button_text'); ?></a>
 		</div>
 
 	</div>
 
 	<div class="small-12 medium-4 columns">
-		<div class="callout alert  text-center">
+		<div class="callout alert  text-center" data-equalizer-watch>
 			<?php
 				if( !empty($box_5_image) ): ?>
 				<img src="<?php echo $box_5_image['url']; ?>" alt="<?php echo $box_1_image['alt']; ?>" height="64" width="94" class="img-responsive" />
@@ -147,7 +148,7 @@ get_header(); ?>
 				<h2><?php echo $box_5_heading; ?></h2>
 				<p class="description"><?php echo $box_5_description; ?></p>
 
-			 <a href="<?php the_field('box_5_url');?>" class="button expanded" ><?php  esc_html_e('Learn about ', 'gcc-wp-2018');  the_field('box_5_heading'); ?></a>
+			 <a href="<?php the_field('box_5_url');?>" class="button expanded" ><?php  the_field('box_5_button_text'); ?></a>
 		</div>
 	</div>
 
@@ -192,13 +193,13 @@ get_header(); ?>
 
 				<?php if ( has_post_thumbnail() ) : ?>
 					<div class="row latest-post">
-					<div class="medium-5 columns">
+					<div class="medium-12 large-4 columns collapse">
 
 							<?php gcc_wp_2018_post_thumbnail(); ?>
 
 					</div>
-					<div class="medium-7 columns">
-					<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<div class="medium-12 large-8 columns collapse">
+					<h3 class="post-title"><?php the_title(); ?></h3>
 					<?php if ( 'post' === get_post_type() ) : ?>
 						<div class="entry-meta float-right">
 							<p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
@@ -206,21 +207,7 @@ get_header(); ?>
 							?> </strong></p>
 						</div><!-- .entry-meta -->
 				 <?php endif; ?>
-					<p><?php the_excerpt(
-						sprintf(
-									wp_kses(
-										/* translators: %s: Name of current post. Only visible to screen readers */
-										__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-										array(
-											'span' => array(
-												'class' => array(),
-											),
-										)
-									),
-									get_the_title()
-								)
-
-					); ?></p>
+					<?php the_content(); ?>
 
 					</div>
 					</div>
@@ -229,7 +216,7 @@ get_header(); ?>
 
 					<div class="row latest-post">
 					<div class="medium-12 columns">
-					<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<h3 class="post-title"><?php the_title(); ?></h3>
 					<?php if ( 'post' === get_post_type() ) : ?>
 						<div class="entry-meta float-right">
 							<p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
@@ -237,22 +224,7 @@ get_header(); ?>
 							?> </strong></p>
 						</div><!-- .entry-meta -->
 				<?php endif; ?>
-					<p><?php the_excerpt(
-
-						sprintf(
-									wp_kses(
-										/* translators: %s: Name of current post. Only visible to screen readers */
-										__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-										array(
-											'span' => array(
-												'class' => array(),
-											),
-										)
-									),
-									get_the_title()
-								)
-
-					); ?></p>
+					<?php the_content(); ?>
 
 					</div>
 					</div>

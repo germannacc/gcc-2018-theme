@@ -10,7 +10,7 @@
     li {
 
       a {
-        padding: .3rem 2rem .3rem 1.2rem;
+        padding: .5rem 2rem .5rem 1.2rem;
       }
 
     }
@@ -23,14 +23,16 @@
 
   }
   }
-  $hero-height: 22vh;
-
   .hero-section {
-    height: 300px;
+    height: 60vh;
 
     img {
-      height: $hero-height;
+      width: 100%;
+      margin-left: 0;
+      height: 64vh;
+      left: 0;
     }
+
 
   }
 
@@ -44,6 +46,23 @@
 
   }
 
+  .hero-section-single {
+
+    height: 80vh;
+
+      img  {
+        height: 100vh;
+        width: 100%;
+        margin-left: 0;
+
+    }
+
+      .hero-section-text {
+        bottom: 10%;
+        padding: 0;
+  }
+}
+
   #getting-started {
 
     padding: 1rem 0  4rem 0;
@@ -55,5 +74,6 @@
 
     }
   }
+
 
   }

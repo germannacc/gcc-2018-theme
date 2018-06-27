@@ -1,5 +1,46 @@
 .latest-post {
   margin-bottom: 2rem;
   background-color: $light-gray;
-  padding: 2rem .5rem 0 .5rem;
+  padding: 2rem 1rem;
+
+  img {
+    margin-bottom: 1rem;
+    min-width: 100%;
+  }
+
+.button.primary{
+    background: $light-gray;
+    color: $primary;
+    font-size: 1.4rem;
+    font-weight: 600;
+    padding: 0;
+    margin: 1rem 0 0 0;
+    text-align: left;
+    line-height: 1.6rem;
+  }
+.button.primary:hover {
+    background: $light-gray;
+    color: $secondary;
+
+  }
+.button.primary::after {
+    font-family: FontAwesome;
+    content: "\f061";
+    border-radius: 100%;
+    color: $primary;
+    right: -2;
+    position: absolute;
+    margin-left: .4rem;
+    margin-top: -.4rem;
+    padding: .4rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+  }
+  .button.primary:hover::after {
+    background-color: $secondary;
+    color: $white;
+    padding: .4rem;
+  }
+
 }
