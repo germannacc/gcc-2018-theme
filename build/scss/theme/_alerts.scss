@@ -6,182 +6,176 @@
 }
 
 .callout.announcement {
-
-   background: $primary;
-   color: $white;
-   margin: 0 0 1rem 0;
-   padding: 1rem 4rem;
-   font-size: 1.4rem;
-
+  background: $primary;
+  color: $white;
+  margin: 0 0 1rem;
+  padding: 1rem 4rem;
+  font-size: 1.4rem;
 }
 //Small Page Panels
+
 .callout.small {
-  padding: 0 2rem;
+
   h3 {
-    font-size: 1rem;
   }
+
+  h4 {
+    padding: 1rem;
+  }
+
   a.button.primary {
     background: $light-gray;
     color: $primary;
     font-size: 1rem;
-    padding: 0 1rem;
-    margin: 0;
     text-align: left;
     line-height: 1.8rem;
     display: block;
+    padding: .5rem 0;
+    margin: 0;
   }
+
   a.button.primary:hover {
     background: $light-gray;
     color: $secondary;
-
   }
+
   a.button.primary::after {
     font-family: FontAwesome;
     content: "\f061";
     border-radius: 100%;
     color: $primary;
-    right: -2;
+    left: 10;
     position: absolute;
-    margin-left: .4rem;
-    margin-top: -.4rem;
-    padding: .4rem;
     font-size: 1.2rem;
     font-weight: 600;
     transition: background-color 0.5s ease;
   }
-   a.button.primary:hover::after {
+
+  a.button.primary:hover::after {
     background-color: $secondary;
     color: $white;
-    padding: .4rem;
   }
-  p {
-    padding: 1rem;
+
+  ul {
+    padding: .5rem 0;
   }
+
 
 }
 //Page Panels
-.callout.primary  {
+
+.callout.primary {
   background-color: $light-gray !important;
   border: 2px solid $primary !important;
-  padding: 1rem 2rem;
   color: $secondary !important;
 
+  h2, h3 {
+    display: block;
+    background-color: $primary;
+    color: $white;
+  }
+  h2 {
+    padding: 1rem 1rem 0 1rem;
+  }
   h3 {
     padding: 1rem;
-    margin: 1rem auto;
-    display: block;
-    width: 98%;
-    background-color:  $primary;
-    color: $white;
-    font-size: 1rem;
-
+  }
     h4 {
-      padding-left: 1rem;
+      padding: 1rem;
     }
 
     p {
-      padding: 0 1rem 1rem 1rem;
+      padding-left: 1rem;
     }
 
-    a {
-      color: $medium-gray;
+    ul {
+      padding: 1rem;
     }
-
-    a:hover {
-      color: $white;
-    }
-
   }
 
-     .close-button {
-       color: $secondary;
-     }
+  .close-button {
+    color: $secondary;
+  }
 
-     .close-button:hover {
-       color: $primary;
-     }
+  .close-button:hover {
+    color: $primary;
+  }
 
-     p a {
-       position: relative;
-       text-align: right;
-     }
-     p {
-       padding: 0 .5rem;
-     }
+  p a {
+    position: relative;
+    text-align: right;
+  }
 
-     .medium-8.columns {
+  p {
+  }
 
-       a.button {
-         padding-left: 1rem;
-       }
-     }
-
+  .medium-8.columns {
+    a.button {
+    }
 
 }
-
 //
-
-.callout.alert  {
+.callout.alert {
   background-color: $light-gray !important;
   border: 2px solid $primary !important;
   padding: 1rem;
   color: $secondary !important;
 
-     .close-button {
-       color: $secondary;
-     }
+  .close-button {
+    color: $secondary;
+  }
 
-     .close-button:hover {
-       color: $primary;
-     }
+  .close-button:hover {
+    color: $primary;
+  }
 
-     h3 {
-       margin-top: 0;
-       padding-top: 0;
-       }
+  h3 {
 
+  }
 }
-
-
 //Closing Announcement
-.closing  {
+.closing {
   background-color: $primary;
   border: none;
   padding: 1rem 1rem 1rem 4rem;
   color: $white;
 
-     p {
-       padding-left: 2rem;
-     }
+  p {
+    padding-left: 2rem;
+  }
 
-     p.lead {
-       font-weight: 800;
-       font-size: 1.4rem;
-       margin-top: .4rem;
-       padding-left: 2rem;
-     }
+  p.lead {
+    font-weight: 800;
+    font-size: 1.4rem;
+    margin-top: 0.4rem;
+    padding-left: 2rem;
+  }
 
-    a.button:hover {
-      border: 2px solid $black;
-      background-color: $black;
-      color: $white;
+  a.button:hover {
+    border: 2px solid $black;
+    background-color: $black;
+    color: $white;
+  }
 
-    }
-     .close-button {
-       color: $white;
-     }
+  .close-button {
+    color: $white;
+  }
 
-     .close-button:hover {
-       color: $secondary;
-     }
+  .close-button:hover {
+    color: $secondary;
+  }
 
 }
-
-.medium-6.columns {
-  margin-bottom: 1rem;
+.medium-5.columns {
   .callout.small {
-    a.button {
-      padding-left: 1rem;
+    h4 {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+    }
+    a.button.primary {
+      font-size: 1.4rem;
+      line-height: 1.8rem;
+
     }
   }
 }
