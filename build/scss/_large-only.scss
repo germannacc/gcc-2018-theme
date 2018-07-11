@@ -1,22 +1,14 @@
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
-
   .gcc-main-nav {
+    background-color: $light-gray !important;
+    margin: 1rem 0;
+    position: relative;
 
-   background-color: $light-gray !important;
-   margin: 1rem 0;
-   position: relative;
-
-  li {
-
-    a {
-
+    li {
+      a {}
     }
-
   }
-
-}
-
 
   .hero-section {
     height: 34vh;
@@ -26,81 +18,61 @@
       margin-left: 300px;
       height: 34vh;
     }
-
   }
 
   .hero-section-single {
-
     height: 80vh;
 
-      img  {
-
-        width: 100%;
-        margin-left: 0;
-        height: 80vh;
-
+    img {
+      width: 100%;
+      margin-left: 0;
+      height: 80vh;
     }
 
-      .hero-section-text {
-        bottom: 5%;
-        padding: 0;
+    .hero-section-text {
+      bottom: 5%;
+      padding: 0;
 
-        .entry-title {
-          font-size: 1.8rem;
-        }
-
+      .entry-title {
+        font-size: 1.8rem;
+      }
+    }
   }
-}
 
   #getting-started {
+    padding: 1rem 0 4rem;
 
-    padding: 1rem 0  4rem 0;
-
-    img.background  {
-
+    img.background {
       height: 65vh;
-
     }
   }
 
   .getting-started-content {
-
     h2 {
-     margin: 2rem 0;
+      margin: 2rem 0;
     }
 
     .card {
-
-
       a {
-
-      .card-section {
-
-         h3  {
-
-          font-size: 1.2rem;
-       }
+        .card-section {
+          h3 {
+            font-size: 1.2rem;
+          }
+        }
       }
-
-    }
     }
   }
 
   #highlights {
-  padding: 4rem 1rem;
+    padding: 4rem 1rem;
 
-  .highlights-content {
-
-  h2 {
-    left: 35%;
-    margin: 0 -1rem 2rem auto;
-    padding: 1rem 0;
-    width: 60%;
+    .highlights-content {
+      h2 {
+        left: 35%;
+        margin: 0 -1rem 2rem auto;
+        padding: 1rem 0;
+        width: 60%;
+      }
+    }
   }
-
-}
-
-}
-
-
 }

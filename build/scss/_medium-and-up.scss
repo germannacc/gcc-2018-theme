@@ -10,6 +10,7 @@
       }
     }
   }
+
   #main-menu {
     .gcc-main-nav {
       background-color: $light-gray !important;
@@ -30,41 +31,39 @@
   }
 
   .hero-section {
+    height: 64vh;
+    background: rgba(0, 0, 0, .1);
+    position: relative;
 
-  height: 64vh;
-  background: rgba(0, 0, 0, .1);
-  position: relative;
+    img {
+      height: 68vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      z-index: -1;
+      width: 88%;
+      margin-bottom: 0;
+      margin-left: 300px;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    }
 
-  img  {
-    height: 68vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: -1;
-    width: 88%;
-    margin-bottom: 0;
-    margin-left: 300px;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-
-  }
-
-  img.background::after {
-  /* Display and position the pseudo-element */
-  content: "";
-  position: relative;
-  /* Move the pseudo-element back away from the camera,
+    img.background::after {
+      /* Display and position the pseudo-element */
+      content: "";
+      position: relative;
+      /* Move the pseudo-element back away from the camera,
    * then scale it back up to fill the viewport.
    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-  transform: translateZ(-1px) scale(1.5);
-  /* Force the background image to fill the whole element. */
-  background-size: 100%;
-  /* Keep the image from overlapping sibling elements. */
-  z-index: -1;
-  }
+      transform: translateZ(-1px) scale(1.5);
+      /* Force the background image to fill the whole element. */
+      background-size: 100%;
+      /* Keep the image from overlapping sibling elements. */
+      z-index: -1;
+    }
 
     .hero-section-text {
       bottom: 14%;
@@ -74,18 +73,16 @@
         font-size: 2.8rem;
       }
     }
-
-
   }
 
   .hero-section-single {
     height: 100vh;
     position: relative;
     overflow: hidden;
-    background-color:  rgba(0,0,0, .4);
+    background-color: rgba(0,0,0, .4);
 
-    img  {
-      background:  no-repeat;
+    img {
+      background: no-repeat;
       background-size: cover;
       height: 100vh;
       text-align: center;
@@ -101,28 +98,28 @@
       right: 0;
       bottom: 0;
       left: 0;
+    }
 
-  }
-
-  img.background::after {
-    /* Display and position the pseudo-element */
-    content: "";
-    position: relative;
-    /* Move the pseudo-element back away from the camera,
+    img.background::after {
+      /* Display and position the pseudo-element */
+      content: "";
+      position: relative;
+      /* Move the pseudo-element back away from the camera,
      * then scale it back up to fill the viewport.
      * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-    transform: translateZ(-1px) scale(1.5);
-    /* Force the background image to fill the whole element. */
-    background-size: 100%;
-    /* Keep the image from overlapping sibling elements. */
-    z-index: -1;
+      transform: translateZ(-1px) scale(1.5);
+      /* Force the background image to fill the whole element. */
+      background-size: 100%;
+      /* Keep the image from overlapping sibling elements. */
+      z-index: -1;
+    }
+
+    .hero-section-text {
+      bottom: 10%;
+      padding: 0;
+    }
   }
 
-      .hero-section-text {
-        bottom: 10%;
-        padding: 0;
-  }
-}
   #pathways {
     .pathways-content {
       h2 {
@@ -140,7 +137,6 @@
   }
 
   #highlights {
-
     .highlights-content {
       h2 {
         font-size: 2.8rem;
@@ -157,7 +153,7 @@
   }
 
   .entry-content {
-    padding: 2rem 3rem 4rem 3rem;
+    padding: 1rem 2.5rem 2rem 2.5rem;
 
     p {
       font-size: 1.31rem;
@@ -189,12 +185,10 @@
     flex: 1;
 
     .widget p {
-      padding: 0 0;
-
+      padding: 0;
     }
 
-    p
-    {
+    p {
       margin-bottom: 1rem;
     }
   }
@@ -212,73 +206,88 @@
       text-align: left;
     }
   }
-#workforce {
-  .workforce-explore-content {
-    background-color: $light-gray;
 
-    h1 {
-      font-size: 2.8rem;
-      margin-bottom: 2rem;
+  #workforce {
+    .workforce-explore-content {
+      background-color: $light-gray;
+
+      h1 {
+        font-size: 2.8rem;
+        margin-bottom: 2rem;
+      }
+
+      .callout {
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        img {
+          margin-bottom: 1rem;
+        }
+      }
+      //workforce Small Page Panels
+      .callout.small {
+
+        h2 {
+          font-size: 1.6rem;
+        }
+
+        h3 {
+          font-size: 1.6rem;
+        }
+      }
     }
-
-    .callout {
-      h2 {
-        font-size: 1.6rem;
-      }
-
-      img {
-        margin-bottom: 1rem;
-      }
-    }
-    //workforce Small Page Panels
-    .callout.small {
-      padding: 0 2rem;
-      h2 {
-        font-size: 1.6rem;
-      }
-      h3 {
-        font-size: 1.6rem;
-      }
-  }
-}
-}
-.callout-small {
-  min-height: auto;
-}
-.callout.primary {
-  h3 {
-    font-size: 1.6rem;
   }
 
-  p {
-    padding: 0 1.2rem 1rem 1.2rem;
+  .callout-small {
+    min-height: auto;
   }
-  a.button.primary {
-    font-size: 1.6rem;
-    padding: 0 1rem;
-  }
-}
-
-.medium-6.columns {
 
   .callout.primary {
-    min-height: 100%;
-  }
-
-}
-
-.large-4.columns {
-  .callout.small {
     h3 {
-      font-size: 1.2rem;
+      font-size: 1.6rem;
     }
 
-  a.button.primary {
-    padding-left: .5rem;
+    p {
+      padding: 0 1rem;
+    }
+
+    a.button.primary {
+      font-size: 1.6rem;
+      padding: 0 1rem 1rem 1rem;
+    }
   }
 
+.entry-content {
+
+  .medium-6.columns {
+
+    padding-right: 1rem;
+
+    .callout.primary {
+      min-height: 96%;
+      margin-bottom: 1rem;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+  }
+
+.medium-7.columns {
+  padding-right: 1rem;
+}
 }
 
-}
+  .large-4.columns {
+    .callout.small {
+      h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+      }
 
+      a.button.primary {
+      }
+    }
+  }
 }

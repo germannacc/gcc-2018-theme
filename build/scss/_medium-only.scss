@@ -2,27 +2,22 @@
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
   #main-menu {
     .gcc-main-nav {
+      background-color: $light-gray !important;
+      margin: 1rem 0;
+      position: relative;
 
-     background-color: $light-gray !important;
-     margin: 1rem 0;
-     position: relative;
-
-    li {
-
-      a {
-        padding: .5rem 2rem .5rem 1.2rem;
+      li {
+        a {
+          padding: 0.5rem 2rem 0.5rem 1.2rem;
+        }
       }
-
-    }
 
       ul.vertical.menu {
-
         top: -100px;
-
       }
+    }
+  }
 
-  }
-  }
   .hero-section {
     height: 60vh;
 
@@ -32,48 +27,38 @@
       height: 64vh;
       left: 0;
     }
-
-
   }
 
-    .hero-section-text {
-          bottom: 30%;
+  .hero-section-text {
+    bottom: 30%;
 
-          .entry-title {
-            color: $white;
-            font-size: 2.4rem;
-          }
-
+    .entry-title {
+      color: $white;
+      font-size: 2.4rem;
+    }
   }
 
   .hero-section-single {
-
     height: 80vh;
 
-      img  {
-        height: 100vh;
-        width: 100%;
-        margin-left: 0;
-
+    img {
+      height: 100vh;
+      width: 100%;
+      margin-left: 0;
     }
 
-      .hero-section-text {
-        bottom: 10%;
-        padding: 0;
+    .hero-section-text {
+      bottom: 10%;
+      padding: 0;
+    }
   }
-}
 
   #getting-started {
+    padding: 1rem 0 4rem;
 
-    padding: 1rem 0  4rem 0;
-
-    img.background  {
-
+    img.background {
       height: 100vh;
-        object-fit: fit;
-
+      object-fit: fit;
     }
   }
-
-
-  }
+}

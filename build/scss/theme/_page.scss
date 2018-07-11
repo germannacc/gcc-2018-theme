@@ -20,9 +20,9 @@ article {
 }
 
 .entry-content {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 2rem 0;
   overflow: hidden;
-  max-width: 98%;
+  max-width: 99%;
   border: none;
 
   h2 {
@@ -87,14 +87,14 @@ article {
 }
 //Page Side bar
 .widget {
-  margin-bottom: 0;
+  margin-bottom: 1rem;
 
   h3 {
     background-color: $black;
     color: $white;
     width: 100%;
     padding: 1rem;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
 
@@ -109,7 +109,7 @@ article {
         padding: 0.5rem 1rem;
         font-weight: bold;
         color: $dark-gray;
-        line-height: 1.8rem;
+        line-height: 1.4rem;
       }
 
       a:hover {

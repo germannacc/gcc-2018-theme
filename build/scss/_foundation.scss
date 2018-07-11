@@ -35,7 +35,7 @@
 @import 'components/button-group';
 @import 'components/accordion-menu';
 @import 'components/accordion';
-@import 'components/badge';
+//@import 'components/badge';
 @import 'components/breadcrumbs';
 @import 'components/callout';
 @import 'components/card';
@@ -45,16 +45,16 @@
 @import 'components/dropdown';
 @import 'components/flex';
 @import 'components/responsive-embed';
-@import 'components/label';
+//@import 'components/label';
 @import 'components/media-object';
 @import 'components/menu';
 @import 'components/menu-icon';
 @import 'components/off-canvas';
-@import 'components/orbit';
+//@import 'components/orbit';
 @import 'components/pagination';
-@import 'components/progress-bar';
+//@import 'components/progress-bar';
 @import 'components/reveal';
-@import 'components/slider';
+//@import 'components/slider';
 @import 'components/sticky';
 @import 'components/switch';
 @import 'components/table';
@@ -62,26 +62,23 @@
 @import 'components/title-bar';
 @import 'components/top-bar';
 @import 'components/thumbnail';
-//@import 'components/tooltip';
+@import 'components/tooltip';
 @import 'prototype/prototype';
 
 //Theme Styles
 @import 'theme/top-bar';
-@import 'theme/branding';
-@import 'theme/hero';
-@import 'theme/slider';
 @import 'theme/quicklinks';
 @import 'theme/sidebar';
 @import 'theme/home';
-@import 'theme/workforce';
 @import 'theme/blog';
 @import 'theme/page-heading';
 @import 'theme/page';
+@import 'theme/alerts';
+@import 'theme/tabs';
+@import 'theme/workforce';
 @import 'theme/custom-wpforms';
 @import 'theme/helpers';
 @import 'theme/wp-styles';
-@import 'theme/buttons';
-@import 'theme/alerts';
 @import 'theme/footer';
 
 
@@ -141,7 +138,7 @@
   @include foundation-tabs;
   @include foundation-thumbnail;
   @include foundation-title-bar;
-  //@include foundation-tooltip;
+  @include foundation-tooltip;
   @include foundation-top-bar;
   @include foundation-visibility-classes;
   @include foundation-float-classes;

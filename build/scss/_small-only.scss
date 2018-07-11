@@ -1,35 +1,25 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
   ul.dropdown.menu {
-
-  li.mygcc {
-
-          a {
-
-            padding: .9rem 1rem;
-            font-size: 1rem;
-
-          }
-
-   }
-
+    li.mygcc {
+      a {
+        padding: 0.9rem 1rem;
+        font-size: 1rem;
+      }
+    }
   }
 
   .gcc-main-nav {
+    background-color: $light-gray !important;
+    margin: 1rem 0;
+    position: relative;
 
-   background-color: $light-gray !important;
-   margin: 1rem 0;
-   position: relative;
-
-  li {
-
-    a {
-      font-size: 1rem;
+    li {
+      a {
+        font-size: 1rem;
+      }
     }
-
   }
-
-}
 
   .hero-section {
     height: 22vh;
@@ -40,70 +30,57 @@
       background-position: bottom;
     }
 
-  .hero-section-text {
-        bottom: 10%;
-        text-shadow:  none;
+    .hero-section-text {
+      bottom: 10%;
+      text-shadow: none;
 
-        .entry-title {
-          font-size: 1.8rem;
-        }
-  }
+      .entry-title {
+        font-size: 1.8rem;
+      }
+    }
 
-  .hero-section-single {
-
-      img  {
-
+    .hero-section-single {
+      img {
         width: 100%;
         margin-left: 0;
-
-    }
+      }
 
       .hero-section-text {
         bottom: 10%;
         padding: 0;
-  }
-}
-
-  .crumbs-container {
-
-    border-bottom: 5px solid $primary;
-
-    .breadcrumbs {
-     margin-left: 4.2%;
-     padding: 0;
-     font-size: 1rem;
-
-
-      li  {
-
-        padding: 0;
-
-        a {
-           font-weight: 700;
-        }
-
       }
+    }
 
+    .crumbs-container {
+      border-bottom: 5px solid $primary;
+
+      .breadcrumbs {
+        margin-left: 4.2%;
+        padding: 0;
+        font-size: 1rem;
+
+        li {
+          padding: 0;
+
+          a {
+            font-weight: 700;
+          }
+        }
+      }
     }
   }
 
-  }
-
   .entry-content {
-padding: 1rem 1rem 10rem 1.2rem;
+    padding: 1rem 1rem 10rem 1.2rem;
   }
 
   .highlights-content {
-
-  h2 {
-    margin-bottom: 3rem;
-    top: 1%;
-    margin: 0 5% 6rem 5%;
-    padding: 1.5rem 0;
-    width: 90%;
+    h2 {
+      margin-bottom: 3rem;
+      top: 1%;
+      margin: 0 5% 6rem;
+      padding: 1.5rem 0;
+      width: 90%;
+    }
   }
-
-
-}
-
 }

@@ -1,4 +1,49 @@
 //Branding and Main Navigation
+.branding {
+  background-color: $secondary;
+  padding: 0 0 0 1rem;
+  max-width: 315px !important;
+}
+
+.calltos {
+  margin-bottom: 0;
+  font-weight: bold;
+
+  a.primary {
+    background-color: #82082A;
+  }
+
+  a.primary:hover {
+    background-color: $secondary;
+  }
+
+  a.secondary {
+    background-color: $primary;
+  }
+
+  a.secondary:hover {
+    background-color: $secondary;
+  }
+}
+
+a.logo {
+  margin: 1rem 3rem;
+  background: url("../media/germanna-logo-white-medium.png");
+  height: 60px;
+  width: 200px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.tagline {
+  color: $white;
+  font-weight: 600;
+  padding: 0 0 0 0.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
 #main-menu {//main sidebar styles
   background-color: $light-gray;
   width: 300px;

@@ -137,20 +137,20 @@ img  {
 .hero-section-plain {
 
 position: relative;
-height: 340px;
-margin-bottom: 1rem;
+height: 180px;
 padding-bottom: 0;
-background-color: $medium-gray;
-border-bottom: 10px solid $primary;
+background-color: $white;
 
 .hero-section-text {
-  color: $secondary;
+  color: $white;
+  background-color: $primary;
   z-index: 1;
   position: absolute;
-  left: 4%;
-  bottom: 10%;
-  background-color:  rgba(0,0,0, .4);
+  padding: 1rem 1rem 0 1rem;
+  left: 2%;
+  bottom: 42%;
   display: flex;
+  width: 97%;
 
   .entry-meta {
     display: block;
@@ -172,15 +172,16 @@ border-bottom: 10px solid $primary;
 }
 .crumbs-container-plain {
   padding: 0;
-  margin: 0;
-  background-color: $light-gray;
+  margin: 1rem 0 0 0;
   position: absolute;
   z-index: 0;
   bottom: 0;
-  width: 100%;
+  width: 99%;
   .breadcrumbs {
-   margin-left: 4.2%;
-   padding: 0;
+   margin-left: 2%;
+   padding: 1rem;
+   background-color: $medium-gray;
+
 
     li  {
 
