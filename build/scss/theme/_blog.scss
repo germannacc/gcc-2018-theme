@@ -8,39 +8,40 @@
     min-width: 100%;
   }
 
-.button.primary{
+  .button.primary {
     background: $light-gray;
     color: $primary;
     font-size: 1.4rem;
     font-weight: 600;
     padding: 0;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0 0;
     text-align: left;
     line-height: 1.6rem;
   }
-.button.primary:hover {
+
+  .button.primary:hover {
     background: $light-gray;
     color: $secondary;
-
   }
-.button.primary::after {
+
+  .button.primary::after {
     font-family: FontAwesome;
     content: "\f061";
     border-radius: 100%;
     color: $primary;
     right: -2;
     position: absolute;
-    margin-left: .4rem;
+    margin-left: 0.4rem;
     margin-top: -.4rem;
-    padding: .4rem;
+    padding: 0.4rem;
     font-size: 1.2rem;
     font-weight: 600;
     transition: background-color 0.5s ease;
   }
+
   .button.primary:hover::after {
     background-color: $secondary;
     color: $white;
-    padding: .4rem;
+    padding: 0.4rem;
   }
-
 }
