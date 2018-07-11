@@ -10,12 +10,7 @@
 
     <?php //get custom sidebar menu for section
      wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-     'menu' => 'PTA Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
-
-    <h3><?php echo _e('Important Information'); ?></h3>
-      <?php //get custom sidebar menu for section
-       wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-      'menu' => 'Physical Therapist Assistant Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
+     'menu' => 'PTA Main Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
 
   </nav>
 
