@@ -81,7 +81,6 @@
     'orientation-menu' => 'Orientation Menu',
     'paying-for-college-menu' => 'Paying For College Menu',
     'physical-therapist-assistant-main-menu' => 'PTA Main Menu',
-    'physical-therapist-assistant-menu' => 'Physical Therapist Assistant Menu',
     'policies-menu' => 'Policies Menu',
     'publications-menu' => 'Publications Menu',
     'presidents-office-menu' => 'Presidents Office Menu',
