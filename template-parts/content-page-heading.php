@@ -27,16 +27,16 @@ if  (has_post_thumbnail( ) )  { ?>
 
 <div class="row gutter-small expanded">
 
-<header class="hero-section">
+<header class="hero-section-plain">
 
   <?php //if the child page doesn't have a featured images
-  gcc_featured_image_on_child(); ?>
+  //gcc_featured_image_on_child(); ?>
 
   <div class="hero-section-text">
      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
   </div>
 
-  <div class="crumbs-container  show-for-medium">
+  <div class="crumbs-container-plain  show-for-medium">
 
         <nav aria-label="<?php _e('You are here:');?>" aria-label="Breadcrumb">
           <?php the_breadcrumb() ?>
