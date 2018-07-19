@@ -1,7 +1,7 @@
 <?php
 //Names the page template for each section
 /*
-Template Name: Directory Directory
+Template Name: Directory A-E
 */
 get_header(); ?>
 
@@ -18,15 +18,9 @@ get_header(); ?>
 
 			<div class="small-12 entry-content">
 
-				<div class="small-12 medium-3 columns">
-
 			<?php
 			    the_content();
 			?>
-
-		</div>
-
-     <div class="small-12 medium-9 columns">
 
 			<?php
 
@@ -38,6 +32,13 @@ $args = array(
 	'posts_per_page'         => '10',
 	'order'                  => 'DESC',
 	'orderby'   						 => 'title',
+	'tax_query' => array(
+			array(
+				'taxonomy' => 'directory_order',
+				'field' => 'slug',
+				'terms' => 'a-e'
+			)
+		)
 );
 
 // The Query
@@ -74,11 +75,7 @@ else {
 wp_reset_postdata();
 ?>
 
-</div>
-
-
 			</div>
-
 
 
 			<footer class="entry-footer">

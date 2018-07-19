@@ -1,0 +1,34 @@
+.column:last-child:not(:first-child), .columns:last-child:not(:first-child) {
+    float: left !important;
+}
+
+
+.callout.employee-profile {
+  padding: 0.4rem;
+  background-color: $white;
+  color: $body-font-color;
+
+  h3 {
+    background-color: $white;
+    color: $secondary;
+  }
+
+  h3,
+  p {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+  }
+
+  .thumbnail {
+    padding: 0;
+    border: none;
+  }
+
+  .position-info {
+    font-size: 1.2rem;
+  }
+
+  .contact-info {
+    font-size: 1rem;
+  }
+}
