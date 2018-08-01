@@ -3,16 +3,27 @@ if  (has_post_thumbnail( ) )  { ?>
 
 <header class="hero-section" role="banner">
 
-  <?php
-     get_template_part( 'template-parts/content', 'weather-alert' );
-    ?>
-
-
 <?php the_post_thumbnail();  ?>
 
   <div class="hero-section-text">
-     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-  </div>
+
+
+    <?php
+
+global $post;     // if outside the loop
+
+if ( !is_page('directory') && $post->post_parent ) {
+    // This is a subpage
+    ?>  <h1><?php esc_html_e('Faculty &amp; Staff Directory: ', 'gcc-wp-2018'); the_title(); ?></h1>
+
+<?php } else {
+    // This is not a subpage
+    the_title('<h1>', '</h1>', 'gcc-wp-2018');
+}
+?>
+
+
+   </div>
 
   <div class="row expanded crumbs-container">
 
@@ -28,23 +39,31 @@ if  (has_post_thumbnail( ) )  { ?>
 <?php  }  else {  //.pagesubbanner
 // if page doesn't have a featured image
 ?>
-  <?php
-   get_template_part( 'template-parts/content', 'weather-alert' );
-  ?>
 
 
 <div class="row gutter-small expanded">
 
 <header class="hero-section-plain">
 
-
-
   <?php //if the child page doesn't have a featured images
   //gcc_featured_image_on_child(); ?>
 
   <div class="hero-section-text">
 
-     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    <?php
+
+global $post;     // if outside the loop
+
+if ( !is_page('directory') && $post->post_parent ) {
+    // This is a subpage
+    ?>  <h1><?php esc_html_e('Faculty &amp; Staff Directory: ', 'gcc-wp-2018'); the_title(); ?></h1>
+
+<?php } else {
+    // This is not a subpage
+    the_title('<h1>', '</h1>', 'gcc-wp-2018');
+}
+?>
+
   </div>
 
   <div class="crumbs-container-plain  show-for-medium">

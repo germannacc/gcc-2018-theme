@@ -23,7 +23,6 @@
 
         <div id="skip"><a href="#main" class="show-on-focus"><?php esc_html_e('Skip to Main Content', 'gcc-wp-2018') ?></a></div>
 
-
         <div class="off-canvas-wrapper">
 
             <?php  //movile menu hidden
@@ -40,8 +39,13 @@
                       get_template_part( 'template-parts/content', 'quicklinks' );
                     ?>
 
-                    <?php
-                     get_template_part( 'template-parts/content', 'weather-alert' );
-                    ?>
+                        <?php
+                            if (is_page( 'home' ))  {
+
+                                 get_template_part( 'template-parts/content', 'weather-alert' );
+
+                            }
+
+                         ?>
 
                         <main id="main" role="main" tabindex="0">

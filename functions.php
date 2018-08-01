@@ -61,6 +61,10 @@ require get_template_directory() . '/inc/template-tags.php';
  */
 require get_template_directory() . '/inc/template-functions.php';
 /**
+ * Functions which enhance custom post type columns.
+ */
+require get_template_directory() . '/inc/custom-columns.php';
+/**
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';

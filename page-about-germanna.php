@@ -14,6 +14,9 @@ get_header(); ?>
 		get_template_part( 'template-parts/content', 'page-heading' );
  		?>
 
+		<?php //Page Heading
+		get_template_part( 'template-parts/content', 'page-alert' );
+		?>
 
 		<div class="row gutter-small expanded content-area">
 

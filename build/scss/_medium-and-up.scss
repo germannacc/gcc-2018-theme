@@ -291,3 +291,16 @@
     }
   }
 }
+.medium-4.columns {
+    .callout.primary {
+      min-height: 250px;
+      p {
+        font-size: 1.2rem;
+        padding: 0 .5rem;
+      }
+      a.primary.button {
+         font-size: 1.2rem;
+         padding-left: .5rem;
+      }
+    }
+}
