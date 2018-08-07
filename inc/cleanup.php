@@ -56,7 +56,6 @@ function gcc_wp_2018_cleanup_head() {
 	// Prevent unneccecary info from being displayed
 	add_filter( 'login_errors',create_function( '$a', 'return null;' ) );
 
-
 }
 endif;
 //remove plugin scripts
@@ -71,14 +70,12 @@ function gcc_wp_2018_deregister_style() {
 		wp_deregister_style( 'cf7cf-style' );
 		wp_deregister_style( 'dashicons' );
 		wp_deregister_style( 'fb_data_style' );
-		wp_deregister_style( 'contact-form-7' );
 		wp_deregister_style( 'jquery-ui-css' );
 		wp_deregister_style( 'wpah-front-styles'  );
 		wp_deregister_style( 'UserAccessManagerLoginForm'  );
-		wp_deregister_style( 'yoast-seo-adminbar' );
 		wp_deregister_style( 'rs-plugin-settings' );
 		wp_deregister_style( 'foundation-icon' );
-
+		wp_deregister_script( 'wp-embed' );
 
 }
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_style' );
@@ -139,4 +136,5 @@ function gcc_wp_2018_clean_shortcodes( $content ) {
 }
 add_filter('the_content', 'gcc_wp_2018_clean_shortcodes');
 endif;
+
 ?>

@@ -61,7 +61,7 @@ get_header(); ?>
 
  <div id="workforce" class="row expanded" >
 
- <div class="workforce-explore-content" data-aos="fade-up" data-aos-once="true" data-aos-offset="20">
+ <div class="workforce-explore-content">
 
 	<h1 class="text-center"><?php the_field('page_heading'); ?></h1>
 
@@ -161,7 +161,7 @@ get_header(); ?>
 <?php get_template_part( 'template-parts/content', 'workforce-newsletter' ); ?>
 
 
-<div class="row gutter-small expanded content-area" data-aos="fade-up" data-aos-once="true"  data-aos-offset="80">
+<div class="row gutter-small expanded content-area">
 
 			<div class="small-12 medium-8 large-9 entry-content" >
 

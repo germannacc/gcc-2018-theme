@@ -144,12 +144,12 @@
 
     <?php wp_footer(); ?>
 
-    <script type="text/javascript">
+    <script async>
          var _monsido = _monsido || [];
          _monsido.push(['_setDomainToken', '_zbPflN9VdD6OgWB_h7F4Q']);
          _monsido.push(['_withStatistics', 'true']);
      </script>
-     <script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
+     <script src="//cdn.monsido.com/tool/javascripts/monsido.js" async></script>
 
     </body>
 

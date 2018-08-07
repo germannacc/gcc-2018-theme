@@ -1,0 +1,70 @@
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+  font-family: $body-font-family;
+}
+
+.gsc-result-info {
+	font-size: 1.4rem !important;
+}
+
+.gs-title {
+  padding: 1rem 0;
+  color: $primary  !important;
+  font-size: 1.4rem  !important;
+  line-height: 1.8rem !important;
+  height: 2.2em !important;
+}
+.gs-title:hover {
+  color: $secondary !important;
+}
+.gs-result a.gs-visibleUrl, .gs-result .gs-visibleUrl  {
+  color: $warning !important;
+  font-size: $global-font-size;
+}
+.gsc-control-wrapper-cse table tr {
+  border: none !important;
+}
+
+.gsc-control-cse, .gsc-control-cse .gsc-table-result {
+	font-family:  $body-font-family !important;
+	font-size: 1.2rem !important;
+
+  table {
+	border-collapse: separate;
+}
+}
+
+
+.gs-result img.gs-image, .gs-result img.gs-promotion-image {
+	border: none !important;
+  height: 160px;
+  width: 130px;
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+	text-decoration: none;
+	color: $primary;
+	border: 1px solid $primary;
+	padding: .4em .8em;
+	margin-right: 1rem;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+	text-decoration: none;
+	color: $primary !important;
+  border: 1px solid $primary !important;
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+	margin-right: 8px;
+	border: 1px solid $secondary !important;
+	padding: .4em .8em;
+}
+.gsc-results:hover .gsc-cursor-box:hover .gsc-cursor-page:hover {
+
+     color: $primary !important;
+     border: 1px solid $primary !important;
+
+
+}

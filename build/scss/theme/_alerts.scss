@@ -5,12 +5,20 @@
   overflow: hidden;
 }
 
-.callout.announcement {
-  background: $primary;
-  color: $white;
-  margin: 0 0 1rem;
-  padding: 1rem 4rem;
+.callout.announcement.small {
+  background: $light-gray;
+  color: $dark-gray;
+  margin: 0 0 2rem 0;
+  padding: 1rem 4rem 1rem 1rem;
   font-size: 1.4rem;
+  border: 5px solid $black;
+
+  button.close-button  {
+      color: $dark-gray;
+  }
+  button:hover.close-button {
+    color: $primary;
+  }
 }
 //Small Page Panels
 
@@ -44,16 +52,24 @@
     content: "\f061";
     border-radius: 100%;
     color: $primary;
-    left: 10;
     position: absolute;
+    left: 10;
+    bottom: 10;
     font-size: 1.2rem;
     font-weight: 600;
     transition: background-color 0.5s ease;
+    margin-left: .8rem;
+    margin-top: -.2rem;
+    background-color: $medium-gray;
+    padding: .2rem .4rem;
+
   }
 
   a.button.primary:hover::after {
     background-color: $secondary;
     color: $white;
+    padding: .2rem .4rem;
+
   }
 
   ul {
@@ -89,7 +105,18 @@
     }
 
     ul {
-      padding: 1rem;
+      padding: 0 0 1rem 0;
+
+        li {  padding: 0;
+          a {
+            font-size: 1.2rem;
+            padding: 0;
+          }
+        }
+    }
+    table {
+      width: 96% !important;
+      margin: 0 auto 1rem auto;
     }
   }
 
@@ -181,4 +208,9 @@
 
     }
   }
+}
+
+.callout.small .small-uncollapse > .column, .callout.small .small-uncollapse > .columns {
+	padding-right: 0;
+	padding-left: 0;
 }

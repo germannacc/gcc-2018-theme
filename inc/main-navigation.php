@@ -6,7 +6,7 @@ function gcc_wp_2018_main_navigation() {
         'container' => true,             // remove menu container
         'container_class' => '',          // class of container
         'menu' => '',
-        'items_wrap' => '<ul class="vertical dropdown menu gcc-main-nav" data-dropdown-menu>%3$s</ul>' ,                  // menu name
+        'items_wrap' => '<ul id="%1$s" class="vertical dropdown menu gcc-main-nav" data-dropdown-menu>%3$s</ul>' ,                  // menu name
         'menu_class' => '',        // adding custom nav class
         'theme_location' => 'main-navigation',  // where it's located in the theme
         'before' => '',                   // before each link <a>
@@ -74,4 +74,15 @@ function change_submenu_class($menu) {
   return $menu;
 }
 add_filter('wp_nav_menu','change_submenu_class');
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+
+//highlights sidebar active page menu
+function special_nav_class ($classes, $item) {
+    if (in_array('current-page-ancestor', $classes) || in_array('current-menu-item', $classes) ){
+        $classes[] = 'active ';
+    }
+    return $classes;
+}
 ?>

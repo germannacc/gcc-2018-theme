@@ -10,7 +10,7 @@ $highlights_heading = get_field('highlights_heading');
 
 <h2  class="text-center"><?php the_field('highlights_heading'); ?></h2>
 
-<div id="4080701046" class="large-8 columns collapse" data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-once="true">
+<div id="4080701046" class="large-8 columns collapse">
 
   <?php get_template_part( 'template-parts/content', 'latest-post' );
   ?>
@@ -20,7 +20,7 @@ $highlights_heading = get_field('highlights_heading');
 
 </div>
 
-<div class="large-4 columns collapse"  data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-once="true">
+<div class="large-4 columns collapse">
 
   <?php get_template_part( 'template-parts/content', 'trending' );
   ?>

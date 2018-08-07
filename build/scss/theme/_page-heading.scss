@@ -152,6 +152,10 @@ background-color: $white;
   display: flex;
   width: 97%;
 
+  h1.entry-title {
+    font-size: 2.125rem;
+  }
+
   .entry-meta {
     display: block;
     width: 100%;

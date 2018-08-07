@@ -1,10 +1,8 @@
 <?php
-
  $callto_button_1_text = get_field('callto_button_1_text', 'option');
  $callto_button_1_url = get_field('callto_button_1_url', 'option');
  $callto_button_2_text = get_field('callto_button_2_text', 'option');
  $callto_button_2_url = get_field('callto_button_2_url', 'option');
-
 ?>
 
 <div class="button-group hide-for-large expanded calltos">
@@ -16,13 +14,11 @@
  <?php endif; ?>
 </div>
 
-
 <div class="title-bar hide-for-large expanded">
-
-<div class="title-bar-left">
-  <button class="float-right" type="button" data-open="main-menu"><span class="fa fa-bars fa-2x" aria-hidden="true"></span></button>
-  <a href="<?php echo esc_url( home_url() )  ?>" class="logo"><?php bloginfo( 'name' ); ?></a>
-</div>
+  <div class="title-bar-left">
+    <button class="float-right" type="button" data-open="popout-mobile"><span class="fa fa-bars fa-2x" aria-hidden="true"></span></button>
+    <a href="<?php echo esc_url( home_url() )  ?>" class="logo"><?php bloginfo( 'name' ); ?></a>
+  </div>
 </div>
 
 <!--quicklinks bar with search hide on medium -->

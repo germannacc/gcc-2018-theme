@@ -45,7 +45,7 @@ get_header(); ?>
       ); ?>
 
 
-      <?php           $general_description = get_field('general_description');
+      <?php      $general_description = get_field('general_description');
       					$event_description = get_field('event_description');
       					$event_image = get_field('event_image');
       					$event_date = get_field('event_date');

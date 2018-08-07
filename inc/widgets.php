@@ -236,26 +236,8 @@ register_sidebar(array(
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
-	'id' => 'dental-hygiene-widgets',
-	'name' => __( 'Dental Hygiene Sidebar widgets', 'gcc-wp-2018' ),
-	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
-	'before_widget' => '<div class="widget">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>',
-	));
-register_sidebar(array(
 	'id' => 'dental-widgets',
 	'name' => __( 'Dental Sidebar widgets', 'gcc-wp-2018' ),
-	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
-	'before_widget' => '<div class="widget">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>',
-	));
-register_sidebar(array(
-	'id' => 'dental-assisting-widgets',
-	'name' => __( 'Dental Assisting Sidebar widgets', 'gcc-wp-2018' ),
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
@@ -354,15 +336,6 @@ register_sidebar(array(
 register_sidebar(array(
 	'id' => 'gainful-employment-widgets',
 	'name' => __( 'Gainful Employment Sidebar widgets', 'gcc-wp-2018' ),
-	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
-	'before_widget' => '<div class="widget">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>',
-	));
-register_sidebar(array(
-	'id' => 'ged-testing-widgets',
-	'name' => __( 'GED Testing Sidebar widgets', 'gcc-wp-2018' ),
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',

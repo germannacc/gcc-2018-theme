@@ -29,7 +29,7 @@ get_header(); ?>
 								$general_description = get_field('general_description');
 								?>
 
-						<div class="row latest-post">
+						<div class="callout primary small">
 
 							<?php the_title('<h2>', '</h2>');  ?>
 

@@ -39,8 +39,16 @@ ul.dropdown.menu {
     }
     a::selection {
       background-color: $medium-gray;
+      color: $primary;
     }
+
   }
+      .active > a {
+        background-color: $medium-gray;
+        color: $primary;
+      
+       }
+
   li:hover a {
     background-color: $medium-gray;
   }

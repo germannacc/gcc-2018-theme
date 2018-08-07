@@ -76,6 +76,8 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 
+
+
 		/**
 		 * Add support for core custom logo.
 		 *

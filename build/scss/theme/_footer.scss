@@ -63,12 +63,25 @@
         line-height: 1.4rem;
         font-weight: 700;
         color: $light-gray;
+        padding: .4rem .4rem;
       }
       a:hover {
         color: $white;
         text-decoration: underline;
       }
   }
+
+  .active > a {
+    background-color: $medium-gray;
+    color: $primary;
+
+   }
+
+   .active > a:hover {
+     background-color: $medium-gray;
+     color: $dark-gray;
+
+    }
 
 }
 

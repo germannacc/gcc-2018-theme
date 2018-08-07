@@ -2,7 +2,7 @@
  $tips_url = get_field('tips_url ', 'option');
  ?>
 
-<div class="off-canvas position-right mobile-menu" id="main-menu" data-off-canvas>
+<div class="off-canvas position-right mobile-menu" id="popout-mobile" data-off-canvas>
   <!-- Your menu or Off-canvas content goes here -->
 
 <div class="row expanded columns close-mobile">

@@ -10,8 +10,7 @@
       }
     }
   }
-
-  #main-menu {
+#main-menu  {
     .gcc-main-nav {
       background-color: $light-gray !important;
       margin: 1rem 0;
@@ -153,7 +152,7 @@
   }
 
   .entry-content {
-    padding: 1rem 2.5rem 2rem 2.5rem;
+    padding: 2rem 2.5rem 4rem 2.5rem;
 
     p {
       font-size: 1.31rem;
@@ -241,6 +240,7 @@
 
   .callout-small {
     min-height: auto;
+
   }
 
   .callout.primary {
@@ -253,7 +253,7 @@
     }
 
     a.button.primary {
-      font-size: 1.6rem;
+      font-size: 1.2rem;
       padding: 0 1rem 1rem 1rem;
     }
   }
@@ -265,8 +265,13 @@
     padding-right: 1rem;
 
     .callout.primary {
-      min-height: 96%;
+      min-height: 300px;
       margin-bottom: 1rem;
+
+      a.button.primary {
+        font-size: 1.2rem;
+        padding-left: 1rem;
+      }
     }
 
     ul {
@@ -282,11 +287,13 @@
   .large-4.columns {
     .callout.small {
       h3 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         margin-bottom: 1rem;
       }
 
       a.button.primary {
+        padding-left: 1rem;
+        font-size: 1.2rem;
       }
     }
   }
@@ -294,6 +301,9 @@
 .medium-4.columns {
     .callout.primary {
       min-height: 250px;
+      h3 {
+        font-size: 1.4rem;
+      }
       p {
         font-size: 1.2rem;
         padding: 0 .5rem;

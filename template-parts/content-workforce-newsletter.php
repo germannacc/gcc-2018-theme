@@ -1,4 +1,4 @@
-<div class="simple-subscription-form" data-aos="fade-up" data-aos-once="true" data-aos-offset="20">
+<div class="simple-subscription-form">
   <form action="<?php the_field('sign_up_box_action_url', 113);?>" method="post" >
     <div class="row expanded">
 

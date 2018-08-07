@@ -11,14 +11,24 @@ get_header(); ?>
  	while ( have_posts() ) : the_post(); ?>
 
 
+  <?php //Page Heading
+  get_template_part( 'template-parts/content', 'page-heading' );
+  ?>
+
+
  		<div class="row gutter-small expanded content-area">
 
       <div class="small-12 columns">
+
+        <div class="entry-content">
 
 
       <?php
           the_content();
       ?>
+
+    </div>
+
 
     </div>
 

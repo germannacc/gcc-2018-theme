@@ -22,20 +22,20 @@
   }
 
   .hero-section {
-    height: 22vh;
+    height: 38vh;
 
     img {
-      height: 40vh;
+      height: 44vh;
       background-color: $medium-gray;
       background-position: bottom;
     }
 
     .hero-section-text {
-      bottom: 10%;
+      bottom: 24%;
       text-shadow: none;
 
       .entry-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
     }
 
@@ -56,6 +56,7 @@
 
       .breadcrumbs {
         margin-left: 4.2%;
+        margin-top: 1rem;
         padding: 0;
         font-size: 1rem;
 
@@ -71,7 +72,7 @@
   }
 
   .entry-content {
-    padding: 1rem 1rem 10rem 1.2rem;
+    padding: 2rem 1rem;
   }
 
   .highlights-content {

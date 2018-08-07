@@ -17,6 +17,6 @@
 </div>
 
 <?php //custom department widgets
-dynamic_sidebar( 'ged-testing-widgets' ); ?>
+dynamic_sidebar( 'testing-services-widgets' ); ?>
 
 </aside>

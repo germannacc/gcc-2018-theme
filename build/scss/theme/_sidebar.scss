@@ -44,7 +44,7 @@ a.logo {
   text-align: center;
   font-size: 1rem;
 }
-#main-menu {//main sidebar styles
+#main-menu, #menu-container {//main sidebar styles
   background-color: $light-gray;
   width: 300px;
   //do not change these styles
@@ -131,6 +131,12 @@ a.logo {
       }
     }
 
+    .active > a {
+      background-color: $medium-gray;
+      color: $primary;
+
+     }
+
     li:hover a {//top menu hover
       background-color: $medium-gray;
     }
@@ -149,12 +155,17 @@ a.logo {
     margin: 0 auto 1rem auto;
   }
   a.career-coach {//sidebar ad
-    display: block;
-    text-indent: -9999px;
-    background: url("../media/career-search-callto.jpg") center center no-repeat;
+    background: center center no-repeat;
     width: 280px;
     height: 280px;
     margin: 0 auto 1rem auto;
+    display: block;
+
+    span {
+      text-indent: -9999px;
+      display: block;
+
+    }
   }
 
   .social-icons {

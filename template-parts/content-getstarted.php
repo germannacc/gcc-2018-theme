@@ -21,7 +21,7 @@ $paying_box_url = get_field('paying_box_url');
 ?>
 <div id="getting-started" class="row expanded gutter-small expanded">
 
-<div class="getting-started-content"  data-aos="fade-up" data-aos-anchor-placement="top-center"  data-aos-once="true">
+<div class="getting-started-content">
 
   <h2 class="text-center text-shadow"><?php the_field('get_started_heading'); ?></h2>
 

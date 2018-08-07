@@ -17,8 +17,32 @@ get_header(); ?>
 		<!--Page Content-->
 		<div class="row gutter-small expanded content-area">
 
-			<?php //Page with Sidebar Template
-			get_template_part( 'template-parts/content', 'fullpage' ); ?>
+			<div class="small-12 entry-content">
+
+			<?php
+			    the_content();
+			?>
+
+			<script async>
+		(function() {
+			var cx = '004235661866003871264:hsv9lloki5k';
+			var gcse = document.createElement('script');
+			gcse.type = 'text/javascript';
+			gcse.async = true;
+			gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+			var s = document.getElementsByTagName('script')[0];
+			s.parentNode.insertBefore(gcse, s);
+		})();
+	</script>
+
+			</div>
+
+
+			<footer class="entry-footer">
+			  <?php gcc_wp_2018_entry_footer(); ?>
+			</footer><!-- .entry-footer -->
+
+
 
 
 		</div><!--.pagecontent-->
