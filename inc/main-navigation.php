@@ -70,7 +70,7 @@ function gcc_wp_2018_calltos() {
 	));
 }
 function change_submenu_class($menu) {
-  $menu = preg_replace('/ class="sub-menu"/','/ class="vertical menu nested" /',$menu);
+  $menu = preg_replace('/ class="sub-menu"/',' class="vertical menu nested" ',$menu);
   return $menu;
 }
 add_filter('wp_nav_menu','change_submenu_class');
