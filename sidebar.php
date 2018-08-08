@@ -10,9 +10,12 @@
   $callto_button_1_url = get_field('callto_button_1_url', 'option');
   $callto_button_2_text = get_field('callto_button_2_text', 'option');
   $callto_button_2_url = get_field('callto_button_2_url', 'option');
-  $career_coach_portal_text = get_field('career_coach_portal_text', 'option');
-  $career_coach_portal_url = get_field('career_coach_portal_url', 'option');
-  $career_coach_portal_image = get_field('career_coach_portal_image', 'option');
+  $sidebar_ad_1_text = get_field('sidebar_ad_1_text', 'option');
+  $sidebar_ad_1_url = get_field('sidebar_ad_1_url', 'option');
+  $sidebar_ad_1_image = get_field('sidebar_ad_1_image', 'option');
+  $sidebar_ad_2_text = get_field('sidebar_ad_2_text', 'option');
+  $sidebar_ad_2_url = get_field('sidebar_ad_2_url', 'option');
+  $sidebar_ad_2_image = get_field('sidebar_ad_2_image', 'option');
   $tips_url = get_field('tips_url ', 'option');
 ?>
     <div class="off-canvas position-left reveal-for-large" id="main-menu">
@@ -44,6 +47,7 @@
                     <a href="<?php echo esc_url( home_url() )?>" class="logo">
                         <?php bloginfo( 'name' ); ?>
                     </a>
+
                     <p class="tagline lead">
                         <?php bloginfo( 'description' ); ?>
                     </p>
@@ -58,7 +62,7 @@
 
                   <?php
 
-$image = get_field('career_coach_portal_image', 'option');
+$image = get_field('sidebar_ad_1_image', 'option');
 
 if( !empty($image) ):
 
@@ -69,25 +73,48 @@ if( !empty($image) ):
 	$caption = $image['caption'];
 
 	// thumbnail
-	$size = 'thumbnail';
+	$size = 'large';
 	$thumb = $image['sizes'][ $size ];
 	$width = $image['sizes'][ $size . '-width' ];
 	$height = $image['sizes'][ $size . '-height' ];
 
 ?>
 
-  <a href="<?php echo $career_coach_portal_url; ?>" class="career-coach"><span><?php echo $career_coach_portal_text; ?></span>
+  <a href="<?php echo $sidebar_ad_1_url; ?>" class="career-coach"><span><?php echo $sidebar_ad_1_text; ?></span>
 
     <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 
   </a>
 
-
 <?php endif; ?>
 
+<?php
 
+$image = get_field('sidebar_ad_2_image', 'option');
 
-                  <a href="<?php echo esc_url( home_url( '/alumni/alumni-membership-form/', 'gcc-wp-2018' ) ); ?>" class="menu-banner"><?php esc_html_e('Germanna Alumni', 'gcc-wp-2018'); ?></a>
+if( !empty($image) ):
+
+// vars
+$url = $image['url'];
+$title = $image['title'];
+$alt = $image['alt'];
+$caption = $image['caption'];
+
+// thumbnail
+$size = 'large';
+$thumb = $image['sizes'][ $size ];
+$width = $image['sizes'][ $size . '-width' ];
+$height = $image['sizes'][ $size . '-height' ];
+
+?>
+
+<a href="<?php echo $sidebar_ad_2_url; ?>" class="menu-banner"><span><?php echo $sidebar_ad_2_text; ?></span>
+
+<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+
+</a>
+
+<?php endif; ?>
 
                   <?php if( !empty($tips_url) ): ?>
 

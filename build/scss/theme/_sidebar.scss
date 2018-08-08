@@ -146,26 +146,26 @@ a.logo {
 .menu-extras {//items that appear under main navigation
   position: relative;
 
-  a.menu-banner {//sidebar ad
+  a.menu-banner, a.career-coach {
     display: block;
-    text-indent: -9999px;
-    background: url("../media/alumni-menu-banner.jpg") center center no-repeat;
-    width: 280px;
-    height: 560px;
-    margin: 0 auto 1rem auto;
-  }
-  a.career-coach {//sidebar ad
     background: center center no-repeat;
-    width: 280px;
-    height: 280px;
     margin: 0 auto 1rem auto;
-    display: block;
-
     span {
       text-indent: -9999px;
       display: block;
 
     }
+
+  }
+
+  a.menu-banner {//sidebar ad
+    width: 280px;
+    height: 600px;
+  }
+  a.career-coach {//sidebar ad
+    width: 280px;
+    height: 280px;
+
   }
 
   .social-icons {
