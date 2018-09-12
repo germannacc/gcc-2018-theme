@@ -1,4 +1,4 @@
-<aside class="small-12 medium-4 large-3 gutter-small right page-nav" >
+<aside class="small-12 large-3 gutter-small page-nav" >
 
   <div class="widget">
 

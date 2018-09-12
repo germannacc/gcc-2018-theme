@@ -32,9 +32,14 @@
   }
 }
 
+.menu-icon {
+  margin: 1.5rem 1rem 0 1rem !important;
+  height: 22px !important;
+  width: 32px !important;
+}
+
 .mobile-menu {
-  height: 100% !important;
-  overflow: scroll;
+  border-bottom: 5px solid $primary;
 
   .button-group {
     margin-bottom: 0;
@@ -56,21 +61,46 @@
     padding-right: 1rem;
     padding-top: 0.3rem;
     font-size: 1.2rem;
+    border: none;
+  }
+
+  .branding {
+    max-width: 100% !important;
   }
 
   .tagline {
     p.lead {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin-top: 1rem;
     }
   }
 
-
   [type=text] {
-
     width: 100%;
     height: 49.8px;
+    color: $dark-gray;
+    padding-left: 1rem;
+  }
 
+  [type=color],
+  [type=date],
+  [type=datetime-local],
+  [type=datetime],
+  [type=email],
+  [type=month],
+  [type=number],
+  [type=password],
+  [type=search],
+  [type=tel],
+  [type=text],
+  [type=time],
+  [type=url],
+  [type=week],
+  textarea {
+    -webkit-box-shadow: inset 0 1px 2px rgba(2,4,7,.6);
+    box-shadow: inset 0 1px 2px rgba(2,4,7,.6);
+    font-family: inherit;
+    color: $dark-gray;
   }
 
   ul.dropdown.menu {
@@ -133,54 +163,48 @@
 
   .mobile-search {
     margin-top: 0;
+    margin-bottom: 0;
+
+    input[placeholder] {
+      color: $dark-gray;
+    }
+
+    input {
+      box-shadow: 5px 10px $dark-gray;
+    }
   }
 }
 
 .mobile-nav {
-  position: relative;
-  display: block;
-  margin: 1rem 0 2rem;
-}
-
-.mobile-extras {
-  position: relative;
-
-  .social-icons {
-    margin: 0 auto 2rem;
-    padding: 0 1.7rem;
-    width: 86%;
-
+  ul {
     li {
+      background-color: $light-gray;
+
       a {
-        padding: 0.4rem 0.2rem;
-
-        span {
-          color: $primary;
-          padding: 0.3rem 0.6rem;
-          border: 1px solid $primary;
-          border-radius: 100%;
-          text-align: center;
-
-          span {
-            display: none;
-          }
-        }
-
-        span:hover {
-          color: $dark-gray;
-          border: 1px solid $dark-gray;
-        }
+        border-bottom: 1px solid $dark-gray;
       }
     }
-  }
 
-  .tips-logo {
-    background: url("../media/tipslogo.png");
-    height: 52px;
-    width: 132px;
-    text-indent: -9999px;
-    overflow: hidden;
-    display: block;
-    margin: 0 30% 10%;
+    li:hover {
+      background-color: $medium-gray;
+    }
+
+    li.mobile-quicklink {
+      background-color: $white;
+
+      a {
+        color: $secondary !important;
+      }
+
+      a:hover {
+        color: $primary !important;
+      }
+    }
+
+    li.give-button {
+      a {
+        border-radius: 0;
+      }
+    }
   }
 }

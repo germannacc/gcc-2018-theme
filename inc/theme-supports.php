@@ -45,8 +45,6 @@ add_filter('show_admin_bar', '__return_false');
     '#eee',
     '#444'
 );
-
-
 // without parameter -> Post Thumbnail (as set by theme using set_post_thumbnail_size())
 the_post_thumbnail('thumbnail');       // Thumbnail (default 150px x 150px max)
 the_post_thumbnail('medium');          // Medium resolution (default 300px x 300px max)
@@ -75,9 +73,6 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
-
-
-
 		/**
 		 * Add support for core custom logo.
 		 *
@@ -95,5 +90,4 @@ add_action( 'after_setup_theme', 'gcc_wp_2018_setup' );
 
 //add editor style
 add_editor_style( 'dist/css/editor-style.css' );
-
 ?>

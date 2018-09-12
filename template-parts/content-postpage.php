@@ -31,14 +31,14 @@
 
       </div>
       <div class="medium-7 columns">
-          <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <?php if ( 'post' === get_post_type() ) : ?>
-        <div class="entry-meta float-right">
-          <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
-          gcc_wp_2018_posted_on();
-          ?> </strong>  | <?php gcc_wp_2018_entry_footer(); ?></p>
+        <div class="entry-meta alignright">
+          <p><strong><?php
+          gcc_wp_2018_posted_on(); ?> | <?php  gcc_wp_2018_entry_footer(); ?>
+          </strong></p>
         </div><!-- .entry-meta -->
      <?php endif; ?>
+          <h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       <p><?php the_excerpt(
         sprintf(
         			wp_kses(
@@ -62,13 +62,13 @@
 
       <div class="row latest-post">
       <div class="medium-12 columns">
-<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-<?php if ( 'post' === get_post_type() ) : ?>
-        <div class="entry-meta float-right">
-          <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
-          gcc_wp_2018_posted_on(); ?></strong> | <?php gcc_wp_2018_entry_footer(); ?></p>
-        </div><!-- .entry-meta -->
-    <?php endif; ?>
+        <?php if ( 'post' === get_post_type() ) : ?>
+                <div class="entry-meta align-right">
+                  <p><strong><?php
+                  gcc_wp_2018_posted_on(); ?> | <?php  gcc_wp_2018_entry_footer(); ?> </strong></p>
+                </div><!-- .entry-meta -->
+            <?php endif; ?>
+<h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       <p><?php the_excerpt(
 
         sprintf(
@@ -93,14 +93,6 @@
 
 <?php endwhile;  ?>
 
-<span class="alignleft">
-<?php previous_posts_link( '<span class="fa fa-chevron-left" aria-hidden="true"></span>  Previous', 'gcc-wp-2018' ); ?>
-</span>
-<span class="alignright">
-<?php next_posts_link( 'Next<span class="fa fa-chevron-right" aria-hidden="true"></span>', 'gcc-wp-2018' ); ?>
-</span>
-
-
 
       <?php wp_reset_postdata(); ?>
 
@@ -109,6 +101,12 @@
       <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'gcc-wp-2018' ); ?></p>
 
       <?php endif; ?>
+
+
+      <div class="nav-previous alignleft"><?php next_posts_link( '<span class="fa fa-chevron-left" aria-hidden="true" style="padding-right: .5rem;"></span>Older posts' ); ?></div>
+      <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts <span class="fa fa-chevron-right" aria-hidden="true" style="padding-left: .5rem;"></span>' ); ?>
+      </div>
+
 
 
 </div>

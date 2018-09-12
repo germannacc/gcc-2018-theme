@@ -1,0 +1,95 @@
+@media print {
+ /* All your print styles go here */
+ body, article, *, {
+       width: 100% !important;
+       margin: 0;
+       padding: 0;
+       page-break-after: avoid;
+
+}
+ h1,h2,h3, p {
+ 	   font-size: 85%;
+ 	   page-break-after: avoid;
+ }
+ article, main {
+   page-break-after: avoid;
+   width: 100% !important;
+ }
+ article a {
+       font-weight: bolder;
+       text-decoration: none;
+    }
+    article a[href^=http]:after {
+       content:" <" attr(href) "> ";
+    }
+    article a[href^="#"]:after {
+    content: "";
+ }
+ a:after > img {
+    content: "";
+ }
+ ul, table, img, .callout {
+    page-break-inside: avoid;
+ }
+ .hero-section  {
+   max-height: 50px !important;
+   margin-top: 0 !important;
+ }
+ .hero-section-text {
+   padding: 0 !important;
+   left: 0 !important;
+   top: 0 !important;
+ }
+h2:after {
+   border-bottom: none !important;
+    border-bottom-style: none;
+    border: solid white !important;
+ }
+ p {
+ 	padding-bottom: 5px;
+ }
+.columns {
+  display: block !important;
+  width: 100% !important;
+}
+.callout {
+  padding: 20px !important;
+  margin-bottom: 30px !important;
+  margin-top: 10px !important;
+  min-height: auto !important;
+  page-break-after: avoid;
+}
+   h2, h3, p, a {
+    padding: 0 !important;
+  }
+  a.button.primary {
+    display: none !important;
+  }
+
+.callout.small {
+  border: solid black !important;
+  min-height: auto !important;
+  page-break-after: avoid;
+
+  a.button.primary {
+    display: none !important;
+  }
+
+}
+.hero-section img, footer, .page-nav, .top-bar, .quicklinks ul, .sb-search, .crumbs-container, img, .social-icons, .close-button, .branding, #main-menu, .calltos a.button.secondary, .mobile-menu {
+  display: none !important;
+}
+
+ a[href]:after {
+     content: none !important;
+     display: none;
+   }
+
+ @page {
+       margin: 0;
+  }
+
+
+
+
+}

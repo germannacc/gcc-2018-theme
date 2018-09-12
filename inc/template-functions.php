@@ -4,7 +4,6 @@
  *
  * @package gccwp-2018
  */
-
 /**
  * Adds custom classes to the array of body classes.
  *
@@ -20,7 +19,6 @@ function gcc_wp_2018_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'body_class', 'gcc_wp_2018_body_classes' );
-
 /**
  * Add a pingback url auto-discovery header for singularly identifiable articles.
  */

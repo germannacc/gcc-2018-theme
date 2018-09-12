@@ -6,66 +6,58 @@
  *
  * @package gccwp-2018
  */
+get_header();
+$post_page_featured_image = get_field('post_page_featured_image', 'option');
+$post_page_title= get_field('post_page_title', 'option');
 
-get_header(); ?>
+	// vars
+	$url = $post_page_featured_image['url'];
+	$title = $post_page_featured_image['title'];
+	$alt = $post_page_featured_image['alt'];
+	$caption = $post_page_featured_image['caption'];
 
-	<?php
+	// thumbnail
+	$size = 'large';
+	$thumb = $post_page_featured_image['sizes'][ $size ];
+	$width = $post_page_featured_image['sizes'][ $size . '-width' ];
+	$height = $post_page_featured_image['sizes'][ $size . '-height' ];
+?>
+
+    <?php
 		if ( have_posts() ) : ?>
 
-		<header class="hero-section">
+        <header class="hero-section hero-section-single">
 
-		      <img width="3333" height="2500" src="<?php esc_html_e('https://germannacc.staging.wpengine.com/wp-content/uploads/2018/05/gcc-fac-rooftop-featured-image.jpg', 'gcc-wp-2018'); ?>" alt="<?php the_title(); ?>" sizes="(max-width: 3333px) 100vw, 3333px"   />
+            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 
-		  <div class="hero-section-text">
-				<?php
-				  the_archive_title('<h1>', '</h1>');
-					the_archive_description( '<div class="archive-description">', '</div>' );
-				?>
-			</div>
+            <div class="hero-section-text" style="width: 75%;">
+                <h1>
+                    <?php echo $post_page_title; ?>
+                </h1>
+                <p>
+                    <?php echo get_the_archive_title(); ?>
+                </p>
 
-		  <div class="row expanded crumbs-container">
+            </div>
 
-				<nav aria-label="<?php esc_html_e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-		        <ul class="breadcrumbs">
+            <div class="row expanded crumbs-container show-for-medium">
 
-		            <?php $home_page = get_the_title( get_option('page_on_front'));
-								$post_title = get_the_archive_title();
+                <nav aria-label="<?php _e('You are here:');?>" role="navigation">
 
-								 ?>
-		            <li role="menuitem">
-		                <a href="<?php echo get_site_url(); ?>">
-		                    <?php echo $home_page; ?>
-		                </a>
-		            </li>
-								<li role="menuitem">
-										<a href="<?php esc_html_e('/highlights/', 'gcc-wp-2018');?>">
-												<?php _e('Highlights', 'gcc-wp-2018'); ?>
-										</a>
-								</li>
-								<li role="menuitem">
-										<a href="<?php  echo get_permalink( get_option( 'page_for_posts' ) ); ?>">
-												<?php echo $post_title; ?>
-										</a>
-								</li>
-		            <li role="menuitem" class="disabled">
-		                <?php the_title(); ?>
-		            </li>
+                    <?php gcc_wp_2018_archive_breadcrumbs(); ?>
 
+                </nav>
 
-		        </ul>
-		    </nav>
+            </div>
 
-		  </div>
+        </header>
 
-		</header>
+        <!--Page Content-->
+        <div class="row gutter-small expanded content-area">
 
+            <div class="small-12 medium-9 entry-content">
 
- <!--Page Content-->
-				 <div class="row gutter-small expanded content-area">
-
-				 <div class="small-12 medium-9 entry-content">
-
-								<?php
+                <?php
 								/* Start the Loop */
 								while ( have_posts() ) : the_post();
 
@@ -77,22 +69,37 @@ get_header(); ?>
 
 								?>
 
-  		<div class="row latest-post">
-				<div class="medium-12 columns">
+                    <div class="row latest-post">
+                        <div class="medium-12 columns">
 
 
-	    <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
+                            <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
 
-			<h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <h3 class="post-title">
+                                <a href="<?php the_permalink(); ?>">
+                                    <?php the_title(); ?>
+                                </a>
+                            </h3>
 
-			<?php if ( 'post' === get_post_type() ) : ?>
-	      <div class="entry-meta float-right">
-	        <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
-	        gcc_wp_2018_posted_on();
-	        ?> </strong></p>
-	      </div><!-- .entry-meta -->
-	  	<?php endif; ?>
-			<p><?php the_excerpt(
+                            <?php if ( 'post' === get_post_type() ) : ?>
+                            <div class="entry-meta">
+                                <p>
+                                    <strong>
+							<?php
+	        		gcc_wp_2018_posted_on();
+						?>
+						<?php if (is_tag()) {
+						# code...
+						_e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
+					</strong></p>
+                                <?php } ?>
+                                </strong>
+                                </p>
+                            </div>
+                            <!-- .entry-meta -->
+                            <?php endif; ?>
+                            <p>
+                                <?php the_excerpt(
 
 				sprintf(
 						 wp_kses(
@@ -108,31 +115,28 @@ get_header(); ?>
 					 )
 
 			); ?>
-		</p>
-			 </div>
-			 </div>
+                            </p>
+                        </div>
+                    </div>
 
-			<?php endwhile;
+                    <?php endwhile;
 
 			the_posts_navigation(); ?>
 
-		</div>
-	 </div>
+            </div>
 
 
-		<?php	else :
+            <?php //Template Sidebar
+		 	 get_template_part( '/sidebars/archive-sidebar' ); ?>
+
+            <?php	else :
 
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
 
-  <?php //Template Sidebar
- 	 get_template_part( '/sidebars/archive-sidebar' ); ?>
 
-	 <footer class="entry-footer">
-		 <?php gcc_wp_2018_entry_footer(); ?>
-	 </footer><!-- .entry-footer -->
+        </div>
 
-
-<?php
+        <?php
 get_footer();

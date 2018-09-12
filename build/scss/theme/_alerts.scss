@@ -8,14 +8,15 @@
 .callout.announcement.small {
   background: $light-gray;
   color: $dark-gray;
-  margin: 0 0 2rem 0;
+  margin: 0 0 2rem;
   padding: 1rem 4rem 1rem 1rem;
   font-size: 1.4rem;
   border: 5px solid $black;
 
-  button.close-button  {
-      color: $dark-gray;
+  button.close-button {
+    color: $dark-gray;
   }
+
   button:hover.close-button {
     color: $primary;
   }
@@ -23,9 +24,7 @@
 //Small Page Panels
 
 .callout.small {
-
-  h3 {
-  }
+  h3 {}
 
   h4 {
     padding: 1rem;
@@ -38,7 +37,7 @@
     text-align: left;
     line-height: 1.8rem;
     display: block;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
     margin: 0;
   }
 
@@ -53,30 +52,26 @@
     border-radius: 100%;
     color: $primary;
     position: absolute;
-    left: 10;
-    bottom: 10;
+    left: 10px;
+    bottom: 10px;
     font-size: 1.2rem;
     font-weight: 600;
     transition: background-color 0.5s ease;
-    margin-left: .8rem;
+    margin-left: 0.8rem;
     margin-top: -.2rem;
     background-color: $medium-gray;
-    padding: .2rem .4rem;
-
+    padding: 0.2rem 0.4rem;
   }
 
   a.button.primary:hover::after {
     background-color: $secondary;
     color: $white;
-    padding: .2rem .4rem;
-
+    padding: 0.2rem 0.4rem;
   }
 
   ul {
-    padding: .5rem 0;
+    padding: 0.5rem 0;
   }
-
-
 }
 //Page Panels
 
@@ -85,63 +80,68 @@
   border: 2px solid $primary !important;
   color: $secondary !important;
 
-  h2, h3 {
+  h2,
+  h3 {
     display: block;
     background-color: $primary;
     color: $white;
   }
+
   h2 {
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 0;
   }
+
   h3 {
     padding: 1rem;
   }
-    h4 {
-      padding: 1rem;
-    }
 
-    p {
-      padding-left: 1rem;
-    }
-
-    ul {
-      padding: 0 0 1rem 0;
-
-        li {  padding: 0;
-          a {
-            font-size: 1.2rem;
-            padding: 0;
-          }
-        }
-    }
-    table {
-      width: 96% !important;
-      margin: 0 auto 1rem auto;
-    }
-  }
-
-  .close-button {
-    color: $secondary;
-  }
-
-  .close-button:hover {
-    color: $primary;
-  }
-
-  p a {
-    position: relative;
-    text-align: right;
+  h4 {
+    padding: 1rem;
   }
 
   p {
+    padding-left: 1rem;
   }
 
-  .medium-8.columns {
-    a.button {
-    }
+  ul {
+    padding: 0 0 1rem;
 
+    li {
+      padding: 0;
+
+      a {
+        font-size: 1.2rem;
+        padding: 0;
+      }
+    }
+  }
+
+  table {
+    width: 96% !important;
+    margin: 0 auto 1rem;
+  }
+}
+
+.close-button {
+  color: $secondary;
+}
+
+.close-button:hover {
+  color: $primary;
+}
+
+p a {
+  position: relative;
+  text-align: right;
+}
+
+p {}
+
+.medium-8.columns {
+  a.button {}
 }
 //
+
 .callout.alert {
   background-color: $light-gray !important;
   border: 2px solid $primary !important;
@@ -156,18 +156,16 @@
     color: $primary;
   }
 
-  h3 {
-
-  }
+  h3 {}
 }
 //Closing Announcement
+
 .closing {
-  background-color: rgba(2, 4, 7, .6) !important;
+  background-color: $secondary;
   border: none;
-  padding: 1rem 0 !important;
+  padding: 1rem;
   color: $white;
   margin-bottom: 0 !important;
-
 
   p {
     font-size: 1.2rem;
@@ -179,6 +177,7 @@
     font-weight: 800;
     font-size: 2rem;
     padding-bottom: 0;
+    margin-top: 0.3rem;
   }
 
   a.button:hover {
@@ -195,22 +194,45 @@
     color: $secondary;
   }
 
+  .button.hollow {
+    border: 2px solid $white;
+    color: $white;
+    margin-top: 1rem;
+  }
 }
+
 .medium-5.columns {
   .callout.small {
     h4 {
       font-size: 1.4rem;
       line-height: 1.8rem;
     }
+
     a.button.primary {
       font-size: 1.4rem;
       line-height: 1.8rem;
-
     }
   }
 }
 
-.callout.small .small-uncollapse > .column, .callout.small .small-uncollapse > .columns {
-	padding-right: 0;
-	padding-left: 0;
+.callout.small .small-uncollapse > .column,
+.callout.small .small-uncollapse > .columns {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.callout.small.primary {
+  .accordion {
+    padding: 0;
+
+    .accordion-item a {
+      padding: 1rem;
+    }
+
+    .accordion-item {
+      .accordion-content {
+        padding: 1rem 0;
+      }
+    }
+  }
 }

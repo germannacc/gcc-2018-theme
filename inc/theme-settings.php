@@ -1,6 +1,5 @@
 <?php
 if( function_exists('acf_add_options_page') ) {
-
 	acf_add_options_page(array(
 		'page_title' 	=> 'GCC 2018 Settings',
 		'menu_title'	=> 'GCC 2018 Settings',
@@ -18,16 +17,10 @@ if( function_exists('acf_add_options_page') ) {
 		'position' => 3
 	));
 }
-?>
-<?php
 function gcc_pagination() {
     global $wp_query;
     echo paginate_links();
 }
-
-//display featured images on child pages
-
-add_action( 'gcc_wp_2018_before_post', 'gcc_featured_image_on_child' );
 function gcc_featured_image_on_child () {
     if( is_page() ) {
         $parents = get_post_ancestors( get_the_ID() );
@@ -35,5 +28,6 @@ function gcc_featured_image_on_child () {
         echo get_the_post_thumbnail($id, 'full');
     }
 }
-
- ?>
+//display featured images on child pages
+add_action( 'gcc_wp_2018_before_post', 'gcc_featured_image_on_child' );
+?>

@@ -1,4 +1,5 @@
 //Branding and Main Navigation
+
 .branding {
   background-color: $secondary;
   padding: 0 0 0 1rem;
@@ -8,6 +9,12 @@
 .calltos {
   margin-bottom: 0;
   font-weight: bold;
+
+  a {
+    font-size: 1.1rem !important;
+    padding-top: 1.05rem;
+    padding-bottom: 1.05rem;
+  }
 
   a.primary {
     background-color: #82082A;
@@ -44,7 +51,11 @@ a.logo {
   text-align: center;
   font-size: 1rem;
 }
-#main-menu, #menu-container {//main sidebar styles
+
+#main-menu,
+#menu-container,
+#popout-menu {
+  //main sidebar styles
   background-color: $light-gray;
   width: 300px;
   //do not change these styles
@@ -54,12 +65,12 @@ a.logo {
   position: absolute;
   z-index: 99999;
 
-
-  .gcc-main-nav { //sidebar navigation styles
+  .gcc-main-nav {
+    //sidebar navigation styles
     background-color: $light-gray;
     margin: 1rem 0;
     position: relative;
-     //top menu
+    //top menu
     li {
       a {
         background-color: transparent;
@@ -84,7 +95,8 @@ a.logo {
         background-color: $medium-gray;
       }
 
-      a::selection { //keeps top menu item highlighted when over pop out menu
+      a::selection {
+        //keeps top menu item highlighted when over pop out menu
         background-color: $medium-gray;
       }
       //pop out menu
@@ -95,7 +107,8 @@ a.logo {
         top: -50px;
         left: 300px;
 
-        li {  //puts menu items into columns
+        li {
+          //puts menu items into columns
           width: 100% !important;
           width: 36%;
           max-width: 360px !important;
@@ -126,7 +139,8 @@ a.logo {
         }
       }
 
-      li:hover a { //popout menu hover
+      li:hover a {
+        //popout menu hover
         background-color: $medium-gray;
       }
     }
@@ -134,38 +148,42 @@ a.logo {
     .active > a {
       background-color: $medium-gray;
       color: $primary;
+    }
 
-     }
-
-    li:hover a {//top menu hover
+    li:hover a {
+      //top menu hover
       background-color: $medium-gray;
     }
   }
 }
 
-.menu-extras {//items that appear under main navigation
+.menu-extras {
+  //items that appear under main navigation
   position: relative;
 
-  a.menu-banner, a.career-coach {
+  a.career-coach,
+  a.menu-banner {
     display: block;
     background: center center no-repeat;
-    margin: 0 auto 1rem auto;
+    margin: 0 auto 1rem;
+
     span {
       text-indent: -9999px;
       display: block;
-
     }
-
   }
 
-  a.menu-banner {//sidebar ad
+  a.menu-banner {
+    //sidebar ad
     width: 280px;
-    height: 600px;
+    height: 300px;
+    margin-bottom: 2rem;
   }
-  a.career-coach {//sidebar ad
+
+  a.career-coach {
+    //sidebar ad
     width: 280px;
     height: 280px;
-
   }
 
   .social-icons {
@@ -189,12 +207,12 @@ a.logo {
           color: $dark-gray;
           border: 1px solid $dark-gray;
         }
+
         span.icon-text {
           display: block;
           text-indent: -99999px;
           display: none;
         }
-
       }
     }
   }

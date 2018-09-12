@@ -1,0 +1,22 @@
+.label {
+  font-size: 1.4rem;
+  padding: 1rem 1.8rem;
+  margin: 0 1rem 2rem 0;
+  position: relative;
+  display: inline-block;
+  border-radius: 25px;
+
+  strong {
+    font-weight: 900 !important;
+  }
+}
+
+.label.primary {
+  background-color: $primary;
+  color: $white;
+}
+
+.label.secondary {
+  background-color: $secondary;
+  color: $white;
+}

@@ -12,7 +12,6 @@
     'admissions-menu' => 'Admissions Menu',
     'advising-menu' => 'Advising Menu',
     'arts-sciences-menu' => 'Arts Sciences Menu',
-    'automotive-menu' => 'Automotive Menu',
     'available-test-menu' => 'Available Test Menu',
     'awards-menu' => 'Awards Menu',
     'bookstore-menu' => 'Bookstore Menu',
@@ -91,5 +90,13 @@
     'veterans-sidebar-menu' => 'Veterans Menu',
     'welcome-day-menu' => 'Welcome Day Menu',
     'workforce-menu' => 'Workforce Menu',
-    'workforce-home-menu' => 'Workforce Home Menu'
+    'workforce-home-menu' => 'Workforce Home Menu',
+     //pathways
+       'business-pathway-menu' => 'Business Pathway Menu',
+       'health-sciences-pathway-menu' => 'Health Sciences Pathway Menu',
+       'humanities-arts-pathway-menu' => 'Humanities and Arts Pathway Menu',
+       'it-technical-studies-pathway-menu' => 'IT and Technical Studies Pathway Menu',
+       'publis-service-pathway-menu' => 'Public Service Pathway Menu',
+       'science-engineering-pathway-menu' => 'Science and Engineering Pathway Menu',
+       'social-sciences-education-pathway-menu' => 'Socials Sciences and Education Pathway Menu'
   ) ); ?>

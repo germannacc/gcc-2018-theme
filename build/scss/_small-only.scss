@@ -1,5 +1,6 @@
 /* Small only */
 @media screen and (max-width: 39.9375em) {
+//popout links
   ul.dropdown.menu {
     li.mygcc {
       a {
@@ -8,7 +9,7 @@
       }
     }
   }
-
+//main navigation links
   .gcc-main-nav {
     background-color: $light-gray !important;
     margin: 1rem 0;
@@ -20,35 +21,57 @@
       }
     }
   }
-
+  //page heading
   .hero-section {
-    height: 38vh;
+    height: auto;
+    display: block;
+    position: relative;
 
     img {
-      height: 44vh;
-      background-color: $medium-gray;
-      background-position: bottom;
+      height: auto;
+
     }
 
     .hero-section-text {
-      bottom: 24%;
-      text-shadow: none;
-
+       position: relative;
+       display: block;
+       margin: 0;
+       left: 0;
+       background-color: $secondary;
       .entry-title {
-        font-size: 2rem;
+        font-size: 1.2rem;
+        padding: .8rem .5rem;
       }
     }
 
-    .hero-section-single {
-      img {
-        width: 100%;
-        margin-left: 0;
+    .crumbs-container {
+    position: relative;
+    display: block;
+    left: 0;
+    margin: 0;
+    padding: 0;
+
+    .breadcrumbs {
+     margin-left: 0;
+     padding: 0;
+
+      li  {
+
+        padding: 0;
+
+        a {
+           font-weight: 700;
+           padding: 0;
+        }
+
       }
 
-      .hero-section-text {
-        bottom: 10%;
-        padding: 0;
+      li.disabled {
+        color: $dark-gray;
       }
+
+    }
+
     }
 
     .crumbs-container {
@@ -71,8 +94,70 @@
     }
   }
 
+  .hero-section-single {
+    height: auto;
+    display: block;
+    position: relative;
+
+    img  {
+
+      height: auto;
+      width: 100%;
+
+  }
+
+  .hero-section-text {
+    position: relative;
+    display: block;
+    margin: 0;
+    left: 0;
+    padding: .5rem 1rem;
+
+    .entry-title {
+      font-size: 1.1rem;
+    }
+    .entry-meta {
+      padding: .5em 0;
+    }
+
+  }
+  }
+//page and post content
   .entry-content {
+
     padding: 2rem 1rem;
+
+    h2 {
+      font-size: 1.6rem;
+      margin-top: 1rem;
+    }
+
+    .callout.primary   {
+
+      margin-bottom: 1rem;
+
+    h2, h3 {
+      font-size: 1.4rem;
+    }
+
+    p {
+      padding-left: .5rem;
+      font-size: 1rem;
+    }
+
+      a.button.primary {
+       padding-left: .5rem;
+       font-size: 1rem;
+       width: 92%;
+
+    }
+
+  }
+
+  ul {
+    margin-bottom: 0;
+  }
+
   }
 
   .highlights-content {
@@ -84,4 +169,18 @@
       width: 90%;
     }
   }
+
+  .marketing-site-footer
+{
+
+   p {
+    text-align: center;
+   }
+
+  ul {
+    margin-bottom: 0;
+  }
+
+}
+
 }

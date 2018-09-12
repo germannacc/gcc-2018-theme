@@ -1,0 +1,20 @@
+
+<html>
+  <head>
+      <script src="https://s3-us-west-2.amazonaws.com/cc-widget-v2/ccWidget.js"></script>
+      <link rel="stylesheet" type="text/css" href="https://s3-us-west-2.amazonaws.com/cc-widget-v2/ccWidget.css">
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.onload = function() {
+        var subdomain = 'germanna'; // subdomain
+        var level = 'county'; // state or county atm
+        var geoids = ['11001','24009','24017','24031','24033','24037','51003','51013','51033','51047','51057','51059','51061','51065','51075','51079','51085','51087','51097','51099','51101','51107','51109','51113','51137','51145','51153','51157','51159','51177','51179','51193','51510','51600','51610','51630','51683','51685','51760']; // state id or county ids, must be an array
+        var onets = ['11-9161.00','17-3029.10','49-2094.00']; // onets, must be an array
+        var legacy = false; //specify version, must be Boolean
+        ccWidget.render(subdomain, level, geoids, onets, legacy);
+      }
+    </script>
+    <div id='cc-widget-careers'></div>
+  </body>
+</html>

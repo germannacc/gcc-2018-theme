@@ -1,14 +1,9 @@
 <?php // if the page has a featured image
 if  (has_post_thumbnail( ) )  { ?>
 
-<header class="hero-section" role="banner">
+<header class="hero-section">
 
-  <?php
-     get_template_part( 'template-parts/content', 'weather-alert' );
-    ?>
-
-
-<?php the_post_thumbnail();  ?>
+<?php the_post_thumbnail('', array ('alt' => false));  ?>
 
   <div class="hero-section-text">
      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
@@ -16,7 +11,7 @@ if  (has_post_thumbnail( ) )  { ?>
 
   <div class="row expanded crumbs-container">
 
-        <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" aria-label="Breadcrumb">
+        <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
           <?php the_breadcrumb() ?>
         </nav>
 
@@ -28,15 +23,10 @@ if  (has_post_thumbnail( ) )  { ?>
 <?php  }  else {  //.pagesubbanner
 // if page doesn't have a featured image
 ?>
-  <?php
-   get_template_part( 'template-parts/content', 'weather-alert' );
-  ?>
-
 
 <div class="row gutter-small expanded">
 
 <header class="hero-section-plain">
-
 
 
   <?php //if the child page doesn't have a featured images

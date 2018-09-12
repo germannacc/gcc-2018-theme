@@ -2,9 +2,7 @@
 
   <div class="widget">
 
-    <h3><?php //gets parent page title
-    echo empty( $post->post_parent ) ? get_the_title( $post->ID ) : get_the_title( $post->post_parent );
-    ?></h3>
+    <h3><?php _e('Physical Therapist Assistant', 'gcc-wp-2018'); ?></h3>
 
   <nav class="department-links">
 

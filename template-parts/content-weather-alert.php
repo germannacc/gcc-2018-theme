@@ -7,10 +7,10 @@
 //Column 1 Heading
 if( !empty($closing_announcement_text) ): ?>
 
-<div class="callout small closing hide-for-small-only hide-for-medium-only" data-closable>
+<div class="callout small closing" data-closable>
   <div class="row expanded">
 
-      <div class="medium-8 large-9 columns">
+      <div class="medium-7 large-8 columns gutter-small">
 
         <?php //Alert Text
         if( !empty($weather_alert_heading) ): ?>
@@ -21,7 +21,7 @@ if( !empty($closing_announcement_text) ): ?>
 
       </div>
 
-      <div class="medium-4 large-3 columns">
+      <div class="medium-4 large-3 columns gutter-small">
 
         <?php //Alert Button
         if( !empty($sign_up_for_alerts_text) ): ?>
@@ -35,11 +35,15 @@ if( !empty($closing_announcement_text) ): ?>
 
       </div>
 
-   </div>
+      <div class="medium-1 large-2 columns">
 
-  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-    <span aria-hidden="true">&times;</span>
-  </button>
+        <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+          <span aria-hidden="true">&times;</span>
+        </button>
+
+      </div>
+
+   </div>
 
 </div>
 <?php endif; ?>

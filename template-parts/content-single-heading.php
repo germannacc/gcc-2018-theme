@@ -12,19 +12,26 @@ if  ( has_post_thumbnail())  { ?>
 
 <div class="row gutter-small expanded">
 
-<header class="hero-section-single">
+<header class="hero-section hero-section-single">
 
-    <?php the_post_thumbnail(); ?>
+  <?php the_post_thumbnail('', array ('alt' => false));  ?>
 
     <div class="hero-section-text">
        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
        <?php if ( 'post' === get_post_type() ) : ?>
-         <div class="entry-meta float-right">
-           <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
-           gcc_wp_2018_posted_on();
-           ?> </strong> | <?php gcc_wp_2018_entry_footer(); ?></p>
+         <div class="entry-meta">
+           <p><strong><?php
+           gcc_wp_2018_posted_on(); ?> | <?php gcc_wp_2018_entry_footer(); ?>
+           </strong>
+         </p>
+         <p>
+            <?php echo get_the_tag_list(); ?>
+
+         </p>
+
          </div>
      <?php endif; ?>
+
     </div>
 
   <div class="row expanded crumbs-container show-for-medium">
@@ -62,21 +69,22 @@ if  ( has_post_thumbnail())  { ?>
 ?>
 
 
-<div class="row gutter-small expanded">
+<div class="row expanded">
 
-<header class="hero-section-single">
+<header class="hero-section-plain">
 
-      <img width="3333" height="2500" src="<?php esc_html_e('https://germannacc.staging.wpengine.com/wp-content/uploads/2018/05/gcc-fac-rooftop-featured-image.jpg', 'gcc-wp-2018'); ?>" alt="<?php the_title(); ?>" sizes="(max-width: 3333px) 100vw, 3333px"   />
+  <?php //if the child page doesn't have a featured images
+  //gcc_featured_image_on_child(); ?>
 
   <div class="hero-section-text">
-     <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-     <?php if ( 'post' === get_post_type() ) : ?>
-       <div class="entry-meta float-right">
-         <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
-         gcc_wp_2018_posted_on();
-         ?> </strong> | <?php gcc_wp_2018_entry_footer(); ?></p>
-       </div>
-   <?php endif; ?>
+          <h1 class="entry-title"><?php the_title(); ?></h1>
+  </div>
+
+  <div class="post-meta">
+    <?php if ( 'post' === get_post_type() ) : ?>
+        <p><strong></span><?php gcc_wp_2018_posted_on();
+        ?> | <?php gcc_wp_2018_entry_footer(); ?> </strong></p>
+  <?php endif; ?>
   </div>
 
   <div class="crumbs-container-plain">

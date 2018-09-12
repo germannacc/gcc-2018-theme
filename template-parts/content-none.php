@@ -51,5 +51,7 @@
 	</div>
 	</div>
 
+	<?php //Template Sidebar
+ 	 get_template_part( '/sidebars/archive-sidebar' ); ?>
 
 </div>

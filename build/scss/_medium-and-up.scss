@@ -10,7 +10,8 @@
       }
     }
   }
-#main-menu  {
+
+  #main-menu {
     .gcc-main-nav {
       background-color: $light-gray !important;
       margin: 1rem 0;
@@ -30,24 +31,25 @@
   }
 
   .hero-section {
-    height: 64vh;
-    background: rgba(0, 0, 0, .1);
+    height: 58vh;
     position: relative;
 
     img {
-      height: 68vh;
+      height: 58vh;
       display: flex;
       align-items: center;
       justify-content: center;
-      position: fixed;
+      position: relative;
       z-index: -1;
-      width: 88%;
+      width: 100%;
       margin-bottom: 0;
-      margin-left: 300px;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: contain;
     }
 
     img.background::after {
@@ -65,7 +67,7 @@
     }
 
     .hero-section-text {
-      bottom: 14%;
+      bottom: 18%;
 
       .entry-title {
         color: $white;
@@ -77,45 +79,45 @@
   .hero-section-single {
     height: 100vh;
     position: relative;
-    overflow: hidden;
-    background-color: rgba(0,0,0, .4);
+    padding: 0 0 8rem;
 
     img {
-      background: no-repeat;
-      background-size: cover;
       height: 100vh;
-      text-align: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: fixed;
-      z-index: -1;
       width: 100%;
-      margin-bottom: 0;
-      margin-left: 300px;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-    }
-
-    img.background::after {
-      /* Display and position the pseudo-element */
-      content: "";
-      position: relative;
-      /* Move the pseudo-element back away from the camera,
-     * then scale it back up to fill the viewport.
-     * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
-      transform: translateZ(-1px) scale(1.5);
-      /* Force the background image to fill the whole element. */
-      background-size: 100%;
-      /* Keep the image from overlapping sibling elements. */
-      z-index: -1;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: contain;
     }
 
     .hero-section-text {
-      bottom: 10%;
-      padding: 0;
+      color: $white;
+      z-index: 1;
+      position: absolute;
+      left: 4%;
+      bottom: 12%;
+      letter-spacing: 0.2rem;
+      padding: 1rem 2rem;
+      background-color: rgba(0,0,0, .6);
+      width: 75%;
+
+      .entry-title {
+        color: $white;
+      }
+
+      .entry-meta {
+        display: block;
+        width: 100%;
+        padding: 1rem 0;
+
+        a {
+          color: $white;
+        }
+
+        a:hover {
+          color: $secondary;
+          text-decoration: underline;
+        }
+      }
     }
   }
 
@@ -152,7 +154,7 @@
   }
 
   .entry-content {
-    padding: 2rem 2.5rem 4rem 2.5rem;
+    padding: 1rem 2.5rem 12rem 2rem;
 
     p {
       font-size: 1.31rem;
@@ -181,7 +183,7 @@
   }
 
   .page-nav {
-    flex: 1;
+    flex: none;
 
     .widget p {
       padding: 0;
@@ -226,7 +228,6 @@
       }
       //workforce Small Page Panels
       .callout.small {
-
         h2 {
           font-size: 1.6rem;
         }
@@ -240,7 +241,6 @@
 
   .callout-small {
     min-height: auto;
-
   }
 
   .callout.primary {
@@ -254,35 +254,33 @@
 
     a.button.primary {
       font-size: 1.2rem;
-      padding: 0 1rem 1rem 1rem;
+      padding: 0 1rem 1rem;
     }
   }
 
-.entry-content {
+  .entry-content {
+    .medium-6.columns {
+      padding-right: 1rem;
 
-  .medium-6.columns {
+      .callout.primary {
+        min-height: 300px;
+        margin-bottom: 1rem;
 
-    padding-right: 1rem;
+        a.button.primary {
+          font-size: 1.2rem;
+          padding-left: 1rem;
+        }
+      }
 
-    .callout.primary {
-      min-height: 300px;
-      margin-bottom: 1rem;
-
-      a.button.primary {
-        font-size: 1.2rem;
-        padding-left: 1rem;
+      ul {
+        padding-left: 0;
       }
     }
 
-    ul {
-      padding-left: 0;
+    .medium-7.columns {
+      padding-right: 1rem;
     }
   }
-
-.medium-7.columns {
-  padding-right: 1rem;
-}
-}
 
   .large-4.columns {
     .callout.small {
@@ -298,19 +296,23 @@
     }
   }
 }
+
 .medium-4.columns {
-    .callout.primary {
-      min-height: 250px;
-      h3 {
-        font-size: 1.4rem;
-      }
-      p {
-        font-size: 1.2rem;
-        padding: 0 .5rem;
-      }
-      a.primary.button {
-         font-size: 1.2rem;
-         padding-left: .5rem;
-      }
+  .callout.primary {
+    min-height: 250px;
+
+    h3 {
+      font-size: 1.4rem;
     }
+
+    p {
+      font-size: 1.2rem;
+      padding: 0 0.5rem;
+    }
+
+    a.primary.button {
+      font-size: 1.2rem;
+      padding-left: 0.5rem;
+    }
+  }
 }

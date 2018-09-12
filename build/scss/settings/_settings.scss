@@ -112,8 +112,8 @@ $breakpoints: (
   small: 0,
   medium: 640px,
   large: 1024px,
-  xlarge: 1200px,
-  xxlarge: 1440px,
+  xlarge: 1440px,
+  xxlarge: 1920px,
 );
 $print-breakpoint: medium;
 $breakpoint-classes: (small medium large xlarge xxlarge);
@@ -459,8 +459,8 @@ $label-background: $primary-color;
 $label-color: $white;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
-$label-font-size: 0.8rem;
-$label-padding: 0.33333rem 0.5rem;
+$label-font-size: 1.2rem;
+$label-padding: 1rem 0.5rem;
 $label-radius: $global-radius;
 
 // 22. Media Object

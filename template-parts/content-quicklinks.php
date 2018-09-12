@@ -16,17 +16,18 @@
 
 <div class="title-bar hide-for-large expanded">
   <div class="title-bar-left">
-    <button class="float-right" type="button" data-open="popout-mobile"><span class="fa fa-bars fa-2x" aria-hidden="true"></span></button>
+    <button class="menu-icon float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"></button>
     <a href="<?php echo esc_url( home_url() )  ?>" class="logo"><?php bloginfo( 'name' ); ?></a>
   </div>
 </div>
+
 
 <!--quicklinks bar with search hide on medium -->
 <div class="row expanded quicklinks top-bar show-for-large">
 
   <div class="small-12 medium-12 large-7 columns quicklinks-box collapse">
 
-  <div class="top-bar-left collapse">
+  <div class="top-bar-left collapse stacked-for-medium">
 
     <?php  //function located in inc/main-navigation.php
     gcc_wp_2018_quicklinks_bar(); ?>
@@ -38,7 +39,7 @@
 
 <div class="small-12 medium-12 large-5 columns quicklinks-box collapse">
 
-<div class="small-12 large-8 columns collapse">
+<div class="small-12 medium-6 large-8 columns collapse">
 
   <?php //Start of Important Links Widget Container
     if ( is_active_sidebar( 'quicklinks-widgets' ) ) : ?>
@@ -48,7 +49,7 @@
 
 </div>
 
- <div class="small-12 large-4 columns collapse" style="padding: 0;">
+ <div class="small-12 medium-4 large-4 columns collapse right-calltos">
 
    <div class="top-bar-right float-right">
 

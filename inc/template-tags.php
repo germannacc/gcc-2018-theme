@@ -13,25 +13,18 @@ if ( ! function_exists( 'gcc_wp_2018_posted_on' ) ) :
 	 */
 	function gcc_wp_2018_posted_on() {
 		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
-
-
 		$time_string = sprintf( $time_string,
 			esc_attr( get_the_date( 'c' ) ),
 			esc_html( get_the_date() )
-
 		);
-
 		$posted_on = sprintf (
 			/* translators: %s: post date. */
 			 esc_html_x( ' %s', 'post date', 'gcc-wp-2018' ),
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
-
 		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
-
 	}
 endif;
-
 if ( ! function_exists( 'gcc_wp_2018_entry_footer' ) ) :
 	/**
 	 * Prints HTML with meta information for the categories, tags and comments.
@@ -45,7 +38,6 @@ if ( ! function_exists( 'gcc_wp_2018_entry_footer' ) ) :
 				/* translators: 1: list of categories. */
 				printf( '<strong><span class="cat-links">' . esc_html__( 'Posted in %1$s', 'gcc-wp-2018' ) . '</span></strong> ', $categories_list ); // WPCS: XSS OK.
 			}
-
 			/* translators: used between list items, there is a space after the comma */
 			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'gcc-wp-2018' ) );
 			if ( $tags_list ) {
@@ -110,9 +102,10 @@ endif;
 // Replaces the excerpt "Read More" text by a link
 function new_read_more($more) {
        global $post;
-	return '...<br/>
-	  <a class="button primary" href="'. get_permalink($post->ID) . '">Read the full article</a>';
+	return '...';
 }
+//...<br/>
+// <a class="button primary" href="'. get_permalink($post->ID) . '">Read the full article</a>
 add_filter('excerpt_more', 'new_read_more');
 
 //custom previous/next links
@@ -137,7 +130,7 @@ function the_breadcrumb() {
         echo '<ul class="breadcrumbs">';
         echo '<li>
 				<a href="';
-        echo get_option('home');
+        echo home_url();
         echo '">';
         _e('Home', 'gcc-wp-2018');
         echo '</a></li>';
@@ -211,4 +204,28 @@ function the_breadcrumb() {
 /*
 * Credit: http://www.thatweblook.co.uk/blog/tutorials/tutorial-wordpress-breadcrumb-function/
 */
+
+//previous post next post links
+
+function getPrevNext(){  ?>
+
+	<div class="row expanded collapsed" style="margin-top:  2rem; padding: 1rem 1rem 0 1rem; background-color: #f5f5f5;">
+		<?php if (strlen(get_previous_post()->post_title) > 0) { ?>
+		<div class="small-12 large-4 columns" style="padding: 0;">
+	  <span class="button hollow primary alignleft"><?php previous_post_link('%link', '<span class="fa fa-chevron-left" aria-hidden="true" style="padding-right: .5rem;"></span>
+	Previous post', TRUE); ?></span>
+		</div>
+ 	<?php } ?>
+		<div class="small-12 large-4 columns" style="padding: 0;">
+		<span class="button hollow secondary" style="width: 100%; text-align: center;"><a href="<?php esc_html_e('https://germannacc.staging.wpengine.com/highlights/', 'gcc-wp-2018')?>"><?php _e('All highlights', 'gcc-wp-2018'); ?></a></span>
+		</div>
+		<?php if (strlen(get_next_post()->post_title) > 0) { ?>
+		<div class="small-12 large-4 columns" style="padding: 0;">
+	  <span class="button hollow primary alignright"><?php next_post_link('%link', 'Next post<span class="fa fa-chevron-right" aria-hidden="true" style="padding-left: .5rem;"></span>', TRUE); ?></span>
+	 </div>
+	 <?php } ?>
+	</div>
+
+<?php
+}
 ?>

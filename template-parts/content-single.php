@@ -32,6 +32,13 @@
 ); ?>
 
 
+<?php getPrevNext();
+
+get_the_category_list();
+
+?>
+
+
 <?php
 
  // If comments are open or we have at least one comment, load up the comment template.

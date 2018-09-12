@@ -7,7 +7,7 @@
           'Upcoming events', 'gcc-wp-2018' ); ?>
     </a>
 
-      <h3 class="text-center"><?php esc_html_e('Latest stories', 'gcc-wp-2018') ?></h3>
+      <h3 class="text-center"><?php esc_html_e('Germanna Today', 'gcc-wp-2018') ?></h3>
 
       <?php //Latest Stories Widget Container
         if ( is_active_sidebar( 'latest-stories-widgets' ) ) : ?>
@@ -18,8 +18,6 @@
       <h3 class="text-center"><?php esc_html_e('Latest tweets', 'gcc-wp-2018') ?></h3>
 
       <a class="twitter-timeline" data-lang="en" data-tweet-limit="3" data-link-color="#a30a36" href="https://twitter.com/germannacc?ref_src=twsrc%5Etfw"><?php _e('Germanna Tweets - Curated tweets by TwitterDev', 'gcc-wp-2018') ?></a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-
 
 </div>
 

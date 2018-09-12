@@ -7,7 +7,6 @@
  **/
 function gcc_wp_2018_search_form( $form ) {
     $form = ?>
-
     <form role="search" method="get" id="searchform" action="<?php echo get_home_url(); esc_html('/search_gcse/', 'gcc-wp-2018')?>">
         <input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
         <input type="hidden" name="ie" value="utf8" title="hidden" />
@@ -18,8 +17,6 @@ function gcc_wp_2018_search_form( $form ) {
         <input id="searchsubmit" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit')?>">
         <span class="sb-icon-search"></span>
     </form>
-
-
 <?php
 
 return $form;

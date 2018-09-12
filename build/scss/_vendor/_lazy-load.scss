@@ -1,0 +1,27 @@
+.lazy-hidden,.entry img.lazy-hidden, img.thumbnail.lazy-hidden {
+	background-color: #ffffff;
+	background-image: url('loading.gif');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+figure.wp-block-image img.lazy-hidden {
+	min-width: 150px;
+}
+
+.lazy-hidden,.entry img.lazy-hidden, img.thumbnail.lazy-hidden {
+    opacity: 0;
+    background-color: #ffffff;
+}
+figure.wp-block-image img.lazy-hidden {
+	min-width: 150px;
+}
+.lazy-loaded {
+    -webkit-transition: opacity 0.3s;
+    -moz-transition: opacity 0.3s;
+    -ms-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s;
+    opacity: 1 !important;
+}
+
+.clear{clear:both}.nobr{white-space:nowrap}.lazy-hidden,.entry img.lazy-hidden,img.thumbnail.lazy-hidden{background-color:#fff}

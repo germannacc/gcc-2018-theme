@@ -33,17 +33,20 @@ button.wpforms-submit:hover {
 }
 
 .wpforms-field-container {
-  ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-      color: $dark-gray;
-      opacity: 1; /* Firefox */
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $dark-gray;
+    opacity: 1;
+    /* Firefox */
   }
 
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
     color: $dark-gray;
   }
 
-  ::-ms-input-placeholder { /* Microsoft Edge */
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
     color: $dark-gray;
   }
-
 }

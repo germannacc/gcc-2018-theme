@@ -1,0 +1,43 @@
+{
+  "name": "gcc-wp-2018",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.23.6",
+    "fg-loadcss": "^2.0.1",
+    "foundation-sites": "^6.4.4-rc1",
+    "grunt": "^1.0.3",
+    "grunt-wp-i18n": "^1.0.2",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.1.0",
+    "gulp-cache": "^1.0.2",
+    "gulp-cli": "^2.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.2.0",
+    "gulp-connect-php": "^1.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-plumber": "^1.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulpfile-generator": "^1.3.3",
+    "motion-ui": "^1.2.3",
+    "siimple-colors": "^0.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mattrhummel/gcc-2018-theme-wp.git"
+  },
+  "author": "Matt Hummel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mattrhummel/gcc-2018-theme-wp/issues"
+  },
+  "homepage": "https://github.com/mattrhummel/gcc-2018-theme-wp#readme"
+}

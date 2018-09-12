@@ -1,4 +1,4 @@
-<div class="row column expanded no-gutter">
+<div class="row column expanded no-gutter" id="slider">
 
     <?php putRevSlider( 'highlight-carousel5' ); ?>
 

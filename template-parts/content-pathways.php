@@ -3,14 +3,16 @@
 $pathways_heading = get_field('pathways_heading');
 $pathway_image = get_field('pathway_image');
 $pathway_url = get_field('pathway_url');
- ?>
+$programs_button_url = get_field('programs_button_url');
+$programs_button_text = get_field('programs_button_text');
+?>
 <div id="pathways" class="row gutter-small expanded">
 
 <div class="pathways-content">
 
 <h2 class="text-center"><?php the_field('pathways_heading'); ?></h2>
 
-<div class="row gutter-small pathways-row-1 expanded">
+<div class="row gutter-small expanded">
 
 <div class="columns small-12">
 
@@ -18,7 +20,7 @@ $pathway_url = get_field('pathway_url');
 $args =  array (
 
 'post_type' => 'pathways_home',
-'posts_per_page' => -1
+'posts_per_page' => 9
 
 );
 ?>
@@ -29,7 +31,7 @@ $args =  array (
 
 <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-<div class="medium-6 large-3 columns" data-equalizer-watch>
+<div class="medium-4 large-4 columns" data-equalizer-watch>
 
   <div class="card">
     <a href="<?php the_field('pathway_url');?>">
@@ -72,9 +74,23 @@ $args =  array (
 
 <?php endif; ?>
 
-</div>
 
 </div>
+
+
+</div>
+
+<?php if( !empty($programs_button_url) ): ?>
+
+<div class="row">
+
+  <div class="small-10 medium-4 small-centered text-center columns">
+    <a href="<?php the_field('programs_button_url'); ?>" class="button expanded large"><?php the_field('programs_button_text'); ?></a>
+  </div>
+
+</div>
+
+<?php endif; ?>
 
 </div>
 

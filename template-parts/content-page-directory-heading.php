@@ -3,7 +3,7 @@ if  (has_post_thumbnail( ) )  { ?>
 
 <header class="hero-section" role="banner">
 
-<?php the_post_thumbnail();  ?>
+  <?php the_post_thumbnail('', array ('alt' => false));  ?>
 
   <div class="hero-section-text">
 

@@ -22,71 +22,62 @@
   > .row {
     margin-bottom: 1rem;
   }
-
   @include breakpoint(small only) {
     .columns {
       margin-bottom: 0;
     }
   }
+
   .menu {
     margin-top: 1rem;
 
-  a {
-    padding: 0 0 1rem 0;
-    font-weight: 600;
-    color: $light-gray;
-  }
+    a {
+      padding: 0 0 1rem;
+      font-weight: 600;
+      color: $light-gray;
+    }
 
-  a:hover {
-    color: $white;
-    text-decoration: underline;
-  }
-
+    a:hover {
+      color: $white;
+      text-decoration: underline;
+    }
   }
 
   .footer-links {
-
     margin-top: 0;
     margin-bottom: 0;
 
+    ul.menu.vertical {
+      padding-top: 0;
+      padding-bottom: 0;
 
-  ul.menu.vertical {
+      li {
+        margin-bottom: 0;
 
-    padding-top: 0;
-    padding-bottom: 0;
+        a {
+          line-height: 1.4rem;
+          font-weight: 700;
+          color: $light-gray;
+          padding: 0.4rem;
+        }
 
-
-  li  {
-    margin-bottom: 0;
-
-      a  {
-        line-height: 1.4rem;
-        font-weight: 700;
-        color: $light-gray;
-        padding: .4rem .4rem;
+        a:hover {
+          color: $white;
+          text-decoration: underline;
+        }
       }
-      a:hover {
-        color: $white;
-        text-decoration: underline;
+
+      .active > a {
+        background-color: $medium-gray;
+        color: $primary;
       }
-  }
 
-  .active > a {
-    background-color: $medium-gray;
-    color: $primary;
-
-   }
-
-   .active > a:hover {
-     background-color: $medium-gray;
-     color: $dark-gray;
-
+      .active > a:hover {
+        background-color: $medium-gray;
+        color: $dark-gray;
+      }
     }
-
-}
-
-}
-
+  }
 }
 
 .marketing-site-footer-name {
@@ -106,7 +97,6 @@
   margin-bottom: 2rem;
   position: relative;
 
-
   .fas {
     font-size: 2.5rem;
     color: darken($secondary, 20%);
@@ -121,7 +111,7 @@
     font-size: 1.4rem;
     color: $white;
     position: absolute;
-    top: .38em;
+    top: 0.38em;
     left: 1.5em;
   }
 
@@ -135,7 +125,6 @@
 .marketing-site-footer-bottom {
   background: $black;
   padding: 1.2rem 0;
-
   @include breakpoint(medium down) {
     text-align: center;
   }
@@ -144,13 +133,14 @@
     padding-bottom: 0;
     margin-bottom: 0;
     line-height: 1.6rem;
-    font-size: .8rem;
+    font-size: 0.8rem;
     text-align: center;
 
     a {
       color: $light-gray;
       font-weight: 700;
     }
+
     a:hover {
       color: $white;
       text-decoration: underline;

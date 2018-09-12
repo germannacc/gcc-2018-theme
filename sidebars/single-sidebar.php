@@ -2,11 +2,9 @@
 
   <div class="widget">
 
-        <h3><?php //gets parent page title
-        echo empty( $post->post_parent ) ? get_the_archive_title() : get_the_title( $post->post_parent );
-        ?></h3>
-
-        <nav class="department-links">
+          <h3><?php _e( 'Germanna highlights', 'gcc-wp-2018'
+        ); ?></h3>
+          <nav class="department-links">
 
           <?php //get custom sidebar menu for section
           wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.

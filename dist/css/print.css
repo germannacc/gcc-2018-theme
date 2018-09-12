@@ -1,0 +1,46 @@
+/*Germanna Print Style to only print main content, hide extras*/
+   
+   body, article {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+   }
+h1,h2,h3, p {
+	font-size: 85%;
+	   page-break-after: avoid;
+}
+article {
+   page-break-before: always;
+}
+article a {
+      font-weight: bolder;
+      text-decoration: none;
+   }
+
+   article a[href^=http]:after {
+      content:" <" attr(href) "> ";
+   }
+   article a[href^="#"]:after {
+   content: "";
+}
+$a:after > img {
+   content: "";
+}
+ul, table, img {
+   page-break-inside: avoid;
+}
+p {
+	padding-bottom: 5px;
+}
+.top-bar-menu, .button, aside.right-off-canvas-menu,
+.mobile-main-menu, .quicklinks-container, .quicklinks-bar, nav.tab-bar, .right-off-canvas-toggle, a.right-off-canvas-toggle, .banner, .breadcrumbs, .subpage-hero, .alert-box, #sidebar, .footer, .footer-copyright {display: none;}
+a[href]:after {
+    content: none !important;
+    display: none;
+  }
+div.quicklinks-container.contain-to-grid.show-for-medium-up > div.quicklinks-bar > div.row > div.quick-icons.small-12.large-12.columns {display: none;}
+.scroll-top-wrapper{display: none;}
+
+@page {
+      margin: 2cm;
+   }

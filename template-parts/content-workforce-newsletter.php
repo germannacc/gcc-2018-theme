@@ -10,7 +10,7 @@
 
     <div class="input-group">
       <span class="input-group-label">
-        <i class="fa fa-envelope"></i>
+        <span class="fa fa-envelope"></span>
       </span>
       <input class="input-group-field" type="email" placeholder="<?php esc_html_e('Email', 'gcc-wp-2018'); ?>" required>
       <input type="submit" name="go" value="<?php the_field('sign_up_box_button_text', 113)?>" title="<?php the_field('sign_up_box_button_text',  113)?>" class="submit button"/>

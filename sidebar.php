@@ -21,13 +21,13 @@
     <div class="off-canvas position-left reveal-for-large" id="main-menu">
 
         <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018'); ?>" type="button" data-close>
-       <span aria-hidden="true">&times;</span>
+        <span aria-hidden="true">&times;</span>
 
       </button>
 
         <div class="row column">
 
-            <div id="menu-container" class="off-canvas position-left reveal-for-large" data-off-canvas >
+            <div id="menu-container" class="off-canvas position-left reveal-for-large" data-off-canvas>
 
                 <div class="row branding">
 
@@ -69,7 +69,6 @@ if( !empty($image) ):
 	// vars
 	$url = $image['url'];
 	$title = $image['title'];
-	$alt = $image['alt'];
 	$caption = $image['caption'];
 
 	// thumbnail
@@ -82,7 +81,7 @@ if( !empty($image) ):
 
   <a href="<?php echo $sidebar_ad_1_url; ?>" class="career-coach"><span><?php echo $sidebar_ad_1_text; ?></span>
 
-    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+    <img src="<?php echo $thumb; ?>" alt="" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 
   </a>
 
@@ -97,7 +96,6 @@ if( !empty($image) ):
 // vars
 $url = $image['url'];
 $title = $image['title'];
-$alt = $image['alt'];
 $caption = $image['caption'];
 
 // thumbnail
@@ -110,7 +108,7 @@ $height = $image['sizes'][ $size . '-height' ];
 
 <a href="<?php echo $sidebar_ad_2_url; ?>" class="menu-banner"><span><?php echo $sidebar_ad_2_text; ?></span>
 
-<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+<img src="<?php echo $thumb; ?>" alt="" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
 
 </a>
 

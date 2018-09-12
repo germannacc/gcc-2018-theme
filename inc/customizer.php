@@ -4,7 +4,6 @@
  *
  * @package gccwp-2018
  */
-
 /**
  * Add postMessage support for site title and description for the Theme Customizer.
  *
@@ -14,7 +13,6 @@ function gcc_wp_2018_customize_register( $wp_customize ) {
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
 	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
-
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(
 			'selector'        => '.site-title a',
@@ -27,7 +25,6 @@ function gcc_wp_2018_customize_register( $wp_customize ) {
 	}
 }
 add_action( 'customize_register', 'gcc_wp_2018_customize_register' );
-
 /**
  * Render the site title for the selective refresh partial.
  *
@@ -36,7 +33,6 @@ add_action( 'customize_register', 'gcc_wp_2018_customize_register' );
 function gcc_wp_2018_customize_partial_blogname() {
 	bloginfo( 'name' );
 }
-
 /**
  * Render the site tagline for the selective refresh partial.
  *
@@ -45,7 +41,6 @@ function gcc_wp_2018_customize_partial_blogname() {
 function gcc_wp_2018_customize_partial_blogdescription() {
 	bloginfo( 'description' );
 }
-
 /**
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */

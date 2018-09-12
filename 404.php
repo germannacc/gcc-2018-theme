@@ -4,6 +4,12 @@
  *
  * @package WordPress
  */
+$error_page_heading = get_field('error_page_heading', 'option');
+$error_page_error_message_1 = get_field('error_page_error_message_1', 'option');
+$error_page_error_message_2 = get_field('error_page_error_message_2', 'option');
+$error_page_button_text = get_field('error_page_button_text', 'option');
+$error_page_button_url = get_field('error_page_button_url', 'option');
+
 get_header(); ?>
 <?php
 if ( have_posts() ) :
@@ -12,12 +18,28 @@ else : ?>
 
 <div class="row expanded hero-section-404">
 
-  <img src="https://germannacc.staging.wpengine.com/wp-content/uploads/2018/05/gcc-fac-rooftop-featured-image.jpg" alt="page heading" width="640" height="300">
+	<?php
+	$error_page_background_image = get_field('error_page_background_image', 'option');
+					 // vars
+					 $url = $error_page_background_image['url'];
+					 $title = $error_page_background_image['title'];
+					 $alt = $error_page_background_image['alt'];
+					 $caption = $error_page_background_image['caption'];
+
+					 // thumbnail
+					 $size = 'large';
+					 $thumb = $error_page_background_image['sizes'][ $size ];
+					 $width = $error_page_background_image['sizes'][ $size . '-width' ];
+					 $height = $error_page_background_image['sizes'][ $size . '-height' ];
+
+	if( !empty($error_page_background_image) ):   ?>
+	<img src="<?php echo $error_page_background_image['url']; ?>" alt="<?php echo $error_page_background_image['alt']; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" class="responsive" />
+	<?php endif; ?>
 
   <div class="row expanded" style="padding: 20% 0;">
 		<div class="small-6 small-offset-3 columns">
 
-    <h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'gcc-wp-2018' ); ?></h1>
+    <h1 class="page-title"><?php echo $error_page_heading; ?></h1>
 
 		<?php
 		if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
@@ -45,22 +67,26 @@ else : ?>
 
 		else : ?>
 
-			<p><?php esc_html_e( 'It seems the information you are looking for can&rsquo;t be found. Please use the search box below and try again.', 'gcc-wp-2018' ); ?></p>
+			<p><?php  echo $error_page_error_message_1;  ?></p>
 
-			<p><?php esc_html_e('Still having trouble?', 'gcc-wp-2018' );?></p>
-			<p><a href="" class="button primary"><?php esc_html_e('Send us a question.', 'gcc-wp-2018' ); ?></a>
+			<p><?php echo $error_page_error_message_2;  ?></p>
+
+			<p><a href="<?php echo $error_page_button_url; ?>" class="button primary"><?php echo $error_page_button_text; ?></a>
 		  </p>
 
-			<form role="search" method="get" id="searchform" style="position: relative; margin-top: 2rem;" action="<?php esc_html('/search_gcse/', 'gcc-wp-2018')?>">
-					<input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
-					<input type="hidden" name="ie" value="utf8" title="hidden" />
-					<input type="hidden" name="oe" value="utf8" title="hidden" />
-					<input type="text" name="q" id="search" title="search input" style="height: 49px;" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018');?>'">
-					<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
-					<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home" />
-					<input id="searchsubmit" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit')?>">
-					<span class="sb-icon-search"></span>
-			</form>
+			<form role="search" method="get" id="searchform-404" style="position: relative; margin-top: 2rem;" action="<?php echo get_home_url(); ?>/search_gcse/">
+
+	        <input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden" >
+	        <input type="hidden" name="ie" value="utf8" title="hidden" />
+	        <input type="hidden" name="oe" value="utf8" title="hidden" />
+	        <input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
+	        <input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
+	        <input type="text" name="q" id="search-404" title="search input" class="sb-search-input" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018');?>'" style="height: 49px;">
+	        <input id="searchsubmit-404" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit')?>">
+	        <button type="submit" id="searchsubmit-button-404" class="sb-icon-search" aria-label="Submit">
+		   </button>
+	    </form>
+
 
       </div>
 		</div>

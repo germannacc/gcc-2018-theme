@@ -20,14 +20,15 @@ article {
 }
 
 .entry-content {
-  padding: 2rem 1rem 2rem 0;
+  padding: 2rem 1rem 10rem 0;
   overflow: hidden;
   max-width: 99%;
   border: none;
+  background-color: $white;
 
   h2 {
     color: $black;
-    margin-top: 2rem 0;
+    margin-top: 2rem;
   }
 
   h2:after {
@@ -69,12 +70,6 @@ article {
   }
 }
 
-.entry-meta {
-  display: block;
-  width: 100%;
-  padding: 1rem 0 0;
-}
-
 .moretag {
   padding: 1rem 0;
   display: block;
@@ -83,9 +78,9 @@ article {
 .page-nav {
   background-color: $light-gray;
   padding: 1rem;
-
 }
 //Page Side bar
+
 .widget {
   margin-bottom: 1rem;
 
@@ -97,7 +92,6 @@ article {
     font-size: 1.2rem;
     margin-bottom: 1rem;
   }
-
 }
 
 .department-links {
@@ -119,11 +113,66 @@ article {
     }
 
     .active > a {
-       background-color: $black;
-       color: $white;
-     }
+      background-color: $black;
+      color: $white;
+    }
   }
+}
 
+.menu-about-governance-menu-container {
+  ul.menu {
+    margin: 1rem 0;
+
+    li {
+      display: block;
+      width: 100%;
+
+      a {
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        color: $dark-gray;
+        line-height: 1.4rem;
+      }
+
+      a:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+
+    .active > a {
+      background-color: $black;
+      color: $white;
+    }
+  }
+}
+
+.menu-facts-and-figures-container {
+  ul.menu {
+    margin: 1rem 0;
+
+    li {
+      display: block;
+      width: 100%;
+
+      a {
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        color: $dark-gray;
+        line-height: 1.4rem;
+      }
+
+      a:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+
+    .active > a {
+      background-color: $black;
+      color: $white;
+    }
+  }
 }
 
 .entry-footer {
@@ -149,4 +198,9 @@ article {
       padding: 0.3rem 0;
     }
   }
+}
+.404-row {
+
+  padding: 20% 0;
+
 }
