@@ -22,5 +22,9 @@ get_header(); ?>
 
     <?php get_template_part( 'template-parts/content', 'highlights' ); ?>
 
+    <footer class="entry-footer">
+      <?php gcc_wp_2018_entry_footer(); ?>
+    </footer><!-- .entry-footer -->
+
     <?php
     get_footer();

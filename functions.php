@@ -47,6 +47,10 @@ require get_template_directory() . '/inc/menus.php';
  */
 require get_template_directory() . '/inc/social-icons.php';
 /**
+ * Weather alerts.
+ */
+// require get_template_directory() . '/inc/weather-alert.php';
+/**
  * Register widgets.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar

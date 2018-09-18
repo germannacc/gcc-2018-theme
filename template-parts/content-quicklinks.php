@@ -41,18 +41,13 @@
 
 <div class="small-12 medium-6 large-8 columns collapse">
 
-  <?php //Start of Important Links Widget Container
-    if ( is_active_sidebar( 'quicklinks-widgets' ) ) : ?>
-    <?php dynamic_sidebar( 'quicklinks-widgets' ); ?>
-    <?php endif; //End of Important Links Widget Container
-   ?>
+<?php get_search_form();  ?>
 
 </div>
 
  <div class="small-12 medium-4 large-4 columns collapse right-calltos">
 
    <div class="top-bar-right float-right">
-
 
      <?php  //function located in inc/main-navigation.php
      gcc_wp_2018_calltos(); ?>

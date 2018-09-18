@@ -119,6 +119,71 @@ article {
   }
 }
 
+.widget {
+  ul.menu {
+    margin: 1rem 0;
+
+    li {
+      display: block;
+      width: 100%;
+      a {
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+        color: $dark-gray;
+        line-height: 1.4rem;
+
+      }
+
+      a:hover {
+        background-color: $black;
+        color: $white;
+      }
+    }
+
+    .active > a {
+      background-color: $black;
+      color: $white;
+    }
+  }
+
+  .social-icons {
+
+    margin: 0;
+    padding: 0;
+
+  li {
+
+    list-style: none;
+    width: auto;
+    display: inline-block;
+
+   a {
+
+      padding: .4rem .2rem;
+
+     span {
+         color: $primary;
+         padding: .3rem .6rem;
+         border: 1px solid $primary;
+         border-radius: 100%;
+         text-align: center;
+     }
+
+     span:hover {
+         color: $dark-gray;
+         border: 1px solid $dark-gray;
+
+     }
+
+
+  }
+
+
+    }
+
+  }
+}
+
 .menu-about-governance-menu-container {
   ul.menu {
     margin: 1rem 0;

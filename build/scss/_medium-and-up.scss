@@ -31,11 +31,11 @@
   }
 
   .hero-section {
-    height: 58vh;
+    height: 96vh;
     position: relative;
 
     img {
-      height: 58vh;
+      height: auto;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -67,7 +67,7 @@
     }
 
     .hero-section-text {
-      bottom: 18%;
+      bottom: 12%;
 
       .entry-title {
         color: $white;

@@ -10,13 +10,13 @@
 
     <?php //get custom sidebar menu for section
     wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-    'menu' => 'President Elect Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
+    'menu' => 'Inauguration Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
 
   </nav>
 
 </div>
 
 <?php //custom department widgets
-dynamic_sidebar( 'president-elect-widgets' ); ?>
+dynamic_sidebar( 'inauguration-widgets' ); ?>
 
 </aside>

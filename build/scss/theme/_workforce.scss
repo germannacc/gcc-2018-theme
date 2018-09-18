@@ -74,36 +74,3 @@ $subscription-form-color: $white;
   }
 
 }
-
-.workforce-social-icons {
-
-  margin: 0 auto 2rem auto;
-  padding: 0 1.7rem;
-
-li {
-
- a {
-
-    padding: .4rem .2rem;
-
-   span {
-      color: $primary;
-       padding: .3rem .6rem;
-       border: 1px solid $primary;
-       border-radius: 100%;
-       text-align: center;
-   }
-
-   span:hover {
-       color: $dark-gray;
-       border: 1px solid $dark-gray;
-
-   }
-
-
-}
-
-
-  }
-
-}

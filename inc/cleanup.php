@@ -28,8 +28,6 @@ remove_action( 'wp_head', 'wp_resource_hints', 2 );
 remove_action( 'wp_head', 'rsd_link' , 10, 0 );
 // Category feed links
 remove_action( 'wp_head', 'feed_links_extra', 3 );
-// Post and comment feed links
-remove_action( 'wp_head', 'feed_links', 2 );
 // Windows Live Writer
 remove_action( 'wp_head', 'wlwmanifest_link' , 10, 0 );
 // Index link
@@ -77,11 +75,11 @@ endif;
 //remove plugin scripts
 if ( ! function_exists( 'gcc_wp_2018_deregister_style' ) ) :
 function gcc_wp_2018_deregister_style() {
-	wp_deregister_style( 'wgs' );
-	wp_deregister_style( 'wgs2' );
-	wp_deregister_style( 'wgs3' );
-	wp_deregister_style( 'wgs2-css' );
-	wp_deregister_style( 'dashicons' );
+	//wp_deregister_style( 'wgs' );
+	//wp_deregister_style( 'wgs2' );
+	//wp_deregister_style( 'wgs3' );
+	//wp_deregister_style( 'wgs2-css' );
+	//wp_deregister_style( 'dashicons' );
 	wp_deregister_style( 'fb_data_style' );
 	wp_deregister_style( 'jquery-ui-css' );
 	wp_deregister_style( 'UserAccessManagerLoginForm'  );
@@ -149,24 +147,6 @@ add_action('get_header', function() {
 	ob_start(
 		function($o) {
 			return preg_replace('/\n?<.*?One SEO Pack.*?>/mi','',$o);
-		}
-	);
-});
-add_action('wp_head', function() {
-	ob_end_flush();
-}, 999);
-}
-
-/**
-* Remove [Yoast SEO] HTML Comments
-* @link //gist.github.com/llgruff/a7ab776167aa0ed307ec445df54e5fdb
-* @link //gist.github.com/paulcollett/4c81c4f6eb85334ba076
-*/
-if (defined('WPSEO_VERSION')) {
-add_action('get_header', function() {
-	ob_start(
-		function($o) {
-			return preg_replace('/\n?<.*?yoast.*?>/mi','',$o);
 		}
 	);
 });

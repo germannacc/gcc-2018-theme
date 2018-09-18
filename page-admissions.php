@@ -13,8 +13,8 @@ get_header(); ?>
 		<div class="row gutter-small expanded content-area">
 			<?php //Page with Sidebar Template
 			get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
-			<?php //Template Sidebar
-			get_template_part( '/sidebars/admissions-sidebar' ); ?>
+
+			<?php get_sidebar( ); ?>
 		</div>
 <?php endwhile; // End of the loop. ?>
 </article>

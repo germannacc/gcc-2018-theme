@@ -1,20 +1,12 @@
 <aside class="small-12 medium-4 large-3 gutter-small right page-nav" >
 
-  <div class="widget">
+<?php
 
-    <h3><?php _e('Academic Center for Excellence', 'gcc-wp-2018'); ?></h3>
+  if ( is_page('108') || $post->post_parent == '108' ) {
+    //custom department widgets
+      dynamic_sidebar( 'tutoring-services-widgets' );
+  }
 
-  <nav class="department-links">
-
-    <?php //get custom sidebar menu for section
-    wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-    'menu' => 'Tutoring Menu', 'container' => 'true', 'menu_class' => 'vertical menu' ) ); ?>
-
-  </nav>
-
-</div>
-
-<?php //custom department widgets
-dynamic_sidebar( 'tutoring-services-widgets' ); ?>
+?>
 
 </aside>

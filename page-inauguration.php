@@ -1,7 +1,7 @@
 <?php
 //Names the page template for each section
 /*
-Template Name: Tutoring Services
+Template Name: Inauguration
 */
 get_header(); ?>
 
@@ -20,7 +20,8 @@ get_header(); ?>
 			<?php //Page with Sidebar Template
 			get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
 
-			<?php get_sidebar(); ?>
+			<?php //Template Sidebar
+			get_template_part( '/sidebars/inauguration-sidebar' ); ?>
 
 		</div><!--.pagecontent-->
 

@@ -20,8 +20,7 @@ get_header(); ?>
 			<?php //Page with Sidebar Template
 			get_template_part( 'template-parts/content', 'sidebarpage' ); ?>
 
-			<?php //Template Sidebar
-			get_template_part( '/sidebars/academics-sidebar' ); ?>
+			<?php get_sidebar(); ?>
 
 		</div><!--.pagecontent-->
 
