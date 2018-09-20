@@ -72,6 +72,33 @@ register_sidebar(array(
 		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	));
+	register_sidebar(array(
+		'id' => 'alumni-widgets',
+		'name' => __( 'Alumni Sidebar', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+));
+register_sidebar(array(
+	'id' => 'acc-widgets',
+	'name' => __( 'ACC Sidebar', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+));
+register_sidebar(array(
+	'id' => 'aawards-widgets',
+	'name' => __( 'Awards Sidebar', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+));
 register_sidebar(array(
 	'id' => 'advising-widgets',
 	'name' => __( 'Advising Sidebar widgets', 'gcc-wp-2018' ),
@@ -108,6 +135,15 @@ register_sidebar(array(
 	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
+	register_sidebar(array(
+		'id' => 'arts-sciences-widgets',
+		'name' => __( 'Arts and Sciences Sidebar', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+	));
 register_sidebar(array(
 'id' => 'bookstore-widgets',
 'name' => __( 'Bookstore Sidebar widgets', 'gcc-wp-2018' ),
@@ -126,6 +162,15 @@ register_sidebar(array(
 	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
+	register_sidebar(array(
+		'id' => 'catalog-widgets',
+		'name' => __( 'Catalog Sidebar widgets', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+		));
 register_sidebar(array(
 	'id' => 'college-police-widgets',
 	'name' => __( 'College Police Sidebar widgets', 'gcc-wp-2018' ),
@@ -152,16 +197,16 @@ register_sidebar(array(
 	    'after_widget' => '</div>',
 	    'before_title' => '<h3>',
 	    'after_title' => '</h3>',
-		));
+));
 register_sidebar(array(
-	'id' => 'career-center-widgets',
-	'name' => __( 'Career Center Sidebar widgets', 'gcc-wp-2018' ),
+	'id' => 'career-transfer-widgets',
+	'name' => __( 'Career and Transfer Sidebar', 'gcc-wp-2018' ),
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
-    'after_widget' => '</div>',
-    'before_title' => '<h3>',
-    'after_title' => '</h3>',
-	));
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+));
 register_sidebar(array(
 	'id' => 'dental-widgets',
 	'name' => __( 'Dental Sidebar widgets', 'gcc-wp-2018' ),
@@ -242,15 +287,7 @@ register_sidebar(array(
 	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
-register_sidebar(array(
-	'id' => 'f1visa-widgets',
-	'name' => __( 'F1-Visa Sidebar widgets', 'gcc-wp-2018' ),
-	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
-	'before_widget' => '<div class="widget">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>',
-	));
+
 register_sidebar(array(
 	'id' => 'great-expectations-widgets',
 	'name' => __( 'Great Expectation Sidebar widgets', 'gcc-wp-2018' ),
@@ -260,6 +297,15 @@ register_sidebar(array(
 	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
+	register_sidebar(array(
+		'id' => 'gainful-employment-widgets',
+		'name' => __( 'Gainful Employment Sidebar', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+		));
 register_sidebar(array(
 	'id' => 'gladys-todd-widgets',
 	'name' => __( 'Gladys Todd Sidebar widgets', 'gcc-wp-2018' ),
@@ -278,6 +324,15 @@ register_sidebar(array(
 	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
+	register_sidebar(array(
+		'id' => 'grants-widgets',
+		'name' => __( 'Grants Sidebar', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+		));
 register_sidebar(array(
 	'id' => 'human-resources-widgets',
 	'name' => __( 'Human Resources Sidebar widgets', 'gcc-wp-2018' ),
@@ -287,6 +342,15 @@ register_sidebar(array(
 	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
+	register_sidebar(array(
+		'id' => 'helpdesk-widgets',
+		'name' => __( 'Helpdesk Sidebar', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+		));
 register_sidebar(array(
 	'id' => 'ie-widgets',
 	'name' => __( 'Institutional Effectiveness Sidebar widgets', 'gcc-wp-2018' ),
@@ -297,22 +361,22 @@ register_sidebar(array(
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
-'id' => 'information-session-widgets',
-'name' => __( 'Information Session widgets', 'gcc-wp-2018' ),
-'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
-'before_widget' => '<div class="widget">',
-'after_widget' => '</div>',
-'before_title' => '<h3>',
-'after_title' => '</h3>',
-));
-register_sidebar(array(
 	'id' => 'internship-widgets',
-	'name' => __( 'Internship Sidebar widgets', 'gcc-wp-2018' ),
+	'name' => __( 'Internships Services Sidebar', 'gcc-wp-2018' ),
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
     'after_widget' => '</div>',
     'before_title' => '<h3>',
     'after_title' => '</h3>',
+	));
+	register_sidebar(array(
+	'id' => 'location-widgets',
+	'name' => __( 'Locations Sidebar', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
 	));
 register_sidebar(array(
 'id' => 'marketing-widgets',
@@ -395,6 +459,15 @@ register_sidebar(array(
 'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
+register_sidebar(array(
+'id' => 'presidents-office-widgets',
+'name' => __( 'Presidents Office Sidebar', 'gcc-wp-2018' ),
+'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+'before_widget' => '<div class="widget">',
+'after_widget' => '</div>',
+'before_title' => '<h3>',
+'after_title' => '</h3>',
+));
 	register_sidebar(array(
 		'id' => 'sails-widgets',
 		'name' => __( 'Sails Sidebar widgets', 'gcc-wp-2018' ),
@@ -413,6 +486,33 @@ register_sidebar(array(
 	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
+	register_sidebar(array(
+		'id' => 'services-support-widgets',
+		'name' => __( 'Services and Support Sidebar', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+		));
+	register_sidebar(array(
+		'id' => 'statements-widgets',
+		'name' => __( 'Statements & Policies Sidebar', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+		));
+	register_sidebar(array(
+		'id' => 'student-widgets',
+		'name' => __( 'Student Sidebar', 'gcc-wp-2018' ),
+		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+		'before_widget' => '<div class="widget">',
+		'after_widget' => '</div>',
+		'before_title' => '<h3>',
+		'after_title' => '</h3>',
+		));
 register_sidebar(array(
 	'id' => 'student-activities-widgets',
 	'name' => __( 'Student Activities Sidebar widgets', 'gcc-wp-2018' ),

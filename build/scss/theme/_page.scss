@@ -27,23 +27,8 @@ article {
   background-color: $white;
 
   h2 {
-    color: $black;
-    margin-top: 2rem;
-  }
-
-  h2:after {
-    content: "";
-    /* This is necessary for the pseudo element to work. */
-    display: block;
-    /* This will put the pseudo element on its own line. */
-    margin: 0 0 1rem;
-    /* This will center the border. */
-    width: 100%;
-    /* Change this to whatever width you want. */
-    padding-top: 10px;
-    /* This creates some space between the element and the border. */
-    border-bottom: 2px solid $primary;
-    /* This creates the border. Replace black with whatever color you want. */
+    color: $secondary;
+    font-size: 2.188rem;
   }
 
   a {
@@ -77,7 +62,8 @@ article {
 
 .page-nav {
   background-color: $light-gray;
-  padding: 1rem;
+  padding:  0;
+  margin-top: 1rem;
 }
 //Page Side bar
 
@@ -85,18 +71,27 @@ article {
   margin-bottom: 1rem;
 
   h3 {
-    background-color: $black;
-    color: $white;
+    background-color: $medium-gray;
+    border-bottom: 2px solid $primary;
+    color: $dark-gray;
     width: 100%;
     padding: 1rem;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    margin: 0;
   }
+
+  h4, h5 {
+    font-size: 1.2rem;
+  }
+
+.textwidget {
+  padding: 1rem;
+}
 }
 
 .department-links {
   ul.vertical.menu {
-    margin: 1rem 0;
+    margin: 0;
 
     li {
       a {
@@ -107,42 +102,68 @@ article {
       }
 
       a:hover {
-        background-color: $black;
-        color: $white;
+        color: $primary;
+        text-decoration: underline;
       }
     }
 
     .active > a {
-      background-color: $black;
-      color: $white;
+      color: $primary;
+      text-decoration: underline;
     }
   }
 }
+.widget ul:nth-child(1).menu {
+  li:first-child {
+    background-color: $medium-gray;
+    color: $dark-gray;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1rem;
+    border-bottom: 2px solid $primary;
 
+
+    a {
+      line-height: 1.8rem;
+      padding: 0 0 0 1rem;
+
+    }
+  }
+
+  li:last-child {
+    border-bottom: none;
+  }
+
+  li:last-child a, li:last-child div {
+    border-bottom: none;
+  }
+
+}
 .widget {
   ul.menu {
-    margin: 1rem 0;
+    margin: 0;
 
     li {
       display: block;
       width: 100%;
+      border-bottom: 1px solid $medium-gray;
       a {
-        padding: 0.5rem 1rem;
+        padding: 1rem 1.5rem;
         font-weight: bold;
         color: $dark-gray;
         line-height: 1.4rem;
-
       }
 
       a:hover {
-        background-color: $black;
-        color: $white;
+        color: $primary;
+        text-decoration: underline;
       }
+
     }
 
     .active > a {
-      background-color: $black;
-      color: $white;
+      background-color: $medium-gray;
+      color: $primary;
     }
   }
 

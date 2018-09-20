@@ -112,8 +112,8 @@ get_header(); ?>
 
 
 
-			<?php //Template Sidebar
-			get_template_part( '/sidebars/edfoundation-sidebar' ); ?>
+			<?php get_sidebar(); ?>
+
 
 		</div><!--.pagecontent-->
 

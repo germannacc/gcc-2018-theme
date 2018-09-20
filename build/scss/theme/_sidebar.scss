@@ -89,15 +89,18 @@ a.logo {
           top: 10px;
           font-size: 1.2rem;
         }
+
       }
 
       a:hover {
         background-color: $medium-gray;
+        color: $secondary;
       }
 
       a::selection {
         //keeps top menu item highlighted when over pop out menu
         background-color: $medium-gray;
+
       }
       //pop out menu
       ul.nested {
@@ -153,6 +156,7 @@ a.logo {
     li:hover a {
       //top menu hover
       background-color: $medium-gray;
+      color: $primary;
     }
   }
 }

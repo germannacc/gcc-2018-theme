@@ -38,8 +38,7 @@ get_header(); ?>
 				  <?php gcc_wp_2018_entry_footer(); ?>
 			</footer><!-- .entry-footer -->
 
-			<?php //Template Sidebar
-			get_template_part( '/sidebars/workforce-sidebar' ); ?>
+			<?php get_sidebar(); ?>
 
 	</div><!--.pagecontent-->
 
