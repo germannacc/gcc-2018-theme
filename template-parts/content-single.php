@@ -52,7 +52,7 @@ get_the_category_list();
 </div>
 
 <?php //Template Sidebar
-get_template_part( '/sidebars/single-sidebar' ); ?>
+get_sidebar(); ?>
 
 
 </div><!--.pagecontent-->

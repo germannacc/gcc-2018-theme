@@ -1,5 +1,14 @@
 /* Large and up */
 @media screen and (min-width: 64em) {
+
+  .hero-section-plain {
+    h1.entry-title {
+      font-size: 3rem;
+
+    }
+  }
+
+
   ul.dropdown.menu {
     li.mygcc {
       a {
@@ -9,12 +18,6 @@
     }
   }
 
-  a.logo {
-    margin: 1rem;
-    background: url("../media/germanna-logo-white.png") no-repeat;
-    height: 79px;
-    width: 264px;
-  }
   .tagline {
     font-weight: 600;
     padding: 0 0 0 0.4rem;

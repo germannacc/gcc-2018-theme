@@ -70,13 +70,13 @@ $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
 primary: #9d263a,
-secondary: #4c4c4c,
+secondary: #231F20,
 success: #0d6d2e,
 warning: #a05d00,
 alert: #9d263a,
 );
 $primary: #9d263a;
-$secondary: #020407;
+$secondary: #231F20;
 $warning: #a05d00;
 $success: #0d6d2e;
 $light-gray: #f9f9f9;
@@ -226,14 +226,14 @@ $input-error-font-weight: $global-weight-bold;
 // 7. Accordion
 // ------------
 
-$accordion-background: $dark-gray;
+$accordion-background: $light-gray;
 $accordion-plusminus: true;
 $accordion-title-font-size: rem-calc(18);
-$accordion-item-color: $white;
-$accordion-item-background-hover: $medium-gray;
+$accordion-item-color: $secondary;
+$accordion-item-background-hover: $light-gray;
 $accordion-item-padding: 1.2rem 1rem;
-$accordion-content-background: $light-gray;
-$accordion-content-border: 1px solid $light-gray;
+$accordion-content-background: $white;
+$accordion-content-border: 1px solid $medium-gray;
 $accordion-content-color: $secondary;
 $accordion-content-padding: 2rem 1.5rem 1rem 1.5rem;
 
@@ -499,10 +499,10 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-sizes: (
-  small: 300px,
+  small: 330px,
 );
 $offcanvas-vertical-sizes: (
-  small: 300px,
+  small: 330px,
 );
 $offcanvas-background: $secondary;
 $offcanvas-shadow: 0 0 10px rgba($black, 0);
@@ -799,16 +799,16 @@ $table-stack-breakpoint: medium;
 // --------
 
 $tab-margin: 0;
-$tab-background: $secondary;
-$tab-color: $white;
-$tab-background-active: $medium-gray;
+$tab-background: $light-gray;
+$tab-color: $secondary;
+$tab-background-active: #ededed;
 $tab-active-color: $primary-color;
 $tab-item-font-size: rem-calc(18);
-$tab-item-background-hover: $primary;
+$tab-item-background-hover: $medium-gray;
 $tab-item-padding: 1.25rem 1.5rem;
 $tab-expand-max: 6;
-$tab-content-background: $light-gray;
-//$tab-content-border: $white;
+$tab-content-background: #light-gray;
+$tab-content-border: $medium-gray;
 $tab-content-color: $body-font-color;
 $tab-content-padding: 1rem 2rem;
 

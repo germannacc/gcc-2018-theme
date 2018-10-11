@@ -13,7 +13,7 @@
     'advising-menu' => 'Advising Menu',
     'arts-sciences-menu' => 'Arts Sciences Menu',
     'available-test-menu' => 'Available Test Menu',
-    'awards-menu' => 'Awards Menu',
+    'awards-recognition-menu' => 'Awards and Recognition Menu',
     'bookstore-menu' => 'Bookstore Menu',
     'business-office-menu' => 'Business Office Menu',
     'career-services-menu' => 'Career Services Menu',

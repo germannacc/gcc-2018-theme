@@ -3,7 +3,7 @@
 .branding {
   background-color: $secondary;
   padding: 0 0 0 1rem;
-  max-width: 315px !important;
+  max-width: 343px !important;
 }
 
 .calltos {
@@ -33,21 +33,21 @@
   }
 }
 
-a.logo {
-  margin: 1rem 3rem;
-  background: url("../media/germanna-logo-white-medium.png");
-  height: 60px;
-  width: 200px;
-  text-indent: -9999px;
+.custom-logo-link, .mobile-logo {
   overflow: hidden;
   display: block;
   position: relative;
 }
-
+.custom-logo-link {
+  margin: 1rem 2rem;
+}
+.mobile-logo {
+  margin: .5rem;
+}
 .tagline {
   color: $white;
   font-weight: 600;
-  padding: 0 0 0 0.4rem;
+  padding: 0 0 0 .4rem;
   text-align: center;
   font-size: 1rem;
 }
@@ -57,7 +57,7 @@ a.logo {
 #popout-menu {
   //main sidebar styles
   background-color: $light-gray;
-  width: 300px;
+  width: 330px;
   //do not change these styles
   overflow: visible;
   height: 100%;
@@ -68,7 +68,7 @@ a.logo {
   .gcc-main-nav {
     //sidebar navigation styles
     background-color: $light-gray;
-    margin: 1rem 0;
+    margin: 1rem 0 0 0;
     position: relative;
     //top menu
     li {
@@ -108,7 +108,7 @@ a.logo {
         padding: 1rem;
         background-color: $medium-gray;
         top: -50px;
-        left: 300px;
+        left: 330px;
 
         li {
           //puts menu items into columns
@@ -148,6 +148,25 @@ a.logo {
       }
     }
 
+li.support-link {
+
+    margin: 2rem auto 0 auto;
+    width: 280px;
+    text-align: center;
+
+    a {
+            background-color: $medium-gray;
+            font-size: 2.2rem;
+            line-height: 2.6rem;
+            padding: 1rem;
+    }
+  a:hover {
+
+        color: $secondary;
+
+  }
+
+}
     .active > a {
       background-color: $medium-gray;
       color: $primary;
@@ -169,7 +188,7 @@ a.logo {
   a.menu-banner {
     display: block;
     background: center center no-repeat;
-    margin: 0 auto 1rem;
+    margin: 0 auto 1rem auto;
 
     span {
       text-indent: -9999px;

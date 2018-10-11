@@ -14,51 +14,50 @@ $marketing-site-footer-bg: $light-gray;
     height: 28vh;
   }
 
-  .hero-section-text {
-    color: $secondary;
-    z-index: 1;
-    position: absolute;
-    left: 2%;
-    bottom: 22%;
-    text-shadow: 0 5px 7px rgba(0, 0, 0, 1);
-    letter-spacing: 0.2rem;
-    width: auto;
-    background-color: rgba(0,0,0, .6);
+}
 
-    .entry-title {
+.hero-section-text {
+  color: $secondary;
+  letter-spacing: 0.2rem;
+  width: 100%;
+  display: block;
+  position: relative;
+  background-color: $light-gray;
+  padding: 1rem 1.8rem;
+
+  h1 {
+    margin: 0;
+  }
+
+  .entry-title {
+    color: $primary;
+  }
+
+  .entry-meta {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+
+    a {
       color: $white;
-      padding: 1rem 1rem 0;
     }
 
-    .entry-meta {
-      display: block;
-      width: 100%;
-      padding: 1rem 0;
-
-      a {
-        color: $white;
-      }
-
-      a:hover {
-        color: $white;
-        text-decoration: underline;
-      }
+    a:hover {
+      color: $white;
+      text-decoration: underline;
     }
   }
 }
 
 .crumbs-container {
   padding: 0;
-  margin: 0;
-  background-color: rgba(255, 255, 255, .8);
+  margin: 0 0 1rem 0;
+  background-color: $medium-gray;
   border-bottom: 10px solid $primary;
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
   width: 100%;
 
   .breadcrumbs {
-    margin-left: 4.2%;
+    margin-left: 2rem;
     padding: 0;
 
     li {
@@ -117,18 +116,21 @@ $marketing-site-footer-bg: $light-gray;
 
 .hero-section-plain {
   position: relative;
-  height: 180px;
-  padding: 1rem;
+  height: auto;
+  padding: 0.5rem;
   background-color: $white;
+  margin: 0;
 
   .hero-section-text {
     color: $white;
     background-color: $primary;
-    padding: 1rem 1rem 0.2rem;
+    padding: 1rem 1rem 1rem 2rem;
   }
 
   h1.entry-title {
-    font-size: 2.125rem;
+    font-size: 2rem;
+    color: $white;
+
   }
 
   .entry-meta {
@@ -152,7 +154,7 @@ $marketing-site-footer-bg: $light-gray;
   margin: 0;
 
   .breadcrumbs {
-    padding: 0 1rem;
+    padding: 0 1rem 0 2rem;
     background-color: $medium-gray;
 
     li {

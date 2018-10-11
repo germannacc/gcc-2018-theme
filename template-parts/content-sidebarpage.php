@@ -1,4 +1,4 @@
-<div class="small-12 medium-9 entry-content">
+<div class="small-12 medium-8 large-9 gutter-small entry-content">
 
 <?php //Page Heading
 get_template_part( 'template-parts/content', 'page-alert' );

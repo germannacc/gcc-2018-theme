@@ -23,6 +23,15 @@ function gcc_wp_2018_customize_register( $wp_customize ) {
 			'render_callback' => 'gcc_wp_2018_customize_partial_blogdescription',
 		) );
 	}
+	$wp_customize->add_setting( 'gcc_wp_2018_mobile_logo' ); // Add setting for logo uploader
+
+	    // Add control for logo uploader (actual uploader)
+	    $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'gcc_wp_2018_mobile_logo', array(
+	        'label'    => __( 'Upload Mobile Logo', 'gcc-wp-2018' ),
+	        'section'  => 'title_tagline',
+	        'settings' => 'gcc_wp_2018_mobile_logo',
+	    ) ) );
+
 }
 add_action( 'customize_register', 'gcc_wp_2018_customize_register' );
 /**

@@ -134,6 +134,6 @@ if( !empty($statements_link_text ) ): ?>
      _monsido.push(['_setDomainToken', '_zbPflN9VdD6OgWB_h7F4Q']);
      _monsido.push(['_withStatistics', 'true']);
  </script>
- <script src="//cdn.monsido.com/tool/javascripts/monsido.js"</script>
+ <script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
 </body>
 </html>

@@ -13,17 +13,19 @@
   -moz-box-shadow: 0 7px 5px -4px rgba(0,0,0,0.55);
   box-shadow: 0 7px 5px -4px rgba(0,0,0,0.55);
   .quicklinks-box {
-    padding-left: 0 !important;
+  padding-left: 0 !important;
   padding-right: 0 !important;
   position: relative;
   ul.dropdown.menu {
-      padding-left: 0.5rem;
+      padding-left: 0.1rem;
   li {
         a {
           color: $black;
   transition: all 0.25s ease-in;
-  font-size: 1rem;
+  font-size: .935rem;
   font-weight: 600;
+  padding: .5rem .5rem;
+
 }
 
 a:hover {
@@ -67,7 +69,7 @@ ul.vertical.menu {
   margin: 0 0 0 1rem;
   a {
             color: $black;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem .8rem;
   font-weight: bold;
   transition: all 0.06s ease-in;
   display: block;
@@ -106,36 +108,34 @@ li.is-dropdown-submenu {
     }
   }
 }
+.right-calltos, .search-container {
+  padding: 0;
 
-.top-bar-right {
-  display: inline-block;
-  ul.dropdown.menu {
-    li.mygcc {
-      a {
-        -webkit-text-decoration-skip: objects;
-  padding: 1rem 2rem;
-  background-color: $secondary;
-  font-size: 1rem;
-  color: $white;
-  .fa-user {
-          margin-right: 0;
-  font-size: 1rem;
-  display: inline-block;
 }
-      }
-
-a:hover {
-  background-color: $primary;
-  color: $white;
-}
-
-a::selection {
-  background-color: $primary;
-  color: $white;
-}
-    }
+.my-gcc {
+    display: inline-block;
+    padding: 0;
+    float: right;
+     a {
+       color: $white;
+       display: block;
+       width: 100%;
+       padding: .8rem 1rem;
+       min-height: 100%;
+       margin: 0 5rem 0 0;
+       background-color: $secondary;
+       text-align: center;
+       font-weight: 800;
+       transition: all 0.06s ease-in;
+     span {
+       padding-right: 1rem;
+     }
+   }
+   a:hover {
+     background-color: $medium-gray !important;
+     color: $primary;
+   }
   }
-}
 
 .top-bar input {
   max-width: 400px !important;
@@ -153,10 +153,10 @@ a::selection {
 .sb-search,
 .sb-search-mobile {
   position: relative;
-  margin-top: 0;
+  margin: 0;
   width: 44%;
   min-width: 49px;
-  height: 49px;
+  height: 50px;
   float: right;
   overflow: hidden;
   -webkit-backface-visibility: hidden;
@@ -194,14 +194,14 @@ a::selection {
 .sb-icon-search,
 .sb-search-submit {
   width: 49px;
-  height: 49px;
+  height: 50px;
   display: block;
   position: absolute;
   right: 0;
   top: 0;
   padding: 0;
   margin: 0;
-  line-height: 49px;
+  line-height: 50px;
   text-align: center;
   cursor: pointer;
 }
@@ -220,6 +220,8 @@ a::selection {
   z-index: 90;
   font-family: 'FontAwesome';
   -webkit-font-smoothing: antialiased;
+  transition: all 0.06s ease-in;
+  font-weight: 800;
 }
 
 .sb-icon-search:hover {

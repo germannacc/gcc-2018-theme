@@ -7,7 +7,7 @@
  * @package gccwp-2018
  */
  ?>
- <aside class="small-12 medium-4 large-3 gutter-small right page-nav">
+ <aside class="small-12 medium-4 large-3 right page-nav">
 
     <?php //get page widgets
 
@@ -23,7 +23,7 @@
       if ( is_page('24') || $post->post_parent == '24' ) {
         //custom department widgets
           dynamic_sidebar( 'admissions-widgets' );
-    }
+      }
 
     //academic center for excellence sidebar
 
@@ -39,9 +39,7 @@
      dynamic_sidebar( 'about-widgets' );
 }
 
-
-   //academics
-
+//academics
    if ( is_page('5761') || $post->post_parent == '5761') {
    //custom department widgets
      dynamic_sidebar( 'academic-widgets' );
@@ -68,23 +66,36 @@ if ( is_page('26') || $post->post_parent == '26') {
 }
 
 
-   //alumni
+//alumni
 
-   if ( is_page('20401') || $post->post_parent == '20401' ) {
-   //custom department widgets
-     dynamic_sidebar( 'alumni-widgets' );
+if ( is_page('20401') || $post->post_parent == '20401' ) {
+//custom department widgets
+ dynamic_sidebar( 'alumni-widgets' );
 }
 
+if ( is_singular('post'))  {
+  //custom archive widgets
+    dynamic_sidebar( 'single-widgets' );
+}
+if ( is_home('post'))  {
+  //custom archive widgets
+    dynamic_sidebar( 'single-widgets' );
+}
+if ( is_category('safety-alerts'))  {
+  //custom archive widgets
+    dynamic_sidebar( 'single-widgets' );
+}
    //awards
+ if (is_page('35') || $post->post_parent == '35')
 
-   if ( is_page('35') || $post->post_parent == '35' ) {
-   //custom department widgets
-     dynamic_sidebar( 'awards-widgets' );
-}
+    {
+     //custom department widgets
+       dynamic_sidebar( 'awards-widgets' );
+    }
 
 //arts and sciences
 
-  if ( is_page('34') || $post->post_parent == '34' ) {
+  if ( is_page('34') || $post->post_parent == '34') {
     //custom department widgets
       dynamic_sidebar( 'arts-sciences-widgets' );
 }
@@ -173,11 +184,12 @@ if ( is_page('26') || $post->post_parent == '26') {
 
    //disability services
 
-   if ( is_page('47') || $post->post_parent == '47' ) {
+if ( is_page('47') || $post->post_parent == '47' ) 
+   {
    //custom department widgets
      dynamic_sidebar( 'disability-services-widgets' );
 
-}
+  }
 
 
    //distance learning
@@ -215,7 +227,7 @@ if ( is_page('26') || $post->post_parent == '26') {
    if ( is_page('57') || $post->post_parent == '57' ) {
    //custom department widgets
      dynamic_sidebar( 'facilities-widgets' );
-}
+   }
 
 
    //faculty and staff
@@ -223,7 +235,7 @@ if ( is_page('26') || $post->post_parent == '26') {
    if ( is_page('58') || $post->post_parent == '58' ) {
    //custom department widgets
      dynamic_sidebar( 'faculty-widgets' );
-}
+    }
 
 
    //financial aid
@@ -238,15 +250,6 @@ if ( is_page('26') || $post->post_parent == '26') {
 if ( is_page('60') || $post->post_parent == '60' ) {
 //custom department widgets
   dynamic_sidebar( 'gainful-employment-widgets' );
-}
-
-
-
-   //foundation events
-
-   if ( is_page('52') || $post->post_parent == '52' ) {
-   //custom department widgets
-     dynamic_sidebar( 'edfoundation-widgets' );
 }
 
 
@@ -313,15 +316,16 @@ if ( is_page('60') || $post->post_parent == '60' ) {
 }
 
 
-   //institutional advancement
+//highlights
 
+   //institutional advancement
    if ( is_page('93') || $post->post_parent == '93' ) {
    //custom department widgets
      dynamic_sidebar( 'ie-widgets' );
+
 }
 
-
-   //inauguration
+  //inauguration
 
    if ( is_page('24232') || $post->post_parent == '24232' ) {
    //custom department widgets
@@ -413,12 +417,6 @@ if ( is_page('84') || $post->post_parent == '84' ){
 }
 
 
-   //policies
-
-   if ( is_page('63') || $post->post_parent == '63' ) {
-   //custom department widgets
-     dynamic_sidebar( 'policies-widgets' );
-}
 
 
    //presidents office
@@ -507,8 +505,6 @@ if ( is_page('11046') || $post->post_parent == '11046' ) {
   dynamic_sidebar( 'student-handbook-widgets' );
 }
 
-
-
    //technical Services
 
    if ( is_page('106') || $post->post_parent == '106' ) {
@@ -536,7 +532,6 @@ if ( is_page('107') || $post->post_parent == '107' ) {
       dynamic_sidebar( 'veterans-widgets' );
 }
 
-
     //workforce
 
     if ( is_page('113') || $post->post_parent == '113' ) {
@@ -544,12 +539,6 @@ if ( is_page('107') || $post->post_parent == '107' ) {
       dynamic_sidebar( 'workforce-widgets' );
 }
 
+?>
 
-
- ?>
-
-
-
-
-
- </aside>
+</aside>

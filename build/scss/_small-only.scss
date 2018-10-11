@@ -23,26 +23,12 @@
   }
   //page heading
   .hero-section {
-    height: auto;
-    display: block;
-    position: relative;
+  height: auto;
 
     img {
-      height: auto;
-
+  height: auto;
     }
-
-    .hero-section-text {
-       position: relative;
-       display: block;
-       margin: 0;
-       left: 0;
-       background-color: $secondary;
-      .entry-title {
-        font-size: 1.2rem;
-        padding: .8rem .5rem;
-      }
-    }
+  }
 
     .crumbs-container {
     position: relative;
@@ -92,7 +78,7 @@
         }
       }
     }
-  }
+
 
   .hero-section-single {
     height: auto;

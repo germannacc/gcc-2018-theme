@@ -9,13 +9,10 @@
     a {}
   }
 }
-.quicklinks-box, .off-canvas {
+.off-canvas {
   display:none;
 }
 
-.button-group .hide-for-large, .title-bar .hide-for-large {
-  display: block !important;
-}
 .off-canvas-content.has-reveal-left, .position-left.reveal-for-large~.off-canvas-content {
     margin-left: 0 !important;
 }
@@ -41,14 +38,20 @@ ul.dropdown.menu {
 
 }
 .hero-section {
-  height: 34vh;
+height: auto;
+
   img {
-          height: 34vh;
-  }
-  .hero-section-text {
-    bottom: 20%;
+height: auto;
   }
 }
+
+.hero-section-plain {
+  h1.entry-title {
+    font-size: 2.4rem;
+
+  }
+}
+
 
 .hero-section-single {
   height: 40vh;

@@ -20,7 +20,7 @@ article {
 }
 
 .entry-content {
-  padding: 2rem 1rem 10rem 0;
+  padding: 1rem 2rem 28rem 2rem;
   overflow: hidden;
   max-width: 99%;
   border: none;
@@ -29,6 +29,7 @@ article {
   h2 {
     color: $secondary;
     font-size: 2.188rem;
+
   }
 
   a {
@@ -50,6 +51,9 @@ article {
     li.accordion-item {
       a.accordion-title {
         line-height: 1.8rem;
+        border-bottom: 1px solid $medium-gray;
+          border-top: 1px solid $medium-gray;
+        font-weight: 800;
       }
     }
   }
@@ -62,8 +66,8 @@ article {
 
 .page-nav {
   background-color: $light-gray;
-  padding:  0;
-  margin-top: 1rem;
+  padding:  2rem 3rem 0 3rem;
+  margin: 1rem 0;
 }
 //Page Side bar
 

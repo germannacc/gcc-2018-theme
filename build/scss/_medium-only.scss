@@ -3,7 +3,6 @@
   .off-canvas {
     display: block !important;
   }
-
     .gcc-main-nav {
       background-color: $light-gray !important;
       margin: 1rem 0;
@@ -22,30 +21,19 @@
 
 //page headings
 .hero-section {
-  height: 26vh;
+height: auto;
 
-
-  img  {
-
-    height: 26vh;
+  img {
+height: auto;
+  }
+}
+.hero-section-plain {
+  h1.entry-title {
+    font-size: 2.4rem;
 
   }
-
-
-  .hero-section-text {
-
-    left: 2%;
-    bottom: 22%;
-
-
-    .entry-title {
-      font-size: 1.4rem;
-
-    }
-
 }
 
-}
 .hero-section-single {
   height: 40vh;
 

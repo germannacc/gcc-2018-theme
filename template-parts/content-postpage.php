@@ -112,7 +112,7 @@
 </div>
 
 <?php //Template Sidebar
-get_template_part( '/sidebars/archive-sidebar' ); ?>
+get_sidebar(); ?>
 
 </div>
 <!--.pagecontent-->
