@@ -1,5 +1,8 @@
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {
+  .off-canvas {
+    display: block !important;
+  }
 .gcc-main-nav {
   background-color: $light-gray !important;
   margin: 1rem 0;
@@ -9,9 +12,7 @@
     a {}
   }
 }
-.off-canvas {
-  display:none;
-}
+
 
 .off-canvas-content.has-reveal-left, .position-left.reveal-for-large~.off-canvas-content {
     margin-left: 0 !important;

@@ -1,7 +1,7 @@
 .marketing-site-footer {
   background: $secondary;
   color: lighten($secondary, 95%);
-  padding: 2rem 0 0;
+  padding: 3rem 0 0 0;
   text-align: center;
 
   p {
@@ -29,7 +29,6 @@
   }
 
   .menu {
-    margin-top: 1rem;
 
     a {
       padding: 0 0 1rem;
@@ -77,7 +76,36 @@
         color: $dark-gray;
       }
     }
+
   }
+  .social-icons {
+   position: relative;
+    width: 70%;
+    margin: 0 auto;
+
+      li {
+        a {
+          cursor: pointer;
+            display: inline-block;
+            span {
+              color: $white;
+              padding: 1rem 0.4rem;
+              border-radius: 100%;
+              text-align: center;
+            }
+
+            span:hover {
+              color: $primary;
+            }
+
+            span.icon-text {
+              display: block;
+              text-indent: -99999px;
+              display: none;
+            }
+        }
+      }
+    }
 }
 
 .marketing-site-footer-name {
@@ -105,14 +133,6 @@
 
   a.button {
     font-weight: bold;
-  }
-
-  a.button span {
-    font-size: 1.4rem;
-    color: $white;
-    position: absolute;
-    top: 0.38em;
-    left: 1.5em;
   }
 
   p {
@@ -146,4 +166,5 @@
       text-decoration: underline;
     }
   }
+
 }

@@ -20,6 +20,8 @@ get_header(); ?>
 
     <?php get_template_part( 'template-parts/content', 'getstarted' ); ?>
 
+    <?php get_template_part( 'template-parts/content', 'home-video' ); ?>
+
     <?php get_template_part( 'template-parts/content', 'highlights' ); ?>
 
     <footer class="entry-footer">

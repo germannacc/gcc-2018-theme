@@ -20,12 +20,7 @@
 
     <?php if ( has_post_thumbnail() ) : ?>
       <div class="row latest-post">
-      <div class="medium-5 columns">
-
-          <?php gcc_wp_2018_post_thumbnail(); ?>
-
-      </div>
-      <div class="medium-7 columns">
+      <div class="medium-12 columns">
       <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
       <?php if ( 'post' === get_post_type() ) : ?>
         <div class="entry-meta float-right">

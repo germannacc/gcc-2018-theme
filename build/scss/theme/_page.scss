@@ -20,43 +20,154 @@ article {
 }
 
 .entry-content {
-  padding: 1rem 2rem 28rem 2rem;
+  padding: 2rem 1rem;
   overflow: hidden;
-  max-width: 99%;
   border: none;
   background-color: $white;
+  .columns {
+    padding-left: 0;
+}
 
-  h2 {
-    color: $secondary;
-    font-size: 2.188rem;
+p {
+    font-size: 1rem;
+}
 
-  }
-
-  a {
-    font-weight: 600;
-  }
-
-  a:hover {
-    text-decoration: underline;
-  }
-
-  blockquote {
-    background-color: $light-gray;
-    padding: 2rem;
-  }
-
-  ul.accordion {
-    margin-bottom: 2rem;
-
-    li.accordion-item {
-      a.accordion-title {
-        line-height: 1.8rem;
-        border-bottom: 1px solid $medium-gray;
-          border-top: 1px solid $medium-gray;
-        font-weight: 800;
-      }
+ol,
+  ul {
+li {
+      font-size: 1rem;
+strong {
+        font-size: 1rem;
+}
     }
   }
+
+h2 {
+  color: $secondary;
+  font-size: 2.188rem;
+}
+
+/* unvisited link */
+a:link {
+    color: $primary;
+}
+
+/* visited link */
+a:visited {
+    color: #666633;
+}
+
+/* mouse over link */
+a:hover {
+    color: $secondary;
+}
+
+/* selected link */
+a:active {
+    color: $primary;
+}
+
+a {
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* unvisited link */
+a.button:link {
+    color: $white;
+}
+
+/* visited link */
+a.button:visited {
+    color: $white;
+    background-color: $secondary;
+}
+
+/* mouse over link */
+a.button:hover {
+    color: $primary;
+    background-color: $medium-gray
+}
+
+/* selected link */
+a.button:active {
+    color: $primary;
+    background-color: $medium-gray;
+}
+
+/* unvisited link */
+a.button.hollow:link {
+    color: $primary;
+}
+
+/* visited link */
+a.button.hollow:visited {
+    color: $primary;
+    background-color: $secondary;
+}
+
+/* mouse over link */
+a.button.hollow:hover {
+    color: $white;
+    background-color: $primary;
+}
+
+/* selected link */
+a.button.hollow:active {
+    color: $secondary;
+    background-color: $medium-gray;
+}
+
+blockquote {
+  background-color: $light-gray;
+  padding: 2rem;
+}
+
+ul.accordion {
+  margin-bottom: 2rem;
+  li.accordion-item {
+      a.accordion-title {
+        line-height: 1.8rem;
+  border-bottom: 1px solid $medium-gray;
+  border-top: 1px solid $medium-gray;
+  font-weight: 800;
+}
+    }
+  }
+
+.button-group a {
+  margin-right: 1rem;
+}
+
+//custom wpforms styles
+
+.wpforms-field-label {
+  font-size: 1.4rem !important;
+}
+
+.wpforms-field-sublabel {
+  font-size: 1rem !important;
+  margin-bottom: 1rem !important;
+}
+
+button.wpforms-page-next  , button.wpforms-page-prev  {
+
+  background-color: $secondary !important;
+  color: $white !important;
+  font-weight: 800 !important;
+  font-size: 1rem !important;
+  border-radius: 25px !important;
+
+}
+button:hover.wpforms-page-next  , button:hover.wpforms-page-prev  {
+
+  background-color: $primary !important;
+  color: $white !important;
+
+}
 }
 
 .moretag {
@@ -66,202 +177,219 @@ article {
 
 .page-nav {
   background-color: $light-gray;
-  padding:  2rem 3rem 0 3rem;
-  margin: 1rem 0;
+  padding: 0 !important;
+  margin: 0;
 }
 //Page Side bar
 
 .widget {
   margin-bottom: 1rem;
-
   h3 {
-    background-color: $medium-gray;
-    border-bottom: 2px solid $primary;
-    color: $dark-gray;
-    width: 100%;
-    padding: 1rem;
-    font-size: 1.4rem;
-    margin: 0;
-  }
+  background-color: $medium-gray;
+  border-bottom: 2px solid $primary;
+  color: $dark-gray;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  margin: 0;
+}
 
-  h4, h5 {
-    font-size: 1.2rem;
-  }
+h4,
+  h5 {
+  font-size: 1.2rem;
+}
 
 .textwidget {
-  padding: 1rem;
+  padding: 1rem ;
 }
 }
 
 .department-links {
   ul.vertical.menu {
     margin: 0;
-
-    li {
-      a {
+    padding: 0;
+  li {
+    a:link {
         padding: 0.5rem 1rem;
         font-weight: bold;
         color: $dark-gray;
         line-height: 1.4rem;
       }
 
-      a:hover {
-        color: $primary;
-        text-decoration: underline;
-      }
+    /* visited link */
+    a:visited {
+        color: $secondary;
     }
 
-    .active > a {
+    /* mouse over link */
+    a:hover {
       color: $primary;
       text-decoration: underline;
     }
+
+    /* selected link */
+    a:active {
+        color: $primary;
+    }
+
+    }
+
+.active > a {
+  color: $primary;
+  text-decoration: underline;
+}
   }
 }
+
 .widget ul:nth-child(1).menu {
   li:first-child {
     background-color: $medium-gray;
-    color: $dark-gray;
-    width: 100%;
-    padding: 1rem 0;
-    font-size: 1rem;
-    border-bottom: 2px solid $primary;
-
-
-    a {
-      line-height: 1.8rem;
-      padding: 0 0 0 1rem;
-
-    }
-  }
-
-  li:last-child {
-    border-bottom: none;
-  }
-
-  li:last-child a, li:last-child div {
-    border-bottom: none;
-  }
-
+  color: $dark-gray;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 2px solid $primary;
+  a {
+    font-size: 1.2rem;
+    font-weight: 800;
+  line-height: 1.8rem;
+  padding: 0 1rem;
 }
+  }
+
+li:last-child {
+  border-bottom: none;
+}
+
+li:last-child a,
+  li:last-child div {
+  border-bottom: none;
+}
+}
+
 .widget {
+  padding: 0;
   ul.menu {
     margin: 0;
 
     li {
       display: block;
-      width: 100%;
+      width: 100%; //do not remove
       border-bottom: 1px solid $medium-gray;
-      a {
-        padding: 1rem 1.5rem;
-        font-weight: bold;
-        color: $dark-gray;
-        line-height: 1.4rem;
+      padding: 0;
+
+
+      a:link {
+          font-weight: 800;
+          padding: 1rem 1rem 1rem 1.4rem;
+          line-height: 1.6rem;
+          font-size: 1rem;
+          font-weight: bold;
+          color: $dark-gray;
+          line-height: 1.4rem;
+        }
+
+      /* visited link */
+      a:visited {
+          color: $primary;
+          text-decoration: underline;
       }
 
+      /* mouse over link */
       a:hover {
         color: $primary;
         text-decoration: underline;
       }
 
-    }
+      /* selected link */
+      a:active {
+          color: $primary;
+      }
 
-    .active > a {
-      background-color: $medium-gray;
-      color: $primary;
-    }
+      }
+
+  .active > a {
+    background-color: $medium-gray;
+    color: $secondary;
+    font-weight: 800;
   }
 
-  .social-icons {
+}
 
-    margin: 0;
-    padding: 0;
-
+.social-icons {
+  margin: 0;
+  padding: 0;
   li {
+  list-style: none;
+  width: auto;
+  display: inline-block;
+  a {
+        padding: 0.4rem 0.2rem;
+  span {
+  color: $primary;
+  padding: 0.3rem 0.6rem;
+  border: 1px solid $primary;
+  border-radius: 100%;
+  text-align: center;
+}
 
-    list-style: none;
-    width: auto;
-    display: inline-block;
-
-   a {
-
-      padding: .4rem .2rem;
-
-     span {
-         color: $primary;
-         padding: .3rem .6rem;
-         border: 1px solid $primary;
-         border-radius: 100%;
-         text-align: center;
-     }
-
-     span:hover {
-         color: $dark-gray;
-         border: 1px solid $dark-gray;
-
-     }
-
-
-  }
-
-
+span:hover {
+  color: $dark-gray;
+  border: 1px solid $dark-gray;
+}
+      }
     }
-
   }
 }
 
 .menu-about-governance-menu-container {
   ul.menu {
     margin: 1rem 0;
-
-    li {
+  li {
       display: block;
-      width: 100%;
-
-      a {
+  width: 100%;
+  a {
         padding: 0.5rem 1rem;
-        font-weight: bold;
-        color: $dark-gray;
-        line-height: 1.4rem;
-      }
+  font-weight: bold;
+  color: $dark-gray;
+  line-height: 1.4rem;
+}
 
-      a:hover {
-        background-color: $black;
-        color: $white;
-      }
+a:hover {
+  background-color: $black;
+  color: $white;
+}
     }
 
-    .active > a {
-      background-color: $black;
-      color: $white;
-    }
+.active > a {
+  background-color: $black;
+  color: $white;
+}
   }
 }
 
 .menu-facts-and-figures-container {
   ul.menu {
     margin: 1rem 0;
-
-    li {
+  li {
       display: block;
-      width: 100%;
-
-      a {
+  width: 100%;
+  a {
         padding: 0.5rem 1rem;
-        font-weight: bold;
-        color: $dark-gray;
-        line-height: 1.4rem;
-      }
+  font-weight: bold;
+  color: $dark-gray;
+  line-height: 1.4rem;
+}
 
-      a:hover {
-        background-color: $black;
-        color: $white;
-      }
+a:hover {
+  background-color: $black;
+  color: $white;
+}
     }
 
-    .active > a {
-      background-color: $black;
-      color: $white;
-    }
+.active > a {
+  background-color: $black;
+  color: $white;
+}
   }
 }
 
@@ -279,18 +407,11 @@ article {
 /*callout equal heights*/
 .callout.small {
   padding: 0.5rem;
-
+  position: relative;
   ul {
-    padding-left: 0;
 
-    li {
-      list-style: none;
-      padding: 0.3rem 0;
-    }
-  }
+  li {
+  padding: 0.3rem 0;
 }
-.404-row {
-
-  padding: 20% 0;
-
+  }
 }

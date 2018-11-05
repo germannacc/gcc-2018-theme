@@ -263,7 +263,7 @@ $callto_button_1_text = get_field('callto_button_1_text', 'option');
   $sidebar_ad_2_image = get_field('sidebar_ad_2_image', 'option');
   $tips_url = get_field('tips_url ', 'option');
 ?>
-    <div class="off-canvas position-left reveal-for-large" id="main-menu">
+    <div class="off-canvas position-left reveal-for-xlarge" id="main-menu">
 
         <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018'); ?>" type="button" data-close>
         <span aria-hidden="true">&times;</span>
@@ -370,9 +370,6 @@ $height = $image['sizes'][ $size . '-height' ];
                   'T.I.P.S.', 'gcc-wp-2018' ); ?>
                   </a>
 
-                   <?php //function location in inc/social-icons.php
-                   gcc_wp_2018_social_icons(); ?>
-
                  <?php endif; ?>
 
                 </div>
@@ -383,3 +380,12 @@ $height = $image['sizes'][ $size . '-height' ];
     </div>
 <?php
 } ?>
+<?php
+function gcc_wp_2018_close_button() { ?>
+
+<button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018' ); ?>" type="button" data-close>
+					<?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
+</button>
+
+<?php }
+?>

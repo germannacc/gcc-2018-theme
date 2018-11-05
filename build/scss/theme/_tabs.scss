@@ -8,10 +8,124 @@
 
 .accordion-content {
   ul {
-    margin-bottom: 1rem;
-  }
+    margin-bottom: 2rem;
+    display: block;
+}
 }
 
 .tabs-content {
   padding: 1rem 0;
+}
+
+li.tabs-title {
+
+a:link {
+  font-weight: 800;
+  color: $dark-gray;
+}
+/* visited link */
+a:visited {
+  color: $white;
+  text-decoration: underline;
+}
+/* mouse over link */
+a:hover {
+  color: $primary;
+  text-decoration: underline;
+}
+/* selected link */
+a:active {
+  color: $primary;
+}
+
+}
+
+li.accordion-item {
+a:link {
+      font-weight: 800;
+      color: $dark-gray;
+}
+  /* visited link */
+a:visited {
+  color: $primary;
+  text-decoration: underline;
+}
+  /* mouse over link */
+a:hover {
+  color: $primary;
+  text-decoration: underline;
+}
+  /* selected link */
+a:active {
+  color: $primary;
+}
+.accordion-content {
+a:link {
+      font-weight: 800;
+      color: $primary;
+}
+  /* visited link */
+a:visited {
+  color: $secondary;
+  text-decoration: underline;
+}
+  /* mouse over link */
+a:hover {
+  color: $secondary;
+  text-decoration: underline;
+}
+  /* selected link */
+a:active {
+  color: $primary;
+}
+
+a.button.primary:link {
+      font-weight: 800;
+      color: $white;
+      margin-top: 1rem;
+}
+  /* visited link */
+a.button.primary:visited {
+  color: $white;
+  text-decoration: underline;
+  background-color: $secondary;
+
+}
+  /* mouse over link */
+a.button.primary:hover {
+  color: $primary;
+  text-decoration: underline;
+  background-color: $medium-gray;
+}
+  /* selected link */
+a.button.primary:active {
+  color: $primary;
+}
+
+.callout {
+  a.button.primary:link {
+        color: $primary;
+        background-color: $light-gray;
+        padding: 0 0 1rem 0;
+  }
+    /* visited link */
+  a.button.primary:visited {
+    color: $primary;
+    background-color: $light-gray;
+
+  }
+    /* mouse over link */
+  a.button.primary:hover {
+    color: $secondary;
+    background-color: $light-gray;
+
+  }
+    /* selected link */
+  a.button.primary:active {
+    color: $primary;
+  }
+
+
+}
+}
 }

@@ -7,7 +7,7 @@
  * @package gccwp-2018
  */
  ?>
- <aside class="small-12 medium-4 large-3 right page-nav">
+ <aside class="small-12 medium-4 large-3 columns right page-nav">
 
     <?php //get page widgets
 
@@ -93,6 +93,7 @@ if ( is_category('safety-alerts'))  {
        dynamic_sidebar( 'awards-widgets' );
     }
 
+
 //arts and sciences
 
   if ( is_page('34') || $post->post_parent == '34') {
@@ -157,6 +158,15 @@ if ( is_category('safety-alerts'))  {
      dynamic_sidebar( 'college-police-widgets' );
 }
 
+if ( is_category( '1803' )) {
+//custom department widgets
+  dynamic_sidebar( 'college-police-widgets' );
+}
+
+if ( is_archive( '1803' )) {
+//custom department widgets
+  dynamic_sidebar( 'college-police-widgets' );
+}
 
    //contact
 
@@ -184,7 +194,7 @@ if ( is_category('safety-alerts'))  {
 
    //disability services
 
-if ( is_page('47') || $post->post_parent == '47' ) 
+if ( is_page('47') || $post->post_parent == '47' )
    {
    //custom department widgets
      dynamic_sidebar( 'disability-services-widgets' );
@@ -220,6 +230,10 @@ if ( is_page('47') || $post->post_parent == '47' )
    if ( is_page('52') || $post->post_parent == '52' ) {
    //custom department widgets
      dynamic_sidebar( 'edfoundation-widgets' );
+}
+if ( is_page('25329')) {
+//custom department widgets
+  dynamic_sidebar( 'edfoundation-widgets' );
 }
 
    //facilities

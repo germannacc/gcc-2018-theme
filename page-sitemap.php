@@ -15,17 +15,15 @@ get_header(); ?>
   get_template_part( 'template-parts/content', 'page-heading' );
   ?>
 
-
  		<div class="row gutter-small expanded content-area">
 
       <div class="small-12 columns">
 
         <div class="entry-content">
 
-
-      <?php
-          the_content();
-      ?>
+          <?php
+              the_content();
+           ?>
 
       <div class="small-12 medium-5 columns">
 
@@ -46,7 +44,6 @@ get_header(); ?>
             <li><a href="<?php esc_html_e('#business-office', 'gcc-wp-2018'); ?>"><?php _e('Business Office', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#career-center', 'gcc-wp-2018'); ?>"><?php _e('Career Center', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#career-transfer-center', 'gcc-wp-2018'); ?>"><?php _e('Career and Transfer Center', 'gcc_wp_2018'); ?></a></li>
-            <li><a href="<?php esc_html_e('#college-catalog', 'gcc-wp-2018'); ?>"><?php _e('College Catalog', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#college-board', 'gcc-wp-2018'); ?>"><?php _e('College Board', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#college-police', 'gcc-wp-2018'); ?>"><?php _e('College Police Department', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#contact-germanna', 'gcc-wp-2018'); ?>"><?php _e('Contact Us', 'gcc_wp_2018'); ?></a></li>
@@ -79,7 +76,6 @@ get_header(); ?>
             <li><a href="<?php esc_html_e('#paying-for-college', 'gcc-wp-2018'); ?>"><?php _e('Paying for College', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#pathways-programs', 'gcc-wp-2018'); ?>"><?php _e('Pathways', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#pta', 'gcc-wp-2018'); ?>"><?php _e('Physical Therapist Assistant', 'gcc_wp_2018'); ?></a></li>
-            <li><a href="<?php esc_html_e('#policies', 'gcc-wp-2018'); ?>"><?php _e('Policies', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#presidents-office', 'gcc-wp-2018'); ?>"><?php _e('President&#8217s Office', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#printing', 'gcc-wp-2018'); ?>"><?php _e('Printing', 'gcc_wp_2018'); ?></a></li>
             <li><a href="<?php esc_html_e('#statements-policies', 'gcc-wp-2018'); ?>"><?php _e('Statements &amp; Policies', 'gcc_wp_2018'); ?></a></li>
@@ -221,15 +217,6 @@ get_header(); ?>
 
 </div>
 
-<div class="callout small primary">
-
-   <h2 id="college-catalog"><?php _e('College Catalog', 'gcc_wp_2018'); ?></h2>
-
-   <?php //get custom sidebar menu for section
-   wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-     'menu' => 'Catalog Menu', 'container' => 'false', 'menu_class' => '' ) ); ?>
-
-</div>
 
 <div class="callout small primary">
 
@@ -567,17 +554,6 @@ get_header(); ?>
      'menu' => 'PTA Main Menu', 'container' => 'false', 'menu_class' => '' ) ); ?>
 
 </div>
-
-<div class="callout small primary">
-
-   <h2 id="policies"><?php _e('Policies', 'gcc_wp_2018'); ?></h2>
-
-   <?php //get custom sidebar menu for section
-   wp_nav_menu( array( //wp_nav_menu args, look at documentation for more options.
-     'menu' => 'Policies Menu', 'container' => 'false', 'menu_class' => '' ) ); ?>
-
-</div>
-
 
 <div class="callout small primary">
 

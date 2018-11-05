@@ -13,24 +13,23 @@ $marketing-site-footer-bg: $light-gray;
     background-size: cover;
     height: 28vh;
   }
-
 }
-
 .hero-section-text {
   color: $secondary;
-  letter-spacing: 0.2rem;
   width: 100%;
   display: block;
   position: relative;
   background-color: $light-gray;
-  padding: 1rem 1.8rem;
+  padding: 1rem 1rem;
 
   h1 {
     margin: 0;
+      color: $primary;
   }
 
   .entry-title {
-    color: $primary;
+
+    font-size: 1.4rem;
   }
 
   .entry-meta {
@@ -48,13 +47,13 @@ $marketing-site-footer-bg: $light-gray;
     }
   }
 }
-
 .crumbs-container {
   padding: 0;
-  margin: 0 0 1rem 0;
+  margin: 0;
   background-color: $medium-gray;
   border-bottom: 10px solid $primary;
   width: 100%;
+
 
   .breadcrumbs {
     margin-left: 2rem;
@@ -75,38 +74,36 @@ $marketing-site-footer-bg: $light-gray;
 }
 
 .post-meta {
-  padding: 0;
   margin: 0 auto;
-  background-color: $primary;
-  padding: 0 1rem 0.3rem;
+  padding: 0 1.5rem 1rem 1.5rem;
+  background-color: $light-gray;
 
   p {
-    color: $white;
+    color: $secondary;
   }
-
   span.posted-on {
     a {
-      color: $white;
+      color: $primary;
       padding-left: 0.4rem;
     }
-  }
-
-  span.cat-links {
-    a {
-      color: $white;
-    }
-
     a:hover {
       color: $secondary;
       text-decoration: underline;
     }
   }
-
+  span.cat-links {
+    a {
+      color: $primary;
+    }
+    a:hover {
+      color: $secondary;
+      text-decoration: underline;
+    }
+  }
   span.tags-links {
     a {
-      color: $white;
+      color: $primary;
     }
-
     a:hover {
       color: $secondary;
       text-decoration: underline;
@@ -117,9 +114,9 @@ $marketing-site-footer-bg: $light-gray;
 .hero-section-plain {
   position: relative;
   height: auto;
-  padding: 0.5rem;
+  padding: 0 0.5rem;
   background-color: $white;
-  margin: 0;
+  margin: 1rem 0 0 0;
 
   .hero-section-text {
     color: $white;
@@ -173,24 +170,24 @@ $marketing-site-footer-bg: $light-gray;
 
 .hero-section-404 {
   position: relative;
-  height: 100vh;
+  height: 65vh;
   margin-bottom: 0;
   padding: 0;
   width: 100%;
   background: rgba(0,0,0,.6);
   color: $white;
   text-align: center;
-
+display: block;
   img {
-    height: 100vh;
+    height: 85vh;
     display: flex;
     align-items: center;
     justify-content: center;
     position: fixed;
     z-index: -1;
-    width: 88%;
+    width: 100%;
     margin-bottom: 0;
-    margin-left: 300px;
+    margin-left: 0;
     top: 0;
     right: 0;
     bottom: 0;
@@ -198,6 +195,7 @@ $marketing-site-footer-bg: $light-gray;
   }
 
   .hero-section-404-text {
-    padding: 12% 0;
+    margin: 20% 0;
+
   }
 }

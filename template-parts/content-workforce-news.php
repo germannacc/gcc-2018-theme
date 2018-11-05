@@ -6,7 +6,6 @@
 $args =  array (
 
 'post_type' => 'workforce_news_post',
-'paged' => get_query_var('paged'),
 'posts_per_page'=>-1,
 
 );

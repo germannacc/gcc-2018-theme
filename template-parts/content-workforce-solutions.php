@@ -4,9 +4,9 @@
 
 	<h1 class="text-center"><?php the_field('page_heading'); ?></h1>
 
-	<div class="row expanded" data-equalizer data-equalize-on="medium">
+	<div class="row expanded" data-equalizer data-equalize-on="large">
 
-	 <div class="small-12 medium-4 columns">
+	 <div class="small-12 medium-12 large-4 columns">
 
 		 <div class="callout alert text-center" data-equalizer-watch>
 							 <?php
@@ -36,7 +36,7 @@
 
 	 </div>
 
-	 <div class="small-12 medium-4 gutter-small columns" >
+	 <div class="small-12 medium-12 large-4 gutter-small columns" >
 
 		 <div class="callout alert text-center" data-equalizer-watch>
 			 <?php //credentials box
@@ -65,7 +65,7 @@
 
 	</div>
 
-	<div class="small-12 medium-4 columns">
+	<div class="small-12 medium-12 large-4 columns">
 
 		<div class="callout alert  text-center" data-equalizer-watch>
 			<?php //tuition assistance box

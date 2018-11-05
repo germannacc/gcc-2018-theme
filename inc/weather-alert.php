@@ -1,4 +1,5 @@
 <?php
+
 function gcc_wp_2018_weather_alerts() {
 
   $closing_announcement_text = get_field('closing_announcement_text', 'option');

@@ -31,7 +31,7 @@ $args =  array (
 
 <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-<div class="medium-4 large-4 columns" data-equalizer-watch>
+<div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
 
   <div class="card">
     <a href="<?php the_field('pathway_url');?>">
@@ -84,7 +84,7 @@ $args =  array (
 
 <div class="row">
 
-  <div class="small-10 medium-4 small-centered text-center columns">
+  <div class="small-12 medium-6 large-4 small-centered text-center columns">
     <a href="<?php the_field('programs_button_url'); ?>" class="button expanded large"><?php the_field('programs_button_text'); ?></a>
   </div>
 

@@ -1,44 +1,51 @@
+.title-bar {
+
+  padding: .5rem !important;
+
 .title-bar-left {
   margin: 0;
-  padding: 0;
   position: relative;
 
   a.logo {
-    padding: 0;
-    background: url("../media/germanna-logo-white-mobile.png") no-repeat center center;
+    padding: 1rem;
     height: 49px;
     width: 164px;
     text-indent: -9999px;
     overflow: hidden;
     display: block;
     position: relative;
-    margin: 0.5rem 1rem;
+    margin: 1rem;
   }
-
-  button span {
-    position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    width: 50px;
-    height: 50px;
+  button {
     color: $white;
-    font-size: 2.8rem;
-    font-weight: 100;
+    padding: 1rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+
+    span {
+      padding-right: 1rem;
+    }
+
   }
 
-  button span:hover {
-    cursor: pointer;
-    color: $dark-gray;
-  }
+}
+
 }
 
 .menu-icon {
-  margin: 1.5rem 1rem 0 1rem !important;
-  height: 22px !important;
+  margin: 1.3rem 1rem 0 1rem !important;
+  height: 32px !important;
   width: 32px !important;
 }
 
 .mobile-menu {
+  background-color: $light-gray;
+
+  .menu-extras {
+    margin-top: 0;
+
+  }
+
   border-bottom: 5px solid $primary;
 
   .button-group {
@@ -66,12 +73,44 @@
 
   .branding {
     max-width: 100% !important;
+
+    .mygcc {
+
+      margin-bottom: 1rem;
+      text-align: center;
+
+      a:link {
+          color: $primary;
+          border-bottom: 1px solid $dark-gray;
+          font-weight: 800;
+          background-color: $light-gray;
+          padding: 1.2rem 1rem;
+      }
+      /* visited link */
+      a:visited {
+          color: $primary;
+          background-color: $medium-gray;
+      }
+      /* mouse over link */
+      a:hover {
+          color: $white;
+          background-color: $primary;
+
+      }
+      /* selected link */
+      a:active {
+          color: $white;
+          background-color: $light-gray;
+      }
+
+    }
   }
 
   .tagline {
     p.lead {
       font-size: 1.2rem;
       margin-top: 1rem;
+      color: $white;
     }
   }
 
@@ -102,38 +141,6 @@
     font-family: inherit;
     color: $dark-gray;
   }
-
-  ul.dropdown.menu {
-    li.mygcc {
-      a {
-        -webkit-text-decoration-skip: objects;
-        padding: 0.9rem 0;
-        background-color: $medium-gray;
-        font-size: 1rem;
-        color: $primary;
-        text-align: center;
-        margin: 0 auto 1rem;
-        font-weight: 700;
-
-        .fa-user {
-          margin-right: 0;
-          font-size: 1rem;
-          display: inline-block;
-        }
-      }
-
-      a:hover {
-        background-color: $primary;
-        color: $white;
-      }
-
-      a::selection {
-        background-color: $secondary;
-        color: $white;
-      }
-    }
-  }
-
   .alert {
     margin-top: 0;
     padding: 0.8rem 0.2rem 0.1rem;
@@ -174,37 +181,127 @@
     }
   }
 }
-
 .mobile-nav {
+
   ul {
+    margin-bottom: 20px;
+
     li {
-      background-color: $light-gray;
 
-      a {
-        border-bottom: 1px solid $dark-gray;
+
+      a:link {
+          color: $primary;
+          border-bottom: 1px solid $dark-gray;
+          font-weight: 800;
+          background-color: $light-gray;
+          padding: 1.2rem 1rem;
       }
-    }
+      /* visited link */
+      a:visited {
+          color: $primary;
+          background-color: $medium-gray;
+      }
+      /* mouse over link */
+      a:hover {
+          color: $secondary !important;
+          background-color: $medium-gray;
 
-    li:hover {
-      background-color: $medium-gray;
+      }
+      /* selected link */
+      a:active {
+          color: $white;
+          background-color: $light-gray;
+      }
+
+          ul.nested {
+
+                  li  {
+                    a:link {
+                        color: $secondary !important;
+                        background-color: $light-gray;
+                    }
+                    /* visited link */
+                    a:visited {
+                        color: $primary;
+                        background-color: $medium-gray;
+                    }
+                    /* mouse over link */
+                    a:hover {
+                        color: $primary !important;
+                        background-color: $medium-gray;
+                    }
+                    /* selected link */
+                    a:active {
+                        color: $white;
+                        background-color: $light-gray;
+                    }
+
+                  }
+
+          }
+
     }
 
     li.mobile-quicklink {
       background-color: $white;
 
-      a {
-        color: $secondary !important;
+      a:link {
+          color: $secondary !important;
       }
+      /* visited link */
+      a:visited {
+          color: $primary;
+          background-color: $medium-gray;
+      }
+      /* mouse over link */
+      a:hover {
+          color: $primary !important;
+          background-color: $medium-gray;
+      }
+      /* selected link */
+      a:active {
+          color: $primary;
+          background-color: $medium-gray;
+      }
+    }
+    li.give-button {
+      a:link {
+          color: $white !important;
+          border-radius: 0;
+      }
+      /* visited link */
+      a:visited {
+          color: $white !important;
+          text-decoration: underline;
+
+      }
+      /* mouse over link */
+      a:hover {
+         color: $white !important;
+      }
+      /* selected link */
+      a:active {
+          color: $white;
+      }
+    }
+    li.support-link {
+
+        margin: 2rem auto 1rem auto;
+        width: 280px;
+        text-align: center;
+
+        a {
+                background-color: $medium-gray;
+                font-size: 2.2rem;
+                line-height: 2.6rem;
+                padding: 1rem;
+        }
 
       a:hover {
-        color: $primary !important;
+            color: $secondary;
       }
-    }
 
-    li.give-button {
-      a {
-        border-radius: 0;
-      }
     }
   }
+
 }

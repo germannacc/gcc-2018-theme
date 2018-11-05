@@ -1,21 +1,16 @@
 .top-bar {
   padding: 0;
   background-color: $light-gray;
+  border-bottom: 1px solid $medium-gray;
 }
-
 .quicklinks {
-  position: relative;
-  display: block;
-  padding: 0 0 0 1rem;
+  padding: 0;
   margin: 0;
-  z-index: 1000 !important;
-  -webkit-box-shadow: 0 7px 5px -4px rgba(0,0,0,0.55);
-  -moz-box-shadow: 0 7px 5px -4px rgba(0,0,0,0.55);
-  box-shadow: 0 7px 5px -4px rgba(0,0,0,0.55);
+
+  background-color: $medium-gray;
   .quicklinks-box {
   padding-left: 0 !important;
   padding-right: 0 !important;
-  position: relative;
   ul.dropdown.menu {
       padding-left: 0.1rem;
   li {
@@ -24,7 +19,7 @@
   transition: all 0.25s ease-in;
   font-size: .935rem;
   font-weight: 600;
-  padding: .5rem .5rem;
+  padding: 1rem;
 
 }
 
@@ -55,12 +50,12 @@ li:hover a {
 
 ul.vertical.menu {
   z-index: 10000;
-  margin-left: 0.15rem;
   width: 810px;
   padding: 1rem 0.5rem;
   background-color: $medium-gray;
+  left: -350px;
   li {
-          width: 100% !important;
+  width: 100% !important;
   width: 36%;
   max-width: 360px !important;
           /*Adjust width of columnes*/
@@ -68,7 +63,7 @@ ul.vertical.menu {
   display: inline-block;
   margin: 0 0 0 1rem;
   a {
-            color: $black;
+  color: $black;
   padding: 0.8rem .8rem;
   font-weight: bold;
   transition: all 0.06s ease-in;
@@ -108,35 +103,83 @@ li.is-dropdown-submenu {
     }
   }
 }
-.right-calltos, .search-container {
-  padding: 0;
+li.give-button {
+  a {
+    transition: all 0.25s ease-in;
+    color: $white !important;
+    padding-left: 1.4rem !important;
+    padding-right: 1.4rem !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+    background: #627d4d;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #627d4d 0%, #1f3b08 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
+  }
+  a:hover {
+    transition: all 0.25s ease-in;
+    color: $white !important;
+    padding-left: 1.4rem !important;
+    padding-right: 1.4rem !important;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#506b3a+0,#627d4d+100;Olive+3D */
+    background: #506b3a;
+    /* Old browsers */
+    background: -moz-linear-gradient(45deg, #506b3a 0%, #627d4d 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
+  }
 
 }
-.my-gcc {
-    display: inline-block;
-    padding: 0;
-    float: right;
-     a {
-       color: $white;
-       display: block;
-       width: 100%;
-       padding: .8rem 1rem;
-       min-height: 100%;
-       margin: 0 5rem 0 0;
-       background-color: $secondary;
-       text-align: center;
+li.give-button.active > a {
+  transition: all 0.25s ease-in;
+  color: $white !important;
+  padding-left: 1.4rem !important;
+  padding-right: 1.4rem !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
+  background: #627d4d;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #627d4d 0%, #1f3b08 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
+}
+li.give-button.active > a:hover {
+  transition: all 0.25s ease-in;
+  color: $white !important;
+  padding-left: 1.4rem !important;
+  padding-right: 1.4rem !important;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#506b3a+0,#627d4d+100;Olive+3D */
+  background: #506b3a;
+  /* Old browsers */
+  background: -moz-linear-gradient(45deg, #506b3a 0%, #627d4d 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
+}
+
+li.my-gcc {
+ a {
+       color: $primary !important;
+       background-color: $medium-gray;
        font-weight: 800;
        transition: all 0.06s ease-in;
+       padding-left: 2rem !important;
+       padding-right: 2rem !important;
      span {
-       padding-right: 1rem;
+       padding-right: .2rem;
      }
    }
    a:hover {
-     background-color: $medium-gray !important;
-     color: $primary;
+     background-color: $dark-gray !important;
+     color: $white !important;
    }
   }
-
 .top-bar input {
   max-width: 400px !important;
   margin-right: 0 !important;
@@ -248,21 +291,4 @@ li.is-dropdown-submenu {
 .no-js .sb-search .sb-search-submit,
 .sb-search.sb-search-open .sb-search-submit {
   z-index: 90;
-}
-
-li.give-button {
-  a {
-    transition: all 0.25s ease-in;
-    color: $white !important;
-    padding-left: 1.4rem !important;
-    padding-right: 1.4rem !important;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#627d4d+0,1f3b08+100;Olive+3D */
-    background: #627d4d;
-    /* Old browsers */
-    background: -moz-linear-gradient(45deg, #627d4d 0%, #1f3b08 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
-  }
 }

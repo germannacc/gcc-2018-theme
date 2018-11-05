@@ -11,7 +11,8 @@
 <!--Page Content-->
 <div class="row gutter-small expanded content-area">
 
-<div class="columns small-12 medium-9">
+	<div class="small-12 medium-8 large-9 gutter-small entry-content">
+
 
 	<div class="entry-content">
 
@@ -31,6 +32,14 @@
 
 ); ?>
 
+
+<?php getPrevNext();
+
+get_the_category_list();
+
+?>
+
+
 <?php
 
  // If comments are open or we have at least one comment, load up the comment template.
@@ -44,7 +53,7 @@
 </div>
 
 <?php //Template Sidebar
-get_template_part( '/sidebars/workforce-news-sidebar' ); ?>
+get_sidebar(); ?>
 
 
 </div><!--.pagecontent-->

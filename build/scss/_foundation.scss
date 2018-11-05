@@ -8,12 +8,10 @@
   .no-js .top-bar .title-bar {
     display: block;
     z-index: 0;
-
   }
   .no-js .title-bar .title-bar   {
     display: none;
     z-index: 0;
-
   }
 }
 
@@ -98,6 +96,7 @@
 @import 'theme/helpers';
 @import 'theme/wp-styles';
 @import 'theme/footer';
+@import 'theme/specific-page-styles.scss';
 @import 'theme/print';
 
 

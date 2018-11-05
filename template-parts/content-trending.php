@@ -2,12 +2,15 @@
 
   <div class="widget">
 
-    <a href="<?php esc_html_e('https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary', 'gcc-wp-2018')?>" class="events-calendar img-thumbnail" aria-hidden="true">
-        <?php echo _e(
-          'Upcoming events', 'gcc-wp-2018' ); ?>
-    </a>
+    <div class="events-calendar">
 
-      <h3 class="text-center"><?php esc_html_e('Germanna Today', 'gcc-wp-2018') ?></h3>
+    <?php //Latest Stories Widget Container
+      if ( is_active_sidebar( 'upcoming-events-widgets' ) ) : ?>
+      <?php dynamic_sidebar( 'upcoming-events-widgets' ); ?>
+      <?php endif; //End of Important Links Widget Container
+    ?>
+
+  </div>
 
       <?php //Latest Stories Widget Container
         if ( is_active_sidebar( 'latest-stories-widgets' ) ) : ?>

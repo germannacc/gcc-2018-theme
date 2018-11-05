@@ -1,12 +1,8 @@
 <div class="off-canvas position-right mobile-menu" id="popout-menu" data-off-canvas>
-  <!-- Your menu or Off-canvas content goes here -->
 
 <div class="row expanded columns close-mobile">
-
-    <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018' ); ?>" type="button" data-close>
-              <?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
-    </button>
-
+  <?php  //close button
+  gcc_wp_2018_close_button(); ?>
 </div>
 
        <div class="row expanded branding columns">
@@ -35,7 +31,8 @@
         <input type="hidden" name="oe" value="utf8" title="hidden" />
         <input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
         <input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
-        <input type="text" name="q" id="search-mobile" title="search input" class="sb-search-input" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018' );?>'">
+        <label for="search-mobile" class="hide"><?php _e('Search Germanna', 'gcc-wp-2018'); ?></label>
+        <span align="right"><input type="text" name="q" id="search-mobile" title="search input" class="sb-search-input" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018' );?>'"></span>
         <input id="searchsubmit-mobile" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit')?>">
         <span class="sb-icon-search"></span>
       </form>
@@ -47,6 +44,72 @@
 
          <?php  //function located in inc/main-navigation.php
          gcc_wp_2018_mobile_offcanvas(); ?>
+
+  </div>
+  <div class="menu-extras">
+
+    <?php
+
+$image = get_field('sidebar_ad_1_image', 'option');
+
+if( !empty($image) ):
+
+// vars
+$url = $image['url'];
+$title = $image['title'];
+$caption = $image['caption'];
+
+// thumbnail
+$size = 'large';
+$thumb = $image['sizes'][ $size ];
+$width = $image['sizes'][ $size . '-width' ];
+$height = $image['sizes'][ $size . '-height' ];
+
+?>
+
+  <a href="<?php echo $sidebar_ad_1_url; ?>" class="career-coach"><span><?php echo $sidebar_ad_1_text; ?></span>
+
+  <img src="<?php echo $thumb; ?>" alt="" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+
+  </a>
+
+<?php endif; ?>
+
+<?php
+
+$image = get_field('sidebar_ad_2_image', 'option');
+
+if( !empty($image) ):
+
+// vars
+$url = $image['url'];
+$title = $image['title'];
+$caption = $image['caption'];
+
+// thumbnail
+$size = 'large';
+$thumb = $image['sizes'][ $size ];
+$width = $image['sizes'][ $size . '-width' ];
+$height = $image['sizes'][ $size . '-height' ];
+
+?>
+
+    <a href="<?php echo $sidebar_ad_2_url; ?>" class="menu-banner"><span><?php echo $sidebar_ad_2_text; ?></span>
+
+    <img src="<?php echo $thumb; ?>" alt="" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+
+    </a>
+
+<?php endif; ?>
+
+    <?php if( !empty($tips_url) ): ?>
+
+    <a href="<?php echo $tips_url;?>" class="tips-logo" aria-hidden="true">
+        <?php echo _e(
+    'T.I.P.S.', 'gcc-wp-2018' ); ?>
+    </a>
+
+   <?php endif; ?>
 
   </div>
 </div>

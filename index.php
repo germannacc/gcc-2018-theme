@@ -77,7 +77,7 @@ $post_page_title= get_field('post_page_title', 'option');
 
   </div>
 
-<?php }  ?>
+<?php } ?>
 
        <?php //Display all post content
        get_template_part( 'template-parts/content', 'postpage' );

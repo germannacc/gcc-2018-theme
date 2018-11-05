@@ -14,14 +14,17 @@ get_header(); ?>
 <?php
    while ( have_posts() ) : the_post(); ?>
 
+   <?php
+   get_template_part( 'template-parts/content', 'workforce-single-heading' );
+   ?>
 
-   <?php //Single Post Content
-    get_template_part( 'template-parts/content', 'workforce-single-heading' );
-    ?>
+   <div class="row gutter-small expanded content-area">
 
-   	<?php //Single Post Content
-      get_template_part( 'template-parts/content', 'single-workforce' );
-    ?>
+     <?php //Page with Sidebar Template
+     get_template_part( 'template-parts/content', 'workforce-news' ); ?>
+
+     <?php //Template Sidebar
+     get_sidebar(); ?>
 
 <?php endwhile; // End of the loop. ?>
 

@@ -1,9 +1,10 @@
 //Branding and Main Navigation
+@media screen and (min-width: 40em) {
 
 .branding {
   background-color: $secondary;
-  padding: 0 0 0 1rem;
-  max-width: 343px !important;
+  padding: 0;
+  max-width: 300px !important;
 }
 
 .calltos {
@@ -57,7 +58,7 @@
 #popout-menu {
   //main sidebar styles
   background-color: $light-gray;
-  width: 330px;
+  width: 300px;
   //do not change these styles
   overflow: visible;
   height: 100%;
@@ -108,7 +109,7 @@
         padding: 1rem;
         background-color: $medium-gray;
         top: -50px;
-        left: 330px;
+        left: 300px;
 
         li {
           //puts menu items into columns
@@ -161,11 +162,8 @@ li.support-link {
             padding: 1rem;
     }
   a:hover {
-
         color: $secondary;
-
   }
-
 }
     .active > a {
       background-color: $medium-gray;
@@ -178,6 +176,9 @@ li.support-link {
       color: $primary;
     }
   }
+}
+
+
 }
 
 .menu-extras {
@@ -209,36 +210,6 @@ li.support-link {
     height: 280px;
   }
 
-  .social-icons {
-    margin: 0 auto 2rem;
-    padding: 0 1.7rem;
-    width: 86%;
-
-    li {
-      a {
-        padding: 0.4rem 0.2rem;
-
-        span {
-          color: $primary;
-          padding: 0.3rem 0.6rem;
-          border: 1px solid $primary;
-          border-radius: 100%;
-          text-align: center;
-        }
-
-        span:hover {
-          color: $dark-gray;
-          border: 1px solid $dark-gray;
-        }
-
-        span.icon-text {
-          display: block;
-          text-indent: -99999px;
-          display: none;
-        }
-      }
-    }
-  }
 }
 
 .tips-logo {
