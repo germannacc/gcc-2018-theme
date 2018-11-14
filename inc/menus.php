@@ -61,6 +61,7 @@
     'inauguration-menu' => 'Inauguration Menu',
     'information-sessions-menu' => 'Information Sessions Menu',
     'internships-services-menu' => 'Internships Services Menu',
+    'international-education-menu' => 'International Education Menu',
     'locations-menu' => 'Locations Menu',
     'legal-menu' => 'Legal Menu',
     'marketing-menu' => 'Marketing Menu',
@@ -94,7 +95,6 @@
     'welcome-day-menu' => 'Welcome Day Menu',
     'workforce-menu' => 'Workforce Menu',
     'workforce-home-menu' => 'Workforce Home Menu',
-     //pathways
        'business-pathway-menu' => 'Business Pathway Menu',
        'health-sciences-pathway-menu' => 'Health Sciences Pathway Menu',
        'humanities-arts-pathway-menu' => 'Humanities and Arts Pathway Menu',

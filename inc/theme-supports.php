@@ -15,10 +15,8 @@ function gcc_wp_2018_setup() {
 		 * to change 'gcc-wp-2018' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'gcc-wp-2018', get_template_directory() . '/languages' );
-
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
-
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
@@ -26,10 +24,6 @@ function gcc_wp_2018_setup() {
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
-/*
-* Remove front end admin Admin Bar
-*/
-add_filter('show_admin_bar', '__return_false');
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
@@ -37,7 +31,6 @@ add_filter('show_admin_bar', '__return_false');
 		 */
 		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'align-wide' );
-
 		//add colors to the gutenberg color palette
 		add_theme_support( 'editor-color-palette',
     '#a156b4',
@@ -51,7 +44,6 @@ the_post_thumbnail('medium');          // Medium resolution (default 300px x 300
 the_post_thumbnail('medium_large');    // Medium Large resolution (default 768px x 0px max)
 the_post_thumbnail('large');           // Large resolution (default 1024px x 1024px max)
 the_post_thumbnail('full');            // Original image resolution (unmodified)
-
 the_post_thumbnail( array(100,100) );  // Other resolutions
 /*
 		 * Switch default core markup for search form, comment form, and comments
@@ -64,13 +56,11 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 			'gallery',
 			'caption',
 		) );
-
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'gcc_wp_2018_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
 		/**
@@ -87,7 +77,6 @@ the_post_thumbnail( array(100,100) );  // Other resolutions
 	}
 endif;
 add_action( 'after_setup_theme', 'gcc_wp_2018_setup' );
-
 //add editor style
 add_editor_style( 'dist/css/editor-style.css' );
 ?>

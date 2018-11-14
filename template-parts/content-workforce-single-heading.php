@@ -8,7 +8,7 @@ if  ( has_post_thumbnail())  { ?>
   <?php the_post_thumbnail('', array ('alt' => false));  ?>
 
     <div class="hero-section-text">
-       <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+       <?php the_title( '<h1 class="entry-title">', '</h1>', 'gcc-wp-2018' ); ?>
        <?php if ( 'post' === get_post_type() ) : ?>
          <div class="entry-meta">
            <p><strong><?php
@@ -27,7 +27,7 @@ if  ( has_post_thumbnail())  { ?>
 
   <div class="row expanded crumbs-container show-for-medium">
 
-    <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+    <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
       <ul class="breadcrumbs">
              <?php $home_page = get_the_title( get_option('page_on_front'));
              $post_title = get_the_title( get_option('workforce-highlights'));
@@ -80,7 +80,7 @@ if  ( has_post_thumbnail())  { ?>
 
   <div class="crumbs-container-plain">
 
-    <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+    <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
       <ul class="breadcrumbs">
              <?php $home_page = get_the_title( get_option('page_on_front'));
              $post_title = get_the_title( get_option('workforce-highlights'));

@@ -1,4 +1,4 @@
-<div class="small-12 medium-8 large-9 entry-content">
+<div class="small-12 medium-8 large-9 entry-content" id="main" tabindex="0">
 
 
 <?php

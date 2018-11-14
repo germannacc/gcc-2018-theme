@@ -19,7 +19,7 @@
   transition: all 0.25s ease-in;
   font-size: .935rem;
   font-weight: 600;
-  padding: 1rem;
+  padding: 1rem .5rem;
 
 }
 
@@ -50,18 +50,10 @@ li:hover a {
 
 ul.vertical.menu {
   z-index: 10000;
-  width: 810px;
-  padding: 1rem 0.5rem;
+  width: 300px;
   background-color: $medium-gray;
-  left: -350px;
   li {
-  width: 100% !important;
-  width: 36%;
-  max-width: 360px !important;
-          /*Adjust width of columnes*/
-  position: relative;
-  display: inline-block;
-  margin: 0 0 0 1rem;
+
   a {
   color: $black;
   padding: 0.8rem .8rem;

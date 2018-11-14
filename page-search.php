@@ -17,7 +17,7 @@ get_header(); ?>
 		<!--Page Content-->
 		<div class="row gutter-small expanded content-area">
 
-			<div class="small-12 entry-content">
+			<div class="small-12 entry-content" id="main" tabindex="0">
 
 			<?php
 			    the_content();

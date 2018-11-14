@@ -3,12 +3,10 @@
   color: lighten($secondary, 95%);
   padding: 3rem 0 0 0;
   text-align: center;
-
   p {
     line-height: 1.6rem;
     text-align: left;
   }
-
   h4 {
     color: $white;
     font-weight: 600;
@@ -148,19 +146,16 @@
   @include breakpoint(medium down) {
     text-align: center;
   }
-
   p {
     padding-bottom: 0;
     margin-bottom: 0;
     line-height: 1.6rem;
     font-size: 0.8rem;
     text-align: center;
-
     a {
       color: $light-gray;
       font-weight: 700;
     }
-
     a:hover {
       color: $white;
       text-decoration: underline;

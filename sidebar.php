@@ -7,7 +7,9 @@
  * @package gccwp-2018
  */
  ?>
- <aside class="small-12 medium-4 large-3 columns right page-nav">
+
+ <aside class="small-12 medium-4 large-3 columns right page-nav hide-for-print" id="section-menu"  data-toggler="hide">
+
 
     <?php //get page widgets
 
@@ -354,6 +356,12 @@ if ( is_page('60') || $post->post_parent == '60' ) {
      dynamic_sidebar( 'internship-widgets' );
 }
 
+//international education
+
+if ( is_page('25522') || $post->post_parent == '25522' ) {
+//custom department widgets
+  dynamic_sidebar( 'international-education-widgets' );
+}
 
    //legal (statements & policies)
 

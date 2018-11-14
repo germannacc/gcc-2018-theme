@@ -14,17 +14,13 @@ wp_enqueue_script( 'gcc-wp-2018-foundation', get_template_directory_uri() . '/di
 if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 	wp_enqueue_script( 'comment-reply' );
 }
-
 wp_enqueue_script( 'gcc-wp-2018-themepunch-tools', get_template_directory_uri() . '/dist/scripts/jquery.themepunch.tools.min.js', array(), '', true );
-
 wp_enqueue_script( 'gcc-wp-2018-themepunch-revolution', get_template_directory_uri() . '/dist/scripts/jquery.themepunch.revolution.min.js', array(), '', true );
 }
 add_action( 'wp_enqueue_scripts', 'gcc_wp_2018_scripts', 10, 2);
-
 //remove type tag from css and javascript
 add_filter('style_loader_tag', 'myplugin_remove_type_attr', 10, 2);
 add_filter('script_loader_tag', 'myplugin_remove_type_attr', 10, 2);
-
 function myplugin_remove_type_attr($tag, $handle) {
   return preg_replace( "/type=['\"]text\/(javascript|css)['\"]/", '', $tag );
 }

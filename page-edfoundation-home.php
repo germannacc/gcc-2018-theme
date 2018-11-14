@@ -30,7 +30,8 @@ $event_section_heading = get_field('events_section_heading');
 			<div class="small-12 medium-8 large-9">
 
 				<?php // if the page has a featured image
-				if  (has_post_thumbnail( ) )  { ?>
+				if  (has_post_thumbnail( ) ) {
+  ?>
 
 				<header class="hero-section">
 
@@ -39,21 +40,23 @@ $event_section_heading = get_field('events_section_heading');
 				</header>
 
 
-					<?php  }  else {  //.pagesubbanner
+					<?php
+}
+
+else {
+  //.pagesubbanner
 					// if page doesn't have a featured image
 					?>
 
 
 					<?php } ?>
 
-					<div class="entry-content">
+					<div class="entry-content" id="main" tabindex="0">
 
 
 					<?php
 					  the_content();
 					?>
-
-			<h2><?php the_field('events_section_heading'); ?></h2>
 
       <?php
 
@@ -84,8 +87,10 @@ $event_section_heading = get_field('events_section_heading');
 	?>
 
 	<div class="callout small primary">
+		<h2><?php the_field('events_section_heading'); ?></h2>
 
-		<?php the_title('<h2>', '</h2>'); ?>
+
+		<?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
 
 		<div class="columns small-12 medium-4" itemscope itemtype="http://schema.org/Event">
 
@@ -139,9 +144,6 @@ $event_section_heading = get_field('events_section_heading');
 			<footer class="entry-footer">
 			  <?php gcc_wp_2018_entry_footer(); ?>
 			</footer><!-- .entry-footer -->
-
-
-
 
 
 			<?php get_sidebar(); ?>

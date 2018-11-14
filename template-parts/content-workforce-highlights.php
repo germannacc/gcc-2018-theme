@@ -19,23 +19,27 @@ $query = new WP_Query( $args ); ?>
 
   <?php if ( has_post_thumbnail() ) : ?>
     <div class="row latest-post">
-    <div class="medium-5 columns">
 
-        <?php gcc_wp_2018_post_thumbnail(); ?>
+      <div class="medium-5 columns" style="padding-right: 2rem;">
 
-    </div>
-    <div class="medium-7 columns">
-    <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-    <?php if ( 'workforce_news_post' === get_post_type() ) : ?>
-      <div class="entry-meta float-right">
-        <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
-        gcc_wp_2018_posted_on();
-        ?> </strong></p>
-      </div><!-- .entry-meta -->
-   <?php endif; ?>
-   <p><?php the_excerpt(); ?></p>
+          <?php gcc_wp_2018_post_thumbnail(); ?>
 
-    </div>
+      </div>
+
+      <div class="medium-7 columns">
+
+        <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+        <?php if ( 'workforce_news_post' === get_post_type() ) : ?>
+          <div class="entry-meta float-right">
+            <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php
+            gcc_wp_2018_posted_on();
+            ?> </strong></p>
+          </div><!-- .entry-meta -->
+       <?php endif; ?>
+       <p><?php the_excerpt(); ?></p>
+
+      </div>
+
     </div>
 
   <?php else: ?>

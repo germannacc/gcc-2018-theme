@@ -15,19 +15,23 @@
   //gcc_featured_image_on_child(); ?>
 
   <div class="hero-section-text">
+
           <h1 class="entry-title"><?php the_title(); ?></h1>
+          <?php gcc_wp_2018_page_icons() ?>
+
   </div>
 
   <div class="post-meta">
     <?php if ( 'post' === get_post_type() ) : ?>
         <p><strong></span><?php gcc_wp_2018_posted_on();
         ?> | <?php gcc_wp_2018_entry_footer(); ?> </strong></p>
-  <?php endif; ?>
+    <?php endif; ?>
   </div>
 
   <div class="crumbs-container">
 
-    <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+    <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+      <div title="breadcrumbs trail">
         <ul class="breadcrumbs">
             <?php $home_page = get_the_title( get_option('page_on_front'));
             $post_title = get_the_title( get_option('page_for_posts'));
@@ -46,6 +50,7 @@
                 <?php the_title(); ?>
             </li>
         </ul>
+      </div>
     </nav>
 
   </div>

@@ -46,6 +46,23 @@ $marketing-site-footer-bg: $light-gray;
       text-decoration: underline;
     }
   }
+  ul.page-icons {
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+      z-index: 1;
+
+        li  {
+
+             a  {
+
+              padding: 1rem .5rem;
+
+             }
+
+        }
+
+  }
 }
 .crumbs-container {
   padding: 0;

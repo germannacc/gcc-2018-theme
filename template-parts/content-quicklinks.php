@@ -12,7 +12,7 @@
   <a href="<?php echo $callto_button_2_url; ?>" class="button secondary"><?php echo $callto_button_2_text; ?></a>
  <?php endif; ?>
 </div>
-<div class="title-bar hide-for-xlarge expanded">
+<div class="title-bar hide-for-xlarge expanded hide-for-print">
   <div class="title-bar-left">
     <button class="float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"><span class="fa fa-bars" aria-hidden="true"></span>Menu</button>
 
@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<div class="row expanded quicklinks top-bar show-for-xlarge">
+<div class="row expanded quicklinks top-bar show-for-xlarge" id="top-menu"  data-toggler="hide">
 
   <div class="small-12 large-9 columns quicklinks-box collapse">
 

@@ -3,42 +3,33 @@
   background-color: $light-gray;
   padding: 2rem 1rem;
   position: relative;
-
   h2.post-title, h3.post-title {
     margin-bottom: 0;
     margin-top: 2rem;
-    font-size: 1.4rem;
-
+    font-size: 1.8rem;
   }
-
   h2.post-title a, h3.post-title a {
       padding-bottom: 0;
       margin-bottom: 0;
-
   }
-
   h2.post-title:after, h3.post-title:after  {
     border-bottom: none;
     margin: 0;
     padding: 0;
   }
-
   h2.post-title:after a, h3.post-title:after a {
   }
-
   img {
     margin-bottom: 1rem;
     margin-top: 2rem;
     min-width: 100%;
   }
-
   .entry-meta {
     position: absolute;
     right: 0;
     top: 0;
     padding: .2rem 1rem .3rem 1rem;
     background-color:  $primary;
-
     p {
       font-size: 1rem;
       padding-bottom: 0;
@@ -52,12 +43,10 @@
       }
   }
   }
-
 span.posted-on {
   font-size: 1rem;
   padding-top: 0;
   margin-top: 0;
-
 }
   .button.primary {
     background: $light-gray;
@@ -69,12 +58,10 @@ span.posted-on {
     text-align: left;
     line-height: 1.6rem;
   }
-
   .button.primary:hover {
     background: $light-gray;
     color: $secondary;
   }
-
   .button.primary::after {
     font-family: FontAwesome;
     content: "\f061";
@@ -89,7 +76,6 @@ span.posted-on {
     font-weight: 600;
     transition: background-color 0.5s ease;
   }
-
   .button.primary:hover::after {
     background-color: $secondary;
     color: $white;

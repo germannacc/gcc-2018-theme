@@ -17,7 +17,7 @@ get_header(); ?>
 		<!--Page Content-->
 		<div class="row gutter-small expanded content-area">
 
-			<div class="small-12 medium-8 large-9 gutter-small entry-content">
+			<div class="small-12 medium-8 large-9 gutter-small entry-content" id="main" tabindex="0">
 
 			<?php //Page Heading
 			get_template_part( 'template-parts/content', 'page-alert' );

@@ -197,3 +197,16 @@ blockquote {
   width: 96% !important;
   height: 50px;
 }
+
+.widget {
+  ul {
+    list-style: none;
+    li {
+      a {
+        padding: 1rem 0;
+        display: block;
+
+      }
+    }
+  }
+}

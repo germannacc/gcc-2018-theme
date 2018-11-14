@@ -6,7 +6,6 @@
  *
  * @package gccwp-2018
  */
-
 if ( ! function_exists( 'gcc_wp_2018_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time.
@@ -24,7 +23,6 @@ if ( ! function_exists( 'gcc_wp_2018_posted_on' ) ) :
 		);
 		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 }
-
 endif;
 if ( ! function_exists( 'gcc_wp_2018_entry_footer' ) ) :
 	/**
@@ -46,7 +44,6 @@ if ( ! function_exists( 'gcc_wp_2018_entry_footer' ) ) :
   printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'gcc-wp-2018' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 }
 		}
-
 edit_post_link(
 			sprintf(
 				wp_kses(
@@ -64,9 +61,7 @@ edit_post_link(
 			'</span>'
 		);
 }
-
 endif;
-
 if ( ! function_exists( 'gcc_wp_2018_post_thumbnail' ) ) :
 /**
  * Displays an optional post thumbnail.
@@ -78,16 +73,12 @@ function gcc_wp_2018_post_thumbnail() {
 if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 		return;
 }
-
 if ( is_singular() ) :
 	?>
-
 	<div class="post-thumbnail">
 		<?php the_post_thumbnail(); ?>
 	</div><!-- .post-thumbnail -->
-
 	<?php else : ?>
-
 	<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
 		<?php
 			the_post_thumbnail( 'post-thumbnail', array(
@@ -97,12 +88,9 @@ if ( is_singular() ) :
 			) );
 		?>
 	</a>
-
 	<?php endif; // End is_singular().
 }
-
 endif;
-
 // Replaces the excerpt "Read More" text by a link
 function new_read_more($more) {
 global $post;
@@ -111,57 +99,46 @@ global $post;
 //...<br/>
 // <a class="button primary" href="'. get_permalink($post->ID) . '">Read the full article</a>
 add_filter('excerpt_more', 'new_read_more');
-
 //custom previous/next links
 add_filter('next_posts_link_attributes', 'posts_link_attributes');
 add_filter('previous_posts_link_attributes', 'posts_link_attributes');
-
 function posts_link_attributes() {
 return 'class="button hollow rounded"';
 }
 /*=============================================
 =            BREADCRUMBS			            =
 =============================================*/
-
 //to include in functions.php
 function the_breadcrumb() {
 $sep = ' > ';
-
     if (!is_front_page()) {
-
 	// Start the breadcrumb with a link to your homepage
-        echo '<ul class="breadcrumbs">';
+        echo '      <div title="breadcrumbs trail"><ul class="breadcrumbs">';
         echo '<li>
 				<a href="';
         echo home_url();
         echo '">';
         _e('Home', 'gcc-wp-2018');
         echo '</a></li>';
-
 	// Check if the current page is a category, an archive or a single page. If so show the category or archive name.
         if (is_category() || is_single() ){
             the_category('title_li=');
 }
-
 elseif (is_archive() || is_single()) {
 if ( is_day() ) {
                 printf( __( '%s', 'text_domain' ), get_the_date() );
 }
-
 elseif ( is_month() ) {
-printf( __( '%s', 'text_domain' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'text_domain' ) ) );
+printf( __( '%s', 'text_domain' ), get_the_date( _x( 'F Y', 'monthly archives date format', 'gcc-wp-2018' ) ) );
 }
-
 elseif ( is_year() ) {
-printf( __( '%s', 'text_domain' ), get_the_date( _x( 'Y', 'yearly archives date format', 'text_domain' ) ) );
+printf( __( '%s', 'text_domain' ), get_the_date( _x( 'Y', 'yearly archives date format', 'gcc-wp-2018' ) ) );
 }
-
 else {
-_e( 'Blog Archives', 'text_domain' );
+_e( 'Blog Archives', 'gcc-wp-2018' );
 }
         }
-
-	//If the current page is a single post, show its title with the separator
+//If the current page is a single post, show its title with the separator
         if (is_single()) {
 //Gets the parent page title and permalink
 					global $post;
@@ -174,13 +151,11 @@ _e( 'Blog Archives', 'text_domain' );
 					echo '</a>';
 					echo '</li>';
 }
-
 echo '<li>';
 						the_title();
 						echo '</li>';
 }
-
-	//If the current page is a static page, show its title.
+//If the current page is a static page, show its title.
         if (is_page()) {
 //Gets the parent page title and permalink
 					global $post;
@@ -198,8 +173,7 @@ echo '<li>';
 					the_title();
 					echo '</li>';
 }
-
-	//if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
+//if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
         if (is_home()) {
 global $post;
             $page_for_posts_id = get_option('page_for_posts');
@@ -210,20 +184,16 @@ global $post;
                 rewind_posts();
 }
         }
-
-echo '</ul>';
+echo '</ul></div>';
 }
 }
 /*
 * Credit: http://www.thatweblook.co.uk/blog/tutorials/tutorial-wordpress-breadcrumb-function/
 */
-
 //previous post next post links
-
 function getPrevNext() {
 ?>
-
-	<div class="row expanded collapsed" style="margin-top:  2rem; padding: 1rem 1rem 0 1rem; background-color: #f5f5f5;">
+	<div class="row expanded collapsed">
 		<?php if (strlen(get_previous_post()->post_title) > 0) { ?>
 		<div class="small-12 large-4 columns" style="padding: 0;">
 	  <span class="button hollow primary alignleft"><?php previous_post_link('%link', '<span class="fa fa-chevron-left" aria-hidden="true" style="padding-right: .5rem;"></span>
@@ -232,7 +202,7 @@ function getPrevNext() {
  	<?php
 } ?>
 		<div class="small-12 large-4 columns" style="padding: 0;">
-		<span class="button hollow secondary" style="width: 100%; text-align: center;"><a href="<?php esc_html_e('https://germannacc.staging.wpengine.com/highlights/', 'gcc-wp-2018')?>"><?php _e('All highlights', 'gcc-wp-2018'); ?></a></span>
+		<span class="button hollow secondary text-center"><a href="<?php esc_html_e('https://germannacc.staging.wpengine.com/highlights/', 'gcc-wp-2018')?>"><?php _e('All highlights', 'gcc-wp-2018'); ?></a></span>
 		</div>
 		<?php if (strlen(get_next_post()->post_title) > 0) {
 ?>
@@ -242,150 +212,25 @@ function getPrevNext() {
 	 <?php
 } ?>
 	</div>
-
 <?php
-}
-
-?>
+}?>
 <?php
-//The main branding section of the website on the left side.
-
- function main_menu() {
-$callto_button_1_text = get_field('callto_button_1_text', 'option');
-  $callto_button_1_url = get_field('callto_button_1_url', 'option');
-  $callto_button_2_text = get_field('callto_button_2_text', 'option');
-  $callto_button_2_url = get_field('callto_button_2_url', 'option');
-  $sidebar_ad_1_text = get_field('sidebar_ad_1_text', 'option');
-  $sidebar_ad_1_url = get_field('sidebar_ad_1_url', 'option');
-  $sidebar_ad_1_image = get_field('sidebar_ad_1_image', 'option');
-  $sidebar_ad_2_text = get_field('sidebar_ad_2_text', 'option');
-  $sidebar_ad_2_url = get_field('sidebar_ad_2_url', 'option');
-  $sidebar_ad_2_image = get_field('sidebar_ad_2_image', 'option');
-  $tips_url = get_field('tips_url ', 'option');
-?>
-    <div class="off-canvas position-left reveal-for-xlarge" id="main-menu">
-
-        <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018'); ?>" type="button" data-close>
-        <span aria-hidden="true">&times;</span>
-
-      </button>
-
-        <div class="row column">
-
-            <div id="menu-container" class="off-canvas position-left reveal-for-large" data-off-canvas>
-
-                <div class="row branding">
-
-                    <div class="button-group expanded calltos">
-                        <?php if( !empty($callto_button_1_text) ): ?>
-                        <a href="<?php echo $callto_button_1_url; ?>" class="button primary">
-                        <?php echo $callto_button_1_text;
-?>
-                        </a>
-                        <?php endif; ?>
-                        <?php if( !empty($callto_button_2_text) ): ?>
-                        <a href="<?php echo $callto_button_2_url; ?>" class="button secondary">
-                            <?php echo $callto_button_2_text;
-?>
-                        </a>
-                        <?php endif; ?>
-                    </div>
-
-										<?php
-										if ( function_exists( 'the_custom_logo' ) ) {
-    the_custom_logo();
-}
-?>
-
-                    <p class="tagline lead">
-                        <?php bloginfo( 'description' ); ?>
-                    </p>
-
-                </div>
-
-          <?php
-          //function located in inc/main-navigation.php
-          gcc_wp_2018_main_navigation(); ?>
-
-                <div class="menu-extras">
-
-                  <?php
-
-$image = get_field('sidebar_ad_1_image', 'option');
-
-if( !empty($image) ):
-
-	// vars
-	$url = $image['url'];
-	$title = $image['title'];
-	$caption = $image['caption'];
-
-	// thumbnail
-	$size = 'large';
-	$thumb = $image['sizes'][ $size ];
-	$width = $image['sizes'][ $size . '-width' ];
-	$height = $image['sizes'][ $size . '-height' ];
-
-?>
-
-  <a href="<?php echo $sidebar_ad_1_url; ?>" class="career-coach"><span><?php echo $sidebar_ad_1_text; ?></span>
-
-    <img src="<?php echo $thumb; ?>" alt="" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
-
-  </a>
-
-<?php endif; ?>
-
+//page icons
+	function gcc_wp_2018_page_icons() {  ?>
+		<ul class="menu horizontal page-icons hide-for-print">
+			 <li>
+				 <a data-toggle="featured-image section-menu main-menu quicklink top-menu big-featured-image" title="<?php _e('Distraction free reading', 'gcc-wp-2018'); ?>"><span class="fa fa-2x fa-eye-slash" aria-hidden="true"></span></a>
+			</li>
+			<li>
+				<a href="javascript:window.print()" title="<?php _e('Print page', 'gcc-wp-2018'); ?>"><span class="fa fa-2x fa-print" aria-hidden="true"></span></a>
+			</li>
+	</ul>
+<?php } ?>
 <?php
-
-$image = get_field('sidebar_ad_2_image', 'option');
-
-if( !empty($image) ):
-
-// vars
-$url = $image['url'];
-$title = $image['title'];
-$caption = $image['caption'];
-
-// thumbnail
-$size = 'large';
-$thumb = $image['sizes'][ $size ];
-$width = $image['sizes'][ $size . '-width' ];
-$height = $image['sizes'][ $size . '-height' ];
-
-?>
-
-<a href="<?php echo $sidebar_ad_2_url; ?>" class="menu-banner"><span><?php echo $sidebar_ad_2_text; ?></span>
-
-<img src="<?php echo $thumb; ?>" alt="" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
-
-</a>
-
-<?php endif; ?>
-
-                  <?php if( !empty($tips_url) ): ?>
-
-                  <a href="<?php echo $tips_url;?>" class="tips-logo" aria-hidden="true">
-                      <?php echo _e(
-                  'T.I.P.S.', 'gcc-wp-2018' ); ?>
-                  </a>
-
-                 <?php endif; ?>
-
-                </div>
-
-            </div>
-
-        </div>
-    </div>
-<?php
-} ?>
-<?php
+//close button
 function gcc_wp_2018_close_button() { ?>
-
 <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018' ); ?>" type="button" data-close>
 					<?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
 </button>
-
 <?php }
 ?>

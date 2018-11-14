@@ -76,11 +76,10 @@ get_header(); ?>
 					<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
 					<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
 					<input type="text" name="q" id="search-404" title="search input" class="sb-search-input" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018');?>'" style="height: 49px;">
-					<input id="searchsubmit-404" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit')?>">
+					<input id="searchsubmit-404" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit', 'gcc-wp-2018')?>">
 					<button type="submit" id="searchsubmit-button-404" class="sb-icon-search" aria-label="Submit">
 			 </button>
 			</form>
-
 
 			</div>
 		</div>

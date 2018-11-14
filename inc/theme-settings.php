@@ -32,4 +32,18 @@ function gcc_featured_image_on_child () {
 }
 //display featured images on child pages
 add_action( 'gcc_wp_2018_before_post', 'gcc_featured_image_on_child' );
+/**
+ * Change WPForms capability requirement.
+ *
+ * @param string $cap
+ * @return string
+ */
+function wpforms_custom_capability( $cap ) {
+
+	// unfiltered_html by default means Editors and up.
+	// See more about WordPress roles and capabilities
+	// https://codex.wordpress.org/Roles_and_Capabilities
+	return 'moderate_comments';
+}
+add_filter( 'wpforms_manage_cap', 'wpforms_custom_capability' );
 ?>

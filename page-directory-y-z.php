@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<div class="row gutter-small expanded content-area">
 
-			<div class="small-12 entry-content">
+			<div class="small-12 entry-content" id="main" tabindex="0">
 
 			<?php
 			    the_content();
@@ -106,8 +106,9 @@ if( !empty($employee_image) ) :
 else {
 	// no posts found
 ?>
-
-<p><?php esc_html_e('Sorry, the directory is currently undergoing maintenance.', 'gcc-wp-2018') ?></p>
+<div style="padding-bottom: 50rem;">
+	<p><?php esc_html_e('Sorry, the directory is currently undergoing maintenance.', 'gcc-wp-2018') ?></p>
+</div>
 
 <?php
 }

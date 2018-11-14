@@ -13,15 +13,19 @@
  */
  get_header(); ?>
 
+
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
  <?php
  	while ( have_posts() ) : the_post(); ?>
 
-
+  <header>
 
     <div class="hero-section-text">
        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+          <?php gcc_wp_2018_page_icons() ?>
+
     </div>
 
     <div class="row expanded crumbs-container">
@@ -32,20 +36,21 @@
 
     </div>
 
+  </header>
+
  		<!--Page Content-->
  		<div class="row expanded content-area">
 
-      <div class="small-12 medium-9 float-left columns">
+      <div class="small-12 medium-9 float-left columns" >
 
         <?php // if the page has a featured image
         if  (has_post_thumbnail( ) )  { ?>
 
-        <header class="hero-section">
+        <div class="hero-section hide-for-print" id="featured-image" data-toggler="hide" >
 
         <?php the_post_thumbnail('', array ('alt' => false));  ?>
 
-        </header>
-
+      </div>
 
           <?php  }  else {  //.pagesubbanner
           // if page doesn't have a featured image
@@ -54,11 +59,13 @@
 
           <?php } ?>
 
-     <div class="entry-content">
+     <div class="entry-content" id="main" tabindex="0">
 
       <?php //Page Heading
       get_template_part( 'template-parts/content', 'page-alert' );
       ?>
+
+
 
       <?php
         the_content();
@@ -68,19 +75,19 @@
 
     </div>
 
-     			<?php get_sidebar();?>
-
+      <?php get_sidebar();?>
 
       <footer class="entry-footer">
         <?php gcc_wp_2018_entry_footer(); ?>
       </footer><!-- .entry-footer -->
-
 
  		</div><!--.pagecontent-->
 
  <?php endwhile; // End of the loop. ?>
 
  </article>
+
+
 
  <?php
  get_footer();

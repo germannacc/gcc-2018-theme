@@ -10,7 +10,6 @@
  *
  * @package gccwp-2018
  */
-
 /**
  * Set up the WordPress core custom header feature.
  *
@@ -27,7 +26,6 @@ function gcc_wp_2018_custom_header_setup() {
 	) ) );
 }
 add_action( 'after_setup_theme', 'gcc_wp_2018_custom_header_setup' );
-
 if ( ! function_exists( 'gcc_wp_2018_header_style' ) ) :
 	/**
 	 * Styles the header image and text displayed on the blog.
@@ -36,7 +34,6 @@ if ( ! function_exists( 'gcc_wp_2018_header_style' ) ) :
 	 */
 	function gcc_wp_2018_header_style() {
 		$header_text_color = get_header_textcolor();
-
 		/*
 		 * If no custom options for text are set, let's bail.
 		 * get_header_textcolor() options: Any hex value, 'blank' to hide text. Default: add_theme_support( 'custom-header' ).

@@ -11,7 +11,6 @@
 ?>
 <!DOCTYPE html>
 <html class="no-js" <?php language_attributes(); ?>>
-
 <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -21,10 +20,10 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="skip"><a href="#main" class="show-on-focus"><?php esc_html_e('Skip to Main Content', 'gcc-wp-2018') ?></a></div>
+<div id="skip"><a href="#main" class="show-on-focus"><?php esc_html_e('skip to content', 'gcc-wp-2018') ?></a></div>
 
 <?php
- get_template_part( 'template-parts/content', 'weather-alert' );
+   get_template_part( 'template-parts/content', 'weather-alert' );
 ?>
 
   <div class="off-canvas-wrapper no-js">
@@ -34,4 +33,4 @@
               <?php  //quicklinks
                 get_template_part( 'template-parts/content', 'quicklinks' );
               ?>
-                  <main id="main" tabindex="0">
+                  <main>

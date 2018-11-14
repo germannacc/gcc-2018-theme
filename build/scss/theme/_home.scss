@@ -18,18 +18,25 @@
 }
 
 #home-video {
-  background-color: #333333;
-  padding: 100px 0;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#7d7e7d+0,0e0e0e+100;Black+3D */
+  background: #7d7e7d; /* Old browsers */
+  background: -moz-linear-gradient(-45deg, #7d7e7d 0%, #0e0e0e 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, #7d7e7d 0%,#0e0e0e 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, #7d7e7d 0%,#0e0e0e 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  padding: 100px 1rem;
   color: $white;
 
   h2 {
     color: $white;
-    font-size: 2rem;
+    font-size: 2.8rem;
     padding-bottom: 0;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.5);
   }
 
   p {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
     padding: 0 0 1rem 0;
     line-height: 2.4rem;
   }
@@ -37,12 +44,13 @@
   a.button {
     margin-bottom: 2rem;
   }
+
 }
 
 #pathways {
 
 background-color: $white;
-padding:  3rem 1rem 4rem 1rem;
+padding:  3rem 1rem 3rem 1rem;
 
 .pathways-content {
 
@@ -53,13 +61,11 @@ padding:  3rem 1rem 4rem 1rem;
 
 h2 {
 
-  margin-bottom: 3rem;
   color: $secondary;
-  width: 75%;
-  margin: 0 auto 2rem auto;
   position: relative;
-  font-size: 2rem;
-  font-weight: 400;
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
 
 
 }
@@ -77,12 +83,12 @@ h2 {
   margin-bottom: .5rem;
 }
 
-.card {
+.pathways-block {
   position: relative;
-
+  margin-bottom: 20px;
   a {
 
-  .card-section {
+  .block-section {
 
      position: absolute;
      bottom: 0;
@@ -90,6 +96,9 @@ h2 {
      color: $white;
      display: block;
      min-width: 100%;
+     z-index: 1;
+     padding: 1rem;
+     margin-bottom: 10px;
 
 
      h3  {
@@ -114,13 +123,12 @@ h2 {
 
   }
 
-.card-section:hover {
+.block-section:hover {
   background-color: rgba(51, 51, 51, .9);
 }
 
  }
 }
-
 
 }
 
@@ -128,7 +136,7 @@ h2 {
 
 #getting-started {
 
-  padding: 4rem 2rem;
+  padding: 5rem 2rem 6rem 2rem;
   position: relative;
   background-color: $medium-gray;
 
@@ -139,16 +147,16 @@ h2 {
   h2 {
    color: $secondary;
    margin: 0 0 3rem 0;
-  font-weight: 400;
-
+   font-weight: 800;
+   font-size: 2.8rem;
   }
 
-  .card {
+  .getting-started-block {
     position: relative;
-
+    margin-bottom: 10px;
     a {
 
-    .card-section {
+    .block-section {
 
        position: absolute;
        bottom: 0;
@@ -157,12 +165,13 @@ h2 {
        display: block;
        text-align: center;
        width: 100%;
+       padding: .5rem 0;
 
        h3  {
 
         font-size: 1.6rem;
-
-
+        padding-bottom: 0;
+        margin-bottom: 0;
      }
 
      .more-icon {
@@ -173,7 +182,7 @@ h2 {
 
     }
 
-  .card-section:hover {
+  .block-section:hover {
     background-color: rgba(150,34,56, .9);
   }
   }
@@ -197,8 +206,8 @@ h2 {
   color: $secondary;
   text-align: center;
   margin-bottom: 4rem;
-  width: 100%;
-  font-weight: 400;
+  font-weight: 800;
+  font-size: 2.8rem;
 }
 
 .ytp-watermark {
@@ -226,12 +235,14 @@ margin-bottom: 1.2rem;
 
 .events-calendar {
 
-  width: 100%;
+  max-width: 100%;
   margin: 0 0 1rem 0;
   position: relative;
   margin-bottom: 1rem;
-  padding-right: 1rem;
+  display: block;
+  height: auto;
 
 }
+
 
 }

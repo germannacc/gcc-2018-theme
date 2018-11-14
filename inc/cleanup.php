@@ -137,7 +137,6 @@ function gcc_wp_2018_clean_shortcodes( $content ) {
 }
 add_filter('the_content', 'gcc_wp_2018_clean_shortcodes');
 endif;
-
 /**
 * Remove [All in One SEO Pack] HTML Comments
 * @link //gist.github.com/llgruff/a7ab776167aa0ed307ec445df54e5fdb

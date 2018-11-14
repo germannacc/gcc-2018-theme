@@ -30,7 +30,7 @@ $paying_box_url = get_field('paying_box_url');
       <?php //apply box
        if( !empty($apply_box_image) ): ?>
 
-  <div class="card text-center">
+  <div class="getting-started-block text-center">
 
   <?php
       // vars
@@ -47,7 +47,7 @@ $paying_box_url = get_field('paying_box_url');
     <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>">
 
     <a href="<?php the_field('apply_box_url');?>">
-    <div class="card-section">
+    <div class="block-section">
       <h3><?php the_field('apply_box_heading'); ?></h3>
       <p><?php the_field('apply_box_description'); ?></p>
     </div>
@@ -65,7 +65,7 @@ $paying_box_url = get_field('paying_box_url');
 <?php //Register Box
  if( !empty($register_box_image) ):  ?>
 
-  <div class="card text-center">
+  <div class="getting-started-block text-center">
 
 <?php  // vars
   $url = $register_box_image['url'];
@@ -80,7 +80,7 @@ $paying_box_url = get_field('paying_box_url');
               <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>">
 
               <a href="<?php the_field('register_box_url');?>">
-              <div class="card-section">
+              <div class="block-section">
                 <h3><?php the_field('register_box_heading'); ?></h3>
                 <p><?php the_field('register_box_description'); ?></p>
               </div>
@@ -100,7 +100,7 @@ $paying_box_url = get_field('paying_box_url');
   //Payment Box
   if( !empty($paying_box_image) ):  ?>
 
-    <div class="card text-center">
+    <div class="getting-started-block text-center">
 
   <?php  // vars
     $url = $paying_box_image['url'];
@@ -116,7 +116,7 @@ $paying_box_url = get_field('paying_box_url');
 
 
                 <a href="<?php the_field('paying_box_url');?>">
-                <div class="card-section">
+                <div class="block-section">
                   <h3><?php the_field('paying_box_heading'); ?></h3>
                   <p><?php the_field('paying_box_description'); ?></p>
                 </div>

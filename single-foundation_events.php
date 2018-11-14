@@ -86,7 +86,7 @@ get_header(); ?>
      <h1 class="entry-title"><?php the_title(); ?></h1>
      <div class="entry-meta">
        <p><strong><?php
-      _e('Scholarship events') | gcc_wp_2018_entry_footer(); ?>
+      _e('Scholarship events', 'gcc-wp-2018') | gcc_wp_2018_entry_footer(); ?>
        </strong>
      </p>
      <p>
@@ -99,7 +99,7 @@ get_header(); ?>
 
     <div class="crumbs-container show-for-medium">
 
-          <nav aria-label="<?php _e('You are here:');?>" aria-label="Breadcrumb">
+          <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" aria-label="Breadcrumb">
 
             <ul class="breadcrumbs">
                    <?php $home_page = get_the_title( get_option('page_on_front'));

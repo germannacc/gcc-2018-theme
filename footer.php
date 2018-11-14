@@ -22,7 +22,7 @@
   $e2campus_button_url = get_field('e2campus_button_url', 'option');
 ?>
 </main>
-<footer class="marketing-site-footer">
+<footer class="marketing-site-footer hide-for-print">
 <div class="row expanded gutter-small">
     <div class="small-12 medium-12 large-6 columns">
       <div class="medium-7 columns">
@@ -58,7 +58,7 @@
                         <?php endif; ?>
                     </ul>
                     <?php gcc_wp_2018_social_icons(); ?>
-      </div>
+       </div>
         <div class="medium-5 columns">
 
             <?php //Column 2 Heading
@@ -97,16 +97,20 @@
     </div>
   <div class="small-12 medium-12 large-6 columns">
       <div class="medium-6 columns  footer-links">
+        <map name="FooterMenu1">
           <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
+        </map>
       </div>
 
       <div class="medium-6 columns  footer-links">
+        <map name="FooterMenu2">
           <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
+        </map>
       </div>
   </div>
 </div>
 
-  <div class="marketing-site-footer-bottom">
+  <div class="marketing-site-footer-bottom hide-for-print">
       <div class="row align-middle">
           <div class="column text-center">
               <p>&copy;
@@ -130,13 +134,13 @@
 
 <?php wp_footer(); ?>
 <script>
-  	$(document).foundation();
+    $(document).foundation();
 </script>
-<script>
-     var _monsido = _monsido || [];
-     _monsido.push(['_setDomainToken', '_zbPflN9VdD6OgWB_h7F4Q']);
-     _monsido.push(['_withStatistics', 'true']);
- </script>
- <script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
+<script type="text/javascript">
+           var _monsido = _monsido || [];
+           _monsido.push(['_setDomainToken', '14l5XpM9a7fdx1hVoA-QRQ']);
+           _monsido.push(['_withStatistics', 'true']);
+       </script>
+       <script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
 </body>
 </html>

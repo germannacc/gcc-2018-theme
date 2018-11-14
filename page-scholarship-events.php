@@ -11,7 +11,7 @@ Template Name: Scholarship events
 
 
   	<div class="hero-section-text">
-  		 <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+  		 <?php the_title( '<h1 class="entry-title">', '</h1>', 'gcc-wp-2018' ); ?>
   	</div>
 
   	<div class="row expanded crumbs-container">
@@ -44,7 +44,7 @@ Template Name: Scholarship events
 
   					<?php } ?>
 
-  					<div class="entry-content">
+  					<div class="entry-content" id="main" tabindex="0">
 
       <?php //Page Heading
       get_template_part( 'template-parts/content', 'page-alert' );

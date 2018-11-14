@@ -22,7 +22,7 @@ get_header(); ?>
 
       <div class="small-12 columns">
 
-        <div class="entry-content">
+        <div class="entry-content" id="main" tabindex="0">
 
           <?php
           $args =  array (

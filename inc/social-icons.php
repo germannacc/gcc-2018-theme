@@ -1,15 +1,12 @@
 <?php
 function gcc_wp_2018_social_icons() {
-
   $facebook_id = get_field('facebook_id', 'option');
   $twitter_id = get_field('twitter_id', 'option');
   $instagram_id = get_field('instagram_id', 'option');
   $youtube_id = get_field('youtube_id', 'option');
   $flickr_id = get_field('flickr_id', 'option');
   $rss_feed_id = get_field('rss_feed_id', 'option');  ?>
-
   <ul class="menu social-icons">
-
      <?php if( !empty($facebook_id) ): ?>
      <li><a href="https://www.facebook.com/<?php echo $facebook_id; ?>"><span class="fa fa-2x fa-facebook-f" aria-hidden="true"><span class="icon-text"><?php _e('Facebook', 'gcc-wp-2018');?></span></span></a></li>
      <?php endif; ?>
@@ -29,5 +26,5 @@ function gcc_wp_2018_social_icons() {
     <li><a href="http://feeds.feedburner.com/<?php echo $rss_feed_id; ?>"><span class="fa  fa-2x fa-rss"  aria-hidden="true"><span class="icon-text"><?php _e('RSS Feed', 'gcc-wp-2018');?></span></span></a></li>
       <?php endif; ?>
   </ul>
-
-<?php } add_action('gcc_wp_2018', 'gcc_wp_2018_social_icons');?>
+<?php }
+add_action('gcc-wp-2018', 'gcc_wp_2018_social_icons');?>

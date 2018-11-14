@@ -32,7 +32,7 @@
 
   <div class="row expanded crumbs-container show-for-medium">
 
-    <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+    <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
 
       <?php gcc_wp_2018_archive_breadcrumbs(); ?>
 

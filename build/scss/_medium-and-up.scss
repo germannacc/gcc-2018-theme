@@ -8,7 +8,7 @@
     font-size: 1.2rem;
   }
 }
-  }
+}
 
 #main-menu {
   .gcc-main-nav {
@@ -45,7 +45,10 @@ ul.vertical.menu {
   .entry-title {
       font-size: 2.6rem;
 }
-  }
+ul.page-icons {
+    bottom: 1rem;
+}
+}
 
 .hero-section-plain {
   h1.entry-title {
@@ -107,29 +110,6 @@ a:hover {
       margin: 20% 0;
     }
   }
-#pathways {
-  .pathways-content {
-      h2 {
-        font-size: 2.8rem;
-}
-    }
-  }
-
-#getting-started {
-  .getting-started-content {
-      h2 {
-        font-size: 2.8rem;
-}
-    }
-  }
-
-#highlights {
-  .highlights-content {
-      h2 {
-        font-size: 2.8rem;
-}
-    }
-  }
 
 .content-area {
   display: flex;
@@ -158,7 +138,7 @@ ol,
 
 .latest-post {
   h3.post-title {
-      font-size: 1.4rem;
+      font-size: 1.8rem;
 }
 
 p {

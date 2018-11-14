@@ -28,3 +28,21 @@ function gcc_wp_2018_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'gcc_wp_2018_pingback_header' );
+if ( ! function_exists( 'gcc_wp_2018_posted_on' ) ) :
+	/**
+	 * Prints HTML with meta information for the current post-date/time.
+	 */
+	function gcc_wp_2018_posted_on() {
+  $time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time>';
+		$time_string = sprintf( $time_string,
+			esc_attr( get_the_date( 'c' ) ),
+			esc_html( get_the_date() )
+		);
+		$posted_on = sprintf (
+			/* translators: %s: post date. */
+			 esc_html_x( ' %s', 'post date', 'gcc-wp-2018' ),
+			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
+		);
+		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
+}
+endif;

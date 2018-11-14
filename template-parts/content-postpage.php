@@ -1,7 +1,7 @@
 <!--Page Content-->
 <div class="row gutter-small expanded content-area">
 
-<div class="small-12 medium-9 entry-content">
+<div class="small-12 medium-9 entry-content" id="main" tabindex="0">
 
   <?php
   $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;

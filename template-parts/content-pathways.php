@@ -6,6 +6,7 @@ $pathway_url = get_field('pathway_url');
 $programs_button_url = get_field('programs_button_url');
 $programs_button_text = get_field('programs_button_text');
 ?>
+
 <div id="pathways" class="row gutter-small expanded">
 
 <div class="pathways-content">
@@ -14,7 +15,7 @@ $programs_button_text = get_field('programs_button_text');
 
 <div class="row gutter-small expanded">
 
-<div class="columns small-12">
+<div class="columns small-12" id="main" tabindex="0">
 
 <?php
 $args =  array (
@@ -33,7 +34,7 @@ $args =  array (
 
 <div class="small-12 medium-6 large-4 columns" data-equalizer-watch>
 
-  <div class="card">
+  <div class="pathways-block">
     <a href="<?php the_field('pathway_url');?>">
 
         <?php
@@ -55,7 +56,7 @@ $args =  array (
 
       <?php endif; ?>
 
-     <div class="card-section">
+     <div class="block-section">
       <?php the_title('<h3>', '</h3>'); ?>
       <span class="fa fa-2x fa-search-plus more-icon"></span>
     </div>

@@ -6,11 +6,11 @@ function set_custom_edit_directory_columns( $columns ) {
          $columns['comments'],
          $columns['tags']
        );
-  $columns['employee_image'] = __( 'Photo', 'gcc-wp-admin' );
-  $columns['employee_department'] = __( 'Department', 'gcc-wp-admin' ); // Department column
-  $columns['employee_job_title'] = __( 'Title', 'gcc-wp-admin' ); // Title column
-  $columns['employee_email'] = __( 'Email', 'gcc-wp-admin' ); // Email column
-  $columns['employee_phone'] = __( 'Phone', 'gcc-wp-admin' ); // Phone column
+  $columns['employee_image'] = __( 'Photo', 'gcc-wp-2018');
+  $columns['employee_department'] = __( 'Department', 'gcc-wp-2018'); // Department column
+  $columns['employee_job_title'] = __( 'Title', 'gcc-wp-2018'); // Title column
+  $columns['employee_email'] = __( 'Email', 'gcc-wp-2018'); // Email column
+  $columns['employee_phone'] = __( 'Phone', 'gcc-wp-2018'); // Phone column
   return $columns;
 }
 //add data to new columns

@@ -38,7 +38,7 @@ if( !empty($employee_image) ) :
 
 	<br/>
 
-	<?php esc_html_e('(540) ', 'gcc-wp-admin');  the_field('employee_phone'); ?>
+	<?php esc_html_e('(540) ', 'gcc-wp-2018');  the_field('employee_phone'); ?>
 	</p>
 
 	</div>

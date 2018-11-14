@@ -1,4 +1,4 @@
- <div id="workforce" class="row expanded" >
+ <div id="workforce" class="row expanded" id="main" tabindex="0">
 
  <div class="workforce-explore-content">
 
@@ -98,7 +98,7 @@
 <div class="row expanded"  data-equalizer data-equalize-on="medium">
 
 
-	<div class="small-12 medium-8 columns" >
+	<div class="small-12 medium-6 columns" >
 
 		<div class="callout alert  text-center" data-equalizer-watch>
 			<?php //online training box
@@ -114,7 +114,7 @@
 
 	</div>
 
-	<div class="small-12 medium-4 columns">
+	<div class="small-12 medium-6 columns">
 		<div class="callout alert  text-center" data-equalizer-watch>
 			<?php
 				if( !empty($box_5_image) ): ?>

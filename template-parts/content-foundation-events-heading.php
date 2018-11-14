@@ -14,7 +14,7 @@ if  ( has_post_thumbnail())  { ?>
 
   <div class="row expanded crumbs-container show-for-medium">
 
-    <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+    <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
       <ul class="breadcrumbs">
           <?php $home_page = get_the_title( get_option('page_on_front'));
           $post_title = get_the_title( get_option('page_for_posts'));
@@ -61,7 +61,7 @@ if  ( has_post_thumbnail())  { ?>
 
   <div class="crumbs-container-plain">
 
-    <nav aria-label="<?php _e('You are here:');?>" role="navigation">
+    <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
         <ul class="breadcrumbs">
             <?php $home_page = get_the_title( get_option('page_on_front'));
             $post_title = get_the_title( get_option(20493));

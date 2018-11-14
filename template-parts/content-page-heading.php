@@ -1,8 +1,12 @@
 <?php // if the page has a featured image
 if  (has_post_thumbnail( ) )  { ?>
+  <header>
 
   <div class="hero-section-text">
      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+
+     <?php gcc_wp_2018_page_icons() ?>
+
   </div>
 
   <div class="row expanded crumbs-container">
@@ -13,9 +17,11 @@ if  (has_post_thumbnail( ) )  { ?>
 
   </div>
 
-<header class="hero-section">
+<div class="hero-section hide-for-print" id="big-featured-image" data-toggler="hide" >
 
 <?php the_post_thumbnail('', array ('alt' => false));  ?>
+
+</div>
 
 </header>
 
@@ -24,9 +30,9 @@ if  (has_post_thumbnail( ) )  { ?>
 // if page doesn't have a featured image
 ?>
 
-<div class="row gutter-small expanded">
+<header class="row gutter-small expanded">
 
-<header class="hero-section-">
+<div class="hero-section-">
 
 
   <?php //if the child page doesn't have a featured images
@@ -39,14 +45,13 @@ if  (has_post_thumbnail( ) )  { ?>
 
   <div class="crumbs-container show-for-medium">
 
-        <nav aria-label="<?php _e('You are here:');?>" aria-label="Breadcrumb">
+        <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" aria-label="Breadcrumb">
           <?php the_breadcrumb() ?>
         </nav>
 
   </div>
-</header>
-
-
 </div>
+
+</header>
 
 <?php } ?>

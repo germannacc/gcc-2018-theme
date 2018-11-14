@@ -22,7 +22,8 @@ h1 {
 .callout {
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.4rem !important;
+    margin-bottom: 0;
   }
 
   img {
@@ -62,9 +63,8 @@ $subscription-form-color: $white;
   }
   .input-group {
     margin: 2rem 0 0 0;
-
     [type="email"]  {
-      height: 3rem;
+      height: 60px;
     }
   }
 

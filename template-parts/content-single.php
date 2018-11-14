@@ -13,7 +13,7 @@
 
 <div class="columns small-12 medium-9">
 
-	<div class="entry-content">
+	<div class="entry-content" id="main" tabindex="0">
 
 	<?php
  the_content( sprintf(

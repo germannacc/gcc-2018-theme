@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<div class="row gutter-small expanded content-area">
 
-			<div class="small-12 entry-content">
+			<div class="small-12 entry-content" id="main" tabindex="0">
 
 				<div class="small-12 medium-3 columns">
 
