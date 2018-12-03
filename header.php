@@ -20,12 +20,13 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php include_once("analyticstracking.php") ?>
+
 <div id="skip"><a href="#main" class="show-on-focus"><?php esc_html_e('skip to content', 'gcc-wp-2018') ?></a></div>
 
 <?php
    get_template_part( 'template-parts/content', 'weather-alert' );
 ?>
-
   <div class="off-canvas-wrapper no-js">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
           <?php main_menu(); //main sidebar navigation ?>

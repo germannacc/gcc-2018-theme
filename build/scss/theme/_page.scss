@@ -121,11 +121,6 @@ a.button.hollow:active {
     background-color: $medium-gray;
 }
 
-blockquote {
-  background-color: $light-gray;
-  padding: 2rem;
-}
-
 ul.accordion {
   margin-bottom: 2rem;
   li.accordion-item {
@@ -253,6 +248,8 @@ h4,
     font-weight: 800;
   line-height: 1.8rem;
   padding: 0 1rem;
+  background-color: $medium-gray;
+
 }
   }
 
@@ -308,13 +305,12 @@ li:last-child a,
       }
 
   .active > a {
-    background-color: $medium-gray;
+    background-color: $light-gray;
     color: $secondary;
     font-weight: 800;
   }
 
 }
-
 .social-icons {
   margin: 0;
   padding: 0;

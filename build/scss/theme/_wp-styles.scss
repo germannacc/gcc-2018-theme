@@ -128,11 +128,11 @@ a img.aligncenter {
 .bypostauthor {}
 
 blockquote {
-  background: transparent;
+  background-color: $light-gray;
+  padding: 2rem;
   margin: 0;
   font-style: italic;
   padding: 0;
-  text-align: center;
 
   cite {
     display: block;

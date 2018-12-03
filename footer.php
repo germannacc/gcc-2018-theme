@@ -136,6 +136,15 @@
 <script>
     $(document).foundation();
 </script>
+<?php if ( is_page('108') || $post->post_parent == '108' ) {  ?>
+    //tutoring monsido script
+    <script type="text/javascript">
+    var _monsido = _monsido || [];
+    _monsido.push(['_setDomainToken', '4tsVVD4d1Iw5kplXbM3eow']);
+    _monsido.push(['_withStatistics', 'true']);
+</script>
+<script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
+<?php } ?>
 <script type="text/javascript">
            var _monsido = _monsido || [];
            _monsido.push(['_setDomainToken', '14l5XpM9a7fdx1hVoA-QRQ']);
