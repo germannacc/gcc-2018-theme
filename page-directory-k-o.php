@@ -4,134 +4,49 @@
 Template Name: Directory K-O
 */
 get_header(); ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-<?php
+	<?php
 	while ( have_posts() ) : the_post(); ?>
-
-		<?php //Page Heading
-		get_template_part( 'template-parts/content', 'page-directory-heading' );
- 		?>
-
-		<div class="row gutter-small expanded content-area">
-
-			<div class="small-12 entry-content" id="main" tabindex="0">
-
-			<?php
-			    the_content();
-			?>
-
-			<?php
-
-
-			// WP_Query arguments
-$args = array(
-	'post_type'              => array( 'directory' ),
-	'nopaging'               => false,
-	'posts_per_page'         => '10',
-	'order'                  => 'DESC',
-	'orderby'   						 => 'title',
-	'tax_query' => array(
-			array(
-				'taxonomy' => 'directory_order',
-				'field' => 'slug',
-				'terms' => 'k-o'
-			)
-		)
-);
-
-// The Query
-$loop = new WP_Query( $args );
-
-// The Loop
-if ( $loop ->have_posts() ) {
-	while ( $loop ->have_posts() ) {
-		$loop ->the_post();
-		// do something
-
-		$employee_department = get_field('employee_department');
-		$employee_job_title = get_field('employee_job_title');
-		$employee_location= get_field('employee_location');
-		$employee_phone = get_field('employee_phone');
-		$employee_email = get_field('employee_email');
-		$size = 'medium'; // (thumbnail, medium, large, full or custom size)
-?>
-
-
-
-<div class="small-12 medium-4 columns directory">
-
-<div class="callout employee-profile">
-
-<?php
-$employee_image = get_field('employee_image');
-
-if( !empty($employee_image) ) :
-
-	// vars
-	$url = $employee_image['url'];
-	$alt = $employee_image['alt'];
-
-	// thumbnail
-	$size = 'medium';
-	$thumb = $employee_image['sizes'][ $size ];
-	$width = $employee_image['sizes'][ $size . '-width' ];
-	$height = $employee_image['sizes'][ $size . '-height' ];
+	<?php //Page Heading
+	get_template_part( 'template-parts/content', 'page-directory-heading' );
 	?>
-						<img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>" class="thumbnail">
-
-<?php endif; ?>
-
-	<?php the_title('<h3>','</h3>');  ?>
-    <p class="position-info"><?php the_field('employee_job_title'); ?><br/>
-		<?php the_field('employee_department'); ?><br/>
-		</p>
-
-		<p class="contact-info">
-			<?php the_field('employee_location'); ?><br/>
-
-		<a href="mailto:<?php the_field('employee_email'); ?>"><?php the_field('employee_email'); ?></a>
-
-				<br/>
-				<?php esc_html_e('(540) ', 'gcc-wp-admin');  the_field('employee_phone'); ?>
-		</p>
-
-	</div>
-</div>
-
-<?php
-	}
-}
-
-else {
-	// no posts found
-?>
-
-<div style="padding-bottom: 50rem;">
-	<p><?php esc_html_e('Sorry, the directory is currently undergoing maintenance.', 'gcc-wp-2018') ?></p>
-</div>
-<?php
-}
-
-// Restore original Post Data
-wp_reset_postdata();
-
-			 ?>
-
+	<div class="row gutter-small expanded content-area"  data-equalizer data-equalize-on="medium" id="test-eq">
+		<div class="small-12 entry-content" id="main" tabindex="0">
+			<?php
+			the_content();
+			?>
+			<?php
+			$request = wp_remote_get( 'https://applications.germanna.edu/directory/directory.json');
+			$body = wp_remote_retrieve_body( $request);
+			$data = json_decode($body, false);
+			if( ! empty( $data ) ) {
+			foreach( $data->employee as $employees ) {
+			if ( $employees->employee_info) {
+			?>
+			<?php echo '<div class="small-12 medium-12 large-6 columns sort-directory">';
+				echo '<div class="callout small primary employee-profile" data-equalizer-watch>';
+					echo '<h2>'. $employees->employee_info->firstName. ' '. $employees->employee_info->lastName. '</h2>';
+					echo '<div class="profile-container">';
+						echo '<div class="small-4 medium-4 large-4 columns">';
+							echo '<img src="'. $employees->employee_info->picturePath.'" />';
+						echo '</div>';
+						echo '<div class="small-8 medium-8 large-8 columns">';
+							echo '<p class="position-info"><strong>' . $employees->employee_info->title . '</strong><br/>' . $employees->employee_info->department . '<br/>' . $employees->employee_info->locationCampus . '<br/>';
+								echo '<a href="mailto:'. $employees->employee_info->email.'">' . $employees->employee_info->email. '</a><br/>' . $employees->employee_info->phone . '</p>';
+							echo '</div>';
+						echo '</div>';
+					echo '</div>';
+				echo '</div>';
+				}
+				}
+				}
+				?>
 			</div>
-
-
 			<footer class="entry-footer">
-			  <?php gcc_wp_2018_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
-
-
-		</div>
-
-<?php endwhile; // End of the loop. ?>
-
-</article>
-
-<?php
-get_footer();
+				<?php gcc_wp_2018_entry_footer(); ?>
+				</footer><!-- .entry-footer -->
+			</div>
+			<?php endwhile; // End of the loop. ?>
+		</article>
+		<?php
+		get_footer();

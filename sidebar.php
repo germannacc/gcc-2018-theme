@@ -8,7 +8,7 @@
  */
  ?>
 
- <aside class="small-12 medium-4 large-3 columns right page-nav hide-for-print" id="section-menu"  data-toggler="hide">
+ <aside class="small-12 medium-12 large-3 columns right page-nav hide-for-print" id="section-menu"  data-toggler="hide">
 
 
     <?php //get page widgets
@@ -71,31 +71,38 @@ if ( is_page('26') || $post->post_parent == '26') {
 //alumni
 
 if ( is_page('20401') || $post->post_parent == '20401' ) {
-//custom department widgets
- dynamic_sidebar( 'alumni-widgets' );
+  //custom department widgets
+  dynamic_sidebar( 'alumni-widgets' );
 }
 
+//post pages
+
 if ( is_singular('post'))  {
-  //custom archive widgets
+    //custom archive widgets
+    dynamic_sidebar( 'single-widgets' );
+}
+if ( is_category('highlights'))  {
+    //custom archive widgets
     dynamic_sidebar( 'single-widgets' );
 }
 if ( is_home('post'))  {
+    //custom archive widgets
+    dynamic_sidebar( 'single-widgets' );
+}
+if ( is_archive('safety-alerts'))  {
   //custom archive widgets
     dynamic_sidebar( 'single-widgets' );
 }
-if ( is_category('safety-alerts'))  {
+if ( is_archive('highlights'))  {
   //custom archive widgets
     dynamic_sidebar( 'single-widgets' );
 }
    //awards
  if (is_page('35') || $post->post_parent == '35')
-
     {
      //custom department widgets
        dynamic_sidebar( 'awards-widgets' );
     }
-
-
 //arts and sciences
 
   if ( is_page('34') || $post->post_parent == '34') {
@@ -106,11 +113,17 @@ if ( is_category('safety-alerts'))  {
 
    //bookstore
 
-   if ( is_page('36') || $post->post_parent == '36' ) {
+   if ( is_page('26193') || $post->post_parent == '26193' ) {
    //custom department widgets
-     dynamic_sidebar( 'bookstore-widgets' );
+     dynamic_sidebar( 'cae-widgets' );
 }
 
+//CAE
+
+if ( is_page('36') || $post->post_parent == '36' ) {
+//custom department widgets
+  dynamic_sidebar( 'bookstore-widgets' );
+}
 
    //business office
 
@@ -188,7 +201,7 @@ if ( is_archive( '1803' )) {
 
    ///dental
 
-   if ( is_page('114') ) {
+   if ( is_page('114') || $post->post_parent == '114' )  {
    //custom department widgets
      dynamic_sidebar( 'dental-widgets' );
 }

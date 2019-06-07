@@ -1,7 +1,7 @@
 <?php
 //Names the page template for each section
 /*
-Template Name: Directory Directory
+Template Name: Directory LGC
 */
 get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -14,6 +14,21 @@ get_header(); ?>
 		<div class="small-12 entry-content" id="main" tabindex="0">
 			<?php
 			the_content();
+			?>
+			<?php
+			$request = wp_remote_get( 'https://applications.germanna.edu/directory/directory.json' );
+			if( is_wp_error( $request ) ) {
+																			return false; // Bail early
+			}
+			$body = wp_remote_retrieve_body( $request );
+			$data = json_decode( $body );
+			if( ! empty( $data ) ) {
+			foreach( $data->employee as $employees ) {
+																				if ( $employees->employee_info->locationCampus === 'Locust Grove Campus' ) {
+																				include( 'inc/directory-output.php' );
+																		}
+			}
+			}
 			?>
 		</div>
 		<footer class="entry-footer">
