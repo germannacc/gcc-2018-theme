@@ -1,129 +1,64 @@
-// Foundation for Sites by ZURB
-// foundation.zurb.com
-// Licensed under MIT Open Source
+a.stories {
 
-////
-/// @group card
-////
+.card {
 
-/// Defualt background color.
-/// @type Color
-$card-background: $white !default;
+-webkit-box-shadow: 2px 7px 14px -6px rgba(0,0,0,0.94);
+-moz-box-shadow: 2px 7px 14px -6px rgba(0,0,0,0.94);
+box-shadow: 2px 7px 14px -6px rgba(0,0,0,0.94);
+position: relative;
+  border-radius: 15px;
 
-/// Default font color for cards.
-/// @type Color
-$card-font-color: $body-font-color !default;
+.card-section {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#962238+0,933345+99&1+0,0+100 */
+background: -moz-linear-gradient(45deg,  rgba(150,34,56,1) 0%, rgba(147,51,69,0.01) 99%, rgba(147,51,69,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(150,34,56,1) 0%,rgba(147,51,69,0.01) 99%,rgba(147,51,69,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(150,34,56,1) 0%,rgba(147,51,69,0.01) 99%,rgba(147,51,69,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#962238', endColorstr='#00933345',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color: #ffffff;
+min-height: 100%;
+width: 100%;
+         transition: all 0.15s ease-in;
 
-/// Default background.
-/// @type Color
-$card-divider-background: $light-gray !default;
+h3 {
 
-/// Default border style.
-/// @type List
-$card-border: 1px solid $light-gray !default;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 
-/// Default card shadow.
-/// @type List
-$card-shadow: none !default;
+  a {
+    text-decoration: underline;
+    color: $white;
 
-/// Default border radius.
-/// @type List
-$card-border-radius: $global-radius !default;
-
-/// Default padding.
-/// @type Number
-$card-padding: $global-padding !default;
-
-/// Default bottom margin.
-/// @type number
-$card-margin-bottom: $global-margin !default;
-
-/// Adds styles for a card container.
-/// @param {Color} $background - Background color of the card.
-/// @param {Color} $color - font color of the card.
-/// @param {Number} $margin - Bottom margin of the card.
-/// @param {List} $border - Border around the card.
-/// @param {List} $radius - border radius of the card.
-/// @param {List} $shadow - box shadow of the card.
-@mixin card-container(
-  $background: $card-background,
-  $color: $card-font-color,
-  $margin: $card-margin-bottom,
-  $border: $card-border,
-  $radius: $card-border-radius,
-  $shadow: $card-shadow
-) {
-  @if $global-flexbox {
-    //display: flex;
-    //flex-direction: column;
-    //flex-grow: 1;
+    &:hover {
+      color: $secondary;
+    }
   }
 
-  margin-bottom: $margin;
-
-  border: $border;
-  border-radius: $radius;
-
-  background: $background;
-  box-shadow: $shadow;
-
-  overflow: hidden;
-  color: $color;
-
-  & > :last-child {
-    margin-bottom: 0;
-  }
+}
 }
 
-/// Adds styles for a card divider.
-@mixin card-divider(
-  $background: $card-divider-background,
-  $padding: $card-padding
-) {
-  @if $global-flexbox {
-    //flex: 0 1 auto;
-    //display: flex;
-  }
-
-  padding: $padding;
-  background: $background;
-
-  & > :last-child {
-    margin-bottom: 0;
-  }
 }
 
-/// Adds styles for a card section.
-@mixin card-section(
-  $padding: $card-padding
-) {
-  @if $global-flexbox {
-    //flex: 1 0 auto;
-  }
+&:hover {
+.card-section {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#333333+0,000000+100&1+0,0+100 */
+background: -moz-linear-gradient(45deg,  rgba(51,51,51,1) 0%, rgba(0,0,0,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(45deg,  rgba(51,51,51,1) 0%,rgba(0,0,0,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#333333', endColorstr='#00000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+color: #ffffff;
+min-height: 100%;
 
-  padding: $padding;
-
-  & > :last-child {
-    margin-bottom: 0;
-  }
 }
 
-@mixin foundation-card {
-  .card {
-    @include card-container;
-  }
+}
 
-  .card-divider {
-    @include card-divider;
-  }
-
-  .card-section {
-    @include card-section;
-  }
-
-  // For IE 11 - Flexbug
-  // https://github.com/philipwalton/flexbugs/issues/75
-  .card-image {
-    min-height: 1px;
-  }
 }
