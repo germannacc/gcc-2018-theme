@@ -30,6 +30,7 @@ article {
 
 p {
     font-size: 1rem;
+
 }
 
 ol,
@@ -126,9 +127,9 @@ ul.accordion {
   li.accordion-item {
       a.accordion-title {
         line-height: 1.8rem;
-  border-bottom: 1px solid $medium-gray;
-  border-top: 1px solid $medium-gray;
-  font-weight: 800;
+        border-bottom: 1px solid $medium-gray;
+        border-top: 1px solid $medium-gray;
+        font-weight: 800;
 }
     }
   }
@@ -162,6 +163,12 @@ button:hover.wpforms-page-next  , button:hover.wpforms-page-prev  {
   background-color: $primary !important;
   color: $white !important;
 
+}
+.label {
+
+    font-size: 1rem;
+    padding: .3rem 1rem;
+    margin: 0 1rem;
 }
 }
 
@@ -206,7 +213,7 @@ h4,
   li {
     a:link {
         padding: 0.5rem 1rem;
-        font-weight: bold;
+        font-weight: 400;
         color: $dark-gray;
         line-height: 1.4rem;
       }
@@ -245,7 +252,7 @@ h4,
   border-bottom: 2px solid $primary;
   a {
     font-size: 1.2rem;
-    font-weight: 800;
+    font-weight: 600;
   line-height: 1.8rem;
   padding: 0 1rem;
   background-color: $medium-gray;

@@ -128,7 +128,7 @@ Template Name: Scholarship events
 
       <?php else : ?>
 
-      <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'gcc-wp-2018'); ?></p>
+      <p><?php esc_html_e( 'We are currently working on updating our event details.  Please check back soon for our upcoming events.', 'gcc-wp-2018'); ?></p>
 
       <?php endif; ?>
 

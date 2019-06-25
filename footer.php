@@ -21,11 +21,17 @@
   $e2campus_button_text = get_field('e2campus_button_text', 'option');
   $e2campus_button_url = get_field('e2campus_button_url', 'option');
 ?>
+
+<?php //closing main container, do not remove ?>
 </main>
 <footer class="marketing-site-footer hide-for-print">
+
 <div class="row expanded gutter-small">
-    <div class="small-12 medium-12 large-6 columns">
+
+  <div class="small-12 medium-12 large-6 columns">
+
       <div class="medium-7 columns">
+
         <?php //Column 1 Heading
         if( !empty($footer_column_1_heading_text) ): ?>
                   <h4>
@@ -59,97 +65,91 @@
                     </ul>
                     <?php gcc_wp_2018_social_icons(); ?>
        </div>
+
         <div class="medium-5 columns">
+          <?php //Column 2 Heading
+          if( !empty($footer_column_2_heading_text) ): ?>
+                    <h4>
+                        <?php echo $footer_column_2_heading_text; ?>
+                    </h4>
+          <?php endif; ?>
+          <?php //Primary Address Text Block
+          if( !empty($primary_address) ): ?>
+                    <div class="marketing-site-footer-block">
+                        <span class="fa fa-3x fa-map-marker" aria-hidden="true"></span>
+                        <p>
+                            <?php echo $primary_address; ?>
+                        </p>
+                    </div>
+                    <?php endif; ?>
+                    <?php //Primary Phone Number Text Block
+          if( !empty($primary_phone_number) ): ?>
+                    <div class="marketing-site-footer-block">
+                        <span class="fa fa-3x fa-mobile" aria-hidden="true"></span>
+                        <p>
+                            <?php echo $primary_phone_number; ?>
+                        </p>
+                    </div>
+                    <?php endif; ?>
+                    <?php //e2Campus Alerts Text Block
+          if( !empty($e2campus_button_text) ): ?>
+                    <div class="marketing-site-footer-block">
+                        <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle show-for-large-only"  aria-hidden="true"></span>
+          <?php echo $e2campus_button_text; ?></a>
+                    </div>
+                    <?php endif; ?>
 
-            <?php //Column 2 Heading
-            if( !empty($footer_column_2_heading_text) ): ?>
-                      <h4>
-                          <?php echo $footer_column_2_heading_text; ?>
-                      </h4>
-            <?php endif; ?>
-            <?php //Primary Address Text Block
-            if( !empty($primary_address) ): ?>
-                      <div class="marketing-site-footer-block">
-                          <span class="fa fa-3x fa-map-marker" aria-hidden="true"></span>
-                          <p>
-                              <?php echo $primary_address; ?>
-                          </p>
-                      </div>
-                      <?php endif; ?>
-                      <?php //Primary Phone Number Text Block
-            if( !empty($primary_phone_number) ): ?>
-                      <div class="marketing-site-footer-block">
-                          <span class="fa fa-3x fa-mobile" aria-hidden="true"></span>
-                          <p>
-                              <?php echo $primary_phone_number; ?>
-                          </p>
-                      </div>
-                      <?php endif; ?>
-                      <?php //e2Campus Alerts Text Block
-            if( !empty($e2campus_button_text) ): ?>
-                      <div class="marketing-site-footer-block">
-                          <a href="<?php echo $e2campus_button_url; ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle show-for-large-only"  aria-hidden="true"></span>
-            <?php echo $e2campus_button_text; ?></a>
-                      </div>
-                      <?php endif; ?>
         </div>
-
-    </div>
-  <div class="small-12 medium-12 large-6 columns">
-      <div class="medium-6 columns  footer-links">
-        <map name="FooterMenu1">
-          <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
-        </map>
-      </div>
-
-      <div class="medium-6 columns  footer-links">
-        <map name="FooterMenu2">
-          <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
-        </map>
-      </div>
   </div>
+
+  <div class="small-12 medium-12 large-6 columns">
+
+    <div class="medium-6 columns footer-links">
+      <map name="FooterMenu1">
+        <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
+      </map>
+    </div>
+
+    <div class="medium-6 columns  footer-links">
+      <map name="FooterMenu2">
+        <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
+      </map>
+    </div>
+
+  </div>
+
 </div>
 
-  <div class="marketing-site-footer-bottom hide-for-print">
-      <div class="row align-middle">
-          <div class="column text-center">
-              <p>&copy;
-                  <?php echo date('Y'); ?>
-                  <?php bloginfo( 'name' ); ?>
-              </p>
-              <?php if( !empty($bottom_footer_text) ): ?>
-              <?php echo $bottom_footer_text; ?>
-              <?php endif; ?>
-          </div>
+<div class="marketing-site-footer-bottom hide-for-print">
+
+  <div class="row align-middle">
+      <div class="column text-center">
+          <p>&copy;
+              <?php echo date('Y'); ?>
+              <?php bloginfo( 'name' ); ?>
+          </p>
+          <?php if( !empty($bottom_footer_text) ): ?>
+          <?php echo $bottom_footer_text; ?>
+          <?php endif; ?>
       </div>
   </div>
+
+</div>
 </footer>
 <?php
- get_template_part( 'template-parts/content', 'mobile-nav' );
+get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
-<!--Closing Site Divs Do not Remove-->
-</div>
-</div>
+
+
+<?php //closing Site Divs Do not Remove ?>
+    </div>
+  </div>
 </div>
 
 <?php wp_footer(); ?>
+
 <script>
     $(document).foundation();
 </script>
-<?php if ( is_page('108') || $post->post_parent == '108' ) {  ?>
-    //tutoring monsido script
-    <script type="text/javascript">
-    var _monsido = _monsido || [];
-    _monsido.push(['_setDomainToken', '4tsVVD4d1Iw5kplXbM3eow']);
-    _monsido.push(['_withStatistics', 'true']);
-</script>
-<script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
-<?php } ?>
-<script type="text/javascript">
-           var _monsido = _monsido || [];
-           _monsido.push(['_setDomainToken', '14l5XpM9a7fdx1hVoA-QRQ']);
-           _monsido.push(['_withStatistics', 'true']);
-       </script>
-       <script src="//cdn.monsido.com/tool/javascripts/monsido.js"></script>
 </body>
 </html>

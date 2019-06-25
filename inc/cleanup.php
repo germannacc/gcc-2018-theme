@@ -84,14 +84,21 @@ function gcc_wp_2018_deregister_style() {
 	wp_deregister_style( 'jquery-ui-css' );
 	wp_deregister_style( 'UserAccessManagerLoginForm'  );
 	wp_deregister_style( 'jquery-lazyloadxt-fadein' );
+	wp_deregister_style( 'wp-block-library' );
+	wp_deregister_style( 'wp-mediaelement' );
+	wp_deregister_style( 'mediaelement' );
+	wp_deregister_style( 'imgareaselect' );
 }
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_style' );
 endif;
 if ( ! function_exists( 'gcc_wp_2018_deregister_script' ) ) :
  function gcc_wp_2018_deregister_script() {
+
 			wp_deregister_script('google_cse_v2');
 			wp_deregister_script('tp-tools');
 			wp_deregister_script('revmin');
+
+
 }
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_script' );
 endif;

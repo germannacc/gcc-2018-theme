@@ -45,6 +45,9 @@
 
       ); ?></p>
 
+      <?php gcc_wp_2018_entry_footer();  ?>
+
+
       </div>
       </div>
 

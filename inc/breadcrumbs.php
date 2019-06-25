@@ -36,7 +36,7 @@ if ( ! function_exists( 'gcc_wp_2018_archive_breadcrumbs' ) ) :
 	 				 </a>
 	 		 </li>
  			 <li role="menuitem">
- 						 <a href="<?php esc_html_e('/highlights/', 'gcc-wp-2018'); ?>"> <?php _e('Germanna highlights & news', 'gcc-wp-2018');?></a>
+ 						 <a href="<?php esc_html_e('/blog/', 'gcc-wp-2018'); ?>"> <?php _e('Germanna highlights & news', 'gcc-wp-2018');?></a>
  			</li>
 	 		 <?php if (is_archive()) : ?>
  			 <li role="menuitem">

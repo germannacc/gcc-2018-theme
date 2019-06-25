@@ -92,7 +92,7 @@ $global-margin: 1rem;
 $global-padding: 1rem;
 $global-position: 1rem;
 $global-weight-normal: normal;
-$global-weight-bold: bolder;
+$global-weight-bold: bold;
 $global-radius: 0;
 $global-menu-padding: 0.7rem 1rem;
 $global-menu-nested-margin: 1rem 1rem 1rem 0;
@@ -282,12 +282,12 @@ $breadcrumbs-item-separator-color: $dark-gray;
 // 11. Button
 // ----------
 
-$button-font-family: inherit;
+$button-font-family: $body-font-family;
 $button-padding: 0.85em 1em;
 $button-margin: 0 0 $global-margin 0;
 $button-fill: solid;
 $button-background: $primary;
-$button-background-hover: scale-color($button-background, $lightness: 25%);
+$button-background-hover: $secondary;
 $button-color: $white;
 $button-color-alt: $black;
 $button-radius: $global-radius;
@@ -459,8 +459,8 @@ $label-background: $primary-color;
 $label-color: $white;
 $label-color-alt: $black;
 $label-palette: $foundation-palette;
-$label-font-size: 1.2rem;
-$label-padding: 1rem 0.5rem;
+$label-font-size: .8rem;
+$label-padding: .3rem 0.8rem;
 $label-radius: $global-radius;
 
 // 22. Media Object

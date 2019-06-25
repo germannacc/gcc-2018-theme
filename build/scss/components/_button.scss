@@ -8,7 +8,7 @@
 
 /// Font family for button elements.
 /// @type Font
-$button-font-family: inherit !default;
+$button-font-family: $body-font-family !default;
 
 /// Padding inside buttons.
 /// @type List

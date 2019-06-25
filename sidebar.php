@@ -71,31 +71,38 @@ if ( is_page('26') || $post->post_parent == '26') {
 //alumni
 
 if ( is_page('20401') || $post->post_parent == '20401' ) {
-//custom department widgets
- dynamic_sidebar( 'alumni-widgets' );
+  //custom department widgets
+  dynamic_sidebar( 'alumni-widgets' );
 }
 
+//post pages
+
 if ( is_singular('post'))  {
-  //custom archive widgets
+    //custom archive widgets
+    dynamic_sidebar( 'single-widgets' );
+}
+if ( is_category('highlights'))  {
+    //custom archive widgets
     dynamic_sidebar( 'single-widgets' );
 }
 if ( is_home('post'))  {
+    //custom archive widgets
+    dynamic_sidebar( 'single-widgets' );
+}
+if ( is_archive('safety-alerts'))  {
   //custom archive widgets
     dynamic_sidebar( 'single-widgets' );
 }
-if ( is_category('safety-alerts'))  {
+if ( is_archive('highlights'))  {
   //custom archive widgets
     dynamic_sidebar( 'single-widgets' );
 }
    //awards
  if (is_page('35') || $post->post_parent == '35')
-
     {
      //custom department widgets
        dynamic_sidebar( 'awards-widgets' );
     }
-
-
 //arts and sciences
 
   if ( is_page('34') || $post->post_parent == '34') {

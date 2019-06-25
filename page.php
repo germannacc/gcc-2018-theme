@@ -13,7 +13,6 @@
  */
  get_header(); ?>
 
-
  <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
  <?php
@@ -46,7 +45,7 @@
         <?php // if the page has a featured image
         if  (has_post_thumbnail( ) )  { ?>
 
-        <div class="hero-section hide-for-print" id="featured-image" data-toggler="hide" >
+        <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
 
         <?php the_post_thumbnail('', array ('alt' => false));  ?>
 
@@ -64,8 +63,6 @@
       <?php //Page Heading
       get_template_part( 'template-parts/content', 'page-alert' );
       ?>
-
-
 
       <?php
         the_content();
@@ -86,7 +83,6 @@
  <?php endwhile; // End of the loop. ?>
 
  </article>
-
 
 
  <?php

@@ -43,6 +43,11 @@
 
   a.button {
     margin-bottom: 2rem;
+    font-weight: 600;
+  }
+
+  a.button:hover {
+    background-color: $secondary;
   }
 
 }
@@ -56,6 +61,7 @@ padding:  3rem 1rem 3rem 1rem;
 
   .button {
     margin-top: 1.8rem;
+    font-weight: 600;
   }
 
 
@@ -224,8 +230,8 @@ margin-bottom: 1.2rem;
 
 }
 
-.button {
-  font-weight: bold;
+.button .expanded {
+  font-weight: 700;
 }
 
 }
