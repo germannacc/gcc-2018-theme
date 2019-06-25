@@ -1,51 +1,66 @@
 <?php
 /**
- * The template for displaying search results pages
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
- *
- * @package gccwp-2018
- */
-
+* The template for displaying search results pages
+*
+* @link https://developer.wordpress.org/themes/basics/template-hierarchy/#search-result
+*
+* @package gccwp-2018
+*/
 get_header(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header>
+		<div class="hero-section-text">
+			<h1><?php _e('Search germanna.edu', 'gcc-wp-2018'); ?></h1>
+			<?php gcc_wp_2018_page_icons() ?>
+		</div>
+		<div class="row expanded crumbs-container">
+			<nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
+				<?php the_breadcrumb() ?>
+			</nav>
+		</div>
+	</header>
+	<!--Page Content-->
+	<div class="row expanded content-area">
+		<div class="small-12 columns" >
+			<div class="entry-content" id="main" tabindex="0">
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main">
+				<?php
+				global $query_string;
+				$query_args = explode("&", $query_string);
+				
+				$search_query = array();
+				
+				foreach($query_args as $key => $string) {
+				$query_split = explode("=", $string);
+				$search_query[$query_split[0]] = urldecode($query_split[1]);
+				} // foreach
+				
+				$the_query = new WP_Query($search_query);
+				if ( $the_query->have_posts('post,page,attachment') ) :
+				?>
 
+				<h2><?php echo $wp_query->found_posts; ?> <?php _e( 'Search Results Found For', 'locale' ); ?>: "<?php the_search_query(); ?>"</h2>
+				<hr>
+				<!-- the loop -->
+				<?php while ( $the_query->have_posts('attachments') ) : $the_query->the_post(); ?>
+				<h3>
+				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				</h3>
+				<p><?php the_date(); ?></p>
+				<p><?php the_excerpt(); ?></p>
+				<hr>
+				<?php endwhile; ?>
+				<!-- end of the loop -->
+				<?php wp_reset_postdata(); ?>
+				<?php else : ?>
+				<p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+				<?php endif; ?>
+			</div>
+			<footer class="entry-footer">
+				<?php gcc_wp_2018_entry_footer(); ?>
+				</footer><!-- .entry-footer -->
+				</div><!--.pagecontent-->
+			</div>
+		</article>
 		<?php
-		if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title"><?php
-					/* translators: %s: search query. */
-					printf( esc_html__( 'Search Results for: %s', 'gcc-wp-2018' ), '<span>' . get_search_query() . '</span>' );
-				?></h1>
-			</header><!-- .page-header -->
-
-			<?php
-			/* Start the Loop */
-			while ( have_posts() ) : the_post();
-
-				/**
-				 * Run the loop for the search to output the results.
-				 * If you want to overload this in a child theme then include a file
-				 * called content-search.php and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', 'search' );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
-<?php
-get_sidebar();
-get_footer();
+		get_footer();

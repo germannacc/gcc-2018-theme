@@ -4,79 +4,70 @@
 Template Name: Educational Foundation
 */
 get_header(); ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
-<?php
+	<?php
 	while ( have_posts() ) : the_post(); ?>
-
-		<?php //Page Heading
-		get_template_part( 'template-parts/content', 'page-heading' );
-		?>
-
-		<!--Page Content-->
-		<div class="row gutter-small expanded content-area">
-
-			<div class="small-12 medium-8 large-9 gutter-small entry-content" id="main" tabindex="0">
-
+	<?php //Page Heading
+	get_template_part( 'template-parts/content', 'page-heading' );
+	?>
+	<!--Page Content-->
+	<div class="row gutter-small expanded content-area">
+		<div class="small-12 medium-8 large-9 gutter-small entry-content" id="main" tabindex="0">
 			<?php //Page Heading
 			get_template_part( 'template-parts/content', 'page-alert' );
 			?>
-
 			<?php
-			  the_content();
+			the_content();
 			?>
-
 			<?php if (is_page('438')):
 			?>
-
-<div id="cp_widget_8b41ad5b-6dc6-45ba-9aca-face3508ba86">...</div>
-<script type="text/javascript">
-var cpo = []; cpo["_object"] ="cp_widget_8b41ad5b-6dc6-45ba-9aca-face3508ba86"; cpo["_fid"] = "AwPAYdMGlcd_";
-var _cpmp = _cpmp || []; _cpmp.push(cpo);
-(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
-cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
-var c = document.getElementsByTagName("script")[0];
-c.parentNode.insertBefore(cp, c); })(); </script><noscript><span>Germanna Community CollegeEducational  Foundation Art Collection</span><span>Cadow Art Collection</span><span>Artic Prowl</span><span>Artic Prowl by Carl Arlen
-14 X 20
-$240</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Bluebird</span><span>Bluebird by Carl Arlen
-14 x 20
-$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.01</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:55:43 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>By the Docks</span><span>By the Docks by Carl Arlen
-14 X 20
-$280</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Fluffing Up</span><span>Fluffing Up by Carl Arlen
-14 x 20
-$240</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Great Horned</span><span>Great Horned by Carl Arlen
-14 x 20
-$240
-</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0111111114</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 2:08:19 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>GULLS</span><span>Gulls by Carl Arlen
-14 X 20
-$240</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>HAWK'S COUNTRY</span><span>Hawk's Country by Carl Alden
-14 x 20
-$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.01</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 2:05:45 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Majesty</span><span>Majesty by Carl Alden
-14 x 20
-$280</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0166666675</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:56:26 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Mister Toad</span><span>Mister Toad by Carl Alden
-14 x 20
-$280 </span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>One of a Kind</span><span>One of a Kind by Carl Arlen
-14 x 20
-$280</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Raven</span><span>Raven by Carl Arlen
-14 x 20
-$280</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.01</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:59:14 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>The Bandit</span><span>The Bandit
-14 x 20
-$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0153846154</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:57:51 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Wary Study</span><span>Wary Study by Carl Arlen
-14 x 20
-$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.008333334</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:58:35 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Western-King Risker</span><span>Western-King Risker by Carl Arlen
-14 x 20
-$</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Yodeling-Common Loon</span><span>Yodeling-Common Loon by Carl Arlen
-'14 x 20
-$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.01</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 2:03:11 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Dreaming Impressionism # 1, 1996-97
-</span><span>Dreaming Impressionism # 1, 1996-97
-Barbara Astman
-12 x 19.5
-$230</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0166666675</span><span>width</span><span> 1024</span><span>originaldate</span><span> 3/22/2002 6:58:23 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Dreaming Impressionism # 3, 1996-97
-</span><span>Dreaming Impressionism # 3, 1996-97
-Barbara Astman
-12 x 19.5
-$230</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0153846154</span><span>width</span><span> 1024</span><span>originaldate</span><span> 3/22/2002 6:54:31 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Dreaming Impressionism # 4, 1996-97
+			<div id="cp_widget_8b41ad5b-6dc6-45ba-9aca-face3508ba86">...</div>
+			<script type="text/javascript">
+			var cpo = []; cpo["_object"] ="cp_widget_8b41ad5b-6dc6-45ba-9aca-face3508ba86"; cpo["_fid"] = "AwPAYdMGlcd_";
+			var _cpmp = _cpmp || []; _cpmp.push(cpo);
+			(function() { var cp = document.createElement("script"); cp.type = "text/javascript";
+			cp.async = true; cp.src = "//www.cincopa.com/media-platform/runtime/libasync.js";
+			var c = document.getElementsByTagName("script")[0];
+			c.parentNode.insertBefore(cp, c); })(); </script><noscript><span>Germanna Community CollegeEducational  Foundation Art Collection</span><span>Cadow Art Collection</span><span>Artic Prowl</span><span>Artic Prowl by Carl Arlen
+			14 X 20
+			$240</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Bluebird</span><span>Bluebird by Carl Arlen
+			14 x 20
+			$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.01</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:55:43 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>By the Docks</span><span>By the Docks by Carl Arlen
+			14 X 20
+			$280</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Fluffing Up</span><span>Fluffing Up by Carl Arlen
+			14 x 20
+			$240</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Great Horned</span><span>Great Horned by Carl Arlen
+			14 x 20
+			$240
+			</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0111111114</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 2:08:19 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>GULLS</span><span>Gulls by Carl Arlen
+			14 X 20
+			$240</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>HAWK'S COUNTRY</span><span>Hawk's Country by Carl Alden
+			14 x 20
+			$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.01</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 2:05:45 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Majesty</span><span>Majesty by Carl Alden
+			14 x 20
+			$280</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0166666675</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:56:26 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Mister Toad</span><span>Mister Toad by Carl Alden
+			14 x 20
+			$280 </span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>One of a Kind</span><span>One of a Kind by Carl Arlen
+			14 x 20
+			$280</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Raven</span><span>Raven by Carl Arlen
+			14 x 20
+			$280</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.01</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:59:14 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>The Bandit</span><span>The Bandit
+			14 x 20
+			$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0153846154</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:57:51 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Wary Study</span><span>Wary Study by Carl Arlen
+			14 x 20
+			$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.008333334</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 1:58:35 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Western-King Risker</span><span>Western-King Risker by Carl Arlen
+			14 x 20
+			$</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 768</span><span>orientation</span><span> 1</span><span>height</span><span> 1024</span><span>Yodeling-Common Loon</span><span>Yodeling-Common Loon by Carl Arlen
+			'14 x 20
+			$240</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.01</span><span>width</span><span> 1024</span><span>originaldate</span><span> 6/6/2002 2:03:11 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Dreaming Impressionism # 1, 1996-97
+		</span><span>Dreaming Impressionism # 1, 1996-97
+		Barbara Astman
+		12 x 19.5
+		$230</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0166666675</span><span>width</span><span> 1024</span><span>originaldate</span><span> 3/22/2002 6:58:23 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Dreaming Impressionism # 3, 1996-97
+	</span><span>Dreaming Impressionism # 3, 1996-97
+	Barbara Astman
+	12 x 19.5
+	$230</span><span>cameramake</span><span> SONY</span><span>orientation</span><span> 1</span><span>height</span><span> 768</span><span>focallength</span><span> 18.3</span><span>exposuretime</span><span> 0.0153846154</span><span>width</span><span> 1024</span><span>originaldate</span><span> 3/22/2002 6:54:31 PM</span><span>fnumber</span><span> 4</span><span>cameramodel</span><span> CYBERSHOT</span><span>Dreaming Impressionism # 4, 1996-97
 </span><span>Dreaming Impressionism # 4, 1996-97
 Barbara Astman
 12 x 19.5
@@ -2303,23 +2294,14 @@ $160</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width
 Tom Mathews
 14 x 20
 $160</span><span>originaldate</span><span> 1/1/0001 6:00:00 AM</span><span>width</span><span> 128</span><span>height</span><span> 96</span></noscript>
-
-			<?php endif; ?>
-
-			</div>
-
-			<footer class="entry-footer">
-			  <?php gcc_wp_2018_entry_footer(); ?>
-			</footer><!-- .entry-footer -->
-
-			<?php get_sidebar(); ?>
-
-
-		</div><!--.pagecontent-->
-
+<?php endif; ?>
+</div>
+<footer class="entry-footer">
+<?php gcc_wp_2018_entry_footer(); ?>
+</footer><!-- .entry-footer -->
+<?php get_sidebar(); ?>
+</div><!--.pagecontent-->
 <?php endwhile; // End of the loop. ?>
-
 </article>
-
 <?php
 get_footer();

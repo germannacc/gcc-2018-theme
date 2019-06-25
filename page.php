@@ -40,7 +40,7 @@
  		<!--Page Content-->
  		<div class="row expanded content-area">
 
-      <div class="small-12 medium-9 float-left columns" >
+      <div class="small-12 medium-12 large-9 float-left columns" >
 
         <?php // if the page has a featured image
         if  (has_post_thumbnail( ) )  { ?>

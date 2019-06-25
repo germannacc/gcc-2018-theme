@@ -1,5 +1,8 @@
 // Dependencies
 //Plugins
+html {
+  scroll-behavior: smooth;
+}
 .no-js .top-bar .title-bar {
   display: none;
   z-index: 0;
@@ -51,6 +54,7 @@
 @import 'theme/top-bar';
 @import 'theme/quicklinks';
 @import 'theme/sidebar';
+@import 'theme/countdown-timer';
 @import 'components/visibility';
 @import 'components/float';
 @import 'components/button';
@@ -84,6 +88,8 @@
 @import 'components/tooltip';
 @import 'prototype/prototype';
 @import 'theme/home';
+//@import 'theme/slider';
+@import 'theme/animate';
 @import 'theme/blog';
 @import 'theme/page-heading';
 @import 'theme/page';
@@ -91,6 +97,7 @@
 @import 'theme/label';
 @import 'theme/directory-styles';
 @import 'theme/tabs';
+@import 'theme/card';
 @import 'theme/workforce';
 @import 'theme/custom-wpforms';
 @import 'theme/helpers';
@@ -98,8 +105,7 @@
 @import 'theme/footer';
 @import 'theme/specific-page-styles.scss';
 @import 'theme/print';
-
-
+@import 'theme/search';
 
 @mixin foundation-everything(
   $flex: false,
