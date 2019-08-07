@@ -6,7 +6,10 @@ Template Name: Workforce Home
 get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="row column expanded no-gutter">
-		<?php putRevSlider( 'workforce-slider' ); ?>
+
+
+
+
 	</div>
 	<?php
 	while ( have_posts() ) : the_post(); ?>

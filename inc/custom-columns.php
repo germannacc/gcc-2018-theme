@@ -69,3 +69,56 @@ function directory_custom_orderby( $query ) {
     return;
   $orderby = $query->get( 'orderby');
 }
+
+//setup custom columns for programs post type
+add_filter( 'manage_programs_posts_columns', 'set_custom_edit_programs_columns', 5 );
+function set_custom_edit_programs_columns( $columns ) {
+  unset( $columns['date'],
+         $columns['categories'],
+         $columns['tags']
+       );
+  $columns['program_category'] = __( 'Degree Type', 'gcc-wp-2018');
+  $columns['pathway_categories'] = __( 'Pathway Category', 'gcc-wp-2018');
+
+
+  return $columns;
+}
+//add data to new columns
+add_action( 'manage_programs_posts_custom_column' , 'custom_programs_column', 5, 2 );
+function custom_programs_column( $column, $post_id ) {
+  switch ( $column ) {
+    // display a list of the custom taxonomy terms assigned to the post
+
+        case 'program_category' :
+
+                $taxterms = get_field('degree_type');
+
+                 foreach ($taxterms as $taxterm) {
+
+
+         echo $taxterm;
+
+  }
+        break;
+
+        case 'pathway_categories' :
+
+        break;
+
+  }
+}
+//add data to the new column
+add_filter( 'manage_edit-programs_sortable_columns', 'set_custom_programs_sortable_columns' );
+function set_custom_programs_sortable_columns( $columns ) {
+  $columns['degree_type'] = 'degree_type';
+  $columns['pathway_category'] = 'pathway_category';
+
+  return $columns;
+}
+//Sortable column
+add_action( 'pre_get_posts', 'programs_custom_orderby' );
+function programs_custom_orderby( $query ) {
+  if ( ! is_admin() )
+    return;
+  $orderby = $query->get( 'orderby');
+}

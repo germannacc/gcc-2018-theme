@@ -196,7 +196,10 @@ get_header(); ?>
                       <?php the_field( 'academic_links_content' ); ?>
                     </div>
                   </div>
+
+                <?php the_field( 'additional_content' ); ?>
                 </div>
+    
               </div>
               <?php get_sidebar();?>
               <footer class="entry-footer">

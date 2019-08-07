@@ -20,8 +20,8 @@
         <input type="hidden" name="oe" value="utf8" title="hidden" />
         <input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
         <input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
-        <label for="search-mobile" class="hide"><?php _e('Search Germanna', 'gcc-wp-2018'); ?></label>
-        <span class="right"><input type="text" name="q" id="search-mobile" title="search input" class="sb-search-input" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018' );?>'"></span>
+        <label for="search-mobile" class="hide"><?php _e('Search germanna.edu', 'gcc-wp-2018'); ?></label>
+        <span class="right"><input type="text" name="q" id="search-mobile" title="search input" class="sb-search-input" placeholder="<?php _e('Search', 'gcc-wp-2018' );?>"></span>
         <input id="searchsubmit-mobile" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit', 'gcc-wp-2018')?>">
         <span class="sb-icon-search"></span>
       </form>

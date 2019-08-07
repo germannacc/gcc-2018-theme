@@ -22,7 +22,7 @@ gulp.task('php', function() {
 
 gulp.task('browser-sync', ['php'], function() {
   browserSync({
-       proxy: "http://localhost:8888/",
+       proxy: "http://gccnew.local/",
        open: true,
        notify: false
   });
@@ -69,7 +69,7 @@ gulp.task('scripts', function(){
 });
 
 gulp.task('default', ['browser-sync'], function(){
+  gulp.watch("**/*.php", ['bs-reload']);
   gulp.watch("build/scss/**/*.scss", ['styles']);
   gulp.watch("build/scripts/**/*.js", ['scripts']);
-  gulp.watch("*.php", ['bs-reload']);
 });

@@ -12,12 +12,12 @@ html {
     display: block;
     z-index: 0;
   }
-  .no-js .title-bar .title-bar   {
+  .no-js .title-bar .title-bar  {
     display: none;
     z-index: 0;
   }
 }
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
 //@import '_vendor/normalize-scss/sass/normalize';
 @import '_vendor/sassy-lists/stylesheets/helpers/missing-dependencies';
 @import '_vendor/sassy-lists/stylesheets/helpers/true';
@@ -26,7 +26,8 @@ html {
 @import '_vendor/sassy-lists/stylesheets/functions/remove';
 @import '_vendor/sassy-lists/stylesheets/functions/replace';
 @import '_vendor/sassy-lists/stylesheets/functions/to-list';
-@import '_vendor/lazy-load';
+@import 'theme/animate';
+//@import '_vendor/lazy-load';
 
 // Settings
 // import your own `settings` here or
@@ -43,15 +44,11 @@ html {
 // Components
 @import 'grid/grid';
 @import 'typography/typography';
-@import url('../../fonts/font-awesome/css/font-awesome.min.css');
-@import 'theme/google-fonts';
-
 //Forms
 @import 'forms/forms';
 //Theme Styles
 @import 'components/title-bar';
 @import 'components/top-bar';
-@import 'theme/top-bar';
 @import 'theme/quicklinks';
 @import 'theme/sidebar';
 @import 'theme/countdown-timer';
@@ -61,7 +58,7 @@ html {
 @import 'components/button-group';
 @import 'components/accordion-menu';
 @import 'components/accordion';
-@import 'components/badge';
+//@import 'components/badge';
 @import 'components/breadcrumbs';
 @import 'components/callout';
 @import 'components/card';
@@ -77,19 +74,18 @@ html {
 @import 'components/menu-icon';
 //@import 'components/orbit';
 @import 'components/pagination';
-@import 'components/progress-bar';
-@import 'components/reveal';
+//@import 'components/progress-bar';
+//@import 'components/reveal';
 //@import 'components/slider';
 @import 'components/sticky';
-@import 'components/switch';
+//@import 'components/switch';
 @import 'components/table';
 @import 'components/tabs';
 @import 'components/thumbnail';
 @import 'components/tooltip';
 @import 'prototype/prototype';
+@import 'theme/slider';
 @import 'theme/home';
-//@import 'theme/slider';
-@import 'theme/animate';
 @import 'theme/blog';
 @import 'theme/page-heading';
 @import 'theme/page';
@@ -106,6 +102,7 @@ html {
 @import 'theme/specific-page-styles.scss';
 @import 'theme/print';
 @import 'theme/search';
+@import 'font-awesome/font-awesome';
 
 @mixin foundation-everything(
   $flex: false,
@@ -127,13 +124,13 @@ html {
       @include foundation-flex-grid;
     }
   }
-    @include foundation-off-canvas;
+  @include foundation-off-canvas;
   @include foundation-typography;
   @include foundation-forms;
   @include foundation-button;
   @include foundation-accordion;
   @include foundation-accordion-menu;
-  @include foundation-badge;
+  //@include foundation-badge;
   @include foundation-breadcrumbs;
   @include foundation-button-group;
   @include foundation-callout;
@@ -149,11 +146,11 @@ html {
   @include foundation-media-object;
   //@include foundation-orbit;
   @include foundation-pagination;
-  @include foundation-progress-bar;
+  //@include foundation-progress-bar;
   //@include foundation-slider;
   @include foundation-sticky;
-  @include foundation-reveal;
-  @include foundation-switch;
+  //@include foundation-reveal;
+  //@include foundation-switch;
   @include foundation-table;
   @include foundation-tabs;
   @include foundation-thumbnail;

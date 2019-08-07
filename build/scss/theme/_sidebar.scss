@@ -19,19 +19,13 @@
 
   a.primary {
     background-color: #82082A;
-  }
 
-  a.primary:hover {
-    background-color: $secondary;
   }
 
   a.secondary {
     background-color: $primary;
   }
 
-  a.secondary:hover {
-    background-color: $secondary;
-  }
 }
 
 .custom-logo-link, .mobile-logo {
@@ -177,7 +171,6 @@ li.support-link {
   }
 }
 
-
 }
 
 .menu-extras {
@@ -219,4 +212,22 @@ li.support-link {
   overflow: hidden;
   display: block;
   margin: 0 30% 10%;
+}
+//timer
+.time_circles > div > h4 {
+
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8rem !important;
+
+  }
+p.timer-text {
+  text-align: center; 
+  color: #a30936; 
+  font-weight: 800; 
+  padding: 1rem 0 0 0; 
+  font-size: 1.2rem;
 }

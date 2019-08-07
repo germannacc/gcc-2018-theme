@@ -7,7 +7,7 @@
 
     }
   }
-  
+
   ul.dropdown.menu {
     li.mygcc {
       a {
@@ -17,6 +17,85 @@
     }
   }
 
+  .content-area {
+    display: flex;
+  }
+
+  .entry-content {
+    padding: 2rem 2rem 30rem 2rem;
+
+    .callout.primary {
+
+      h2, h3 {
+        font-size: 1.4rem;
+      }
+      h4, h5 {
+        margin-bottom: 0;
+
+      }
+    }
+    .columns.large-6 {
+    .callout.primary {
+
+          h2, h3 {
+            font-size: 1.4rem;
+          }
+
+    a.button.primary {
+
+      font-size: 1.2rem;
+  }
+        }
+
+  ul {
+    padding-left: 1rem;
+
+    li {
+      a {
+        font-size:1.2rem;
+      }
+
+    }
+  }
+      }
+
+  }
+
+
+  .hero-section-text {
+
+  ul.page-icons {
+      position: absolute;
+      bottom: 0;
+      right: 2rem;
+      z-index: 1;
+      display: block;
+        li  {
+            display: inline-block;
+
+             a  {
+
+              padding: 1rem 0 1rem .5rem;
+
+
+              span {
+                display: inline-block;
+              }
+
+              span.icon-text {
+
+                font-weight: 600;
+                padding: 1rem .5rem;
+
+              }
+
+             }
+
+        }
+
+  }
+
+}
   .tagline {
     font-weight: 600;
     padding: 0 0 0 0.4rem;
@@ -80,14 +159,36 @@
 
     .callout {
       h2 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
       }
 
       img {
         margin-bottom: 1rem;
       }
+      p {
+        padding: 0;
+        display: block;
+        padding-bottom: 1.8rem;
+        margin-bottom: 40px;
+        clear: both;
+      }
+      a.button {
+        font-size: 1.2rem;
+      }
     }
+
   }
+}
+
+.callout.callout-workforce-highlights {
+
+  h4.post-title {
+    min-height: 100px;
+    font-size: 1.2rem;
+  }
+  min-height: 520px !important;
+  border: 1px solid $medium-gray !important;
+
 }
 
 .page-nav {
@@ -100,4 +201,6 @@
   p {
     margin-bottom: 1rem;
   }
+
+
 }

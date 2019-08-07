@@ -13,9 +13,13 @@ $event_section_heading = get_field('events_section_heading');
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</div>
 	<div class="row expanded crumbs-container">
-		<nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
-			<?php the_breadcrumb() ?>
-		</nav>
+     <div class="small-12 medium-8 large-9 columns">          <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
+            <?php the_breadcrumb() ?>
+          </nav>
+       </div>
+   <div class="small-12 medium-4 large-3 columns show-for-landscape">
+      <?php gcc_wp_2018_page_icons() ?>
+  </div>
 	</div>
 	<!--Page Content-->
 	<div class="row gutter-small expanded content-area">

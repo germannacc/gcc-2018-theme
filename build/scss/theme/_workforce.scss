@@ -21,6 +21,7 @@ h1 {
 
 .callout {
 
+
   h2 {
     font-size: 1.4rem !important;
     margin-bottom: 0;
@@ -32,9 +33,169 @@ h1 {
 
   }
 
+  p {
+    padding: 0;
+    display: block;
+    padding-bottom: 1.8rem;
+    margin-bottom: 40px;
+    clear: both;
+  }
+
+  a.button.expanded {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
 }
 
 }
+
+
+}
+
+.second-row {
+
+    background-color: $medium-gray;
+    padding: 100px 40px;
+
+    h2 {
+      margin-bottom: 1rem;
+
+    }
+
+    p.lead{
+      font-size: 1.4rem;
+      font-weight: 100px;
+      margin-bottom: 40px;
+    }
+
+.box-link {
+
+
+  .callout.secondary {
+
+    background-color: $light-gray !important;
+    border-radius: 15px;
+    -webkit-transition: opacity 2s ease-in-out;
+     -moz-transition: opacity 2s ease-in-out;
+     -o-transition: opacity 2s ease-in-out;
+     transition: opacity 2s ease-in-out;
+    h2 {
+      background-color: $light-gray;
+      color: $secondary;
+      margin-bottom: 0;
+      -webkit-transition: opacity 2s ease-in-out;
+       -moz-transition: opacity 2s ease-in-out;
+       -o-transition: opacity 2s ease-in-out;
+       transition: opacity 2s ease-in-out;
+       min-height: 130px;
+    }
+
+      border: 1px solid $medium-gray !important;
+
+      .icon-circle {
+
+          background: $white;
+          border: 1px solid $secondary;
+          border-radius: 50%;
+          padding: 10px;
+          margin: 1rem auto;
+          width: 100px;
+          height: 100px;
+          position: relative;
+          -webkit-transition: opacity 2s ease-in-out;
+           -moz-transition: opacity 2s ease-in-out;
+           -o-transition: opacity 2s ease-in-out;
+           transition: opacity 2s ease-in-out;
+
+          span {
+
+            color: $secondary;
+            margin: 1rem auto;
+
+          }
+
+      }
+
+  }
+}
+.box-link:hover {
+
+  .callout.secondary {
+
+    background-color: $white !important;
+
+    h2{
+      background-color: $white;
+      color: $primary;
+
+    }
+
+      border: 1px solid $primary !important;
+
+      .icon-circle {
+
+          background: $white;
+          border: 1px solid $primary;
+
+
+          span {
+
+            color: $primary;
+
+          }
+
+      }
+
+  }
+}
+
+.callout.callout-workforce-highlights {
+
+  h4.post-title {
+    min-height: 40px;
+    font-size: 1.2rem;
+  }
+  min-height: auto !important;
+  border: 1px solid $medium-gray;
+}
+  .callout.secondary.get-started {
+
+    background-color: $light-gray;
+    border-radius: 15px;
+
+    h2{
+      background-color: $light-gray;
+      color: $secondary;
+      margin-bottom: 0;
+    }
+
+      border: 1px solid $medium-gray !important;
+
+
+      .icon-circle {
+
+          background: $white;
+          border: 1px solid $secondary;
+          border-radius: 50%;
+          padding: 10px;
+          margin: 1rem auto;
+          width: 100px;
+          height: 100px;
+          position: relative;
+
+          span {
+
+            color: $secondary;
+
+            margin: 1rem auto;
+
+          }
+
+      }
+
+  }
 
 }
 

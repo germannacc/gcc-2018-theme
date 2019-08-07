@@ -77,38 +77,6 @@ get_header(); ?>
       </p>
       <a href="<?php echo get_the_permalink(); ?>"  class="button primary"><?php _e('Event details', 'gcc-wp-2018') ?></a>
     </div>
-<<<<<<< HEAD
-
-
-      <?php endwhile; ?>
-
-      <?php wp_reset_postdata(); ?>
-
-      <?php else : ?>
-
-      <p><?php esc_html_e( 'We are currently working on updating our event details.  Please check back soon for our upcoming events.', 'gcc-wp-2018'); ?></p>
-
-      <?php endif; ?>
-
-
-      </div>
-    </div>
-
-      <footer class="entry-footer">
-        <?php gcc_wp_2018_entry_footer(); ?>
-      </footer><!-- .entry-footer -->
-
- 			<?php get_sidebar();?>
-
- 		</div><!--.pagecontent-->
-
- <?php endwhile; // End of the loop. ?>
-
- </article>
-
- <?php
- get_footer();
-=======
   </div>
   <?php endwhile; ?>
   <?php wp_reset_postdata(); ?>
@@ -126,4 +94,3 @@ get_header(); ?>
 </article>
 <?php
 get_footer();
->>>>>>> 2e005af4d960ad8060d6c95a9375ccffa7a06d70

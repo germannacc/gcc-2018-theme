@@ -33,63 +33,6 @@
   if ( is_page('5761') || $post->post_parent == '5761') {
   //custom department widgets
   dynamic_sidebar( 'academic-widgets' );
-<<<<<<< HEAD
-}
-
-   //acc
-
-   if ( is_page('27') || $post->post_parent == '27' ) {
-   //custom department widgets
-     dynamic_sidebar( 'acc-widgets' );
-}
-
-
-   //advising
-
-   if ( is_page('9124') || $post->post_parent == '9124' ) {
-   //custom department widgets
-     dynamic_sidebar( 'advising-widgets' );
-}
-
-
-//alumni
-
-if ( is_page('20401') || $post->post_parent == '20401' ) {
-  //custom department widgets
-  dynamic_sidebar( 'alumni-widgets' );
-}
-
-//post pages
-
-if ( is_singular('post'))  {
-    //custom archive widgets
-    dynamic_sidebar( 'single-widgets' );
-}
-if ( is_category('highlights'))  {
-    //custom archive widgets
-    dynamic_sidebar( 'single-widgets' );
-}
-if ( is_home('post'))  {
-    //custom archive widgets
-    dynamic_sidebar( 'single-widgets' );
-}
-if ( is_archive('safety-alerts'))  {
-  //custom archive widgets
-    dynamic_sidebar( 'single-widgets' );
-}
-if ( is_archive('highlights'))  {
-  //custom archive widgets
-    dynamic_sidebar( 'single-widgets' );
-}
-   //awards
- if (is_page('35') || $post->post_parent == '35')
-    {
-     //custom department widgets
-       dynamic_sidebar( 'awards-widgets' );
-    }
-//arts and sciences
-
-=======
   }
   if ( is_page('26') || $post->post_parent == '26') {
   //custom department widgets
@@ -138,7 +81,6 @@ if ( is_archive('highlights'))  {
   dynamic_sidebar( 'awards-widgets' );
   }
   //arts and sciences
->>>>>>> 2e005af4d960ad8060d6c95a9375ccffa7a06d70
   if ( is_page('34') || $post->post_parent == '34') {
   //custom department widgets
   dynamic_sidebar( 'arts-sciences-widgets' );
@@ -233,6 +175,10 @@ if ( is_archive('highlights'))  {
   dynamic_sidebar( 'edfoundation-widgets' );
   }
   if ( is_page('25329')) {
+  //custom department widgets
+  dynamic_sidebar( 'edfoundation-widgets' );
+  }
+  if ( is_page('26722')) {
   //custom department widgets
   dynamic_sidebar( 'edfoundation-widgets' );
   }

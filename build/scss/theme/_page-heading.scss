@@ -23,14 +23,10 @@ $marketing-site-footer-bg: $light-gray;
   padding: 1rem 1rem;
 
   h1 {
-    margin: 0;
+      margin: 0;
       color: $primary;
   }
 
-  .entry-title {
-
-    font-size: 1.4rem;
-  }
 
   .entry-meta {
     display: block;
@@ -46,24 +42,8 @@ $marketing-site-footer-bg: $light-gray;
       text-decoration: underline;
     }
   }
-  ul.page-icons {
-      position: absolute;
-      bottom: 0;
-      right: 2rem;
-      z-index: 1;
-
-        li  {
-
-             a  {
-
-              padding: 1rem .5rem;
-
-             }
-
-        }
-
-  }
 }
+
 .crumbs-container {
   padding: 0;
   margin: 0;
@@ -87,6 +67,32 @@ $marketing-site-footer-bg: $light-gray;
     li.disabled {
       color: $dark-gray;
     }
+  }
+    ul.page-icons {
+
+      padding: 1.2rem 0;
+
+        li  {
+
+             a  {
+
+              padding: 0 1rem 0 0;
+
+                span {
+                  display: inline-block;
+                }
+
+                span.icon-text {
+
+                  font-weight: 900;
+                  padding: 0 1rem 0 .5rem;
+
+                }
+
+             }
+
+        }
+
   }
 }
 
@@ -142,7 +148,6 @@ $marketing-site-footer-bg: $light-gray;
   }
 
   h1.entry-title {
-    font-size: 2rem;
     color: $white;
 
   }

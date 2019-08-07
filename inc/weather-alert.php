@@ -52,4 +52,3 @@ if( !empty($closing_announcement_text) ): ?>
 <?php endif; ?>
 
 }
-?>

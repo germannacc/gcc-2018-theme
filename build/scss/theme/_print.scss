@@ -1,95 +1,193 @@
 @media print {
- /* All your print styles go here */
- body, article, *, {
-       width: 100% !important;
-       margin: 0;
-       padding: 0;
-       page-break-after: avoid;
-
+.print:last-child {
+page-break-after: auto;
 }
- h1,h2,h3, p {
- 	   font-size: 85%;
- 	   page-break-after: avoid;
- }
- article, main {
-   page-break-after: avoid;
-   width: 100% !important;
- }
- article a {
-       font-weight: bolder;
-       text-decoration: none;
-    }
-    article a[href^=http]:after {
-       content:" <" attr(href) "> ";
-    }
-    article a[href^="#"]:after {
-    content: "";
- }
- a:after > img {
-    content: "";
- }
- ul, table, img, .callout {
-    page-break-inside: avoid;
- }
- .hero-section  {
-   max-height: 50px !important;
-   margin-top: 0 !important;
- }
- .hero-section-text {
-   padding: 0 !important;
-   left: 0 !important;
-   top: 0 !important;
- }
+/* All your print styles go here */
+,
+*,
+article,
+body,
+html {
+width: 100% !important;
+margin-top:0px;
+padding-top:0px;
+font: 12pt Georgia, "Times New Roman", Times, serif;
+line-height: 1.3;
+}
+main {
+float: none;
+}
+h1 {
+margin-top: 100px;
+}
+h1 {
+font-size: 24pt;
+}
+h2 {
+font-size: 14pt;
+margin-top: 25px;
+}
+aside h2 {
+font-size: 18pt;
+}
+ul {list-style: none}
+li {
+content: "» ";
+}
+.accordion {
+page-break-before: avoid;
+}
+.header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+table {
+font-size: 85%;
+page-break-after: avoid;
+}
+article,
+main {
+width: 100% !important;
+}
+article a {
+font-weight: bolder;
+text-decoration: none;
+}
+article a[href^=http]:after {
+content: " <" attr(href) "> ";
+}
+.entry-content a {
+content: " [" attr(href) "] ";
+}
+a:after > img {
+content: "";
+}
+p a[href^="http://"]:after {
+content: " (" attr(href) ")";
+font-size: 90%;
+}
+p a:after {
+content: " " attr(href) ")";
+}
+p a[href^="#"]:after {
+display: none;
+}
+p a[href^="http://"]:after, a[href^="https://"]:after {
+content: " (" attr(href) ")";
+}
+p a {
+word-wrap: break-word;
+}
+a {
+color: #000;
+}
+.callout,
+img,
+ul {
+page-break-inside: avoid;
+}
+table {
+display: table;
+border-spacing: 2px;
+display: table-cell;
+border: solid 1px #ccc;
+padding: 2px;
+display: table-row;
+table-layout: fixed;
+page-break-inside: avoid;
+min-width: 100% !important;
+}
+.hero-section {
+max-height: 50px !important;
+margin-top: 0 !important;
+}
+.hero-section-text {
+padding: 0 !important;
+left: 0 !important;
+top: 0 !important;
+}
 h2:after {
-   border-bottom: none !important;
-    border-bottom-style: none;
-    border: solid white !important;
- }
- p {
- 	padding-bottom: 5px;
- }
+border-bottom: none !important;
+border-bottom-style: none;
+border: solid white !important;
+}
+p {
+padding-bottom: 5px;
+}
 .columns {
-  display: block !important;
-  width: 100% !important;
+display: block !important;
+width: 100% !important;
 }
 .callout {
-  padding: 20px !important;
-  margin-bottom: 30px !important;
-  margin-top: 10px !important;
-  min-height: auto !important;
-  page-break-after: avoid;
+padding: 20px !important;
+margin-bottom: 30px !important;
+margin-top: 10px !important;
+min-height: auto !important;
+page-break-after: avoid;
 }
-   h2, h3, p, a {
-    padding: 0 !important;
-  }
-  a.button.primary {
-    display: none !important;
-  }
-
+a,
+h2,
+h3,
+p {
+padding: 0 !important;
+}
+a.button.primary {
+display: none !important;
+}
 .callout.small {
-  border: solid black !important;
-  min-height: auto !important;
-  page-break-after: avoid;
-
-  a.button.primary {
-    display: none !important;
-  }
-
+border: none !important;
+min-height: auto !important;
+page-break-after: avoid;
+a.button.primary {
+display: none !important;
 }
-.hero-section img, footer, .page-nav, .top-bar, .quicklinks ul, .sb-search, .crumbs-container, img, .social-icons, .close-button, .branding, #main-menu, .calltos a.button.secondary, .mobile-menu {
-  display: none !important;
 }
-
- a[href]:after {
-     content: none !important;
-     display: none;
-   }
-
- @page {
-       margin: 0;
-  }
-
-
-
-
+#main-menu,
+.branding,
+.calltos a.button.secondary,
+.closing,
+.announcement,
+.close-button,
+.crumbs-container,
+.hero-section img,
+.mobile-menu,
+.page-nav,
+.accordion-title,
+.quicklinks ul,
+.sb-search,
+.social-icons,
+.top-bar,
+header,
+nav,
+footer,
+img {
+display: none !important;
+}
+.tabs-panel,
+.tabs-content,
+.accordion-item,
+.accordion-title.is-active,
+.accordion-content,
+.callout {
+display: block !important;
+}
+.accordion-content {
+border: none !important;
+}
+.tabs, .tabs-title  {
+display: none;
+}
+@page {
+margin: 0.5cm;
+}
+@page :left {
+margin: 0.5cm;
+}
+@page :right {
+margin: 0.8cm;
+}
 }

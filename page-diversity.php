@@ -1,11 +1,7 @@
 <?php
 /**
-* The template for displaying all default page template.
+* Diversity Home Page Template created to show slider 
 *
-def
-* Please note that this is the WordPress construct of pages
-* and that other 'pages' on your WordPress site may use a
-* different template.
 *
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
@@ -16,18 +12,9 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
   while ( have_posts() ) : the_post(); ?>
-  <header>
-    <div class="hero-section-text">
-      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-      <?php gcc_wp_2018_page_icons() ?>
-    </div>
-    <div class="row expanded crumbs-container">
-      <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
-        <?php the_breadcrumb() ?>
-      </nav>
-    </div>
-  </header>
-  <!--Page Content-->
+  <?php //Page Heading
+  get_template_part( 'template-parts/content', 'page-heading' );
+  ?>
   <div class="row expanded content-area">
     <div class="small-12 medium-9 float-left columns" >
       <?php putRevSlider( 'diversity-slider' ); ?>

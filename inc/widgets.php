@@ -118,6 +118,15 @@ register_sidebar(array(
 	'after_title' => '</h3>',
 ));
 register_sidebar(array(
+	'id' => 'cae-widgets',
+	'name' => __( 'CAE Sidebar', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+));
+register_sidebar(array(
 	'id' => 'classified-awards-widgets',
 	'name' => __( 'Classified Awards Sidebar', 'gcc-wp-2018' ),
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
@@ -676,4 +685,4 @@ register_sidebar(array(
 	'after_title' => '</h3>',
 	));
 }
-add_action( 'widgets_init', 'gcc_wp_2018_widgets_init' ); ?>
+add_action( 'widgets_init', 'gcc_wp_2018_widgets_init' );

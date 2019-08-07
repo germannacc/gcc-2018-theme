@@ -46,10 +46,23 @@ get_header(); ?>
         ?>
       
        <div class="row expanded" data-equalizer data-equalize-on="large" >
+
+ 
+ <ul class="tabs" data-tabs id="story-tabs">
+  <li class="tabs-title is-active"><a href="#storytab1" aria-selected="true"><?php _e('Stories', 'gcc-wp-2018'); ?></a></li>
+  <li class="tabs-title"><a data-tabs-target="storytab2" href="#storytab2"><?php _e('Submit your story', 'gcc-wp-2018'); ?></a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="story-tabs">
+  
+  <div class="tabs-panel is-active" id="storytab1">
+    
           <?php
           
           $args =  array (
           'post_type' => 'success_stories',
+          'order' => 'ASC',
+          'orderby' => 'title',
           'posts_per_page'=>-1,
           );
           // the query
@@ -58,6 +71,7 @@ get_header(); ?>
           <!-- pagination here -->
           <!-- the loop -->
           <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          
           <div class="small-12 medium-12 large-6 columns">
             <a href="<?php the_permalink(); ?>" class="stories">
             <div class="card">
@@ -65,7 +79,7 @@ get_header(); ?>
                 $image     = get_field( 'story_image' );
                 $alt       = $image['alt'];
                 $imageSize = $image['sizes'][ 'large' ];
-                echo '<img src="' . $imageSize . '" alt="' . $alt . '" />';
+                echo '<img src="' . $imageSize . '" alt="' . $alt . '"/>';
                 ?>
              
               <div class="card-section" data-equalizer-watch>
@@ -82,7 +96,20 @@ get_header(); ?>
           <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
           <?php endif; ?>
         </div>
-        
+
+
+ 
+  <div class="tabs-panel" id="storytab2">
+   
+
+<h2><?php _e('Submit your story', 'gcc-wp-2018'); ?></h2>
+
+<?php echo do_shortcode('[wpforms id="26617" title="false" description="false"]'); ?>
+
+  </div>
+</div>
+</div>
+
       </div>
     </div>
     <aside class="small-12 medium-12 large-3 columns right page-nav hide-for-print" id="section-menu"  data-toggler="hide">

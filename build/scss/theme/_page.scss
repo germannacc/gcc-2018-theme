@@ -5,6 +5,7 @@ article {
 .content-area {
   background: $white;
   position: relative;
+
 }
 
 .pathways-row-2 {
@@ -29,28 +30,33 @@ article {
 }
 
 p {
-    font-size: 1rem;
+
+  a {
+    text-decoration: underline;
+  }
 
 }
 
 ol,
   ul {
 li {
-      font-size: 1rem;
-strong {
-        font-size: 1rem;
+
+font-size: 1.2rem;
+
+a {
+  text-decoration: underline;
 }
     }
   }
 
 h2 {
   color: $secondary;
-  font-size: 2.188rem;
 }
 
 /* unvisited link */
 a:link {
     color: $primary;
+
 }
 
 /* visited link */
@@ -141,11 +147,9 @@ ul.accordion {
 //custom wpforms styles
 
 .wpforms-field-label {
-  font-size: 1.4rem !important;
 }
 
 .wpforms-field-sublabel {
-  font-size: 1rem !important;
   margin-bottom: 1rem !important;
 }
 
@@ -166,9 +170,11 @@ button:hover.wpforms-page-next  , button:hover.wpforms-page-prev  {
 }
 .label {
 
-    font-size: 1rem;
     padding: .3rem 1rem;
     margin: 0 1rem;
+}
+table .label {
+  margin-left: 1rem;
 }
 }
 
@@ -194,15 +200,17 @@ button:hover.wpforms-page-next  , button:hover.wpforms-page-prev  {
   padding: 1rem;
   font-size: 1.4rem;
   margin: 0;
-}
 
-h4,
-  h5 {
-  font-size: 1.2rem;
+
 }
 
 .textwidget {
   padding: 1rem ;
+
+a {
+  text-decoration: underline;
+}
+
 }
 }
 
@@ -236,6 +244,10 @@ h4,
 
     }
 
+li.active {
+  text-decoration: underline;
+  background-color: #e2e2e2;
+}
 .active > a {
   color: $primary;
   text-decoration: underline;
@@ -251,7 +263,6 @@ h4,
   padding: 1rem 0;
   border-bottom: 2px solid $primary;
   a {
-    font-size: 1.2rem;
     font-weight: 600;
   line-height: 1.8rem;
   padding: 0 1rem;
@@ -285,11 +296,8 @@ li:last-child a,
       a:link {
           font-weight: 800;
           padding: 1rem 1rem 1rem 1.4rem;
-          line-height: 1.6rem;
-          font-size: 1rem;
           font-weight: bold;
           color: $dark-gray;
-          line-height: 1.4rem;
         }
 
       /* visited link */
@@ -380,7 +388,6 @@ a:hover {
         padding: 0.5rem 1rem;
   font-weight: bold;
   color: $dark-gray;
-  line-height: 1.4rem;
 }
 
 a:hover {

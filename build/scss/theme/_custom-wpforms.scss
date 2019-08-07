@@ -10,13 +10,35 @@ button.wpforms-submit:hover {
   color: $white !important;
 }
 
-.wpforms-field-container {
+.wpforms-field-container  {
   h3 {
     font-size: 2.2rem !important;
     font-weight: 800 !important;
   }
 
   h3::after {
+    content: "";
+    /* This is necessary for the pseudo element to work. */
+    display: block;
+    /* This will put the pseudo element on its own line. */
+    margin: 0 0 1rem;
+    /* This will center the border. */
+    width: 10%;
+    /* Change this to whatever width you want. */
+    padding-top: 10px;
+    /* This creates some space between the element and the border. */
+    border-bottom: 2px solid $primary;
+    /* This creates the border. Replace black with whatever color you want. */
+  }
+}
+
+.acf-label label  {
+  h2 {
+    font-size: 2.2rem !important;
+    font-weight: 800 !important;
+  }
+
+  h2::after {
     content: "";
     /* This is necessary for the pseudo element to work. */
     display: block;

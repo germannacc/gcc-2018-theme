@@ -13,7 +13,11 @@
     }
 
     p {
-      padding: 0 1rem;
+      padding: 0 1rem; 
+
+      a {
+        text-decoration: underline;
+      }
     }
 
     ul {
@@ -32,37 +36,43 @@
       width: 96% !important;
       margin: 0 auto 1rem;
     }
+
+    .callout-image {
+
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: .9rem;
+    }
+
 }
 .callout.small {
   display: block;
   overflow: hidden;
-  h3, h4 {
+  h3 {
     padding: 1rem;
   }
   a.button.primary:link {
-    background: $light-gray;
+    background: rgba(255,255,255, .01);
     color: $primary;
     text-align: left;
-    line-height: 1.8rem;
     padding: 1rem 0 1rem 1rem;
     margin: 0;
     position: relative;
     width: auto;
+    display: block;
   }
   /* visited link */
   a.button.primary:visited {
       color: $secondary;
-      background: $light-gray;
-
+      background: rgba(255,255,255, .01);
   }
   /* selected link */
   a.button.primary:active {
       color: $secondary;
-      background: $light-gray;
-
+      background: rgba(255,255,255, .01);
   }
   a.button.primary:hover {
-    background: $light-gray;
+    background: rgba(255,255,255, .01);
     color: $secondary;
   }
   a.button.primary::after {
@@ -83,7 +93,6 @@
     color: $white;
     padding: 0.2rem 0.4rem;
   }
-
 }
 //Page Panels
 //Primary Callout
@@ -96,7 +105,67 @@
   h3 {
     background-color: $primary;
     color: $white;
+    font-size: 1.4rem;
   }
+
+ul.accordion {
+
+li.accordion-item {
+
+  border-bottom: none;
+  border-top: none;
+
+  a.accordion-title {
+
+    border-bottom: none;
+    border-top: none;
+
+  }
+
+  div.accordion-content {
+    border: none;
+    background-color: none;
+    padding: 1rem;
+    margin: 0;
+
+    h3 {
+      
+      line-height: 12px;
+      margin-top: 0;
+      margin-bottom: .5rem;
+      
+      span.primary.label {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+    }
+
+    h4 {
+      padding: 0 1rem;
+    }
+
+    p {
+      margin-bottom: 0;
+      line-height: 1.8rem;
+    }
+  }
+
+}
+
+}
+
+span.primary.label {
+  background-color: $white;
+  color: $primary;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+
+}
+
+.page-template-page-full .entry-content .small-uncollapse > .columns .callout, .entry-content .small-uncollapse > .columns .callout, .page-template-page-full .entry-content .small-uncollapse > .columns .callout, .entry-content .small-uncollapse > .columns .fp-tabs-wrap {
+    margin: 1rem 0;
 }
 //Secondary callout
 .callout.secondary {
@@ -156,7 +225,6 @@ p a {
   color: $white;
   margin-bottom: 0 !important;
   p {
-    font-size: 1.2rem;
     padding: 0;
     margin: 0;
   }
@@ -191,26 +259,27 @@ p a {
 .medium-5.columns {
   .callout.small {
     h4 {
-      font-size: 1.4rem;
-      line-height: 1.8rem;
+
     }
     a.button.primary {
-      font-size: 1.4rem;
-      line-height: 1.8rem;
+
     }
   }
 }
-.entry-content .medium-6.columns .callout.primary a.button.primary {
+.entry-content .large-6.columns .callout.primary a.button.primary {
     display: block;
     position: relative;
     width: 100%;
+    font-size: 1rem;
+}
+.callout.callout-workforce-highlights {
+  border: 1px solid $medium-gray !important;
 }
 .callout.announcement.small {
   background: $light-gray;
   color: $dark-gray;
   margin: 0 0 1rem 0;
   padding: 1rem;
-  font-size: 1.4rem;
   border: 5px solid $black;
   p {
     padding: 0 0;

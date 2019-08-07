@@ -24,22 +24,22 @@ get_header(); ?>
 			if ( $employees->employee_info) {
 			?>
 			<?php echo '<div class="small-12 medium-12 large-6 columns sort-directory">';
-				echo '<div class="callout small primary employee-profile" data-equalizer-watch>';
-					echo '<h2>'. $employees->employee_info->firstName. ' '. $employees->employee_info->lastName. '</h2>';
-					echo '<div class="profile-container">';
-						echo '<div class="small-4 medium-4 large-4 columns">';
-							echo '<img src="'. $employees->employee_info->picturePath.'" />';
-						echo '</div>';
-						echo '<div class="small-8 medium-8 large-8 columns">';
-							echo '<p class="position-info"><strong>' . $employees->employee_info->title . '</strong><br/>' . $employees->employee_info->department . '<br/>' . $employees->employee_info->locationCampus . '<br/>';
-								echo '<a href="mailto:'. $employees->employee_info->email.'">' . $employees->employee_info->email. '</a><br/>' . $employees->employee_info->phone . '</p>';
+					echo '<div class="callout small primary employee-profile" data-equalizer-watch>';
+							echo '<h2>'. $employees->employee_info->firstName. ' '. $employees->employee_info->lastName. '</h2>';
+							echo '<div class="profile-container">';
+									echo '<div class="small-4 medium-4 large-4 columns">';
+											echo '<img src="'. $employees->employee_info->picturePath.'" />';
+									echo '</div>';
+									echo '<div class="small-8 medium-8 large-8 columns">';
+											echo '<p class="position-info"><strong>' . $employees->employee_info->title . '</strong><br/>' . $employees->employee_info->department . '<br/>' . $employees->employee_info->locationCampus . '<br/>';
+													echo '<a href="mailto:'. $employees->employee_info->email.'">' . $employees->employee_info->email. '</a><br/>' . $employees->employee_info->phone . '</p>';
+											echo '</div>';
+									echo '</div>';
 							echo '</div>';
-						echo '</div>';
 					echo '</div>';
-				echo '</div>';
-				}
-				}
-				}
+					}
+					}
+					}
 				?>
 			</div>
 			<footer class="entry-footer">

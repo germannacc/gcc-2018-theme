@@ -18,15 +18,14 @@ get_header(); ?>
 			<?php
 			$request = wp_remote_get( 'https://applications.germanna.edu/directory/directory.json' );
 			if( is_wp_error( $request ) ) {
-																			return false; // Bail early
+																			retly
 			}
 			$body = wp_remote_retrieve_body( $request );
 			$data = json_decode( $body );
 			if( ! empty( $data ) ) {
 			foreach( $data->employee as $employees ) {
-																				if ( $employees->employee_info->locationCampus === 'Locust Grove Campus' ) {
-																				include( 'inc/directory-output.php' );
-																		}
+				
+														}
 			}
 			}
 			?>

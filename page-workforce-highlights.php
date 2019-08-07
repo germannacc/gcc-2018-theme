@@ -13,9 +13,10 @@ get_header(); ?>
       //gcc_featured_image_on_child(); ?>
       <div class="hero-section-text">
         <h1 class="entry-title"><?php the_title(); ?></h1>
-        <?php gcc_wp_2018_page_icons() ?>
       </div>
-      <div class="crumbs-container">
+      <div class="row expanded crumbs-container gutter-small">
+             <div class="small-12 medium-8 large-9 columns">
+
         <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
           <ul class="breadcrumbs">
             <?php $home_page = get_the_title( get_option('page_on_front'));
@@ -36,6 +37,10 @@ get_header(); ?>
             </li>
           </ul>
         </nav>
+        </div>
+   <div class="small-12 medium-4 large-3 columns show-for-landscape">
+    <?php gcc_wp_2018_page_icons() ?>
+  </div>
       </div>
     </header>
   </div>

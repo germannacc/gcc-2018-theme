@@ -19,6 +19,7 @@
     'classified-awards-menu' => 'Classified Awards Menu',
     'bookstore-menu' => 'Bookstore Menu',
     'business-office-menu' => 'Business Office Menu',
+    'cae-menu' => 'CAE Menu',
     'career-services-menu' => 'Career Services Menu',
     'career-transfer-menu' => 'Career Transfer Menu',
     'catalog-menu' => 'Catalog Menu',
@@ -102,4 +103,4 @@
        'publis-service-pathway-menu' => 'Public Service Pathway Menu',
        'science-engineering-pathway-menu' => 'Science and Engineering Pathway Menu',
        'social-sciences-education-pathway-menu' => 'Socials Sciences and Education Pathway Menu'
-  ) ); ?>
+  ) );

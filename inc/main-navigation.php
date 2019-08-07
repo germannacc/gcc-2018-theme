@@ -6,7 +6,8 @@ function gcc_wp_2018_mobile_offcanvas() {
         'container' => false,             // remove menu container
         'container_class' => '',          // class of container
         'menu' => '',
-        'items_wrap' => '<map name="MobileNav"><ul class="vertical menu accordion-menu" data-accordion-menu>%3$s</ul></map>' ,                  // menu name
+        'items_wrap' => '<map name="MobileNav"><nav>
+        <ul class="vertical menu accordion-menu" data-accordion-menu>%3$s</ul></nav></map>' ,                  // menu name
         'menu_class' => '',        // adding custom nav class
         'theme_location' => 'mobile-offcanvas',  // where it's located in the theme
         'before' => '',                   // before each link <a>
@@ -23,7 +24,7 @@ function gcc_wp_2018_main_navigation() {
         'container' => true,             // remove menu container
         'container_class' => '',          // class of container
         'menu' => '',
-        'items_wrap' => '<map name="PrimaryNavigation"><ul id="%1$s" class=" vertical dropdown menu gcc-main-nav" data-dropdown-menu>%3$s</ul></map>' ,                  // menu name
+        'items_wrap' => '<map name="PrimaryNavigation"><nav><ul id="%1$s" class=" vertical dropdown menu gcc-main-nav" data-dropdown-menu>%3$s</ul></nav></map>' ,                  // menu name
         'menu_class' => '',        // adding custom nav class
         'theme_location' => 'main-navigation',  // where it's located in the theme
         'before' => '',                   // before each link <a>
@@ -40,7 +41,7 @@ function gcc_wp_2018_quicklinks_bar() {
         'container' => true,             // remove menu container
         'container_class' => '',          // class of container
         'menu' => '',
-        'items_wrap' => '<map name="QuicklinksNav"><ul class="dropdown menu align-center" data-dropdown-menu >%3$s</ul></map>' ,                  // menu name
+        'items_wrap' => '<map name="QuicklinksNav"><nav><ul class="dropdown menu align-center" data-dropdown-menu >%3$s</ul></nav></map>' ,                  // menu name
         'menu_class' => '',        // adding custom nav class
         'theme_location' => 'quicklinks-bar',  // where it's located in the theme
         'before' => '',                   // before each link <a>
@@ -84,4 +85,3 @@ function special_nav_class ($classes, $item) {
     return $classes;
 }
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
-?>

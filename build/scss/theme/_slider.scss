@@ -1,0 +1,591 @@
+//*Small only*
+//@media screen and (max-width: 39.9375em) 
+/* Medium only */
+//@media screen and (min-width: 40em) and (max-width: 63.9375em) 
+/* Medium and up */
+//@media screen and (min-width: 40em) 
+/* Large only */
+//@media screen and (min-width: 64em) and (max-width: 74.9375em) 
+/* Large and up */
+//@media screen and (min-width: 64em) 
+
+.hero {
+
+  height: 60vh;
+  position: relative;
+
+@media screen and (max-width: 39.9375em) {
+
+height: 60vh;
+
+}
+
+/* iphone5 Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    height: 110vh;
+
+}
+
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  height: 80vh;
+}
+
+@media screen and (max-width: 63.9375em) and (min-width: 40em)
+{
+height: 80vh;
+
+}
+
+/* iphone 6/7/8 Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    height: 120vh;
+
+}
+
+
+@media screen and (min-width: 40em)  {
+
+height: 80vh;
+
+}
+
+@media screen and (min-width: 64em)  {
+
+height: 120vh;
+
+}
+
+@media only screen and (min-device-width : 375px) and (max-device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+
+height: 50vh;
+
+}
+
+/* iphone x Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    
+    height: 140vh;
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    height: 80vh;
+
+}
+
+.gradient-overlay {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    background: rgb(126,30,46);
+background: -moz-linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
+background: -webkit-linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
+background: linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#951737",endColorstr="#b67472",GradientType=1);
+
+/* iphone x Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    
+      min-height: 120%;
+
+}
+
+
+}
+
+.owl-carousel {
+
+  background-color: $secondary;
+  color: $white;
+  position: relative;
+
+.item {
+
+height: 60vh;
+
+
+@media screen and (max-width: 39.9375em) {
+
+height: 60vh;
+}
+
+/* iphone5 Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    height: 110vh;
+
+}
+
+
+@media screen and (min-width: 40em)  {
+
+height: 80vh;
+
+}
+
+/* iphone 6/7/8 Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+    height: 200vh;
+
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  height: 80vh;
+}
+
+@media screen and (min-width: 64em)  {
+
+height: 120vh;
+
+}
+
+@media screen and (max-width: 63.9375em) and (min-width: 40em)
+
+{
+height: 80vh;
+
+}
+
+/* iphone XS */
+@media only screen and (min-device-width : 375px) and (max-device-height : 812px) and (-webkit-device-pixel-ratio : 3) { 
+
+height: 50vh;
+
+}
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    height: 80vh;
+
+}
+
+/* iphone x Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    
+    height: 140vh;
+}
+
+
+
+img {
+  position: absolute;
+  z-index: -1;
+  min-width: 80%;
+  top: 0;
+  right: 0;
+  background-position: top right;
+  background-size: 100% 100%;
+  background-size: cover;
+
+}
+.item-content {
+
+       position: relative;
+       padding: 1rem 2rem 0 1rem;
+
+       /* iphone5 Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+    max-width:65%;
+
+}
+
+ @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+              
+              padding: 2rem 0 0 2rem;
+
+          }
+            
+          @media screen and (min-width: 40em) {
+
+              padding: 4rem 0 0 4rem;
+
+          }
+
+
+/* ipad Landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  max-width: 55%;
+}
+
+/* iphone x Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    
+    min-width: 65%;
+    padding: 2rem 0 0 2rem;
+    
+}
+
+
+            h1 {
+
+            font-size: 1.8rem;
+
+@media screen and (max-width: 39.9375em) {
+
+  font-size: 1.8rem;
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+
+    font-size: 1.6rem;
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+
+
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) 
+
+          { 
+
+              font-size: 3.0rem;
+              line-height: 3.2rem;
+
+          }
+@media screen and (min-width: 40em) 
+
+           {
+
+             font-size: 2.6rem;
+             line-height: 3.0rem;
+
+           }
+
+  /* iphone x Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    
+            font-size: 2.8rem;
+             line-height: 3.4rem;
+}
+
+@media screen and (min-width: 64em) {
+
+              margin-bottom: 2rem;
+              font-size: 3.0rem;
+              line-height: 3.8rem;
+              
+              }
+
+              /* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+              font-size: 4.2rem;
+              line-height: 5.2rem;
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+              font-size: 4.2rem;
+              line-height: 5.2rem;
+
+}
+
+          }
+
+          p {
+          
+             font-size: 1.2rem;
+             font-weight: 600;
+
+              
+                @media screen and (min-width: 40em) {
+                  
+                  font-size: 1.4rem;
+                  font-weight: 700;
+                  line-height: 2.6rem;
+                  margin-bottom: 2;
+
+                }
+
+                @media screen and (min-width: 64em) {
+
+              font-size: 1.6rem;
+                  font-weight: 700;
+                  line-height: 2.6rem;
+                  margin-bottom: 2;
+              
+              }
+
+
+              /* iphone x Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    
+                  font-size: 1.6rem;
+                  font-weight: 700;
+    
+}
+
+
+          }
+
+          .button.primary {
+        
+              background-color: #964049;
+              font-weight: 700;
+              font-size: 1rem;
+              padding: .5rem 1rem;
+              border-radius: 15px;
+              margin: 0;
+
+              &:hover {
+                background-color: $secondary;
+              }
+
+              @media screen and (min-width: 40em) {
+
+                 margin-top: 2rem;
+                 font-size: 2rem;
+                 padding: 1rem 3rem;
+
+              }
+          }
+
+
+      }
+
+}
+
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: black;
+}
+
+
+ .owl-nav .owl-prev,
+ .owl-nav .owl-next,
+ .owl-dot {
+     font-family: 'fontAwesome';
+ }
+
+ .owl-dots {
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+
+@media screen and (max-width: 39.9375em) {
+
+bottom: 20px;
+right: 5px;
+
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+
+            top: 20px;
+            right: 20px;
+}
+  
+@media screen and (min-width: 40em) {
+
+            top: 20px;
+            right: 20px;
+
+}
+
+ }
+
+ .owl-dot {
+      width: 24px;
+      height: 24px;
+      border-radius: 100%;
+      background: rgba(255,255,255, .9) !important;
+      margin-right: 5px;
+
+ }
+
+ .owl-dot.active {
+      background: rgba(255,255,255, .3) !important;
+      width: 28px;
+      height: 28px;
+
+ }
+
+ .owl-nav .owl-prev:before {
+
+ // fa-chevron-left
+  content: "\f053";
+  margin-right:10px;
+  color: $white;
+  border: 1px solid $white;
+  padding: .6rem;
+  border-radius: 50%;
+
+ }
+ .owl-nav .owl-next:after {
+     //fa-chevron-right
+  content: "\f054";
+  margin-right:10px;
+  color: $white;
+  border: 1px solid $white;
+  padding: .6rem;
+  border-radius: 50%;
+ 
+ }
+ .owl-nav :hover.owl-prev:before {
+     // fa-chevron-left
+  content: "\f053";
+  margin-right:10px;
+  color: $secondary;
+  border: 1px solid $secondary;
+  padding: .6rem;
+  border-radius: 50%;
+ 
+ }
+ .owl-nav .owl-next:hover:after {
+     //fa-chevron-right
+  content: "\f054";
+  margin-right:10px;
+  color: $secondary;
+  border: 1px solid $secondary;
+  padding: .6rem;
+  border-radius: 50%;
+ }
+
+.continue-button {
+
+color: $white;
+font-weight: 700;
+font-size: 1.4rem;
+position: absolute;
+bottom: 25%;
+right: 60px;
+z-index: 1;
+display: none;
+
+&:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 40em)  {
+
+display: block;
+
+}
+
+@media screen and (min-width: 64em)  {
+
+display: block;
+
+}
+
+/* ipad Portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+     display: none;
+}
+
+/* ipad Landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  display: block;
+  bottom: 34%;
+}
+
+/* iphone x Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3)and (orientation: landscape) {
+    
+    display: none;
+}
+
+
+
+/* ipad pro Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   display: none;
+
+}
+
+/* ipad pro Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    display: block;
+
+}
+
+}
+
+}

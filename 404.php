@@ -8,6 +8,7 @@ get_header(); ?>
 <div class="row expanded hero-section-404">
 	<?php
 	$error_page_heading = get_field('error_page_heading', 'option');
+	
 	$error_page_error_message_1 = get_field('error_page_error_message_1', 'option');
 	$error_page_error_message_2 = get_field('error_page_error_message_2', 'option');
 	$error_page_button_text = get_field('error_page_button_text', 'option');
@@ -60,7 +61,7 @@ get_header(); ?>
 			<input type="hidden" name="oe" value="utf8" title="hidden" />
 			<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
 			<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
-			<input type="text" name="q" id="search-404" title="search input" class="sb-search-input" placeholder="<?php _e('Search Germanna...', 'gcc-wp-2018');?>'" style="height: 49px;">
+			<input type="text" name="q" id="search-404" title="search input" class="sb-search-input" placeholder="<?php _e('Search germanna.edu', 'gcc-wp-2018');?>" style="height: 49px;">
 			<input id="searchsubmit-404" class="sb-search-submit" type="submit" value="" aria-label="<?php _e('Submit', 'gcc-wp-2018')?>">
 			<button type="submit" id="searchsubmit-button-404" class="sb-icon-search" aria-label="Submit">
 			</button>

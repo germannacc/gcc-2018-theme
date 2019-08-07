@@ -38,7 +38,7 @@ get_header(); ?>
 						</a>
 					</li>
 					<li role="menuitem">
-						<a href="<?php _e('/success-stories/', 'gcc-wp-2018'); ?>">
+						<a href="<?php _e('/success/', 'gcc-wp-2018'); ?>">
 							<?php _e('Success Stories', 'gcc-wp-2018'); ?>
 						</a>
 					</li>
@@ -61,17 +61,22 @@ get_header(); ?>
 			$alt       = $image['alt'];
 			$imageSize = $image['sizes'][ 'large' ];
 			
-			echo '<img src="' . $imageSize . '" alt="' . $alt . '" />';
+			echo '<img src="' . $imageSize . '" alt="' . $alt . '" style="margin-bottom: 20px;" />';
 			?>
-			<div class="callout secondary" style="margin-top: 10px;">
+	<?php if( get_field('featured_quote') ): ?>			
+
+	<div class="callout secondary">
 				
 				<?php the_field( 'featured_quote' ); ?>
 				
 			</div>
+		   <?php endif; ?>
 			<?php the_field( 'success_story_content' ); ?>
 			
+				<?php if( get_field('video_url') ): ?>		
 			<h3><?php _e('Watch Story', 'gcc-wp-2018'); ?></h3>
-			<iframe width="560" height="315" src="<?php the_field( 'video_url' ); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<div class="flex-video widescreen"><iframe width="560" height="315" src="<?php the_field( 'video_url' ); ?>" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<?php endif; ?>
 			<div class="row expanded" data-equalizer data-equalize-on="large">
 				<hr>
 				<h3><?php _e('Other Stories', 'gcc-wp-2018'); ?></h3>
@@ -80,6 +85,7 @@ get_header(); ?>
 				$args =  array (
 				'post_type' => 'success_stories',
 				'posts_per_page'=>4,
+				'order' => 'ASC',
 				'orderby'        => 'rand',
 				'post__not_in' => array($this_post)
 				);

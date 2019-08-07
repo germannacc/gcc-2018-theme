@@ -56,4 +56,4 @@
      */
     return apply_filters( 'get_the_archive_title', $title );
 }
- ?>
+

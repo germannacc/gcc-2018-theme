@@ -193,21 +193,22 @@ echo '</ul></div>';
 //previous post next post links
 function getPrevNext() {
 ?>
-	<div class="row expanded collapsed">
+	<div class="row expanded collapsed prevnext">
+		<hr/>
 		<?php if (strlen(get_previous_post()->post_title) > 0) { ?>
-		<div class="small-12 large-4 columns" style="padding: 0;">
-	  <span class="button hollow primary alignleft"><?php previous_post_link('%link', '<span class="fa fa-chevron-left" aria-hidden="true" style="padding-right: .5rem;"></span>
+		<div class="small-12 large-4 columns">
+	  <span class="button hollow primary alignleft"><?php previous_post_link('%link', '<span class="fa fa-chevron-left" aria-hidden="true"></span>
 	Previous post', TRUE); ?></span>
 		</div>
  	<?php
 } ?>
-		<div class="small-12 large-4 columns" style="padding: 0;">
-		<span class="button hollow secondary text-center"><a href="<?php esc_html_e('https://germannacc.staging.wpengine.com/highlights/', 'gcc-wp-2018')?>"><?php _e('All highlights', 'gcc-wp-2018'); ?></a></span>
+		<div class="small-12 large-4 columns">
+		<a href="<?php esc_html_e('https://www.germanna.edu/blog/', 'gcc-wp-2018')?>" class="button expanded hollow secondary text-center"><?php _e('All highlights', 'gcc-wp-2018'); ?></a>
 		</div>
 		<?php if (strlen(get_next_post()->post_title) > 0) {
 ?>
-		<div class="small-12 large-4 columns" style="padding: 0;">
-	  <span class="button hollow primary alignright"><?php next_post_link('%link', 'Next post<span class="fa fa-chevron-right" aria-hidden="true" style="padding-left: .5rem;"></span>', TRUE); ?></span>
+		<div class="small-12 large-4 columns">
+	  <span class="button hollow primary alignright"><?php next_post_link('%link', 'Next post<span class="fa fa-chevron-right" aria-hidden="true"></span>', TRUE); ?></span>
 	 </div>
 	 <?php
 } ?>
@@ -217,14 +218,16 @@ function getPrevNext() {
 <?php
 //page icons
 	function gcc_wp_2018_page_icons() {  ?>
+		
 		<ul class="menu horizontal page-icons hide-for-print">
 			 <li>
-				 <a data-toggle="featured-image section-menu main-menu quicklink top-menu big-featured-image" title="<?php _e('Distraction free reading', 'gcc-wp-2018'); ?>"><span class="fa fa-2x fa-eye-slash" aria-hidden="true"></span></a>
+				 <a data-toggle="featured-image section-menu main-menu quicklink top-menu big-featured-image" title="<?php _e('Distraction free reading', 'gcc-wp-2018'); ?>"><span class="fa fa-eye-slash page-icon" aria-hidden="true" ></span><span class="icon-text hide-for-medium"><?php _e('Distraction free', 'gcc-wp-2018'); ?></span></a>
 			</li>
 			<li>
-				<a href="javascript:window.print()" title="<?php _e('Print page', 'gcc-wp-2018'); ?>"><span class="fa fa-2x fa-print" aria-hidden="true"></span></a>
+				<a href="javascript:window.print()" title="<?php _e('Print page', 'gcc-wp-2018'); ?>"><span class="fa fa-print  page-icon" aria-hidden="true"></span><span class="icon-text hide-for-medium"><?php _e('Print page', 'gcc-wp-2018'); ?></span></a>
 			</li>
 	</ul>
+	
 <?php } ?>
 <?php
 //close button
@@ -233,4 +236,3 @@ function gcc_wp_2018_close_button() { ?>
 					<?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
 </button>
 <?php }
-?>

@@ -1,10 +1,30 @@
 .gsc-control-cse,
 .gsc-control-cse .gsc-table-result {
   font-family: $body-font-family;
+
+  caption, tbody td, tbody th {
+
+  padding: 0 !important;
+
+}
+.gs-result .gs-title, .gs-result .gs-title * {
+
+    color: $primary !important;
+    font-size: 1.4rem !important;
+
 }
 
+}
+.gsc-webResult .gsc-result {
+
+    padding: 0;
+    margin-bottom: 10px !important;
+    border-bottom: solid 1px $secondary !important;
+
+}
 .gsc-result-info {
   font-size: 1.4rem !important;
+
 }
 
 .gs-title {
@@ -13,22 +33,30 @@
   font-size: 1.4rem !important;
   line-height: 1.8rem !important;
   height: 2.2em !important;
+
 }
 
 .gs-title:hover {
   color: $secondary !important;
 }
 
+.gsc-control-cse .gs-spelling, .gsc-control-cse .gs-result .gs-title, .gsc-control-cse .gs-result .gs-title * {
+
+    font-size: 1.2rem;
+    height: 60px;
+
+}
 .gs-result .gs-visibleUrl,
 .gs-result a.gs-visibleUrl {
-  color: $warning !important;
+  color: $secondary !important;
   font-size: $global-font-size;
 }
 
-.gsc-control-wrapper-cse table tr {
-  border: none !important;
+.gsc-control-wrapper-cse {
+table.gsc-table-result {
+  border-collapse: none !important;
 }
-
+}
 .gsc-control-cse,
 .gsc-control-cse .gsc-table-result {
   font-family: $body-font-family !important;
@@ -46,7 +74,9 @@
   padding-left: 0 !important;
   padding-top: 0 !important;
 }
-
+.gsc-cursor-box {
+  margin-top: 1.2rem !important;
+}
 .gsc-results .gsc-cursor-box .gsc-cursor-current-page {
   text-decoration: none;
   color: $primary;
@@ -70,4 +100,33 @@
 .gsc-results:hover .gsc-cursor-box:hover .gsc-cursor-page:hover {
   color: $primary !important;
   border: 1px solid $primary !important;
+  background-color: $medium-gray;
+}
+
+.gsc-branding-text, .gcsc-branding-text {
+    color: #666;
+    display: none;
+
+}
+.gs-result .gs-title, .gs-result .gs-title * {
+
+    color: $primary !important;
+    font-size: 1.6rem !important;
+    font-weight: 700 !important;
+
+}
+.gs-result:hover  .gs-title:hover, .gs-result:hover  .gs-title:hover  *{
+
+ color: $secondary !important;
+
+}
+
+img.gsc-branding-img, img.gsc-branding-img-noclear, img.gcsc-branding-img, img.gcsc-branding-img-noclear {
+
+display: none;
+
+}
+
+.gcsc-branding {
+  display: none !important;
 }
