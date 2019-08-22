@@ -5,7 +5,6 @@
 .tabs.vertical {
   margin-bottom: 2rem;
 }
-
 .accordion-content {
   ul {
     margin-bottom: 2rem;
@@ -13,6 +12,9 @@
 }
 }
 
+.tabs {
+  border-bottom: 2px solid $primary !important;
+}
 .tabs-content {
   padding: 1rem 0;
   border: none;
@@ -20,9 +22,72 @@
 
 li.tabs-title {
 
+margin-bottom: 2px;
+width: 100%;
+
+@media screen and (min-width: 40em)  {
+
+width: auto;
+margin-right: 2px;
+margin-bottom: 0;
+}
+
+/* iphone 6/7/8 Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: landscape) { 
+
+   width: 100%;
+  margin-bottom: 2px;
+}
+
+
+/* ipad Portrait */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+width: 100%;
+margin-bottom: 2px;
+}
+/* ipad Landscape */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+width: 100%;
+margin-bottom: 2px;
+}
+
+/* ipad pro Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+   width: 100%;
+margin-bottom: 2px;
+
+}
+
+/* ipad pro Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1366px) 
+  and (max-device-width: 1366px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    width: 100%;
+margin-bottom: 2px;
+
+}
+
+
 a:link {
   font-weight: 800;
   color: $dark-gray;
+  background-color: $medium-gray;
 }
 /* visited link */
 a:visited {
@@ -36,9 +101,14 @@ a:hover {
 }
 /* selected link */
 a:active {
-  color: $primary;
+  color: $white;
 }
 
+}
+
+li.tabs-title>a[aria-selected=true] {
+    background: $primary;
+    color: $white;
 }
 
 li.accordion-item {
@@ -53,31 +123,41 @@ a:visited {
 }
   /* mouse over link */
 a:hover {
-  color: $primary;
+  color: $white;
   text-decoration: underline;
+  background-color: $primary;
 }
   /* selected link */
 a:active {
-  color: $primary;
+  color: $white;
+  background-color: $primary;
 }
+
 .accordion-content {
+
 a:link {
       font-weight: 800;
       color: $primary;
 }
   /* visited link */
 a:visited {
-  color: $secondary;
+  color: $primary;
   text-decoration: underline;
 }
   /* mouse over link */
 a:hover {
   color: $secondary;
   text-decoration: underline;
+  background-color: $white;
 }
   /* selected link */
 a:active {
   color: $primary;
+}
+
+li.tabs-title>a[aria-selected=true] {
+    background: $primary;
+    color: #fff !important;
 }
 
 a.button.primary:link {
@@ -129,4 +209,6 @@ a.button.primary:active {
 
 }
 }
+
 }
+

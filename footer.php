@@ -11,69 +11,46 @@
 ?>
 <?php //closing main container, do not remove ?>
 </main>
-<footer class="marketing-site-footer hide-for-print">
-<div class="row expanded gutter-small">
-  <div class="small-12 medium-12 large-6 columns">
-    <div class="medium-7 columns">
+<footer class="site-footer hide-for-print">
+<div class="row expanded top-footer">
+  <div class="small-12 medium-4 large-6 columns">
+    <div class="contact-icon">
+    <span class="fa fa-2x fa-map-marker" aria-hidden="true"></span>
+   </div>
+     <div class="contact">
+     <h2><?php bloginfo('name'); ?></h2>
       <p>
-        <?php the_field('mission_statement_text', 'option'); ?>
-      </p>
-      <ul class="menu">
-        <li>
-          <a href="<?php the_field('privacy_link_url', 'option'); ?>">
-            <?php the_field('privacy_link_text', 'option');  ?>
-          </a>
-        </li>
-        <li>
-          <a href="<?php the_field('statements_link_url', 'option'); ?>">
-            <?php the_field('statements_link_text', 'option');  ?>
-          </a>
-        </li>
-      </ul>
-      <?php gcc_wp_2018_social_icons(); ?>
-    </div>
-    <div class="medium-5 columns">
-      <div class="marketing-site-footer-block">
-        <span class="fa fa-3x fa-map-marker" aria-hidden="true"></span>
-        <p>
           <?php the_field('primary_address', 'option'); ?>
-        </p>
-      </div>
-      <div class="marketing-site-footer-block">
-        <span class="fa fa-3x fa-mobile" aria-hidden="true"></span>
-        <p>
+        <br/>
           <?php  the_field('primary_phone_number', 'option'); ?>
         </p>
-      </div>
-      <div class="marketing-site-footer-block">
-        <a href="<?php the_field('e2campus_button_url', 'option'); ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle show-for-large-only"  aria-hidden="true"></span>
-      <?php the_field('e2campus_button_text', 'option'); ?></a>
+      <div class="social">
+      
+      <h2><?php _e('#germanna', 'gcc-wp-2018'); ?></h2>
+      <?php gcc_wp_2018_social_icons(); ?>
+
     </div>
-  </div>
+    </div>
 </div>
-<div class="small-12 medium-12 large-6 columns">
-  <div class="medium-6 columns footer-links">
+  <div class="small-12 medium-4 large-3 columns footer-links">
     <map name="FooterMenu1">
     <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
     </map>
   </div>
-  <div class="medium-6 columns  footer-links">
+  <div class="small-12 medium-4 large-3 columns  footer-links">
     <map name="FooterMenu2">
     <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
     </map>
   </div>
 </div>
-</div>
-<div class="marketing-site-footer-bottom hide-for-print">
-<div class="row align-middle">
-  <div class="column text-center">
+<div class="site-footer-bottom hide-for-print">
+  <div class="text-center">
     <p>&copy;
       <?php echo date('Y'); ?>
       <?php bloginfo( 'name' ); ?>
     </p>
     <?php  the_field('bottom_footer_text', 'option'); ?>
   </div>
-</div>
 </div>
 </footer>
 <?php
@@ -128,5 +105,12 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se
 <?php
 }
 ?>
+<script>
+$(document).foundation();
+
+$(function() {
+        $('.lazy').Lazy();
+});
+</script>
 </body>
 </html>

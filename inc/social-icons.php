@@ -1,7 +1,7 @@
 <?php
 function gcc_wp_2018_social_icons() {
 ?>
-  <ul class="menu social-icons">
+  <ul class="social-icons">
 
      <li><a href="https://www.facebook.com/<?php the_field('facebook_id', 'option'); ?>"><span class="fa fa-2x fa-facebook-f" aria-hidden="true"><span class="icon-text"><?php _e('Facebook', 'gcc-wp-2018');?></span></span></a></li>
 

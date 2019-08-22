@@ -3,7 +3,6 @@
 background-color: $light-gray;
 padding:  4rem 2rem;
 
-
 .workforce-explore-content {
 
   background-color: $light-gray;
@@ -20,7 +19,6 @@ h1 {
 }
 
 .callout {
-
 
   h2 {
     font-size: 1.4rem !important;
@@ -51,7 +49,6 @@ h1 {
 
 }
 
-
 }
 
 .second-row {
@@ -71,7 +68,6 @@ h1 {
     }
 
 .box-link {
-
 
   .callout.secondary {
 
@@ -199,19 +195,16 @@ h1 {
 
 }
 
-$subscription-form-bg: darken($primary, 20%);
-$subscription-form-color: $white;
-
-
 .simple-subscription-form {
-  background: $subscription-form-bg;
-  color: $subscription-form-color;
+  background: $primary;
+  color: $white;
   padding: 1rem 2rem;
   border-radius: $global-radius;
   margin-bottom: 2rem;
 
   h2 {
     font-size: 2.2rem;
+    color: $white;
   }
 
   p:after {

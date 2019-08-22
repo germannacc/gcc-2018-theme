@@ -7,6 +7,11 @@ html {
   display: none;
   z-index: 0;
 }
+ .no-js .owl-carousel {
+    display: none;
+    z-index: 0;
+}
+
 @media screen and (min-width: 40em) {
   .no-js .top-bar .title-bar {
     display: block;
@@ -16,6 +21,12 @@ html {
     display: none;
     z-index: 0;
   }
+
+  .no-js .owl-carousel {
+    display: block;
+    z-index: 0;
+  }
+
 }
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap');
 //@import '_vendor/normalize-scss/sass/normalize';

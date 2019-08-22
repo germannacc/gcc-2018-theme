@@ -2,32 +2,47 @@
 @media screen and (min-width: 40em) {
 
 .branding {
-  background-color: $secondary;
+  background-color: $primary;
   padding: 0;
-  max-width: 300px !important;
+  max-width: 315px !important;
+  margin-bottom: 1rem;
 }
 
 .calltos {
+
   margin-bottom: 0;
   font-weight: bold;
 
   a {
+    
     font-size: 1.1rem !important;
     padding-top: 1.05rem;
     padding-bottom: 1.05rem;
-  }
+   
+   }
 
   a.primary {
     background-color: #82082A;
 
+    &:hover {
+      background-color: $medium-gray;
+      color: $primary;
+    }
+
   }
 
   a.secondary {
-    background-color: $primary;
+
+    background-color: $secondary;
+
+    &:hover {
+      background-color: $medium-gray;
+      color: $primary;
+    }
+
   }
 
 }
-
 .custom-logo-link, .mobile-logo {
   overflow: hidden;
   display: block;
@@ -54,8 +69,6 @@
   width: 300px;
   //do not change these styles
   overflow: visible;
-  height: 100%;
-  overflow-y: visible;
   position: absolute;
   z-index: 99999;
 
@@ -144,7 +157,7 @@
 
 li.support-link {
 
-    margin: 2rem auto 0 auto;
+    margin: 1rem auto 0 auto;
     width: 280px;
     text-align: center;
 
@@ -154,6 +167,7 @@ li.support-link {
             line-height: 2.6rem;
             padding: 1rem;
     }
+
   a:hover {
         color: $secondary;
   }
@@ -172,7 +186,6 @@ li.support-link {
 }
 
 }
-
 .menu-extras {
   //items that appear under main navigation
   position: relative;
@@ -193,7 +206,7 @@ li.support-link {
     //sidebar ad
     width: 280px;
     height: 300px;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   a.career-coach {
@@ -204,15 +217,6 @@ li.support-link {
 
 }
 
-.tips-logo {
-  background: url("../media/tipslogo.png");
-  height: 52px;
-  width: 132px;
-  text-indent: -9999px;
-  overflow: hidden;
-  display: block;
-  margin: 0 30% 10%;
-}
 //timer
 .time_circles > div > h4 {
 

@@ -69,13 +69,13 @@ $global-font-size: 100%;
 $global-width: rem-calc(1200);
 $global-lineheight: 1.5;
 $foundation-palette: (
-primary: #9d263a,
+primary: #a10e35,
 secondary: #231F20,
 success: #0d6d2e,
 warning: #a05d00,
 alert: #9d263a,
 );
-$primary: #9d263a;
+$primary: #a10e35;
 $secondary: #231F20;
 $warning: #a05d00;
 $success: #0d6d2e;
@@ -151,12 +151,20 @@ $header-styles: (
     'h6': ('font-size': 18),
   ),
   medium: (
-    'h1': ('font-size': 34),
+    'h1': ('font-size': 36),
+    'h2': ('font-size': 32),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 18),
+    'h6': ('font-size': 14),
+  ),
+  large: (
+    'h1': ('font-size': 36),
     'h2': ('font-size': 32),
     'h3': ('font-size': 28),
-    'h4': ('font-size': 26),
-    'h5': ('font-size': 24),
-    'h6': ('font-size': 22),
+    'h4': ('font-size': 24),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -504,7 +512,7 @@ $offcanvas-sizes: (
 $offcanvas-vertical-sizes: (
   small: 300px,
 );
-$offcanvas-background: $secondary;
+$offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0);
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: rgba($black, 0);
@@ -802,7 +810,7 @@ $tab-margin: 0;
 $tab-background: $light-gray;
 $tab-color: $secondary;
 $tab-background-active: #ededed;
-$tab-active-color: $primary-color;
+$tab-active-color: $white;
 $tab-item-font-size: rem-calc(18);
 $tab-item-background-hover: $medium-gray;
 $tab-item-padding: 1.25rem 1.5rem;
@@ -825,7 +833,7 @@ $thumbnail-radius: $global-radius;
 // 53. Title Bar
 // -------------
 
-$titlebar-background: $secondary;
+$titlebar-background: $primary;
 $titlebar-color: $white;
 $titlebar-padding: .2rem;
 $titlebar-text-font-weight: bold;

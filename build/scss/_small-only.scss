@@ -12,7 +12,7 @@
 //main navigation links
   .gcc-main-nav {
   background-color: $light-gray !important;
-  margin: 1rem 0;
+  margin: 1rem 0 0 0;
   position: relative;
   li {
       a {
@@ -140,16 +140,15 @@ ul {
     text-align: center;
 }
 
-ul {
-  margin-bottom: 0;
+ul.policy-menu {
+margin: 1rem auto;
+width: 48%;
+
+  li {
+    text-align: center;
+  }
 }
 
-.social-icons {
- position: relative;
-  width:40%;
-  margin: 0 auto;
-
-}
 }
 
 .callout.callout-workforce-highlights {

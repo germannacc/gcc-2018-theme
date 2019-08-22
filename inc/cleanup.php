@@ -8,11 +8,11 @@ function gcc_wp_2018_start_cleanup() {
 // launching operation cleanup
 add_action( 'init', 'gcc_wp_2018_cleanup_head' );
 // remove WP version from RSS
-add_filter( 'the_generator', 'gcc_wp_2018_remove_rss_version' );
+//add_filter( 'the_generator', 'gcc_wp_2018_remove_rss_version' );
 // remove pesky injected css for recent comments widget
-add_filter( 'wp_head', 'gcc_wp_2018_remove_wp_widget_recent_comments_style', 1 );
+//add_filter( 'wp_head', 'gcc_wp_2018_remove_wp_widget_recent_comments_style', 1 );
 // clean up comment styles in the head
-add_action( 'wp_head', 'gcc_wp_2018_remove_recent_comments_style', 1 );
+//add_action( 'wp_head', 'gcc_wp_2018_remove_recent_comments_style', 1 );
 }
 add_action( 'after_setup_theme','gcc_wp_2018_start_cleanup' );
 endif;
@@ -25,43 +25,43 @@ function gcc_wp_2018_cleanup_head() {
 // remove WP 4.9+ dns-prefetch nonsense
 remove_action( 'wp_head', 'wp_resource_hints', 2 );
 // EditURI link
-remove_action( 'wp_head', 'rsd_link' , 10, 0 );
+//remove_action( 'wp_head', 'rsd_link' , 10, 0 );
 // Category feed links
-remove_action( 'wp_head', 'feed_links_extra', 3 );
+//remove_action( 'wp_head', 'feed_links_extra', 3 );
 // Windows Live Writer
-remove_action( 'wp_head', 'wlwmanifest_link' , 10, 0 );
+//remove_action( 'wp_head', 'wlwmanifest_link' , 10, 0 );
 // Index link
-remove_action( 'wp_head', 'index_rel_link' , 10, 0 );
+//remove_action( 'wp_head', 'index_rel_link' , 10, 0 );
 // Previous link
-remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
+//remove_action( 'wp_head', 'parent_post_rel_link', 10, 0 );
 // Start link
-remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
+//remove_action( 'wp_head', 'start_post_rel_link', 10, 0 );
 // Canonical
-remove_action( 'wp_head', 'rel_canonical', 10, 0 );
+//remove_action( 'wp_head', 'rel_canonical', 10, 0 );
 // Shortlink
-remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
+//remove_action( 'wp_head', 'wp_shortlink_wp_head', 10, 0 );
 // Links for adjacent posts
-remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
+//remove_action( 'wp_head', 'adjacent_posts_rel_link_wp_head', 10, 0 );
 // WP version
-remove_action( 'wp_head', 'wp_generator' , 10, 0 );
+//remove_action( 'wp_head', 'wp_generator' , 10, 0 );
 // remove WP 4.2+ emoji nonsense
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'admin_print_scripts', 'print_emoji_detection_script' );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
 remove_action( 'admin_print_styles', 'print_emoji_styles' );
 // Remove the REST API endpoint.
-remove_action('rest_api_init', 'wp_oembed_register_route');
+//remove_action('rest_api_init', 'wp_oembed_register_route');
 // Turn off oEmbed auto discovery.
 // Don't filter oEmbed results.
-remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
+//remove_filter('oembed_dataparse', 'wp_filter_oembed_result', 10);
 // Remove oEmbed discovery links.
-remove_action('wp_head', 'wp_oembed_add_discovery_links');
+//remove_action('wp_head', 'wp_oembed_add_discovery_links');
 // Remove oEmbed-specific JavaScript from the front-end and back-end.
-remove_action('wp_head', 'wp_oembed_add_host_js');
+//emove_action('wp_head', 'wp_oembed_add_host_js');
 // Remove WP version from css
-add_filter( 'style_loader_src', 'gcc_wp_2018_remove_wp_ver_css_js', 9999 );
+//add_filter( 'style_loader_src', 'gcc_wp_2018_remove_wp_ver_css_js', 9999 );
 // Remove WP version from scripts
-add_filter( 'script_loader_src', 'gcc_wp_2018_remove_wp_ver_css_js', 9999 );
+//add_filter( 'script_loader_src', 'gcc_wp_2018_remove_wp_ver_css_js', 9999 );
 // Prevent unneccecary info from being displayed
 add_filter( 'login_errors',create_function( '$a', 'return null;' ) );
 // remove OneAll Social script from regular page
@@ -84,35 +84,35 @@ function gcc_wp_2018_deregister_style() {
 }
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_style' );
 endif;
-// remove WP version from RSS
-if ( ! function_exists( 'gcc_wp_2018_remove_rss_version' ) ) :
-function gcc_wp_2018_remove_rss_version() { return ''; }
-endif;
-if ( ! function_exists( 'gcc_wp_2018_remove_wp_ver_css_js' ) ) :
-// remove WP version from scripts
-function gcc_wp_2018_remove_wp_ver_css_js( $src ) {
-if ( strpos( $src, 'ver=' ) ) {
-	$src = remove_query_arg( 'ver', $src ); }
-return $src;
-}
-endif;
+// // remove WP version from RSS
+// if ( ! function_exists( 'gcc_wp_2018_remove_rss_version' ) ) :
+// function gcc_wp_2018_remove_rss_version() { return ''; }
+// endif;
+// if ( ! function_exists( 'gcc_wp_2018_remove_wp_ver_css_js' ) ) :
+// // remove WP version from scripts
+// function gcc_wp_2018_remove_wp_ver_css_js( $src ) {
+// if ( strpos( $src, 'ver=' ) ) {
+// 	$src = remove_query_arg( 'ver', $src ); }
+// return $src;
+// }
+// endif;
 // remove injected CSS for recent comments widget
-if ( ! function_exists( 'gcc_wp_2018_remove_wp_widget_recent_comments_style' ) ) :
-function gcc_wp_2018_remove_wp_widget_recent_comments_style() {
-if ( has_filter( 'wp_head', 'wp_widget_recent_comments_style' ) ) {
-remove_filter( 'wp_head', 'wp_widget_recent_comments_style' );
-}
-}
-endif;
+// if ( ! function_exists( 'gcc_wp_2018_remove_wp_widget_recent_comments_style' ) ) :
+// function gcc_wp_2018_remove_wp_widget_recent_comments_style() {
+// if ( has_filter( 'wp_head', 'wp_widget_recent_comments_style' ) ) {
+// remove_filter( 'wp_head', 'wp_widget_recent_comments_style' );
+// }
+// }
+// endif;
 // remove injected CSS from recent comments widget
-if ( ! function_exists( 'gcc_wp_2018_remove_recent_comments_style' ) ) :
-function gcc_wp_2018_remove_recent_comments_style() {
-global $wp_widget_factory;
-if ( isset($wp_widget_factory->widgets['WP_Widget_Recent_Comments']) ) {
-remove_action( 'wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style') );
-}
-}
-endif;
+// if ( ! function_exists( 'gcc_wp_2018_remove_recent_comments_style' ) ) :
+// function gcc_wp_2018_remove_recent_comments_style() {
+// global $wp_widget_factory;
+// if ( isset($wp_widget_factory->widgets['WP_Widget_Recent_Comments']) ) {
+// remove_action( 'wp_head', array($wp_widget_factory->widgets['WP_Widget_Recent_Comments'], 'recent_comments_style') );
+// }
+// }
+// endif;
 //do not remove the below functions, required for foundation shortcodes
 if ( ! function_exists( 'gcc_wp_2018_clean_shortcodes' ) ) :
 function gcc_wp_2018_clean_shortcodes( $content ) {

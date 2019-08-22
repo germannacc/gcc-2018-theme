@@ -40,13 +40,25 @@
 
 .mobile-menu {
   background-color: $light-gray;
+  border-bottom: 5px solid $primary;
 
   .menu-extras {
     margin-top: 0;
+    background-color: $light-gray;
+    padding: 0;
+
+    img {
+      min-width: 100%;
+    }
+
 
   }
 
-  border-bottom: 5px solid $primary;
+  menu-extras a.career-coach, .menu-extras a.menu-banner {
+    display: block;
+    background: center center no-repeat;
+    margin: 0 auto 1rem auto;
+}
 
   .button-group {
     margin-bottom: 0;
@@ -73,7 +85,7 @@
 
   .branding {
     max-width: 100% !important;
-
+    background-color: $primary;
     .mygcc {
 
       margin-bottom: 1rem;
@@ -111,6 +123,8 @@
       font-size: 1.2rem;
       margin-top: 1rem;
       color: $white;
+      font-weight: 700;
+      text-align: center;
     }
   }
 
@@ -184,7 +198,7 @@
 .mobile-nav {
 
   ul {
-    margin-bottom: 20px;
+    margin-bottom: 0;
 
     li {
 
@@ -286,7 +300,7 @@
     }
     li.support-link {
 
-        margin: 2rem auto 1rem auto;
+        margin: 1rem auto 0 auto;
         width: 280px;
         text-align: center;
 

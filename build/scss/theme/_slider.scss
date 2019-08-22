@@ -119,7 +119,8 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#951737",endCo
   background-color: $secondary;
   color: $white;
   position: relative;
-
+  overflow: hidden;
+  
 .item {
 
 height: 60vh;
