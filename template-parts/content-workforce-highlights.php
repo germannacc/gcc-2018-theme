@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row expanded gutter-small">
 	<?php
 	$args =  array (
 	'post_type' => 'workforce_news_post',

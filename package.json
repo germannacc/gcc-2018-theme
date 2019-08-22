@@ -4,6 +4,7 @@
   "description": "",
   "main": "gulpfile.js",
   "dependencies": {
+    "a11y-checker": "^2.2.1",
     "browser-sync": "^2.23.6",
     "fg-loadcss": "^2.0.1",
     "foundation-sites": "^6.4.4-rc1",
@@ -26,7 +27,9 @@
     "motion-ui": "^1.2.3",
     "siimple-colors": "^0.2.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "critical": "^2.0.0-18"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

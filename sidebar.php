@@ -25,7 +25,7 @@
   dynamic_sidebar( 'tutoring-services-widgets' );
   }
   //about germanna
-  if ( is_page('25') || $post->post_parent == '25' ) {
+  if ( is_page('25') || $post->post_parent == '25' || $post->post_parent == '1222' || $post->post_parent == '1223' || $post->post_parent == '1228' || $post->post_parent == '1224' ) {
   //custom department widgets
   dynamic_sidebar( 'about-widgets' );
   }
@@ -269,7 +269,7 @@
   dynamic_sidebar( 'statements-widgets' );
   }
   //locations
-  if ( is_page('1221') || $post->post_parent == '1221' ) {
+  if ( is_page('1221') || $post->post_parent == '1221' || $post->post_parent == '1222' || $post->post_parent == '1223' || $post->post_parent == '1228' || $post->post_parent == '1224'   ) {
   //custom department widgets
   dynamic_sidebar( 'location-widgets' );
   }

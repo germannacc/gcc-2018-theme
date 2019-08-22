@@ -94,11 +94,19 @@ get_header(); ?>
 				<a href="<?php the_permalink(); ?>" class="stories">
 					<div class="card">
 						<?php // ACF Image Object
-						$image     = get_field( 'story_image' );
-						$alt       = $image['alt'];
-						$imageSize = $image['sizes'][ 'large' ];
-						echo '<img src="' . $imageSize . '" alt="' . $alt . '" />';
-						?>
+					$image     = get_field( 'story_image_home_thumb' );
+							// vars
+					$url = $image['url'];
+					$alt = $image['alt'];
+					// thumbnail
+					$size = 'medium';
+					$thumb = $image['sizes'][ $size ];
+					$width = $image['sizes'][ $size . '-width' ];
+					$height = $image['sizes'][ $size . '-height' ];
+					?>
+								
+				<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
+
 						
 						<div class="card-section" data-equalizer-watch>
 							<h3><?php the_title(); ?></h3>
