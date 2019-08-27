@@ -12,46 +12,70 @@
 <?php //closing main container, do not remove ?>
 </main>
 <footer class="site-footer hide-for-print">
+
 <div class="row expanded top-footer">
   <div class="small-12 medium-4 large-6 columns">
     <div class="contact-icon">
-    <span class="fa fa-2x fa-map-marker" aria-hidden="true"></span>
-   </div>
-     <div class="contact">
-     <h2><?php bloginfo('name'); ?></h2>
+      <span class="fa fa-2x fa-map-marker" aria-hidden="true"></span>
+    </div>
+    <div class="contact">
+      <h2><?php bloginfo('name'); ?></h2>
       <p>
-          <?php the_field('primary_address', 'option'); ?>
+        <?php the_field('primary_address', 'option'); ?>
         <br/>
-          <?php  the_field('primary_phone_number', 'option'); ?>
-        </p>
+        <?php  the_field('primary_phone_number', 'option'); ?>
+      </p>
       <div class="social">
-      
-      <h2><?php _e('#germanna', 'gcc-wp-2018'); ?></h2>
-      <?php gcc_wp_2018_social_icons(); ?>
+        
+        <h2><?php _e('#germanna', 'gcc-wp-2018'); ?></h2>
+        <?php gcc_wp_2018_social_icons(); ?>
+      </div>
 
-    </div>
-    </div>
-</div>
-  <div class="small-12 medium-4 large-3 columns footer-links">
-    <map name="FooterMenu1">
-    <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
-    </map>
-  </div>
-  <div class="small-12 medium-4 large-3 columns  footer-links">
-    <map name="FooterMenu2">
-    <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
-    </map>
   </div>
 </div>
+<div class="small-12 medium-4 large-3 columns footer-links">
+  <map name="FooterMenu1">
+  <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
+  </map>
+</div>
+<div class="small-12 medium-4 large-3 columns footer-links">
+  <map name="FooterMenu2">
+  <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
+  </map>
+</div>
+</div>
+
 <div class="site-footer-bottom hide-for-print">
-  <div class="text-center">
-    <p>&copy;
-      <?php echo date('Y'); ?>
-      <?php bloginfo( 'name' ); ?>
-    </p>
-    <?php  the_field('bottom_footer_text', 'option'); ?>
+
+  <div class="row expanded bottom-footer-content">
+  
+  <div class="small-12 medium-5 large-6 columns">
+
+    <div class="tips">
+      
+      <a href="https://va.moatusers.com/IncidentReport/IncidentReport.asp?q=tkifz6aqXq0FeMvFRcEpvVGQOmy0m7q8Ntzmo0knGpzrnMbHIS&1=EEHDDD&p=%5BTReZNaaN%5D&s=78SbSoDA0n3sbFYGRLnx&x=fC6PigX3y8PgzfbryTEXzG6zbHG2ga" class="tips-logo" aria-hidden="true">
+      
+      <span>Report an Incident</span></a>
+    
+    </div>
   </div>
+
+<div class="small-12 medium-7 large-6 columns">
+
+<div class="text-center">
+  <p>&copy;
+    <?php echo date('Y'); ?>
+    <?php bloginfo( 'name' ); ?>
+  </p>
+  <?php the_field('bottom_footer_text', 'option'); ?>
 </div>
+
+</div>
+
+</div>
+
+</div>
+
 </footer>
 <?php
 get_template_part( 'template-parts/content', 'mobile-nav' );
@@ -107,9 +131,8 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se
 ?>
 <script>
 $(document).foundation();
-
 $(function() {
-        $('.lazy').Lazy();
+$('.lazy').Lazy();
 });
 </script>
 </body>

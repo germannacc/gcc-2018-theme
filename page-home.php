@@ -13,7 +13,7 @@
 * Template Name: Home
 */
 get_header(); ?>
-<div class="row column expanded no-gutter hero">
+<div class="hero">
 	
 <?php
 		//begin home slide repeater loop, checks for slides
@@ -23,7 +23,7 @@ get_header(); ?>
 		//while there are slide items
 		while ( have_rows( 'slide_item', 'options' ) ) : the_row(); ?>
 		<div class="item">
-			<div class="gradient-overlay"></div>
+
 			<?php // ACF Image Object
 			
 				$image = get_sub_field('slide_image');
@@ -36,14 +36,19 @@ get_header(); ?>
 					$width = $image['sizes'][ $size . '-width' ];
 					$height = $image['sizes'][ $size . '-height' ];
 			?>
+
 			<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
-			<div class="item-content columns small-12 medium-8 large-6">
+
+			<div class="item-content columns small-12 medium-6 large-5">
+			
+			<div class="content-container">
 				<h1><?php the_sub_field( 'slide_heading' ); ?>
 				</h1>
 				<div><?php the_sub_field( 'slide_text' ); ?></div>
 				<a href="<?php the_sub_field( 'slide_button_url' ); ?>" class="button primary"><?php the_sub_field( 'slide_button_text' ); ?></a>
 			</div>
-			
+
+			</div>
 		</div>
 		<?php endwhile; ?>
 		</div>  <!--.owl-carousel-->
@@ -55,7 +60,7 @@ get_header(); ?>
 
 	<div class="row expanded no-gutter announcement align-space">
 		
-		<div class="callout text-center">
+	<div class="callout text-center">
 			<div class="column small-12 small-centered">
 				<h2><?php echo get_field( 'announcement_heading', 'options' ); ?></h2>
 				<div><?php echo get_field( 'announcement_text', 'options' ); ?>
@@ -105,7 +110,7 @@ get_header(); ?>
 					$height = $image['sizes'][ $size . '-height' ];
 					?>
 								
-				<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
+				<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" style="min-width: 100%;">
 
 						
 						<div class="card-section" data-equalizer-watch>

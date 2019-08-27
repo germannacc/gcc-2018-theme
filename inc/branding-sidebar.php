@@ -36,44 +36,45 @@ function main_menu() {
 
       </div><!--.branding-->
 
-        <p class="timer-text">
-        <?php the_field('timer_text', 'option'); //timer text ?>
-        </p>
-
-        <?php echo do_shortcode('[wpcdt-countdown id="26372"]'); //timer shortcode ?>
-        s
+<!--         <p class="timer-text">
+ -->        <?php // the_field('timer_text', 'option'); //timer text ?>
+<!--         </p>
+ -->
+        <?php // echo do_shortcode('[wpcdt-countdown id="26372"]'); //timer shortcode ?>
+        
         <?php
         //primary navigation function located in inc/main-navigation.php
         gcc_wp_2018_main_navigation(); ?>
 
         <div class="menu-extras">
-         <?php //menu callto image 1         
+          <?php //menu callto image 1         
 
          // ACF Image Object
          $image     = get_field( 'sidebar_ad_1_image', 'options' );
          $alt       = $image['alt'];
-         $imageSize = $image['sizes'][ 'large' ]; ?>
+         $imageSize = $image['sizes'][ 'large' ];
+                  
+          ?>
           
           <a href="<?php the_field('sidebar_ad_1_url', 'option');  ?>" class="career-coach">
             <span><?php the_field('sidebar_ad_1_text', 'option'); ?></span>
             <img src="<?php echo $imageSize; ?>" alt="<?php echo $alt; ?>" class="lazy" width="350" height="350" />
           </a>
-        
-        <?php //menu callto image 2
+          
+ 
+          <?php //menu callto image 2
         
          // ACF Image Object
          $image     = get_field( 'sidebar_ad_2_image', 'options' );
          $alt       = $image['alt'];
-         $imageSize = $image['sizes'][ 'large' ]; ?>
-         
+         $imageSize = $image['sizes'][ 'large' ];
+                  
+          ?>
           <a href="<?php the_field('sidebar_ad_2_url', 'option');  ?>" class="menu-banner"><span><?php the_field('sidebar_ad_2_text', 'option'); ?></span>
           
           <img src="<?php echo $imageSize; ?>" alt="<?php echo $alt; ?>" class="lazy" width="350" height="350"  />
           </a>
 
-          <a href="<?php the_field('tips_url', 'option'); ?>" class="tips-logo" aria-hidden="true">
-          <?php echo _e('T.I.P.S.', 'gcc-wp-2018' ); ?><!--.tipslogo-->
-        </a>
       </div><!--.menuextras-->
 
     </header>
@@ -81,4 +82,4 @@ function main_menu() {
   </div><!--.row-->
 </div><!--.offcanvas-->
 <?php
-} 
+} ?>
