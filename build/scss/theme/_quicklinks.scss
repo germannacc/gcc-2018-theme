@@ -8,34 +8,39 @@
   margin: 0;
 
   background-color: $medium-gray;
+  
   .quicklinks-box {
   padding-left: 0 !important;
   padding-right: 0 !important;
-  ul.dropdown.menu {
-      padding-left: 0.1rem;
-  li {
-        a {
-          color: $black;
-  transition: all 0.25s ease-in;
-  font-size: .900rem;
-  font-weight: 600;
-  padding: 1rem .5rem;
+ 
+ul.dropdown.menu {
+      padding-left: .1rem;
 
+li {
+
+ a {
+       color: $secondary;
+       background-color: $medium-gray;
+       font-weight: 400;
+       transition: all 0.06s ease-in;
+       padding: 1rem .8rem;
+       margin-right: .1rem;
+       font-size: 0.875rem;
+
+&:hover {
+     background-color: $white !important;
+     color: $primary !important;
 }
 
-a:hover {
-  background-color: $light-gray;
-  color: $primary;
-}
-
-a::after {
+&:after {
   display: none;
   padding-right: 0;
 }
 
-a::selection {
+&:selection {
   background-color: $medium-gray;
   color: $primary;
+}
 }
       }
 
@@ -64,10 +69,10 @@ ul.vertical.menu {
   border-bottom: 1px solid rgba(0,0,0, .2);
   span {
               margin-right: 0.5rem;
-}
-          }
+   }
+         
 
-a::before {
+&:before {
   font-family: 'FontAwesome';
   content: "\f054";
   left: 0;
@@ -75,18 +80,20 @@ a::before {
   font-size: 0.5rem;
 }
 
-a:hover {
-  background-color: $light-gray;
+&:hover {
+  background-color: $white;
   color: $primary;
 }
 
-a::selection {
+&:selection {
   background-color: $light-gray;
 }
         }
 
+      }
+
 li.is-dropdown-submenu {
-  a::after {
+  a:after {
             display: none;
   padding-right: 0;
 }
@@ -96,6 +103,7 @@ li.is-dropdown-submenu {
   }
 }
 li.give-button {
+
   a {
     transition: all 0.25s ease-in;
     color: $white !important;
@@ -109,8 +117,10 @@ li.give-button {
     background: -webkit-linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
-  }
-  a:hover {
+  
+}
+
+   a:hover {
     transition: all 0.25s ease-in;
     color: $white !important;
     padding-left: 1.4rem !important;
@@ -126,6 +136,8 @@ li.give-button {
   }
 
 }
+
+
 li.give-button.active > a {
   transition: all 0.25s ease-in;
   color: $white !important;
@@ -139,8 +151,7 @@ li.give-button.active > a {
   background: -webkit-linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #627d4d 0%,#1f3b08 100%);
-}
-li.give-button.active > a:hover {
+&:hover {
   transition: all 0.25s ease-in;
   color: $white !important;
   padding-left: 1.4rem !important;
@@ -154,7 +165,7 @@ li.give-button.active > a:hover {
   /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(45deg, #506b3a 0%,#627d4d 100%);
 }
-
+}
 li.my-gcc {
  a {
        color: $primary !important;
@@ -166,12 +177,12 @@ li.my-gcc {
      span {
        padding-right: .2rem;
      }
-   }
-   a:hover {
+   &:hover {
      background-color: $dark-gray !important;
      color: $white !important;
    }
   }
+}
 .top-bar input {
   max-width: 400px !important;
   margin-right: 0 !important;

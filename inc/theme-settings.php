@@ -32,6 +32,14 @@ if( function_exists('acf_add_options_page') ) {
 		'redirect'		=> false,
 		'position' => 4
 	));
+    acf_add_options_page(array(
+		'page_title' 	=> 'Workforce Slides',
+		'menu_title'	=> 'Workforce Slides',
+		'menu_slug' 	=> 'workforce-slides',
+		'capability'	=> 'edit_posts',
+		'redirect'		=> false,
+		'position' => 4
+	));
 }
 function gcc_pagination() {
     global $wp_query;

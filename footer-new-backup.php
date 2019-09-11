@@ -15,27 +15,36 @@
 <footer class="site-footer hide-for-print">
 <div class="top-footer row expanded gutter-small">
   <div class="small-12 medium-12 large-6 columns">
-    <div class="small-12 medium-7 columns">
+    <div class="small-12 medium-7 columns text-left">
   
      <?php  //germanna logo
         if ( function_exists( 'the_custom_logo' ) ) {
         the_custom_logo();
         }
     ?>
-    <p>
-        <?php the_field('primary_address', 'option'); ?><br/>
-       <?php  the_field('primary_phone_number', 'option'); ?>
-    </p>
-
      <h2><?php _e('#germanna', 'gcc-wp-2018'); ?></h2>
       <div class="social">
       <?php gcc_wp_2018_social_icons(); ?>
     </div>
     </div>
     <div class="medium-5 columns">
+      <div class="marketing-site-footer-block">
+        <span class="fa fa-3x fa-map-marker" aria-hidden="true"></span>
+        <p>
+          <?php the_field('primary_address', 'option'); ?>
+        </p>
+      </div>
+      <div class="marketing-site-footer-block">
+        <span class="fa fa-3x fa-mobile" aria-hidden="true"></span>
+        <p>
+          <?php  the_field('primary_phone_number', 'option'); ?>
+        </p>
+      </div>
 
-
-
+  <div class="marketing-site-footer-block">
+        <a href="<?php the_field('e2campus_button_url', 'option'); ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle show-for-large-only"  aria-hidden="true"></span>
+      <?php the_field('e2campus_button_text', 'option'); ?></a>
+  </div>
   </div>
 </div>
 <div class="small-12 medium-12 large-6 columns">
@@ -81,16 +90,6 @@
 </div>
 
 </div>
-</footer>
-
-<?php
-get_template_part( 'template-parts/content', 'mobile-nav' );
-?>
-
-</div>
-</div>
-</div>
-
 <?php wp_footer(); ?>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>

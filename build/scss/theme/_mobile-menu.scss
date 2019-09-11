@@ -1,8 +1,9 @@
 .title-bar {
 
-  padding: .5rem !important;
+padding: .5rem !important;
 
 .title-bar-left {
+  
   margin: 0;
   position: relative;
 
@@ -16,7 +17,8 @@
     position: relative;
     margin: 1rem;
   }
-  button {
+   
+   button {
     color: $white;
     padding: 1rem;
     font-size: 1.8rem;
@@ -31,7 +33,6 @@
 }
 
 }
-
 .menu-icon {
   margin: 1.3rem 1rem 0 1rem !important;
   height: 32px !important;
@@ -51,10 +52,9 @@
       min-width: 100%;
     }
 
+}
 
-  }
-
-  menu-extras a.career-coach, .menu-extras a.menu-banner {
+menu-extras a.career-coach, .menu-extras a.menu-banner {
     display: block;
     background: center center no-repeat;
     margin: 0 auto 1rem auto;
@@ -81,43 +81,31 @@
     padding-top: 0.3rem;
     font-size: 1.2rem;
     border: none;
-  }
+}
 
   .branding {
+
     max-width: 100% !important;
     background-color: $primary;
+    
     .mygcc {
 
       margin-bottom: 1rem;
       text-align: center;
 
-      a:link {
+      a {
+
           color: $primary;
           border-bottom: 1px solid $dark-gray;
           font-weight: 800;
           background-color: $light-gray;
-          padding: 1.2rem 1rem;
-      }
-      /* visited link */
-      a:visited {
-          color: $primary;
-          background-color: $medium-gray;
-      }
-      /* mouse over link */
-      a:hover {
-          color: $white;
-          background-color: $primary;
-
-      }
-      /* selected link */
-      a:active {
-          color: $white;
-          background-color: $light-gray;
+          padding: 1.2rem 1rem;    
+    
       }
 
     }
-  }
 
+}
   .tagline {
     p.lead {
       font-size: 1.2rem;
@@ -127,14 +115,12 @@
       text-align: center;
     }
   }
-
   [type=text] {
     width: 100%;
     height: 49.8px;
     color: $dark-gray;
     padding-left: 1rem;
   }
-
   [type=color],
   [type=date],
   [type=datetime-local],
@@ -197,55 +183,53 @@
 }
 .mobile-nav {
 
-  ul {
+  ul.menu {
     margin-bottom: 0;
 
-    li {
+  li {
 
-
-      a:link {
+      a {
           color: $primary;
           border-bottom: 1px solid $dark-gray;
           font-weight: 800;
           background-color: $light-gray;
-          padding: 1.2rem 1rem;
-      }
+          padding: 1.2rem 1rem;    
       /* visited link */
-      a:visited {
-          color: $primary;
-          background-color: $medium-gray;
-      }
-      /* mouse over link */
-      a:hover {
-          color: $secondary !important;
-          background-color: $medium-gray;
 
+  &:visited {
+          color: $primary;
+      }
+
+    &:hover {
+          color: $secondary;
+          text-decoration: underline;
       }
       /* selected link */
-      a:active {
-          color: $white;
-          background-color: $light-gray;
+     &:active {
+          color: $secondary!important;
+          text-decoration: underline;
       }
-
+    }
           ul.nested {
 
-                  li  {
-                    a:link {
-                        color: $secondary !important;
-                        background-color: $light-gray;
-                    }
+                li  {
+
+                    a {
+                    color: $secondary !important;
+                    background-color: $light-gray;
+                    
                     /* visited link */
-                    a:visited {
+                    &:visited {
                         color: $primary;
                         background-color: $medium-gray;
                     }
                     /* mouse over link */
-                    a:hover {
+                    &:hover {
                         color: $primary !important;
                         background-color: $medium-gray;
                     }
                     /* selected link */
-                    a:active {
+                    &:active {
                         color: $white;
                         background-color: $light-gray;
                     }
@@ -256,48 +240,51 @@
 
     }
 
+  }
     li.mobile-quicklink {
       background-color: $white;
 
-      a:link {
-          color: $secondary !important;
-      }
+      a {
+       color: $secondary !important;
+       border-bottom: none;
+       padding: 1rem 1rem .6rem 1rem;   
+      
       /* visited link */
-      a:visited {
-          color: $primary;
-          background-color: $medium-gray;
+      &:visited {
+       color: $secondary !important;
       }
+
       /* mouse over link */
-      a:hover {
-          color: $primary !important;
-          background-color: $medium-gray;
+      &:hover {
+        color: $secondary !important;
       }
       /* selected link */
-      a:active {
-          color: $primary;
-          background-color: $medium-gray;
+      &:active {
+        color: $secondary !important;
+        text-decoration: none !important;
       }
     }
     li.give-button {
-      a:link {
+      a {
           color: $white !important;
           border-radius: 0;
-      }
+    
       /* visited link */
-      a:visited {
+      &:visited {
           color: $white !important;
           text-decoration: underline;
 
       }
       /* mouse over link */
-      a:hover {
+      &:hover {
          color: $white !important;
       }
       /* selected link */
-      a:active {
+      &:active {
           color: $white;
       }
     }
+  }
     li.support-link {
 
         margin: 1rem auto 0 auto;
@@ -309,13 +296,33 @@
                 font-size: 2.2rem;
                 line-height: 2.6rem;
                 padding: 1rem;
-        }
-
-      a:hover {
+        
+       &:hover {
             color: $secondary;
       }
 
     }
   }
-
+  }
+}
+.menu .active > a, .menu .is-active > a {
+  background: $light-gray;
+  color: $secondary !important;
+}
+.menu .active > a:before, .menu .is-active > a:before {
+  font-family: FontAwesome;
+  content: "\f054";
+  text-decoration: none;
+  margin-right: 2px;
+}
+.menu li.mobile-quicklink.active > a, .menu li.mobile-quicklink.is-active > a {
+  background: $light-gray;
+  color: $primary !important;
+}
+.menu li.mobile-quicklink.active > a:before, .menu li.mobile-quicklink.is-active > a:before {
+  font-family: FontAwesome;
+  content: "\f054";
+  text-decoration: none;
+  margin-right: 2px;
+}
 }

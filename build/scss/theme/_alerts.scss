@@ -14,6 +14,7 @@
 
     p {
       padding: 0 1rem; 
+      font-size: 1.2rem;
 
       a {
         text-decoration: underline;
@@ -220,27 +221,23 @@ p a {
 //Closing Announcement
 .closing {
 
-background: rgba(168,13,41,1);
-background: -moz-linear-gradient(left, rgba(168,13,41,1) 0%, rgba(168,13,42,1) 44%, rgba(120,6,27,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(168,13,41,1)), color-stop(44%, rgba(168,13,42,1)), color-stop(100%, rgba(120,6,27,1)));
-background: -webkit-linear-gradient(left, rgba(168,13,41,1) 0%, rgba(168,13,42,1) 44%, rgba(120,6,27,1) 100%);
-background: -o-linear-gradient(left, rgba(168,13,41,1) 0%, rgba(168,13,42,1) 44%, rgba(120,6,27,1) 100%);
-background: -ms-linear-gradient(left, rgba(168,13,41,1) 0%, rgba(168,13,42,1) 44%, rgba(120,6,27,1) 100%);
-background: linear-gradient(to right, rgba(168,13,41,1) 0%, rgba(168,13,42,1) 44%, rgba(120,6,27,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a80d29', endColorstr='#78061b', GradientType=1 );
-border: none;
-  padding: 1rem;
+
+background: rgb(74,64,67) !important;
+  padding: 1rem !important;
   color: $white;
   margin-bottom: 0 !important;
+
   p {
-    padding: .3rem 0;
+    padding: 0;
     margin: 0;
     display: block;
-    line-height: 2rem;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
     strong {
       font-weight: 600;
     }
   }
+  
   a.button:hover {
     border: 2px solid $black;
     background-color: $black;

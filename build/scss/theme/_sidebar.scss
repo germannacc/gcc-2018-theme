@@ -4,7 +4,7 @@
 .branding {
   background-color: $primary;
   padding: 0;
-  max-width: 315px !important;
+  max-width: 310px !important;
   margin-bottom: 1rem;
 }
 
@@ -13,13 +13,13 @@
   margin-bottom: 0;
   font-weight: bold;
 
-  a {
-    
-    font-size: 1.1rem !important;
-    padding-top: 1.05rem;
-    padding-bottom: 1.05rem;
-   
-   }
+    a {
+        
+        font-size: 1.1rem !important;
+        padding-top: 1.05rem;
+        padding-bottom: 1.05rem;
+       
+    }
 
   a.primary {
     background-color: #82082A;
@@ -88,7 +88,7 @@
         padding: 0.5rem 2rem 0.5rem 1.2rem;
         font-weight: 600;
         transition: all 0.25s ease-in;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
 
         span {
           position: absolute;

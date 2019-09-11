@@ -11,31 +11,45 @@
 ?>
 <?php //closing main container, do not remove ?>
 </main>
-
-<footer class="site-footer hide-for-print">
-<div class="top-footer row expanded gutter-small">
+<footer class="marketing-site-footer hide-for-print">
+<div class="row expanded gutter-small">
   <div class="small-12 medium-12 large-6 columns">
     <div class="small-12 medium-7 columns">
-  
-     <?php  //germanna logo
-        if ( function_exists( 'the_custom_logo' ) ) {
-        the_custom_logo();
-        }
-    ?>
-    <p>
-        <?php the_field('primary_address', 'option'); ?><br/>
-       <?php  the_field('primary_phone_number', 'option'); ?>
-    </p>
-
-     <h2><?php _e('#germanna', 'gcc-wp-2018'); ?></h2>
-      <div class="social">
+      <p>
+        <?php the_field('mission_statement_text', 'option'); ?>
+      </p>
+      <ul class="footer-horizontal-links">
+        <li>
+          <a href="<?php the_field('privacy_link_url', 'option'); ?>">
+            <?php the_field('privacy_link_text', 'option');  ?>
+          </a>
+        </li>
+        <li>
+          <a href="<?php the_field('statements_link_url', 'option'); ?>">
+            <?php the_field('statements_link_text', 'option');  ?>
+          </a>
+        </li>
+      </ul>
       <?php gcc_wp_2018_social_icons(); ?>
     </div>
-    </div>
     <div class="medium-5 columns">
+      <div class="marketing-site-footer-block">
+        <span class="fa fa-3x fa-map-marker" aria-hidden="true"></span>
+        <p>
+          <?php the_field('primary_address', 'option'); ?>
+        </p>
+      </div>
+      <div class="marketing-site-footer-block">
+        <span class="fa fa-3x fa-mobile" aria-hidden="true"></span>
+        <p>
+          <?php  the_field('primary_phone_number', 'option'); ?>
+        </p>
+      </div>
 
-
-
+  <div class="marketing-site-footer-block">
+        <a href="<?php the_field('e2campus_button_url', 'option'); ?>" class="button primary expanded medium"><span class="fa fa-exclamation-triangle show-for-large-only"  aria-hidden="true"></span>
+      <?php the_field('e2campus_button_text', 'option'); ?></a>
+  </div>
   </div>
 </div>
 <div class="small-12 medium-12 large-6 columns">
@@ -68,29 +82,20 @@
 
 <div class="small-12 medium-7 large-6 columns">
 
+<div class="text-center">
   <p>&copy;
     <?php echo date('Y'); ?>
     <?php bloginfo( 'name' ); ?><br/>
       <?php the_field('bottom_footer_text', 'option'); ?>
 
   </p>
-
-
 </div>
 
 </div>
 
 </div>
-</footer>
-
-<?php
-get_template_part( 'template-parts/content', 'mobile-nav' );
-?>
 
 </div>
-</div>
-</div>
-
 <?php wp_footer(); ?>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>

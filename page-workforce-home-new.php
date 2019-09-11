@@ -16,12 +16,12 @@ get_header(); ?>
   <div class="row expanded gutter-small content-area">
    
     <div class="small-12 medium-12 large-9 float-left columns" >
- 
+
+      <?php putRevSlider( 'workforce-slider' ); ?>
+
       <div class="entry-content" id="main" tabindex="0">
       
-    <?php putRevSlider( 'workforce-slider' ); ?>
-
-    <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
+      <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
 
     <?php get_template_part( 'template-parts/content', 'workforce-newsletter' ); ?>
 

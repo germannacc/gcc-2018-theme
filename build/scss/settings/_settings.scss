@@ -84,7 +84,7 @@ $medium-gray: #e2e2e2;
 $dark-gray: #262626;
 $black: #333333;
 $white: #ffffff;
-$body-background: $white;
+$body-background: $primary;
 $body-font-color: $black;
 $body-font-family: 'Roboto', sans-serif;
 $body-antialiased: true;
@@ -507,10 +507,10 @@ $meter-fill-bad: $alert-color;
 // --------------
 
 $offcanvas-sizes: (
-  small: 300px,
+  small: 290px,
 );
 $offcanvas-vertical-sizes: (
-  small: 300px,
+  small: 290px,
 );
 $offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0);

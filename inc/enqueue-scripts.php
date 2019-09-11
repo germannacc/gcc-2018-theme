@@ -1,6 +1,6 @@
 <?php
 function gcc_wp_2018_scripts() {
-wp_enqueue_style( 'gcc-wp-2018-theme-styles', get_template_directory_uri() . '/dist/css/theme.min.css', array(), '20190813', 'all' );
+wp_enqueue_style( 'gcc-wp-2018-theme-styles', get_template_directory_uri() . '/dist/css/themeV2.min.css', array(), '20190813', 'all' );
 
 if (is_page('home')) wp_enqueue_style( 'gcc-wp-2018-slider', get_template_directory_uri() . '/dist/css/owl.carousel.min.css', array(), '20190813', 'all' );
 

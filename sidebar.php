@@ -15,7 +15,7 @@
   dynamic_sidebar( 'sidebar-widgets' );
   }
   //admissions
-  if ( is_page('24') || $post->post_parent == '24' ) {
+  if ( is_page('24') || $post->post_parent == '24' || is_page('11434') ) {
   //custom department widgets
   dynamic_sidebar( 'admissions-widgets' );
   }
@@ -312,7 +312,7 @@
   dynamic_sidebar( 'physical-therapist-widgets' );
   }
   //presidents office
-  if ( is_page('94') || $post->post_parent == '94' ) {
+  if ( is_page('94') || $post->post_parent == '94' || is_page('27219') ) {
   //custom department widgets
   dynamic_sidebar( 'presidents-office-widgets' );
   }

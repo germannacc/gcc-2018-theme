@@ -38,6 +38,7 @@
 
     </head>
     <body <?php body_class(); ?>>
+    <div class="container">
       <div id="skip">
         <a href="#main" class="show-on-focus"><?php esc_html_e('skip to content', 'gcc-wp-2018') ?></a>
       </div>
