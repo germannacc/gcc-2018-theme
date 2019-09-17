@@ -48,9 +48,9 @@ get_header(); ?>
 
               <p class="text-center" style="margin-bottom: 0;"><?php the_field( 'event_description' ); ?></p>
 
-              <p  class="text-center"  style="margin-bottom: 0;"><?php the_field( 'event_date' ); ?></p>
+              <p class="text-center"  style="margin-bottom: 0;"><?php the_field( 'event_date' ); ?></p>
 
-              <p  class="text-center"  style="margin-bottom: 0;"><?php the_field( 'event_location' ); ?></p>
+              <p class="text-center"  style="margin-bottom: 0;"><?php the_field( 'event_location' ); ?></p>
 
               <?php if( get_field('event_start_time') ): ?>
               <p><?php the_field('event_start_time'); ?> - <?php the_field('event_end_time'); ?></p>

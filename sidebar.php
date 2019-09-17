@@ -279,7 +279,7 @@
   dynamic_sidebar( 'marketing-widgets' );
   }
   //navigate
-  if ( is_page('27443') || $post->post_parent == '27443' ){
+  if ( is_page('27449') || $post->post_parent == '27449' ){
   //custom department widgets
   dynamic_sidebar( 'navigate-widgets' );
   }
