@@ -4,6 +4,7 @@
  * Template for WPForms.
  */
 class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
+
 	/**
 	 * Primary class constructor.
 	 *
@@ -22,7 +23,7 @@ class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
 
 		// Template field and settings
 		$this->data = array (
-	'field_id' => 38,
+	'field_id' => 39,
 	'fields' => array (
 		14 => array (
 			'id' => '14',
@@ -35,27 +36,24 @@ class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
 			'type' => 'text',
 			'label' => 'First name',
 			'required' => '1',
-			'size' => 'large',
+			'size' => 'medium',
 			'placeholder' => 'Enter your first name...',
-			'css' => 'wpforms-one-half wpforms-first',
 		),
 		29 => array (
 			'id' => '29',
 			'type' => 'text',
 			'label' => 'Last name',
 			'required' => '1',
-			'size' => 'large',
+			'size' => 'medium',
 			'placeholder' => 'Enter your last name...',
-			'css' => 'wpforms-one-half',
 		),
 		36 => array (
 			'id' => '36',
 			'type' => 'text',
 			'label' => 'Email Address',
 			'required' => '1',
-			'size' => 'large',
+			'size' => 'medium',
 			'placeholder' => 'Enter your email address...',
-			'css' => 'wpforms-one-half wpforms-first',
 		),
 		11 => array (
 			'id' => '11',
@@ -63,17 +61,15 @@ class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
 			'label' => 'Phone',
 			'format' => 'us',
 			'required' => '1',
-			'size' => 'large',
+			'size' => 'medium',
 			'placeholder' => 'Enter your phone number...',
-			'css' => 'wpforms-one-half',
 		),
 		37 => array (
 			'id' => '37',
 			'type' => 'text',
 			'label' => 'Date of birth',
-			'size' => 'large',
+			'size' => 'medium',
 			'placeholder' => 'Enter your birthday',
-			'css' => 'wpforms-one-fourth wpforms-first',
 			'input_mask' => '99/99/9999',
 		),
 		30 => array (
@@ -81,18 +77,16 @@ class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
 			'type' => 'text',
 			'label' => 'Zip ',
 			'required' => '1',
-			'size' => 'large',
+			'size' => 'medium',
 			'placeholder' => 'Enter your zipcode...',
-			'css' => 'wpforms-one-fourth',
 			'input_mask' => '99999',
 		),
 		33 => array (
 			'id' => '33',
 			'type' => 'text',
 			'label' => 'When did/will you get your high school/home school degree or equivalent',
-			'size' => 'large',
+			'size' => 'medium',
 			'placeholder' => 'Enter date...',
-			'css' => 'wpforms-two-fourths',
 			'input_mask' => '99/99/9999',
 		),
 		16 => array (
@@ -125,10 +119,10 @@ class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
 			'required' => '1',
 			'choices_images_style' => 'modern',
 		),
-		34 => array (
-			'id' => '34',
-			'type' => 'checkbox',
-			'label' => 'Which best describes you',
+		38 => array (
+			'id' => '38',
+			'type' => 'select',
+			'label' => 'Which best describe you?:',
 			'choices' => array (
 				1 => array (
 					'label' => 'High school/home school student',
@@ -153,7 +147,8 @@ class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
 				),
 			),
 			'required' => '1',
-			'choices_images_style' => 'modern',
+			'size' => 'medium',
+			'placeholder' => 'Select an option...',
 		),
 		35 => array (
 			'id' => '35',
@@ -191,9 +186,10 @@ class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
 	),
 	'settings' => array (
 		'form_title' => 'RIF V2 Sept 2019',
-		'submit_text' => 'Submit request',
-		'submit_text_processing' => 'Sending request',
+		'submit_text' => 'Submit ',
+		'submit_text_processing' => 'Sending',
 		'honeypot' => '1',
+		'ajax_submit' => '1',
 		'notification_enable' => '1',
 		'notifications' => array (
 			2 => array (
@@ -204,15 +200,15 @@ class WPForms_Template_rif_v2_sept_2019 extends WPForms_Template {
 				'sender_address' => 'No_Reply_Germanna@germanna.edu',
 				'message' => 'Thank you for your interest in Germanna Community College.  We’re proud to offer 50+ programs and are here to help you decide which path is best for you.
 
-Browse our <a href="https://issuu.com/germannacc/docs/2018viewbook_online">view book</a> for information about the programs we offer and how to <a href="https://www.germanna.edu/admissions/">become a Germanna student</a>.
+Browse our <a href="https://issuu.com/germannacc/docs/2018viewbook_online">view book</a> for information about the programs we offer and how to <a href="https://germannacc.staging.wpengine.com/admissions/">become a Germanna student</a>.
 
-Our next class session is starting soon and there is still time to register. For your next step, respond to this email or visit one of our <a href="https://www.germanna.edu/admissions/welcome-center">Welcome Centers</a>.
+Our next class session is starting soon and there is still time to register. For your next step, respond to this email or visit one of our <a href="https://germannacc.staging.wpengine.com/admissions/welcome-center">Welcome Centers</a>.
 
 We look forward to helping you reach your educational goals.
 
 Get help with college application, admission and financial aid. Be ready to start fall classes.
 
-<a href="https://www.germanna.edu/admissions/register/">Register for classes</a>
+<a href="https://germannacc.staging.wpengine.com/admissions/register/">Register for classes</a>
 
 <h2>Submitted Information</h2>
 
@@ -232,7 +228,7 @@ Get help with college application, admission and financial aid. Be ready to star
 				'name' => 'Default Confirmation',
 				'type' => 'redirect',
 				'message' => '<p>Thank you for your interest in Germanna Community College.  We are proud to offer over 50 programs and are happy to help you decide which pathway is best for you.  Our <a href="https://issuu.com/germannacc/docs/2018viewbook_online">view book</a> contains information about these programs along with how to become a Germanna Community College student.</p>
-<p>Our next session is starting soon and there is still time to register for classes.   For your next step, respond to this email or visit one of our <a href="https://www.germanna.edu/admissions/welcome-center/">Welcome Centers</a>. </p>
+<p>Our next session is starting soon and there is still time to register for classes.   For your next step, respond to this email or visit one of our <a href="https://germannacc.staging.wpengine.com/admissions/welcome-center/">Welcome Centers</a>. </p>
 <p>We look forward to helping you reach your educational goals.</p>
 <p>Regards,</p>
 <p>Enrollment Services</p>
@@ -241,7 +237,7 @@ Get help with college application, admission and financial aid. Be ready to star
 <p>&nbsp;</p>',
 				'message_scroll' => '1',
 				'page' => '25',
-				'redirect' => 'https://www.germanna.edu/admissions/request-information/confirmation/',
+				'redirect' => 'https://germannacc.staging.wpengine.com/admissions/request-information/confirmation/',
 			),
 		),
 	),
@@ -252,7 +248,7 @@ Get help with college application, admission and financial aid. Be ready to star
 				'account_id' => '5d35fa335e52c',
 				'list_id' => '2021564274',
 				'fields' => array (
-					'email' => '10.value.email',
+					'email' => '36.value.email',
 					'full_name' => '',
 					'first_name' => '28.value.first',
 					'last_name' => '29.value.last',

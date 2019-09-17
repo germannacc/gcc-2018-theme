@@ -13,7 +13,7 @@
 * Template Name: Home
 */
 get_header(); ?>
-<div class="hero">
+<div class="row column expanded no-gutter hero">
 	
 <?php
 		//begin home slide repeater loop, checks for slides
@@ -23,7 +23,7 @@ get_header(); ?>
 		//while there are slide items
 		while ( have_rows( 'slide_item', 'options' ) ) : the_row(); ?>
 		<div class="item">
-
+			<div class="gradient-overlay"></div>
 			<?php // ACF Image Object
 			
 				$image = get_sub_field('slide_image');
@@ -36,19 +36,14 @@ get_header(); ?>
 					$width = $image['sizes'][ $size . '-width' ];
 					$height = $image['sizes'][ $size . '-height' ];
 			?>
-
 			<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
-
-			<div class="item-content columns small-12 medium-6 large-5">
-			
-			<div class="content-container">
+			<div class="item-content columns small-12 medium-8 large-6">
 				<h1><?php the_sub_field( 'slide_heading' ); ?>
 				</h1>
 				<div><?php the_sub_field( 'slide_text' ); ?></div>
 				<a href="<?php the_sub_field( 'slide_button_url' ); ?>" class="button primary"><?php the_sub_field( 'slide_button_text' ); ?></a>
 			</div>
-
-			</div>
+			
 		</div>
 		<?php endwhile; ?>
 		</div>  <!--.owl-carousel-->
@@ -56,11 +51,71 @@ get_header(); ?>
 		
 </div>
 
+<div class="row expanded promotion" data-equalizer data-equalize-on="medium" id="promotion-events">
+<?php
+	$args =  array (
+	'post_type' => 'event_promotions',
+	'paged' => get_query_var('paged'),
+	'posts_per_page'=>2,
+	);
+	?>
+	<?php
+	$query = new WP_Query( $args ); ?>
+	
+	<?php if ( $query->have_posts() ) : ?>
+	<?php while ( $query->have_posts() ) : $query->the_post();?>
+<div class="column small-12 medium-6 promotion-container">
+<div class="card card-<?php the_field( 'promotion_event_color' ); ?>"  data-equalizer-watch>
+
+<?php 
+
+$image = get_field('promotion_event_image');
+
+if( !empty($image) ): 
+
+	// vars
+	$url = $image['url'];
+	$alt = $image['alt'];
+
+	// thumbnail
+	$size = 'large';
+	$thumb = $image['sizes'][ $size ];
+	$width = $image['sizes'][ $size . '-width' ];
+	$height = $image['sizes'][ $size . '-height' ];
+
+?>
+
+<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+
+
+<?php endif; ?>
+  
+  <div class="card-section">
+	<?php the_title('<h2>', '</h2>', 'gcc-wp-2018') ?>
+
+<?php if( get_field('promotion_event_date') ): ?>
+  	<p class="promotion-date"><?php the_field( 'promotion_event_date' ); ?></p>
+<?php endif; ?>
+
+    <p class="promotion-description"><?php the_field( 'promotion_event_description' ); ?></p>
+    <a class="button small" href="<?php the_field( 'promotion_event_button_url' ); ?>"><?php the_field( 'promotion_event_button_text' ); ?></a>
+  </div>
+</div>
+</div>
+
+	<?php endwhile; ?>
+	<?php wp_reset_postdata(); ?>
+	<?php else : ?>
+	
+	<?php endif; ?>
+
+</div>
+
 <?php if ( get_field( 'announcement_heading', 'options' ) ) : ?>
 
 	<div class="row expanded no-gutter announcement align-space">
 		
-	<div class="callout text-center">
+		<div class="callout text-center">
 			<div class="column small-12 small-centered">
 				<h2><?php echo get_field( 'announcement_heading', 'options' ); ?></h2>
 				<div><?php echo get_field( 'announcement_text', 'options' ); ?>

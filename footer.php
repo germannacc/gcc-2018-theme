@@ -24,7 +24,8 @@
     ?>
     <p>
         <?php the_field('primary_address', 'option'); ?><br/>
-       <?php  the_field('primary_phone_number', 'option'); ?>
+       <a href="tel:<?php  the_field('primary_phone_number', 'option'); ?>">
+       <?php  the_field('primary_phone_number', 'option'); ?></a>
     </p>
 
      <h2><?php _e('#germanna', 'gcc-wp-2018'); ?></h2>

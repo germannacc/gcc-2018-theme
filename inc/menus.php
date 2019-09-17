@@ -67,6 +67,7 @@
     'legal-menu' => 'Legal Menu',
     'marketing-menu' => 'Marketing Menu',
     'mobile-offcanvas' => 'Mobile OffCanvas',
+    'navigate-menu' => 'Navigate Menu',
     'nursing-health-menu' => 'Nursing Health Menu',
     'nursing-getting-started-menu' => 'Nursing Home Getting Started Menu',
     'nursing-interactive-tools-menu' => 'Nursing Home Interactive Tools Menu',

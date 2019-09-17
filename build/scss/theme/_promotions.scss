@@ -1,0 +1,97 @@
+.promotion {
+.promotion-container {
+	padding: .2rem .3rem 0rem .3rem;
+
+	  @media screen and (min-width: 40em) {
+
+			padding: .5rem .3rem 0 .3rem;
+
+  }
+
+.card {
+
+ h2 {
+  font-weight: 400;
+  margin-bottom:  0;
+  font-size: 1.3rem;
+
+  @media screen and (min-width: 40em) {
+
+		font-size: 2rem;
+
+  }
+
+  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  font-size: 1.3rem;
+
+}
+
+}
+
+img {
+	min-width: 100%;
+}
+
+p.promotion-date {
+	font-size:  1.2rem;
+	margin-top: 0;
+
+	  @media screen and (min-width: 40em) {
+
+		font-size: 1.6rem;
+
+  }
+
+ @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  font-size: 1.2rem;
+
+}
+
+}
+
+.promotion-description {
+	margin-bottom: 2rem;
+}
+.card-section {
+	padding: 2rem;
+}
+
+}
+
+.card-yellow {
+	border-bottom: 10px solid #FECB30;
+
+a.button {
+	background-color: #FECB30;
+	color: #000000;
+	border-radius: 10px;
+	padding: .6rem .5rem;
+
+	&:hover {
+			background-color: #fcbe05;
+
+	}
+}
+
+}
+
+.card-red {
+	border-bottom: 10px solid #D91009;
+
+   a.button {
+	background-color: #D91009;
+	color:  #ffffff;
+	border-radius: 10px;
+	padding: .6rem .5rem;
+
+	&:hover {
+			background-color: #b20c07;
+	}
+
+}
+
+}
+
+}
+
+}

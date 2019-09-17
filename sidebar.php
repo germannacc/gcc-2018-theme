@@ -278,6 +278,11 @@
   //custom department widgets
   dynamic_sidebar( 'marketing-widgets' );
   }
+  //navigate
+  if ( is_page('27443') || $post->post_parent == '27443' ){
+  //custom department widgets
+  dynamic_sidebar( 'navigate-widgets' );
+  }
   if ( is_page('85') || $post->post_parent == '85' ){
   //custom department widgets
   dynamic_sidebar( 'nursing-health-widgets' );

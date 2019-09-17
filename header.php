@@ -22,13 +22,10 @@
       j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
       })(window,document,'script','dataLayer','GTM-T2KLMW');</script>
-      <!-- End Google Tag Manager -->
       <!-- Google Tag Manager (noscript) -->
       <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-T2KLMW"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-      <!-- End Google Tag Manager (noscript) -->
-
-      
+      <!-- Monsido -->
       <script type="text/javascript">
       var _monsido = _monsido || [];
       _monsido.push(['_setDomainToken', '14l5XpM9a7fdx1hVoA-QRQ']);
@@ -49,7 +46,7 @@
         <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
           <?php main_menu(); //main sidebar navigation ?>
           <div class="off-canvas-content" data-off-canvas-content>
-            <?php  //quicklinks
+            <?php //quicklinks
             get_template_part( 'template-parts/content', 'quicklinks' );
             ?>
             <main>
