@@ -69,10 +69,9 @@ require get_template_directory() . '/inc/custom-header.php';
  */
 require get_template_directory() . '/inc/template-tags.php';
 /**
- * Custom template tags for this theme.
+ * Custom template tags for WPForms.
  */
-require get_template_directory() . '/inc/form-templates/ellsummit2019-form-template.php';
-require get_template_directory() . '/inc/form-templates/rifv2-form-template.php';
+require get_template_directory() . '/inc/form-templates/casting-call-form-template.php';
 /**
 /**
  * Functions which enhance the theme by hooking into WordPress.

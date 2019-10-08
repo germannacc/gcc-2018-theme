@@ -7,7 +7,7 @@
 * @package gccwp-2018
 */
 ?>
-<aside class="small-12 medium-12 large-3 columns right page-nav hide-for-print" id="section-menu"  data-toggler="hide">
+<aside class="small-12 medium-12 large-3 columns right page-nav hide-for-print" id="section-menu" data-toggler="hide">
   <?php //get page widgets
   //alerts
   if ( is_page('50') || $post->post_parent == '50' ) {
@@ -15,9 +15,14 @@
   dynamic_sidebar( 'sidebar-widgets' );
   }
   //admissions
-  if ( is_page('24') || $post->post_parent == '24' || is_page('11434') ) {
+  if ( is_page('24') || $post->post_parent == '24' || is_page('11434') || is_page('14104') ) {
   //custom department widgets
   dynamic_sidebar( 'admissions-widgets' );
+  }
+  //international admissions
+  if ( is_page('27674') ) {
+  //custom department widgets
+  dynamic_sidebar( 'international-students-widgets' );
   }
   //academic center for excellence sidebar
   if ( is_page('108') || $post->post_parent == '108' ) {

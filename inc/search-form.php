@@ -46,4 +46,4 @@ add_filter( 'get_search_form', 'gcc_wp_2018_search_form' );?>
 <?php
 return $form;
 }
-add_filter( 'mobile_search', 'gcc_wp_2018_mobile_search' ); 
+add_filter( 'mobile_search', 'gcc_wp_2018_mobile_search' );  ?>

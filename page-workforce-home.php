@@ -8,12 +8,12 @@ get_header(); ?>
 
 	<div class="row column expanded no-gutter">
 
-	    <?php // putRevSlider( 'workforce-slider' ); ?>
+	    <?php putRevSlider( 'workforce-slider' ); ?>
 
 	</div>
 
-   <?php
-   while ( have_posts() ) : the_post(); ?>
+		<?php
+			while ( have_posts() ) : the_post(); ?>
 
 	<?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
 

@@ -1,14 +1,1360 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-11-07 14:30-0500\n"
-"PO-Revision-Date: 2018-11-07 14:31-0500\n"
-"Last-Translator: \n"
-"Language-Team: \n"
+"POT-Creation-Date: 2018-11-07 14:28-0500\n"
+"PO-Revision-Date: 2019-09-16 20:17+0000\n"
+"Last-Translator: germannacc <marketing@germanna.edu>\n"
+"Language-Team: Spanish (Puerto Rico)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.0.8\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: .\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "Language: es_PR\n"
+"Report-Msgid-Bugs-To: \n"
+"X-Loco-Version: 2.3.0; wp-5.2.3"
+
+#. translators: 1: link to WP admin new post page.
+#: 404.php:45 template-parts/content-none.php:26
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: 404.php:58 template-parts/content-none.php:39
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: 404.php:78 inc/search-form.php:20 inc/search-form.php:46 searchform.php:12
+#: template-parts/content-mobile-nav.php:35
+msgid "Search Germanna..."
+msgstr ""
+
+#: 404.php:79 inc/search-form.php:21 inc/search-form.php:47 searchform.php:13
+#: template-parts/content-mobile-nav.php:36
+msgid "Submit"
+msgstr ""
+
+#: archive.php:45 index.php:47 index.php:71 page-edfoundation-home.php:21
+#: page-scholarship-events.php:19 page.php:32 single-foundation_events.php:43
+#: single-foundation_events.php:102
+#: template-parts/content-archive-page-heading.php:35
+#: template-parts/content-foundation-events-heading.php:17
+#: template-parts/content-foundation-events-heading.php:64
+#: template-parts/content-page-directory-heading.php:30
+#: template-parts/content-page-directory-heading.php:71
+#: template-parts/content-page-heading.php:13
+#: template-parts/content-page-heading.php:45
+#: template-parts/content-postpage-heading.php:25
+#: template-parts/content-postpage-heading.php:70
+#: template-parts/content-single-heading.php:33
+#: template-parts/content-workforce-single-heading.php:30
+#: template-parts/content-workforce-single-heading.php:83
+msgid "You are here:"
+msgstr ""
+
+#: archive.php:93
+msgid "| Posted in:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: archive.php:107 template-parts/content-foundation-events.php:9
+#: template-parts/content-latest-post.php:36
+#: template-parts/content-latest-post.php:68
+#: template-parts/content-postpage.php:42
+#: template-parts/content-postpage.php:73
+#: template-parts/content-single-workforce.php:23
+#: template-parts/content-single.php:22 template-parts/content.php:39
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:40
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr ""
+
+#: content-404.php:5 template-parts/content-404.php:6
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: content-404.php:9 template-parts/content-404.php:12
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+
+#: content-404.php:18 template-parts/content-404.php:23
+msgid "Most Used Categories"
+msgstr ""
+
+#. translators: %1$s: smiley
+#: content-404.php:35 template-parts/content-404.php:41
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: header.php:23
+msgid "skip to content"
+msgstr ""
+
+#: inc/branding-sidebar.php:18 inc/template-tags.php:254
+msgid "Close menu"
+msgstr ""
+
+#: inc/branding-sidebar.php:121 template-parts/content-mobile-nav.php:109
+msgid "T.I.P.S."
+msgstr ""
+
+#: inc/breadcrumbs.php:39 template-parts/content-highlights.php:18
+msgid "/highlights/"
+msgstr ""
+
+#: inc/breadcrumbs.php:39
+msgid "Germanna highlights & news"
+msgstr ""
+
+#: inc/breadcrumbs.php:48
+msgid "Tag:"
+msgstr ""
+
+#: inc/custom-columns.php:9
+msgid "Photo"
+msgstr ""
+
+#: inc/custom-columns.php:10
+msgid "Department"
+msgstr ""
+
+#: inc/custom-columns.php:11
+msgid "Title"
+msgstr ""
+
+#: inc/custom-columns.php:12 template-parts/content-workforce-newsletter.php:15
+msgid "Email"
+msgstr ""
+
+#: inc/custom-columns.php:13
+msgid "Phone"
+msgstr ""
+
+#. translators: Category archive title. 1: Category name
+#: inc/custom-titles.php:4
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#. translators: Tag archive title. 1: Tag name
+#: inc/custom-titles.php:7
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#. translators: Author archive title. 1: Author name
+#: inc/custom-titles.php:10
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#. translators: Yearly archive title. 1: Year
+#: inc/custom-titles.php:13
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/custom-titles.php:13 inc/template-tags.php:151
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#. translators: Monthly archive title. 1: Month name and year
+#: inc/custom-titles.php:16
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/custom-titles.php:16 inc/template-tags.php:147
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#. translators: Daily archive title. 1: Date
+#: inc/custom-titles.php:19
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/custom-titles.php:19
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: inc/custom-titles.php:22
+msgctxt "post format archive title"
+msgid "Asides"
+msgstr ""
+
+#: inc/custom-titles.php:24
+msgctxt "post format archive title"
+msgid "Galleries"
+msgstr ""
+
+#: inc/custom-titles.php:26
+msgctxt "post format archive title"
+msgid "Images"
+msgstr ""
+
+#: inc/custom-titles.php:28
+msgctxt "post format archive title"
+msgid "Videos"
+msgstr ""
+
+#: inc/custom-titles.php:30
+msgctxt "post format archive title"
+msgid "Quotes"
+msgstr ""
+
+#: inc/custom-titles.php:32
+msgctxt "post format archive title"
+msgid "Links"
+msgstr ""
+
+#: inc/custom-titles.php:34
+msgctxt "post format archive title"
+msgid "Statuses"
+msgstr ""
+
+#: inc/custom-titles.php:36
+msgctxt "post format archive title"
+msgid "Audio"
+msgstr ""
+
+#: inc/custom-titles.php:38
+msgctxt "post format archive title"
+msgid "Chats"
+msgstr ""
+
+#. translators: Post type archive title. 1: Post type name
+#: inc/custom-titles.php:42
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#. translators: Taxonomy term archive title. 1: Taxonomy singular name, 2: Current taxonomy term
+#: inc/custom-titles.php:46
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/custom-titles.php:48
+msgid "Archives"
+msgstr ""
+
+#: inc/customizer.php:30
+msgid "Upload Mobile Logo"
+msgstr ""
+
+#: inc/search-form.php:19 inc/search-form.php:45 searchform.php:11
+#: template-parts/content-mobile-nav.php:34
+msgid "Search Germanna"
+msgstr ""
+
+#: inc/social-icons.php:14
+msgid "Facebook"
+msgstr ""
+
+#: inc/social-icons.php:17
+msgid "Twitter"
+msgstr ""
+
+#: inc/social-icons.php:20
+msgid "Instagram"
+msgstr ""
+
+#: inc/social-icons.php:23
+msgid "Youtube"
+msgstr ""
+
+#: inc/social-icons.php:26
+msgid "Flickr"
+msgstr ""
+
+#: inc/social-icons.php:29
+msgid "RSS Feed"
+msgstr ""
+
+#. translators: %s: post date.
+#: inc/template-functions.php:44 inc/template-tags.php:21
+#, php-format
+msgctxt "post date"
+msgid " %s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:36
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of categories.
+#: inc/template-tags.php:39
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: inc/template-tags.php:42
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. translators: 1: list of tags.
+#: inc/template-tags.php:45
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:52
+#, php-format
+msgid "| Edit Page <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: inc/template-tags.php:133
+msgid "Home"
+msgstr ""
+
+#: inc/template-tags.php:143 inc/template-tags.php:147
+#: inc/template-tags.php:151
+#, php-format
+msgid "%s"
+msgstr ""
+
+#: inc/template-tags.php:155
+msgid "Blog Archives"
+msgstr ""
+
+#: inc/template-tags.php:223
+msgid "https://germannacc.staging.wpengine.com/highlights/"
+msgstr ""
+
+#: inc/template-tags.php:223
+msgid "All highlights"
+msgstr ""
+
+#: inc/template-tags.php:242
+msgid "Distraction free reading"
+msgstr ""
+
+#: inc/template-tags.php:245
+msgid "Print page"
+msgstr ""
+
+#: inc/template-tags.php:255
+msgid "Close"
+msgstr ""
+
+#: inc/widgets.php:4
+msgid "Sidebar"
+msgstr ""
+
+#: inc/widgets.php:5 inc/widgets.php:14 inc/widgets.php:23 inc/widgets.php:32
+#: inc/widgets.php:41 inc/widgets.php:60 inc/widgets.php:69 inc/widgets.php:78
+#: inc/widgets.php:87 inc/widgets.php:96 inc/widgets.php:105
+#: inc/widgets.php:114 inc/widgets.php:123 inc/widgets.php:132
+#: inc/widgets.php:141 inc/widgets.php:150 inc/widgets.php:159
+#: inc/widgets.php:168 inc/widgets.php:177 inc/widgets.php:186
+#: inc/widgets.php:195 inc/widgets.php:204 inc/widgets.php:213
+#: inc/widgets.php:222 inc/widgets.php:231 inc/widgets.php:240
+#: inc/widgets.php:249 inc/widgets.php:258 inc/widgets.php:267
+#: inc/widgets.php:276 inc/widgets.php:285 inc/widgets.php:294
+#: inc/widgets.php:311 inc/widgets.php:321 inc/widgets.php:330
+#: inc/widgets.php:339 inc/widgets.php:348 inc/widgets.php:357
+#: inc/widgets.php:366 inc/widgets.php:375 inc/widgets.php:384
+#: inc/widgets.php:393 inc/widgets.php:402 inc/widgets.php:411
+#: inc/widgets.php:420 inc/widgets.php:429 inc/widgets.php:438
+#: inc/widgets.php:447 inc/widgets.php:456 inc/widgets.php:465
+#: inc/widgets.php:474 inc/widgets.php:483 inc/widgets.php:492
+#: inc/widgets.php:501 inc/widgets.php:510 inc/widgets.php:519
+#: inc/widgets.php:528 inc/widgets.php:537 inc/widgets.php:546
+#: inc/widgets.php:555 inc/widgets.php:564 inc/widgets.php:573
+#: inc/widgets.php:582 inc/widgets.php:591 inc/widgets.php:600
+#: inc/widgets.php:609 inc/widgets.php:618
+msgid "Drag widgets to this sidebar container."
+msgstr ""
+
+#: inc/widgets.php:13
+msgid "Post "
+msgstr ""
+
+#: inc/widgets.php:22
+msgid "Blog Sidebar"
+msgstr ""
+
+#: inc/widgets.php:31
+msgid "Archive Sidebar"
+msgstr ""
+
+#: inc/widgets.php:40
+msgid "Single Sidebar"
+msgstr ""
+
+#: inc/widgets.php:49
+msgid "Important Links"
+msgstr ""
+
+#: inc/widgets.php:50 inc/widgets.php:627 inc/widgets.php:636
+#: inc/widgets.php:645 inc/widgets.php:654 inc/widgets.php:663
+msgid "Drag widgets to this footer container"
+msgstr ""
+
+#: inc/widgets.php:59
+msgid "Are You Germanna Ready Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:68
+msgid "About Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:77
+msgid "Alumni Sidebar"
+msgstr ""
+
+#: inc/widgets.php:86
+msgid "ACC Sidebar"
+msgstr ""
+
+#: inc/widgets.php:95
+msgid "Awards Sidebar"
+msgstr ""
+
+#: inc/widgets.php:104
+msgid "Teaching Awards Sidebar"
+msgstr ""
+
+#: inc/widgets.php:113
+msgid "A & P Awards Sidebar"
+msgstr ""
+
+#: inc/widgets.php:122
+msgid "Classified Awards Sidebar"
+msgstr ""
+
+#: inc/widgets.php:131
+msgid "Advising Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:140
+msgid "Admissions Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:149
+msgid "Academic Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:158
+msgid "Academic Calendar widgets"
+msgstr ""
+
+#: inc/widgets.php:167
+msgid "Arts and Sciences Sidebar"
+msgstr ""
+
+#: inc/widgets.php:176
+msgid "Bookstore Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:185
+msgid "Business Office Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:194
+msgid "Catalog Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:203
+msgid "College Police Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:212
+msgid "Counseling Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:221
+msgid "Career Services Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:230
+msgid "Career and Transfer Sidebar"
+msgstr ""
+
+#: inc/widgets.php:239
+msgid "Dental Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:248
+msgid "Distance Learning Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:257
+msgid "Disability Services Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:266
+msgid "Diversity Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:275
+msgid "Dual Enrollment Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:284
+msgid "Inauguration Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:293
+msgid "Educational Foundation Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:302
+msgid "Facilities Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:310
+msgid "Financial Aid Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:320
+msgid "Great Expectation Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:329
+msgid "Gainful Employment Sidebar"
+msgstr ""
+
+#: inc/widgets.php:338
+msgid "Gladys Todd Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:347
+msgid "Graduation Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:356
+msgid "Grants Sidebar"
+msgstr ""
+
+#: inc/widgets.php:365
+msgid "Human Resources Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:374
+msgid "Helpdesk Sidebar"
+msgstr ""
+
+#: inc/widgets.php:383
+msgid "Institutional Effectiveness Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:392
+msgid "Internships Services Sidebar"
+msgstr ""
+
+#: inc/widgets.php:401
+msgid "Locations Sidebar"
+msgstr ""
+
+#: inc/widgets.php:410
+msgid "Marketing Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:419
+msgid "Nursing Health Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:428
+msgid "Nursing Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:437
+msgid "Orientation Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:446
+msgid "Paying For College Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:455
+msgid "Physical Therapist Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:464
+msgid "Printing Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:473
+msgid "Pathways Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:482
+msgid "Publications Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:491
+msgid "Presidents Office Sidebar"
+msgstr ""
+
+#: inc/widgets.php:500
+msgid "Sails Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:509
+msgid "Scholars Program Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:518
+msgid "Services and Support Sidebar"
+msgstr ""
+
+#: inc/widgets.php:527
+msgid "Statements & Policies Sidebar"
+msgstr ""
+
+#: inc/widgets.php:536
+msgid "Student Sidebar"
+msgstr ""
+
+#: inc/widgets.php:545
+msgid "Student Activities Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:554
+msgid "Student Development Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:563
+msgid "Testing Services Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:572
+msgid "Technical Services Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:581
+msgid "Transfer Services Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:590
+msgid "Tutoring Services Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:599
+msgid "Veterans Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:608
+msgid "Welcome Day Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:617
+msgid "Workforce Sidebar widgets"
+msgstr ""
+
+#: inc/widgets.php:626
+msgid "Highlights widgets"
+msgstr ""
+
+#: inc/widgets.php:635
+msgid "Upcoming Events widgets"
+msgstr ""
+
+#: inc/widgets.php:644
+msgid "Latest Stories widgets"
+msgstr ""
+
+#: inc/widgets.php:653
+msgid "Upcoming Workforce Events widgets"
+msgstr ""
+
+#: inc/widgets.php:662
+msgid "Quicklinks widgets"
+msgstr ""
+
+#: node_modules/grunt-wp-i18n/test/fixtures/basic-theme/exclude/file.php:3
+#: node_modules/grunt-wp-i18n/test/fixtures/plugin-include/plugin-include.php:6
+msgid "Exclude"
+msgstr ""
+
+#: node_modules/grunt-wp-i18n/test/fixtures/plugin-include/include/file.php:2
+msgid "Include"
+msgstr ""
+
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/add-domain.php:2
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:2
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:3
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:4
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:2
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-domains.php:3
+msgid "String"
+msgstr ""
+
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:6
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:7
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:8
+msgctxt "a string"
+msgid "String"
+msgstr ""
+
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:9
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:10
+#: node_modules/grunt-wp-i18n/test/fixtures/text-domains/update-all-domains.php:11
+#, php-format
+msgid "1 Star"
+msgid_plural "%s Stars"
+msgstr[0] ""
+msgstr[1] ""
+
+#. translators: A single line translators comment.
+#: node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:7
+msgid "A"
+msgstr ""
+
+#. translators: A
+#. multiline
+#. translators
+#. comment.
+#. 
+#: node_modules/grunt-wp-i18n/test/fixtures/translator-comments/translator-comments.php:15
+msgid "B"
+msgstr ""
+
+#: page-directory-a-e.php:97 page-directory-k-o.php:97
+#: page-directory-y-z.php:96 template-parts/content-directory-blocks.php:41
+msgid "(540) "
+msgstr ""
+
+#: page-directory-a-e.php:111 page-directory-f-j.php:69
+#: page-directory-k-o.php:111 page-directory-p-s.php:69
+#: page-directory-t-x.php:69 page-directory-y-z.php:110 page-directory.php:68
+msgid "Sorry, the directory is currently undergoing maintenance."
+msgstr ""
+
+#: page-edfoundation-home.php:119 page-scholarship-events.php:117
+#: single-foundation_events.php:185
+msgid "Event details"
+msgstr ""
+
+#: page-featured-classes-home.php:77 page-scholarship-events.php:131
+#: page-workforce-highlights.php:94 template-parts/content-latest-post.php:91
+#: template-parts/content-pathways.php:74
+#: template-parts/content-postpage.php:97
+#: template-parts/content-workforce-highlights.php:69
+#: template-parts/content-workforce-news.php:67
+msgid "Sorry, no posts matched your criteria."
+msgstr ""
+
+#: page-sitemap.php:30
+msgid "Browse sections"
+msgstr ""
+
+#: page-sitemap.php:33
+msgid "#about-germanna"
+msgstr ""
+
+#: page-sitemap.php:33 page-sitemap.php:91
+msgid "About Germanna"
+msgstr ""
+
+#: page-sitemap.php:34
+msgid "#academics"
+msgstr ""
+
+#: page-sitemap.php:34 page-sitemap.php:101
+msgid "Academics"
+msgstr ""
+
+#: page-sitemap.php:35
+msgid "#academic-computing-center"
+msgstr ""
+
+#: page-sitemap.php:35 page-sitemap.php:112
+msgid "Academic Computing Center"
+msgstr ""
+
+#: page-sitemap.php:36 page-sitemap.php:37
+msgid "#academic-advising"
+msgstr ""
+
+#: page-sitemap.php:36 page-sitemap.php:37 page-sitemap.php:122
+msgid "Academic Advising"
+msgstr ""
+
+#: page-sitemap.php:38
+msgid "#academic-center-for-excellence"
+msgstr ""
+
+#: page-sitemap.php:38 page-sitemap.php:132
+msgid "Academic Center for Excellence"
+msgstr ""
+
+#: page-sitemap.php:39
+msgid "#admissions"
+msgstr ""
+
+#: page-sitemap.php:39 page-sitemap.php:43 page-sitemap.php:142
+msgid "Admissions"
+msgstr ""
+
+#: page-sitemap.php:40
+msgid "#alumni"
+msgstr ""
+
+#: page-sitemap.php:40
+msgid "Alumni"
+msgstr ""
+
+#: page-sitemap.php:41
+msgid "#are-you-germanna-ready"
+msgstr ""
+
+#: page-sitemap.php:41 page-sitemap.php:162
+msgid "Are you Germanna ready?"
+msgstr ""
+
+#: page-sitemap.php:42
+msgid "#awards"
+msgstr ""
+
+#: page-sitemap.php:42
+msgid "Awards &amp; Recognition"
+msgstr ""
+
+#: page-sitemap.php:43
+msgid "#bookstore"
+msgstr ""
+
+#: page-sitemap.php:44
+msgid "#business-office"
+msgstr ""
+
+#: page-sitemap.php:44 page-sitemap.php:192
+msgid "Business Office"
+msgstr ""
+
+#: page-sitemap.php:45
+msgid "#career-center"
+msgstr ""
+
+#: page-sitemap.php:45 page-sitemap.php:202
+msgid "Career Center"
+msgstr ""
+
+#: page-sitemap.php:46
+msgid "#career-transfer-center"
+msgstr ""
+
+#: page-sitemap.php:46 page-sitemap.php:212
+msgid "Career and Transfer Center"
+msgstr ""
+
+#: page-sitemap.php:47
+msgid "#college-board"
+msgstr ""
+
+#: page-sitemap.php:47 page-sitemap.php:223
+msgid "College Board"
+msgstr ""
+
+#: page-sitemap.php:48
+msgid "#college-police"
+msgstr ""
+
+#: page-sitemap.php:48 page-sitemap.php:233
+msgid "College Police Department"
+msgstr ""
+
+#: page-sitemap.php:49
+msgid "#contact-germanna"
+msgstr ""
+
+#: page-sitemap.php:49
+msgid "Contact Us"
+msgstr ""
+
+#: page-sitemap.php:50
+msgid "#counseling"
+msgstr ""
+
+#: page-sitemap.php:50
+msgid "Counseling"
+msgstr ""
+
+#: page-sitemap.php:51
+msgid "#dental-programs"
+msgstr ""
+
+#: page-sitemap.php:51
+msgid "Dental programs"
+msgstr ""
+
+#: page-sitemap.php:52
+msgid "#distance-learning"
+msgstr ""
+
+#: page-sitemap.php:52 page-sitemap.php:283
+msgid "Distance Learning"
+msgstr ""
+
+#: page-sitemap.php:53
+msgid "#diversity"
+msgstr ""
+
+#: page-sitemap.php:53 page-sitemap.php:293
+msgid "Diversity &amp; Inclusion"
+msgstr ""
+
+#: page-sitemap.php:54
+msgid "#dual-enrollment"
+msgstr ""
+
+#: page-sitemap.php:54
+msgid "Duel Enrollment"
+msgstr ""
+
+#: page-sitemap.php:55
+msgid "#educational-foundation"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: page-sitemap.php:55 page-sitemap.php:313 single-foundation_events.php:55
+#: single-foundation_events.php:115
+msgid "Educational Foundation"
+msgstr ""
+
+#: page-sitemap.php:56
+msgid "#facilities"
+msgstr ""
+
+#: page-sitemap.php:56 page-sitemap.php:324
+msgid "Facilities"
+msgstr ""
+
+#: page-sitemap.php:57
+msgid "#faculty-staff"
+msgstr ""
+
+#: page-sitemap.php:57
+msgid "Faculty &amp;s Staff"
+msgstr ""
+
+#: page-sitemap.php:58
+msgid "#financial-aid"
+msgstr ""
+
+#: page-sitemap.php:58 page-sitemap.php:344
+msgid "Financial Aid"
+msgstr ""
+
+#: page-sitemap.php:59
+msgid "#ged-testing"
+msgstr ""
+
+#: page-sitemap.php:59 page-sitemap.php:354
+msgid "GED Testing"
+msgstr ""
+
+#: page-sitemap.php:60
+msgid "#giving"
+msgstr ""
+
+#: page-sitemap.php:60 page-sitemap.php:364
+msgid "Giving"
+msgstr ""
+
+#: page-sitemap.php:61
+msgid "#gpta"
+msgstr ""
+
+#: page-sitemap.php:61 page-sitemap.php:374
+msgid "Gladys P. Todd Academy"
+msgstr ""
+
+#: page-sitemap.php:62
+msgid "#graduation"
+msgstr ""
+
+#: page-sitemap.php:62 page-sitemap.php:384
+msgid "Graduation"
+msgstr ""
+
+#: page-sitemap.php:63
+msgid "#grants"
+msgstr ""
+
+#: page-sitemap.php:63 page-sitemap.php:394
+msgid "Grants"
+msgstr ""
+
+#: page-sitemap.php:64
+msgid "#great-expectations"
+msgstr ""
+
+#: page-sitemap.php:64 page-sitemap.php:404
+msgid "Great Expectations"
+msgstr ""
+
+#: page-sitemap.php:65
+msgid "#helpdesk"
+msgstr ""
+
+#: page-sitemap.php:65
+msgid "HelpDesk"
+msgstr ""
+
+#: page-sitemap.php:66
+msgid "#human-resources"
+msgstr ""
+
+#: page-sitemap.php:66 page-sitemap.php:425
+msgid "Human Resources"
+msgstr ""
+
+#: page-sitemap.php:68
+msgid "#inauguration"
+msgstr ""
+
+#: page-sitemap.php:68 page-sitemap.php:435
+msgid "Inauguration"
+msgstr ""
+
+#: page-sitemap.php:69
+msgid "#institutional-effectiveness"
+msgstr ""
+
+#: page-sitemap.php:69 page-sitemap.php:445
+msgid "Institutional Effectiveness"
+msgstr ""
+
+#: page-sitemap.php:70
+msgid "#international-students"
+msgstr ""
+
+#: page-sitemap.php:70 page-sitemap.php:455
+msgid "International Student Admissions"
+msgstr ""
+
+#: page-sitemap.php:71
+msgid "#internship-services"
+msgstr ""
+
+#: page-sitemap.php:71 page-sitemap.php:465
+msgid "Internship Services"
+msgstr ""
+
+#: page-sitemap.php:72
+msgid "#locations"
+msgstr ""
+
+#: page-sitemap.php:72 page-sitemap.php:475
+msgid "Locations"
+msgstr ""
+
+#: page-sitemap.php:73
+msgid "#marketing"
+msgstr ""
+
+#: page-sitemap.php:73
+msgid "Marketing &amp; Media Relations"
+msgstr ""
+
+#: page-sitemap.php:74
+msgid "#nursing"
+msgstr ""
+
+#: page-sitemap.php:74 page-sitemap.php:496
+msgid "Nursing &amp; Health Technologies"
+msgstr ""
+
+#: page-sitemap.php:75
+msgid "#nursing-programs"
+msgstr ""
+
+#: page-sitemap.php:75 page-sitemap.php:510
+msgid "Nursing programs"
+msgstr ""
+
+#: page-sitemap.php:76
+msgid "#paying-for-college"
+msgstr ""
+
+#: page-sitemap.php:76 page-sitemap.php:540
+msgid "Paying for College"
+msgstr ""
+
+#: page-sitemap.php:77
+msgid "#pathways-programs"
+msgstr ""
+
+#: page-sitemap.php:77 page-sitemap.php:530
+msgid "Pathways"
+msgstr ""
+
+#: page-sitemap.php:78
+msgid "#pta"
+msgstr ""
+
+#: page-sitemap.php:78
+msgid "Physical Therapist Assistant"
+msgstr ""
+
+#: page-sitemap.php:79
+msgid "#presidents-office"
+msgstr ""
+
+#: page-sitemap.php:79 page-sitemap.php:560
+msgid "President&#8217s Office"
+msgstr ""
+
+#: page-sitemap.php:80
+msgid "#printing"
+msgstr ""
+
+#: page-sitemap.php:80 page-sitemap.php:570
+msgid "Printing"
+msgstr ""
+
+#: page-sitemap.php:81
+msgid "#statements-policies"
+msgstr ""
+
+#: page-sitemap.php:81 page-sitemap.php:580
+msgid "Statements &amp; Policies"
+msgstr ""
+
+#: page-sitemap.php:152
+msgid "Alumni Association"
+msgstr ""
+
+#: page-sitemap.php:172
+msgid "Awards and Recognition"
+msgstr ""
+
+#: page-sitemap.php:182
+msgid "Bookstore"
+msgstr ""
+
+#: page-sitemap.php:243
+msgid "Contact Germanna"
+msgstr ""
+
+#: page-sitemap.php:253
+msgid "Counseling Services"
+msgstr ""
+
+#: page-sitemap.php:263
+msgid "Dental Programs"
+msgstr ""
+
+#: page-sitemap.php:273
+msgid "Disability Services"
+msgstr ""
+
+#: page-sitemap.php:303
+msgid "Dual Enrollment"
+msgstr ""
+
+#: page-sitemap.php:334
+msgid "Faculty &amp; Staff"
+msgstr ""
+
+#: page-sitemap.php:415
+msgid "Help Desk"
+msgstr ""
+
+#: page-sitemap.php:485
+msgid "Marketing & Media Relations"
+msgstr ""
+
+#: page-sitemap.php:520
+msgid "Orientation"
+msgstr ""
+
+#: page-sitemap.php:550
+msgid "Physical Therapist Assistant Program"
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:21
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#. Template Name of the plugin/theme
+#: single-foundation_events.php:30 single-foundation_events.php:89
+msgid "Scholarship events"
+msgstr ""
+
+#: single-foundation_events.php:54 single-foundation_events.php:114
+msgid "/educational-foundation/"
+msgstr ""
+
+#: single-foundation_events.php:59 single-foundation_events.php:119
+msgid "/educational-foundation/scholarship-events/"
+msgstr ""
+
+#: single-foundation_events.php:60 single-foundation_events.php:120
+msgid "Scholarship Events"
+msgstr ""
+
+#: template-parts/content-highlights.php:18
+msgid "View all highlights"
+msgstr ""
+
+#: template-parts/content-none.php:17
+msgid "Nothing Found"
+msgstr ""
+
+#: template-parts/content-none.php:45
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: template-parts/content-page-alert.php:19
+msgid "Dismiss alert"
+msgstr ""
+
+#: template-parts/content-page-backup.php:24 template-parts/content-page.php:20
+#: template-parts/content.php:50
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-page-backup.php:37 template-parts/content-page.php:35
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#: template-parts/content-page-directory-heading.php:17
+#: template-parts/content-page-directory-heading.php:59
+msgid "Faculty &amp; Staff Directory: "
+msgstr ""
+
+#: template-parts/content-trending.php:21
+msgid "Latest tweets"
+msgstr ""
+
+#: template-parts/content-trending.php:23
+msgid "Germanna Tweets - Curated tweets by TwitterDev"
+msgstr ""
+
+#: template-parts/content-workforce-single-heading.php:41
+#: template-parts/content-workforce-single-heading.php:94
+msgid "/workforce/"
+msgstr ""
+
+#: template-parts/content-workforce-single-heading.php:42
+#: template-parts/content-workforce-single-heading.php:95
+msgid "Workforce Services"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "GCC WP 2018"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "https://www.germanna.edu/marketing"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Germanna WordPress theme for 2018 built with Foundation Zurb 6"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Germanna Marketing"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.germanna.edu/"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Blog Page"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Directory A-E"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Directory F-J"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Directory K-O"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Directory P-S"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Directory T-X"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Directory Y-Z"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Directory Directory"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Educational Foundation Home"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Featured Classes Home"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Full Width"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Pathway Descriptions"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Search"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Site Map"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Workforce Highlights"
+msgstr ""
+
+#. Template Name of the plugin/theme
+msgid "Workforce Home"
+msgstr ""

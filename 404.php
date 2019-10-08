@@ -8,7 +8,6 @@ get_header(); ?>
 <div class="row expanded hero-section-404">
 	<?php
 	$error_page_heading = get_field('error_page_heading', 'option');
-	
 	$error_page_error_message_1 = get_field('error_page_error_message_1', 'option');
 	$error_page_error_message_2 = get_field('error_page_error_message_2', 'option');
 	$error_page_button_text = get_field('error_page_button_text', 'option');

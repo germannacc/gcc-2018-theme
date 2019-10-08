@@ -236,3 +236,4 @@ function gcc_wp_2018_close_button() { ?>
 					<?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
 </button>
 <?php }
+?>

@@ -1,10 +1,13 @@
 <?php
 /**
-* Template Name: Student Activities Events
+* 
 *
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
 * @package gccwp-2018
+*
+* Template Name: Student Events
+*
 */
 get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -31,51 +34,59 @@ get_header(); ?>
         <?php
         the_content();
         ?>
-        <div class="row">
+        <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
           <?php
           $args =  array (
           'post_type' => 'sa_events',
+          'meta_key'      => 'event_date',
+          'orderby'     => 'meta_value',
+          'order'       => 'ASC',
+          'posts_per_page'=> -1,
           );
           ?>
           <?php
           $query = new WP_Query( $args ); ?>
           <?php if ( $query->have_posts() ) : ?>
           <?php while ( $query->have_posts() ) : $query->the_post();?>
-          <div class="small-12 medium-12 large-3">
-            <div class="callout primary small">
+          <div class="small-12 medium-12 large-6 columns">
+            <div class="callout primary small"  data-equalizer-watch>
               
               <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
 
-              <p class="text-center" style="margin-bottom: 0;"><?php the_field( 'event_description' ); ?></p>
 
-              <p class="text-center"  style="margin-bottom: 0;"><?php the_field( 'event_date' ); ?></p>
+              <p  style="margin-bottom: 0;"><?php the_field( 'event_date' ); ?></p>
 
-              <p class="text-center"  style="margin-bottom: 0;"><?php the_field( 'event_location' ); ?></p>
+              <p style="margin-bottom: 0;"><?php the_field( 'event_location' ); ?></p>
 
-              <?php if( get_field('event_start_time') ): ?>
-              <p><?php the_field('event_start_time'); ?> - <?php the_field('event_end_time'); ?></p>
-              <?php endif; ?>
+                           <?php if( get_field('event_start_time') ): ?>
+              <p><?php the_field('event_start_time'); ?>   <?php endif; ?> 
+              <?php if( get_field('event_end_time') ): ?> <?php _e('- ', 'gcc-wp-2018'); ?><?php the_field('event_end_time'); ?>
+                 <?php endif; ?> 
+              </p>
+
+                      <p style="margin-bottom: 0;"><?php the_field( 'event_description' ); ?></p>
 
               <?php if( get_field('event_details') ): ?>
-              <p class="text-center"><a href="<?php echo the_permalink(); ?>" class="button primary"><?php _e('Learn more', 'gcc-wp-2018'); ?></a></p>
+              <a href="<?php echo the_permalink(); ?>" class="button primary"><?php _e('Learn more', 'gcc-wp-2018'); ?></a>
               <?php endif; ?>
             </div>
             
           </div>
           
-        </div>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
         <?php else : ?>
-        <p><?php esc_html_e( 'Sorry, no currents to display', 'gcc-wp-2018'); ?></p>
+        <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
         <?php endif; ?>
       </div>
-    </div>
-  
-  <?php get_sidebar();?>
-  <footer class="entry-footer">
+        <footer class="entry-footer">
     <?php gcc_wp_2018_entry_footer(); ?>
     </footer><!-- .entry-footer -->
+    </div>
+  </div>
+
+   <?php get_sidebar();?>
+
     </div><!--.pagecontent-->
     <?php endwhile; // End of the loop. ?>
   </article>

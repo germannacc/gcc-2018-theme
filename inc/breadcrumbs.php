@@ -50,4 +50,4 @@ if ( ! function_exists( 'gcc_wp_2018_archive_breadcrumbs' ) ) :
  		 <?php endif; ?>
 	  </ul>
 <?php }
-endif;  
+endif;  ?>

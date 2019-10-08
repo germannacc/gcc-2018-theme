@@ -126,6 +126,28 @@ return $content;
 }
 add_filter('the_content', 'gcc_wp_2018_clean_shortcodes');
 endif;
+/**Stop stripping html**/
+// stop wp removing div tags
+// paste everything below this line in your WP functions.php file below everything else. 
+// always backup your data
+
+function allow_all_tinymce_elements_attributes( $init ) {
+
+    // Allow all elements and all attributes
+    $ext = '*[*]';
+
+    // Add to extended_valid_elements if it already exists
+    if ( isset( $init['extended_valid_elements'] ) ) {
+        $init['extended_valid_elements'] .= ',' . $ext;
+    } else {
+        $init['extended_valid_elements'] = $ext;
+    }
+
+    // return value
+    return $init;
+}
+add_filter('tiny_mce_before_init', 'allow_all_tinymce_elements_attributes');
+
 /**
 * Remove [All in One SEO Pack] HTML Comments
 * @link //gist.github.com/llgruff/a7ab776167aa0ed307ec445df54e5fdb

@@ -1,3 +1,17 @@
+<?php
+ $callto_button_1_text = get_field('callto_button_1_text', 'option');
+ $callto_button_1_url = get_field('callto_button_1_url', 'option');
+ $callto_button_2_text = get_field('callto_button_2_text', 'option');
+ $callto_button_2_url = get_field('callto_button_2_url', 'option');
+?>
+<div class="button-group hide-for-xlarge expanded calltos">
+ <?php if( !empty($callto_button_1_text) ): ?>
+  <a href="<?php echo $callto_button_1_url; ?>" class="button primary"><?php echo $callto_button_1_text; ?></a>
+ <?php endif; ?>
+ <?php if( !empty($callto_button_2_text) ): ?>
+  <a href="<?php echo $callto_button_2_url; ?>" class="button secondary"><?php echo $callto_button_2_text; ?></a>
+ <?php endif; ?>
+</div>
 <div class="title-bar hide-for-xlarge expanded hide-for-print">
   <div class="title-bar-left">
     <button class="float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"><span class="fa fa-bars" aria-hidden="true"></span>Menu</button>
