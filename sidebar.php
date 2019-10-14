@@ -207,6 +207,11 @@
   //custom department widgets
   dynamic_sidebar( 'gainful-employment-widgets' );
   }
+  //g3
+  if ( is_page('26400') || $post->post_parent == '26400') {
+  //custom department widgets
+  dynamic_sidebar( 'get-skilled-widgets' );
+  }
   //ged testing
   if ( is_page('62') || $post->post_parent == '62' ) {
   //custom department widgets

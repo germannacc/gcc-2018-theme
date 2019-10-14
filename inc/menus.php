@@ -54,6 +54,7 @@
     'graduation-menu' => 'Graduation Menu',
     'grants-menu' => 'Grants Menu',
     'great-expectations-menu' => 'Great Expectations Menu',
+    'g3-menu' => 'G3 Menu',
     'helpdesk-menu' => 'Helpdesk Menu',
     'highlights-menu' => 'Highlights Menu',
     'human-resources-menu' => 'Human Resources Menu',

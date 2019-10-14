@@ -1,6 +1,6 @@
 <?php
 function gcc_wp_2018_scripts() {
-wp_enqueue_style( 'gcc-wp-2018-theme-styles', get_template_directory_uri() . '/dist/css/themeV6.min.css', array(), '20190930', 'all' );
+wp_enqueue_style( 'gcc-wp-2018-theme-styles', get_template_directory_uri() . '/dist/css/themeV7.min.css', array(), '20191011', 'all' );
 
 if (is_page('home')) wp_enqueue_style( 'gcc-wp-2018-slider', get_template_directory_uri() . '/dist/css/owl.carousel.min.css', array(), '20190917', 'all' );
 
@@ -21,7 +21,7 @@ wp_enqueue_script( 'gcc-wp-2018-foundation', get_template_directory_uri() . '/di
 
 if (is_page('home')) wp_enqueue_script('gcc-wp-2018-owl', get_template_directory_uri() . '/dist/scripts/owl.carousel.min.js', array(), '20190813', true);
 
-wp_enqueue_script( 'gcc-wp-2018-scripts', get_template_directory_uri() . '/dist/scripts/main.min.js', array(), '20190813', true );
+wp_enqueue_script( 'gcc-wp-2018-scripts', get_template_directory_uri() . '/dist/scripts/main.min.js', array(), '20191011', true );
 
 if (is_page('home')) wp_enqueue_script( 'gcc-wp-2018-slider', get_template_directory_uri() . '/dist/scripts/slider.js', array(), '20190813', true );
 

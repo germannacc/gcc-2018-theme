@@ -78,6 +78,7 @@
     margin: 1rem 0 0 0;
     position: relative;
     //top menu
+    
     li {
       a {
         background-color: transparent;
@@ -231,23 +232,4 @@ li.menu-calltos {
     height: 280px;
   }
 
-}
-
-//timer
-.time_circles > div > h4 {
-
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: 'Roboto', sans-serif;
-    font-size: .8rem !important;
-
-  }
-p.timer-text {
-  text-align: center; 
-  color: #a30936; 
-  font-weight: 800; 
-  padding: 1rem 0 0 0; 
-  font-size: 1.2rem;
 }

@@ -266,10 +266,10 @@
 .#{$fa-css-prefix}-angle-right:before { content: $fa-var-angle-right; }
 // .#{$fa-css-prefix}-angle-up:before { content: $fa-var-angle-up; }
 // .#{$fa-css-prefix}-angle-down:before { content: $fa-var-angle-down; }
-// .#{$fa-css-prefix}-desktop:before { content: $fa-var-desktop; }
-// .#{$fa-css-prefix}-laptop:before { content: $fa-var-laptop; }
-// .#{$fa-css-prefix}-tablet:before { content: $fa-var-tablet; }
-// .#{$fa-css-prefix}-mobile-phone:before,
+.#{$fa-css-prefix}-desktop:before { content: $fa-var-desktop; }
+.#{$fa-css-prefix}-laptop:before { content: $fa-var-laptop; }
+.#{$fa-css-prefix}-tablet:before { content: $fa-var-tablet; }
+.#{$fa-css-prefix}-mobile-phone:before,
 .#{$fa-css-prefix}-mobile:before { content: $fa-var-mobile; }
 // .#{$fa-css-prefix}-circle-o:before { content: $fa-var-circle-o; }
 // .#{$fa-css-prefix}-quote-left:before { content: $fa-var-quote-left; }
@@ -423,7 +423,7 @@
 // .#{$fa-css-prefix}-space-shuttle:before { content: $fa-var-space-shuttle; }
 // .#{$fa-css-prefix}-slack:before { content: $fa-var-slack; }
 .#{$fa-css-prefix}-envelope-square:before { content: $fa-var-envelope-square; }
-// .#{$fa-css-prefix}-wordpress:before { content: $fa-var-wordpress; }
+.#{$fa-css-prefix}-wordpress:before { content: $fa-var-wordpress; }
 // .#{$fa-css-prefix}-openid:before { content: $fa-var-openid; }
 // .#{$fa-css-prefix}-institution:before,
 // .#{$fa-css-prefix}-bank:before,
