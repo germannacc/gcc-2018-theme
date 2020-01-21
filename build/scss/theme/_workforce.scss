@@ -147,15 +147,21 @@ h1 {
   }
 }
 
-.callout.callout-workforce-highlights {
+
+.callout .callout-workforce-highlights {
 
   h4.post-title {
     min-height: 40px;
-    font-size: 1.2rem;
+   a {
+     font-size: 1.8rem !important;
+    font-weight: 800;
+   }
   }
   min-height: auto !important;
   border: 1px solid $medium-gray;
 }
+
+
   .callout.secondary.get-started {
 
     background-color: $light-gray;
@@ -196,35 +202,32 @@ h1 {
 }
 
 .simple-subscription-form {
-  background: $primary;
-  color: $white;
-  padding: 1rem 2rem;
-  border-radius: $global-radius;
-  margin-bottom: 2rem;
+  background: $light-gray;
+  padding: 0;
+  margin-bottom: 0;
 
   h2 {
     font-size: 2.2rem;
     color: $white;
   }
 
-  p:after {
-      content: ""; /* This is necessary for the pseudo element to work. */
-      display: block; /* This will put the pseudo element on its own line. */
-      margin: 0; /* This will center the border. */
-      width: 15%; /* Change this to whatever width you want. */
-      padding-top: 20px; /* This creates some space between the element and the border. */
-      border-bottom: 5px solid $white; /* This creates the border. Replace black with whatever color you want. */
-  }
   .input-group {
-    margin: 2rem 0 0 0;
+    margin: 0;
+    padding: 0;
     [type="email"]  {
-      height: 60px;
+      height: 40px;
     }
   }
 
   .button {
     margin-bottom: 0;
     border-radius: 0 $global-radius $global-radius 0;
+    padding: 0 .5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    &:hover {
+      background-color: $primary;
+    }
   }
 
 }

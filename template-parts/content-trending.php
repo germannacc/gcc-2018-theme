@@ -1,11 +1,13 @@
 <aside class="trending">
   <div class="widget">
     <div class="events-calendar">
-    <?php //Latest Stories Widget Container
-      if ( is_active_sidebar( 'upcoming-events-widgets' ) ) : ?>
-      <?php dynamic_sidebar( 'upcoming-events-widgets' ); ?>
-      <?php endif; //End of Important Links Widget Container
-     ?>
+    
+    <a href="https://calendar.activedatax.com/germanna/default.aspx?type=&#038;view=Summary" id="calendar-widget">
+
+      <div class="calendar-widget"></div>
+
+      </a> 
+
     </div>
 
       <?php //Latest Stories Widget Container

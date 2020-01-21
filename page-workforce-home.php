@@ -7,13 +7,11 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<div class="row column expanded no-gutter">
-
-	    <?php putRevSlider( 'workforce-slider' ); ?>
-
+	    <?php putRevSlider( 'workforce-nov-4' ); ?>
 	</div>
 
-		<?php
-			while ( have_posts() ) : the_post(); ?>
+     <?php
+		while ( have_posts() ) : the_post(); ?>
 
 	<?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
 
@@ -25,8 +23,8 @@ get_header(); ?>
 
 	     <h2><?php the_field('workforce_highlights_heading'); ?></h2>
 
-				 <?php
-				    the_content();
+		   <?php
+				  the_content();
 					?>
 
 					<?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>

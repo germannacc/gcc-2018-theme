@@ -25,16 +25,25 @@ get_header(); ?>
       ?>
       <?php } ?>
       <div class="entry-content" id="main" tabindex="0">
+       
         <?php //Page Heading
         get_template_part( 'template-parts/content', 'page-alert' );
         ?>
+
         <?php
         the_content();
         ?>
+      
       </div>
     </div>
     <?php get_sidebar();?>
     <footer class="entry-footer">
+      <?php $u_time = get_the_time('U'); 
+$u_modified_time = get_the_modified_time('U'); 
+if ($u_modified_time >= $u_time + 86400) { 
+echo "<p>Last modified on "; 
+the_modified_time('F j, Y'); 
+"</p> "; }  ?>
       <?php gcc_wp_2018_entry_footer(); ?>
       </footer><!-- .entry-footer -->
       </div><!--.pagecontent-->

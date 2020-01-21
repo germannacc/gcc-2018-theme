@@ -16,6 +16,8 @@ get_header(); ?>
   get_template_part( 'template-parts/content', 'page-heading' );
   ?>
   <div class="row expanded content-area">
+    <div class="row">
+      
     <div class="small-12 medium-12 large-9 float-left columns" >
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
@@ -39,6 +41,9 @@ get_header(); ?>
 
       </div>
     </div>
+
+    </div>
+    
     <?php get_sidebar();?>
     <footer class="entry-footer">
       <?php gcc_wp_2018_entry_footer(); ?>

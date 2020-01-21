@@ -1,9 +1,9 @@
-<div class="row expanded promotion" data-equalizer data-equalize-on="medium" id="promotion-events">
+<div class="row expanded promotion" data-equalizer id="promotion-events">
 <?php
 	$args =  array (
 	'post_type' => 'event_promotions',
 	'paged' => get_query_var('paged'),
-	'posts_per_page'=>2,
+	'posts_per_page'=>3,
 	);
 	?>
 	<?php
@@ -11,31 +11,18 @@
 	
 	<?php if ( $query->have_posts() ) : ?>
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
-<div class="column small-12 medium-6 promotion-container">
+<div class="column small-12 medium-6 large-4 promotion-container">
 <div class="card card-<?php the_field( 'promotion_event_color' ); ?>"  data-equalizer-watch>
 
-<?php 
+<?php // ACF Image Object
 
 $image = get_field('promotion_event_image');
-
-if( !empty($image) ): 
-
-	// vars
-	$url = $image['url'];
-	$alt = $image['alt'];
-
-	// thumbnail
-	$size = 'large';
-	$thumb = $image['sizes'][ $size ];
-	$width = $image['sizes'][ $size . '-width' ];
-	$height = $image['sizes'][ $size . '-height' ];
+// vars
+$url = $image['url'];
 
 ?>
 
-<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
-
-
-<?php endif; ?>
+<div class="card-image" style="background-image: url('<?php echo $url ?>');"></div>
   
   <div class="card-section">
 	<?php the_title('<h2>', '</h2>', 'gcc-wp-2018') ?>

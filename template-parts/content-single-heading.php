@@ -16,8 +16,7 @@
     </div>
     <div class="post-meta">
       <?php if ( 'post' === get_post_type() ) : ?>
-    <p><strong></span><?php gcc_wp_2018_posted_on();
-  ?> | <?php gcc_wp_2018_entry_footer(); ?> </strong></p>
+    <p><?php the_date();?></p>
   <?php endif; ?>
 </div>
 <div class="row expanded crumbs-container gutter-small">

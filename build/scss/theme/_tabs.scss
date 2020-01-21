@@ -136,8 +136,9 @@ a:active {
 .accordion-content {
 
 a:link {
-      font-weight: 800;
+      font-weight:  normal;
       color: $primary;
+      text-decoration: underline;
 }
   /* visited link */
 a:visited {
@@ -153,6 +154,7 @@ a:hover {
   /* selected link */
 a:active {
   color: $primary;
+    text-decoration: underline;
 }
 
 li.tabs-title>a[aria-selected=true] {

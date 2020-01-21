@@ -1,38 +1,49 @@
 <?php
-if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page(array(
-		'page_title' 	=> 'GCC 2018 Settings',
-		'menu_title'	=> 'GCC 2018 Settings',
+if( function_exists('acf_add_options_page') ) {	
+	$parent = acf_add_options_page(array(
+		'page_title' 	=> 'Site Settings',
+		'menu_title'	=> 'Site Settings',
 		'menu_slug' 	=> 'theme-general-settings',
 		'capability'	=> 'edit_posts',
 		'redirect'		=> false,
 		'position' => 2
 	));
-    acf_add_options_page(array(
+    $child = acf_add_options_page(array(
 		'page_title' 	=> 'Emergency Alert',
 		'menu_title'	=> 'Emergency Alert',
 		'menu_slug' 	=> 'emergency-alert',
 		'capability'	=> 'edit_posts',
-		'redirect'		=> false,
-		'position' => 3
+        'parent_slug'   => $parent['menu_slug'],
+ 		'redirect'		=> false,
+		
 	));
-    acf_add_options_page(array(
+    $child1 = acf_add_options_page(array(
 		'page_title' 	=> 'Home Slides',
 		'menu_title'	=> 'Home Slides',
 		'menu_slug' 	=> 'home-slides',
 		'capability'	=> 'edit_posts',
+		'parent_slug'   => $parent['menu_slug'],
 		'redirect'		=> false,
-		'position' => 4
 	));
-    acf_add_options_page(array(
-		'page_title' 	=> 'Announcement',
-		'menu_title'	=> 'Announcement',
-		'menu_slug' 	=> 'special-announcement',
+    $child2 = acf_add_options_page(array(
+		'page_title' 	=> 'Footer Banner',
+		'menu_title'	=> 'Footer Banner',
+		'menu_slug' 	=> 'banner-callto',
 		'capability'	=> 'edit_posts',
+		'parent_slug'   => $parent['menu_slug'],
 		'redirect'		=> false,
-		'position' => 4
 	));
+    $child3 = acf_add_options_page(array(
+		'page_title' 	=> 'Full Screen Popup',
+		'menu_title'	=> 'Full Screen Popup',
+		'menu_slug' 	=> 'popup',
+		'capability'	=> 'edit_posts',
+		'parent_slug'   => $parent['menu_slug'],
+		'redirect'		=> false,
+	));
+
 }
+
 function gcc_pagination() {
     global $wp_query;
     echo paginate_links();
@@ -59,6 +70,6 @@ function wpforms_custom_capability( $cap ) {
 	// unfiltered_html by default means Editors and up.
 	// See more about WordPress roles and capabilities
 	// https://codex.wordpress.org/Roles_and_Capabilities
-	return 'moderate_comments';
+	return 'manage_options';
 }
 add_filter( 'wpforms_manage_cap', 'wpforms_custom_capability' );

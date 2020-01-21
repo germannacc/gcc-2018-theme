@@ -9,11 +9,6 @@
 ?>
 <aside class="small-12 medium-12 large-3 columns right page-nav hide-for-print" id="section-menu" data-toggler="hide">
   <?php //get page widgets
-  //alerts
-  if ( is_page('50') || $post->post_parent == '50' ) {
-  //custom department widgets
-  dynamic_sidebar( 'sidebar-widgets' );
-  }
   //admissions
   if ( is_page('24') || $post->post_parent == '24' || is_page('11434') || is_page('14104') ) {
   //custom department widgets
@@ -169,6 +164,11 @@
   //custom department widgets
   dynamic_sidebar( 'diversity-widgets' );
   }
+     //educational foundation
+  if (  is_page('27504') ) {
+  //custom department widgets
+  dynamic_sidebar( 'de-early-college-widgets' );
+  }
   //dual enrollment
   if ( is_page('49') || $post->post_parent == '49' ) {
   //custom department widgets
@@ -284,9 +284,24 @@
   dynamic_sidebar( 'location-widgets' );
   }
   //marketing
-  if ( is_page('79') || $post->post_parent == '79' ) {
+  if ( is_page('79') || is_page('27963')) {
   //custom department widgets
   dynamic_sidebar( 'marketing-widgets' );
+  }
+//marketing web
+  if ( is_page('27911') || $post->post_parent == '27911' || is_page('27972') ) {
+  //custom department widgets
+  dynamic_sidebar( 'marketing-web-widgets' );
+  }
+  //marketing branding
+  if ( is_page('27909') || $post->post_parent == '27909' ) {
+  //custom department widgets
+  dynamic_sidebar( 'marketing-branding-widgets' );
+  }
+   //marketing recruiting
+  if ( is_page('28760') || $post->post_parent == '28760' ) {
+  //custom department widgets
+  dynamic_sidebar( 'marketing-recruiting-widgets' );
   }
   //navigate
   if ( is_page('27449') || $post->post_parent == '27449' ){

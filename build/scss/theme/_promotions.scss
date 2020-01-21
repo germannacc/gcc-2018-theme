@@ -1,6 +1,20 @@
 .promotion {
 
-  padding: 1.8rem .8rem 0 .8rem;
+  padding: 1.6rem .8rem 0 .8rem;
+
+  @media screen and (max-width: 39.9375em) {
+  padding: 1rem .8rem 0 .8rem;
+
+
+  }
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em),
+    screen and (min-width: 64em) and (max-width: 74.9375em) {
+  
+    padding: 1rem 1.2rem 0 1.2rem;
+
+
+    }
 
 .promotion-container {
 
@@ -8,32 +22,43 @@
 
 	@media screen and (min-width: 40em) {
 
-	padding: 0 .8rem;
+	padding: 0 .4rem 0 .4rem;
 
  }
 
+
 .card {
+
+
 
  h2 {
   font-weight: 400;
   margin-bottom:  0;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
 
   @media screen and (min-width: 40em) {
 
-		font-size: 2rem;
+		font-size: 1.8rem;
 
   }
 
   @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-  font-size: 1.3rem;
+  font-size: 1.6rem;
+
 
 }
 
 }
+.card-image {
+	
+ background-position: top center; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0;
+ padding: 0;
+ height: 300px; 
 
-img {
-	min-width: 100%;
 }
 
 p.promotion-date {
@@ -56,9 +81,17 @@ p.promotion-date {
 .promotion-description {
 	margin-bottom: 2rem;
 }
+
 .card-section {
 	padding: 2rem;
 }
+
+  @media screen and (min-width: 40em),
+  screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+ 		min-height: 601px;
+
+  	}
 
 }
 
@@ -96,6 +129,43 @@ a.button {
 
 }
 
+@media screen and (min-width: 40em) and (max-width: 63.9375em)
+
+{
+	width: 50%;
 }
+
+@media screen and (max-width: 74.9375em) and (min-width: 64em)
+{
+	width: 33%;
+}
+
+
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em)
+
+		  {
+		 
+		 	.promotion-container:first-child {
+		 	width: 100%;
+		 	padding: 0;
+
+		 	.card-image {
+			
+			 background-position: top center; 
+			 background-repeat: none; 
+			 background-size: cover;
+			 margin: 0;
+			 padding: 0;
+			 height: 500px; 
+		 
+		}
+
+ }
+
+}
+
+
 
 }

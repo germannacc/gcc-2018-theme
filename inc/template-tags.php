@@ -113,13 +113,14 @@ function the_breadcrumb() {
 $sep = ' > ';
     if (!is_front_page()) {
 	// Start the breadcrumb with a link to your homepage
-        echo '      <div title="breadcrumbs trail"><ul class="breadcrumbs">';
+        echo '<div title="breadcrumbs trail"><ul class="breadcrumbs">';
         echo '<li>
 				<a href="';
         echo home_url();
         echo '">';
         _e('Home', 'gcc-wp-2018');
         echo '</a></li>';
+
 	// Check if the current page is a category, an archive or a single page. If so show the category or archive name.
         if (is_category() || is_single() ){
             the_category('title_li=');
@@ -157,8 +158,10 @@ echo '<li>';
 }
 //If the current page is a static page, show its title.
         if (is_page()) {
-//Gets the parent page title and permalink
-					global $post;
+//ets the parent page title and permalink
+					global $post;	
+							
+						
 					if ( $post->post_parent ) {
 					echo '<li>';
 					echo  '<a href="';
@@ -169,11 +172,14 @@ echo '<li>';
 					echo '</li>';
 }
 
+
+
 echo '<li>';
 					the_title();
 					echo '</li>';
 }
 //if you have a static page assigned to be you posts list page. It will find the title of the static page and display it. i.e Home >> Blog
+
         if (is_home()) {
 global $post;
             $page_for_posts_id = get_option('page_for_posts');

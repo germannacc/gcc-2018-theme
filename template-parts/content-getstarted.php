@@ -8,22 +8,15 @@
 
   <div class="getting-started-block text-center">
 
-  <?php
-      // vars
-
-      $image1 = get_field('apply_box_image');
-
-      $url = $image1['url'];
-      $alt = $image1['alt'];
-
-      // thumbnail
-      $size = 'large';
-      $thumb = $image1['sizes'][ $size ];
-      $width = $image1['sizes'][ $size . '-width' ];
-      $height = $image1['sizes'][ $size . '-height' ];
+      <?php // ACF Image Object
+      
+            $image = get_field('apply_box_image');
+          // vars
+          $url = $image['url'];
+        
       ?>
 
-    <img src="<?php echo $url; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>">
+    <div class="getstarted-image" style="background-image: url('<?php echo $url ?>');"></div>
 
     <a href="<?php the_field('apply_box_url'); ?>">
 
@@ -42,20 +35,16 @@
 
   <div class="getting-started-block text-center">
 
-<?php  // vars
+          <?php // ACF Image Object
+      
+            $image = get_field('register_box_image');
+          // vars
+          $url = $image['url'];
+        
+      ?>
 
-$image2 = get_field('register_box_image');
+    <div class="getstarted-image" style="background-image: url('<?php echo $url ?>');"></div>
 
-  $url = $image2['url'];
-  $alt = $image2['alt'];
-
-  // thumbnail
-  $size = 'large';
-  $thumb = $image2['sizes'][ $size ];
-  $width = $image2['sizes'][ $size . '-width' ];
-  $height = $image2['sizes'][ $size . '-height' ];
-     ?>
-              <img src="<?php echo $url; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>">
 
               <a href="<?php the_field('register_box_url');?>">
 
@@ -75,20 +64,17 @@ $image2 = get_field('register_box_image');
 
     <div class="getting-started-block text-center">
 
-  <?php  // vars
+            <?php // ACF Image Object
+      
+            $image = get_field('paying_box_image');
+          // vars
+          $url = $image['url'];
+        
+      ?>
 
-  $image3 = get_field('paying_box_image');
+    <div class="getstarted-image" style="background-image: url('<?php echo $url ?>');"></div>
 
-    $url = $image3['url'];
-    $alt = $image3['alt'];
 
-    // thumbnail
-    $size = 'large';
-    $thumb = $image3['sizes'][ $size ];
-    $width = $image3['sizes'][ $size . '-width' ];
-    $height = $image3['sizes'][ $size . '-height' ];
-  ?>
-                <img src="<?php echo $url; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">
 
                 <a href="<?php the_field('paying_box_url');?>">
 

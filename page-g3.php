@@ -30,21 +30,10 @@ get_header(); ?>
 
 <div class="entry-content" id="main" tabindex="0">
 
-  <div class="row expanded">
 
-    <div class="small-12 medium-6 columns">
- <p>The G3 initiative focuses on training Virginians for high-demand jobs that meet employer demand in our community. Pathways in <a href="https://germannacc.staging.wpengine.com/pathways/public-service/">public service</a>, <a href="https://germannacc.staging.wpengine.com/pathways/it-and-technical-studies/">IT</a>, <a href="https://germannacc.staging.wpengine.com/pathways/it-and-technical-studies/cybersecurity/">cybersecurity</a> and <a href="https://germannacc.staging.wpengine.com/pathways/it-and-technical-studies/information-systems-technology-major/">computer science</a>, <a href="https://germannacc.staging.wpengine.com/pathways/social-science-education/early-childhood-development/">early childhood education</a>, <a href="https://germannacc.staging.wpengine.com/pathways/health-science/">healthcare</a>, and <a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fwww.germanna.edu%2Fworkforce%2Fapprenticeship-programs%2F&data=02%7C01%7CMHummel%40germanna.edu%7C1e165454e7e64405ae8008d742947881%7C81259a06defb41f98a9d4fa2f6dd84c2%7C0%7C0%7C637051077752270148&sdata=dK7mHKam6VLO0mBQdTUfBu%2BA%2BZ2W8Jf19caBiKaOF8A%3D&reserved=0">manufacturing and trades</a> will be redesigned so that students learn skills first, with multiple levels of training that all have clear tracks to careers.</p>
-    </div>
+  <?php the_content(); ?>
 
-    <div class="small-12 medium-6 columns">
 
-              <?php
-        the_content();
-        ?>
-
-    </div>
-
-  </div>
 
 <h2><?php _e('Included Pathways', 'gcc-wp-2018'); ?></h2>
 

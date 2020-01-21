@@ -9,16 +9,13 @@ License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: , 'gcc-wp-2018'
 */
-
-
 @import 'foundation';
-
 .content {
   background: $white;
   padding: 0;
 }
-
 @include foundation-global-styles;
+@include foundation-reveal;
 //@include foundation-xy-grid-classes;
 @include foundation-grid;
 //@include foundation-flex-grid;
@@ -48,7 +45,6 @@ Text Domain: , 'gcc-wp-2018'
 //@include foundation-progress-bar;
 //@include foundation-slider;
 @include foundation-sticky;
-//@include foundation-reveal;
 //@include foundation-switch;
 @include foundation-table;
 @include foundation-tabs;

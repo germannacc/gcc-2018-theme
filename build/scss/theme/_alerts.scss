@@ -222,8 +222,8 @@ p a {
 .closing {
 
 
-background: rgb(74,64,67) !important;
-  padding: 1rem !important;
+  background: rgb(74,64,67) !important;
+  padding: .8rem .2rem !important;
   color: $white;
   margin-bottom: 0 !important;
 
@@ -231,10 +231,19 @@ background: rgb(74,64,67) !important;
     padding: 0;
     margin: 0;
     display: block;
-    line-height: 1.8rem;
-    font-size: 1.4rem;
+    line-height: 1.6rem;
+    font-size: 1rem;
     strong {
       font-weight: 600;
+    }
+    a {
+      color: $white;
+      font-weight: 800;
+      text-decoration: underline;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   
@@ -244,10 +253,16 @@ background: rgb(74,64,67) !important;
     color: $white;
 
   }
-  .close-button {
-    color: $white;
+  .close-button-alert {
+      color: $white;
+      font-size: 2.4rem;
+      font-weight: 800;
+      position: absolute;
+      right: 20px;
+      top: 2px;
+
   }
-  .close-button:hover {
+  .close-button-alert:hover {
     color: $secondary;
   }
   .button.hollow {
@@ -283,4 +298,93 @@ background: rgb(74,64,67) !important;
   a.button.primary {
     padding-left: 0
   }
+}
+
+.bottom-banner {
+
+    position: fixed;
+    z-index: 99999999;
+    bottom: 0;
+    left: 0;
+    height: auto;
+    background-color: $primary;
+    width: 100%;
+    padding: .5rem 8rem .5rem .2rem;
+    min-width: 100%;
+
+@media screen and (max-width: 39.9375em) {
+
+      padding: .5rem 0 .5rem .2rem;
+
+}
+
+    @media screen and (min-width: 64em) {
+    padding: .5rem 2.6rem .5rem 1rem;
+
+    }
+
+    .close-button {
+      color: $white;
+      font-size: 2rem;
+      font-weight: 800
+    }
+
+    p {
+      color: $white;
+      font-size: 1rem;
+      font-weight: 800;
+      margin: 0;
+      line-height: auto;
+
+
+        @media screen and (min-width: 40em) {
+
+        font-size: 1.4rem;
+        margin: 0;
+        padding-top: .2rem;
+      
+      }
+        
+        @media screen and (min-width: 64em) {
+        
+        font-size: 1.6rem;
+        margin: 0;
+     }
+
+    }
+
+    .button-group {
+
+        float: none;
+        margin-right: 20px;
+
+     @media screen and (min-width: 64em) {
+
+        float: right;
+        margin-right: 0;
+    
+    }
+
+   .button.banner-button {
+    margin: .2rem .1rem 0 .1rem; 
+    font-weight: 800;
+    background-color: $light-gray;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    color: $secondary;
+    border-radius: 10px;
+
+   }
+        
+   .button.banner-button-hollow {
+    margin: .2rem .2rem 0 .1rem; 
+    font-weight: 800;
+    background-color: $primary;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    color: $white;
+    border-radius: 10px;
+  
+   }
+ }
 }

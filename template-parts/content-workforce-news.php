@@ -27,7 +27,7 @@ $query = new WP_Query( $args ); ?>
 
     </div>
     <div class="medium-7 columns">
-    <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+    <h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
     <?php if ( 'workforce_news_post' === get_post_type() ) : ?>
       <div class="entry-meta float-right">
         <p><strong><span class="fa fa-calendar" aria-hidden="true"></span><?php

@@ -38,6 +38,12 @@ get_header(); ?>
     </div>
     <?php get_sidebar();?>
     <footer class="entry-footer">
+        <?php $u_time = get_the_time('U'); 
+$u_modified_time = get_the_modified_time('U'); 
+if ($u_modified_time >= $u_time + 86400) { 
+echo "<p>Last modified on "; 
+the_modified_time('F j, Y'); 
+"</p> "; }  ?>
       <?php gcc_wp_2018_entry_footer(); ?>
       </footer><!-- .entry-footer -->
       </div><!--.pagecontent-->

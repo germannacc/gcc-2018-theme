@@ -32,9 +32,15 @@ article {
 p {
 
   a {
-    text-decoration: underline;
+    font-weight: normal;
+   text-decoration: underline;
   }
 
+}
+
+p.lead {
+  font-size: 2rem;
+  font-weight: 100;
 }
 
 ol,
@@ -44,7 +50,8 @@ li {
 font-size: 1.2rem;
 
 a {
-  text-decoration: underline;
+   font-weight: normal;
+   text-decoration: underline;
 }
     }
   }
@@ -75,7 +82,8 @@ a:active {
 }
 
 a {
-  font-weight: 600;
+  font-weight: normal;
+   text-decoration: underline;
 }
 
 a:hover {
@@ -175,6 +183,83 @@ button:hover.wpforms-page-next  , button:hover.wpforms-page-prev  {
 }
 table .label {
   margin-left: 1rem;
+}
+.spring-save {
+ background-image: url('https://www.germanna.edu/wp-content/uploads/spring-save.jpg');
+ background-position: top right; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0 0 21px 0;
+ padding: 21px;
+ height: 350px; 
+}
+
+.spring-skill {
+ background-image: url('https://www.germanna.edu/wp-content/uploads/spring-skill-2.jpg');
+ background-position: top left; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0 0 21px 0;
+ padding: 21px;
+ height: 350px; 
+}
+
+.spring-learn {
+ background-image: url('https://www.germanna.edu/wp-content/uploads/spring-learn.jpg');
+ background-position: top right; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0 0 21px 0;
+ padding: 21px;
+ height: 350px;
+}
+//DE Styles
+.de-on-campus {
+ background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/on-campus.jpg');
+ background-position: top right; 
+ background-repeat: none; 
+ background-size: cover;
+ margin: 0 0 20px 0;
+ padding: 0;
+ height: 350px; 
+}
+.de-in-school {
+ background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/in-school.jpg');
+ background-position: top left; 
+ background-repeat: none; 
+ background-size: cover;
+ padding: 0;
+ height: 350px; 
+ margin: 0 0 20px 0;
+}
+
+.de-early-college {
+ background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/early-college.jpg');
+ background-position: top center; 
+ background-repeat: none; 
+ background-size: cover;
+ padding: 0;
+ height: 350px; 
+ margin: 0 0 20px 0;
+}
+
+.icon-check-red:before,
+.icon-check-blue:before {
+   font-family: FontAwesome;
+   display: inline-block;
+   padding: 0;
+   vertical-align: middle;
+   content: "\f058";
+   font-size: 2rem;
+}
+.icon-check-red:before {  
+   color: $primary;
+}
+.icon-check-blue:before {
+   color: #2C3C73;
 }
 }
 
@@ -347,6 +432,13 @@ span:hover {
   color: $dark-gray;
   border: 1px solid $dark-gray;
 }
+  span.icon-text {
+      
+      display: block;
+      text-indent: -99999px;
+      display: none;
+
+ }
       }
     }
   }

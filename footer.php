@@ -12,6 +12,7 @@
 <?php //closing main container, do not remove ?>
 </main>
 
+
 <footer class="site-footer hide-for-print">
 <div class="top-footer row expanded gutter-small">
   <div class="small-12 medium-12 large-6 columns">
@@ -62,7 +63,7 @@
       
       <a href="<?php echo get_field( 'tips_url', 'options' ); ?>" class="tips-logo" aria-hidden="true">
       
-      <span><?php echo get_field( 'tips_text', 'options' ); ?></span></a>
+      <span><?php echo get_field( 'tips_text', 'options' ); ?><span class="hide-text">report an incident</span></span></a>
     
     </div>
   </div>
@@ -84,15 +85,29 @@
 </div>
 </footer>
 
+
 <?php
 get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
 
+
 </div>
 </div>
 </div>
 
+
 <?php wp_footer(); ?>
+
+<script>
+  
+  $(document).foundation();
+  
+  $(function() {
+        $('.lazy').Lazy();
+  });
+  
+</script>
+
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
 <!-- begin SnapEngage code for testing -->
@@ -137,12 +152,5 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se
 <?php
 }
 ?>
-<script>
-$(document).foundation();
-
-$(function() {
-        $('.lazy').Lazy();
-});
-</script>
 </body>
 </html>

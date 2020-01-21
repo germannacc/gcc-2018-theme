@@ -1,0 +1,101 @@
+.reveal {
+ 		position: relative;
+	    margin: 0;
+	    padding: 0;
+	    display: block;
+ 		background-repeat:no-repeat;
+		background-size: cover;
+		background-position: left;
+		height:100% !important;
+		width: 100% !important;
+	    z-index: 9999999 !important;
+		background-color: rgba(0,0,0, 1) !important;
+	    background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/veterans-day-hero.jpg'); 
+	   
+	.reveal-container {
+		background-color: $primary;
+		padding: 1rem 2rem 1rem 2rem;
+		width: 85%;
+		position: absolute;
+		left: 0;
+		top: 80px;
+		
+		@media screen and (min-width: 40em) {
+			width: 55%;
+		}
+
+		@media screen and (min-width: 64em) {
+			width: 45%;
+		}
+
+		h1 {
+			color: $white;
+			margin-bottom: 20px;
+			padding-bottom: 0;
+			font-weight: 900;
+
+			@media screen and (min-width: 40em) {
+
+				font-size: 4.2rem;
+				line-height: 4.8rem;
+			}
+
+			@media screen and (min-width: 64em) {
+				
+				font-size: 4.8rem;
+				line-height: 5.2rem;
+			}
+		}
+		p {
+			color: $white;
+			font-weight: 600;
+
+		    @media screen and (min-width: 40em) {
+
+				font-size: 2rem;
+				line-height: 2.8rem;
+			}
+		    
+		    @media screen and (min-width: 64em) {
+				
+				font-size: 2rem;
+				line-height: 2.8rem;
+			}
+		}
+	
+		.close-button {
+		color: $white;
+		position: relative !important;
+	    display: block !important;
+	    margin-top: 0;
+	    padding: 0 0 1rem 1rem;
+        text-align: left;
+	    font-size: 1.2rem;
+	    
+	    &:hover {
+	    	
+	    	text-decoration: underline;
+	    	color: $white;
+
+	    }
+
+	    .fa {
+	    	margin-left: 10px;
+	    }
+
+	       @media screen and (min-width: 40em) {
+
+					font-size: 1.4rem;
+			}
+
+	    	@media screen and (min-width: 64em) {
+
+				font-size: 1.8rem;
+
+	    	}
+
+	}
+
+}
+
+}

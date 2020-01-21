@@ -165,6 +165,18 @@ h2 {
 
   a {
 
+.pathway-image {
+  
+ background-position: top center; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0;
+ padding: 0;
+ height: 350px; 
+ 
+}
+
   .block-section {
 
      position: absolute;
@@ -246,6 +258,19 @@ h2 {
   .getting-started-block {
     position: relative;
     margin-bottom: 10px;
+
+
+.getstarted-image  {
+  
+ background-position: top center; 
+ background-repeat: none; 
+ background-size: cover;
+ background-color: #eee;
+ margin: 0;
+ padding: 0;
+ height: 350px; 
+
+}
     a {
 
     .block-section {
@@ -325,17 +350,26 @@ margin-bottom: 1.2rem;
 
 }
 }
+  .events-calendar {
 
-.events-calendar {
+    max-width: 100%;
+    margin: 0 0 1rem 0;
+    position: relative;
+    margin-bottom: 1rem;
+    display: block;
+    height: auto;
 
-  max-width: 100%;
-  margin: 0 0 1rem 0;
-  position: relative;
-  margin-bottom: 1rem;
-  display: block;
-  height: auto;
+    .calendar-widget {
+     background-image: url('https://www.germanna.edu/wp-content/uploads/events-calendar.jpg');
+     background-position: bottom center; 
+     background-repeat: none; 
+     background-size: cover;
+     background-color: #eee;
+     margin: 0;
+     padding: 0;
+     height: 350px; 
+    }
 
-}
-
+  }
 
 }

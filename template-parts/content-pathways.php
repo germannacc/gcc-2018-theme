@@ -34,24 +34,15 @@ $args =  array (
   <div class="pathways-block">
     <a href="<?php the_field('pathway_url');?>">
 
-        <?php
-        $pathway_image = get_field('pathway_image');
+      <?php // ACF Image Object
+      
+            $image = get_field('pathway_image');
+          // vars
+          $url = $image['url'];
+        
+      ?>
 
-        if( !empty($pathway_image) ):
-
-        	// vars
-        	$url = $pathway_image['url'];
-        	$alt = $pathway_image['alt'];
-
-        	// thumbnail
-        	$size = 'large';
-        	$thumb = $pathway_image['sizes'][ $size ];
-        	$width = $pathway_image['sizes'][ $size . '-width' ];
-        	$height = $pathway_image['sizes'][ $size . '-height' ];
-             ?>
-                    <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>">
-
-      <?php endif; ?>
+     <div class="pathway-image" style="background-image: url('<?php echo $url ?>');"></div>
 
      <div class="block-section">
       <?php the_title('<h3>', '</h3>'); ?>

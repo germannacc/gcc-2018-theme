@@ -13,6 +13,8 @@ function gcc_wp_2018_social_icons() {
 
     <li><a href="https://www.flickr.com/photos/<?php the_field('flickr_id', 'option'); ?>"><span class="fa  fa-2x fa-flickr"  aria-hidden="true"><span class="icon-text"><?php _e('Flickr', 'gcc-wp-2018');?></span></span></a></li>
 
+    <li><a href="https://www.linkedin.com/school/<?php the_field('linkedin_id', 'option'); ?>"><span class="fa  fa-2x fa-linkedin"  aria-hidden="true"><span class="icon-text"><?php _e('LinkedIn', 'gcc-wp-2018');?></span></span></a></li>
+
   </ul>
 <?php }
 add_action('gcc-wp-2018', 'gcc_wp_2018_social_icons');

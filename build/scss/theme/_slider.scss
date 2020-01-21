@@ -1,80 +1,20 @@
-//*Small only*
-//@media screen and (max-width: 39.9375em) 
-/* Medium only */
-//@media screen and (min-width: 40em) and (max-width: 63.9375em) 
-/* Medium and up */
-//@media screen and (min-width: 40em) 
-/* Large only */
-//@media screen and (min-width: 64em) and (max-width: 74.9375em) 
-/* Large and up */
-//@media screen and (min-width: 64em) 
-
 .hero {  
-  
-  overflow:hidden;
-  height: auto; 
-  max-height: auto;
   position: relative;
   background-color: $white;
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-
-    height: auto; 
-    max-height: auto;
-
-}
-
-/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-      height: auto; 
-      max-height: auto;
-}
-
+  height: auto;
+  
 .owl-carousel {
-
 background-color: $white;
 color: $white;
 
 .item {
-
-.gradient-overlay {
   
-position: absolute;
-overflow: hidden;
-z-index: 0;
-top: 0;
-left: 0;
-width: 100%;
-height: 740px;
-background: rgb(126,30,46);
-background: -moz-linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
-background: -webkit-linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
-background: linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#951737",endColorstr="#b67472",GradientType=1);
+    background-position: top right; 
+    background-repeat: none; 
+    background-size: cover;
+    height:80vh;
+    overflow: hidden;
 
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-
-display: none;
-
-}
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
@@ -82,371 +22,118 @@ display: none;
 @media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-   display: none;
-
-}
-
-}
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-  
-  height: auto; 
-  max-height: auto;
-  
-}
-
-/* Medium and up */
-@media screen and (min-width: 40em) { 
-  
-height: 70vh;
-
-}
-
-
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
-height: 72vh;
-  
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-   height: auto; 
-   max-height: auto;
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+   background-position: top center; 
+  height: 30vh;
 }
 
 /* Landscape */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: landscape) { 
-    
-    height: 100vh;
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: landscape) {
+  background-position: top left; 
+  height: 100vh;
 }
-
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) { 
-height: 67vh;
-min-height: 100%;
-
+ @media screen and (max-width: 39.9375em) {
+  background-position: top center; 
+  height: 40vh;
+ }
+@media screen and (min-width: 40em) {
+  background-position: top right; 
+  height: 80vh;
+ }
+@media screen and (min-width: 40em) and (max-width: 63.9375em) { 
+    background-position: top center; 
+    height: 50vh;
 }
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-height: 50vh;
-       
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 834px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-   height: 50vh;
-
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-   height: 72vh;
-
-}
-
 /* Large and up */
-@media screen and (min-width: 64em) {
-
-height: 80vh;
-
+@media screen and (min-width: 64em) { 
+  background-position: top center; 
+  height: 70vh;
 }
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+    background-position: top center; 
+    height: 70vh;
 }
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-/* Portrait */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
+@media screen and (max-width: 63.9375em) and (min-width: 40em)
+{
+    background-position: top center;
     height: 50vh;
-
+}
+@media screen and (max-width: 74.9375em) and (min-width: 64em)
+ {
+    background-position: top center;
+    height: 50vh;
+}
+@media screen and (min-width: 85.3125em) {  
+    background-position: top center; 
+    height: 70vh;
 }
 
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media screen and (min-width: 119em) {  
+  height: 85vh;
+}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* Landscape */
 @media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
+  and (min-device-width: 375px) 
+  and (max-device-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 1.5)
+  and (orientation: landscape) { 
 
-   height: 72vh;
-
-}
-
-img {
-
-  position: absolute;
-  z-index: -1;
-  min-width: 100%;
-  top: 0;
-  right: 0;
-  background-position: top right;
-  background-size: cover;
-  height: auto;
-
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-
-    position: relative;
-    display: block;
-    z-index: 0;
+   height: 100vh;
 
 }
-
-
-/* Medium and up */
-@media screen and (min-width: 40em) { 
-height: 70vh;
-
-}
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {
- height: 72vh;
-  
-}
-
 /* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-   height: auto; 
-   max-height: auto;
-}
-
 /* Landscape */
 @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 3)
+  and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation: landscape) { 
-    
-    height: 100vh;
+
+      height: 100vh;
 }
 
+  .gradient-overlay {
 
-
-
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-height: 50vh;
-       
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgb(126,30,46);
+    background: -moz-linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
+    background: -webkit-linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
+    background: linear-gradient(132deg, rgba(126,30,46,1) 0%, rgba(149,23,55,1) 5%, rgba(182,116,114,0) 68%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#951737",endColorstr="#b67472",GradientType=1);
+    min-height: 100%;
 
 }
 
-/* ----------- iPad Pro 10.5" ----------- */
+  .gradient-overlay-dark {
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+    position: absolute;
+    overflow: hidden;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#515151+0,606060+87&1+0,0+100 */
+background: -moz-linear-gradient(-45deg,  rgba(81,81,81,1) 0%, rgba(96,96,96,0.13) 87%, rgba(96,96,96,0) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  rgba(81,81,81,1) 0%,rgba(96,96,96,0.13) 87%,rgba(96,96,96,0) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  rgba(81,81,81,1) 0%,rgba(96,96,96,0.13) 87%,rgba(96,96,96,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#515151', endColorstr='#00606060',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 
-}
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 834px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-   height: 50vh;
+    min-height: 100%;
 
 }
 
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen 
-  and (min-device-width: 1112px) 
-  and (max-device-width: 1112px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-   height: 50vh;
-
-}
-
-@media screen and (min-width: 64em) {
-
-height: 80vh;
-
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) { 
-height: 67vh;
-
-}
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-}
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-/* Portrait */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-    height: 50vh;
-
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-/* Landscape */
-@media only screen 
-  and (min-width: 1024px) 
-  and (max-height: 1366px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-height: 72vh;
-
-}
-
-
-
-}
 .item-content {
 
 padding: 1rem 2rem 0 1rem;
@@ -455,51 +142,69 @@ z-index: 1000;
 position: relative;
 
 /* Small only */
-@media screen and (max-width: 39.9375em) {
+ @media screen and (max-width: 39.9375em) {
 
-  position: relative;
-  display: block;
-  background: rgb(161, 13, 52);
-  padding: 1rem 2rem 2rem 1rem;
+width: 90%;
 
-}
+ }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {  
-
   padding: 1rem;
-
 }
-
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       padding: 1.4rem;
-      width: 60%;
+      width: 68%;
 }
-
 /* Large and up */
 @media screen and (min-width: 64em) {
-
-   width: 55%;
+   width: 50%;
    padding: 2rem;
 }
-
+@media screen and (max-width: 63.9375em) and (min-width: 40em)
+{
+    padding: 1.4rem;
+    width: 60%;
+}
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) { 
  width: 60%;
+}
+@media screen and (max-width: 74.9375em) and (min-width: 64em)
+{
+    width: 50%;
+}
 
+@media screen and (min-width: 85.3125em) {  
+width: 46%;
+}
+@media screen and (min-width:79.9375em) {
+ width: 46%;
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+
+   width: 55%;
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+ width: 55%;
 }
 
 
 /* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 834px) 
-  and (max-device-width: 1112px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
-}
 
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
@@ -511,7 +216,7 @@ position: relative;
   and (-webkit-min-device-pixel-ratio: 2) {
 
   padding: 2rem 2rem 0 2rem;
-  width: 65%;
+  width: 55%;
 
 }
 
@@ -529,15 +234,6 @@ position: relative;
 }
 
 /* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 1024px) 
-  and (max-device-width: 1366px)
-  and (-webkit-min-device-pixel-ratio: 1.5) {
-
-}
-
 /* Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
@@ -559,28 +255,11 @@ position: relative;
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1.5) {
 
-     width: 85%;
+     width: 65%;
 
 }
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: portrait) { 
-
-}
-
 /* Landscape */
 @media only screen 
   and (min-device-width: 375px) 
@@ -588,53 +267,12 @@ position: relative;
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation: landscape) { 
 
-   width: 85%;
+   width: 75%;
 
-}
-
-/* ----------- Non-Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 1) 
-
-
-  { 
-
-  width: 75%;
-
-}
-
-/* ----------- Retina Screens ----------- */
-@media screen 
-  and (min-device-width: 1200px) 
-  and (max-device-width: 1600px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (min-resolution: 192dpi) { 
-
-  width: 65%;
 }
 
 /* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: portrait) { 
-
-   
-}
-
 /* Landscape */
 @media only screen 
   and (min-device-width: 375px) 
@@ -642,8 +280,7 @@ position: relative;
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation: landscape) { 
 
-       width: 70%;
-
+       width: 55%;
 }
 
 /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
@@ -656,16 +293,6 @@ position: relative;
   width: 100%;
 }
 
-/* Portrait */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 568px)
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-
-
-}
-
 /* Landscape */
 @media only screen 
   and (min-device-width: 320px) 
@@ -675,41 +302,62 @@ position: relative;
    width: 100%;
 }
 
+/* ----------- Non-Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 1) 
+
+{ 
+
+  width: 50%;
+
+}
+
+/* ----------- Retina Screens ----------- */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1600px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (min-resolution: 192dpi) { 
+
+  width: 55%;
+}
+@media screen and (min-width: 120em) {  
+  width: 45%;
+}
 
 h1 {
 
-font-size: 1.8rem;
+font-size: 1.4rem;
 
 /* Small only */
-@media screen and (max-width: 39.9375em) {
+ @media screen and (max-width: 39.9375em) {
 
+font-size: 1.6rem;
+line-height: 2rem;
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {  
-
-       font-size: 2.2rem;
+      
+      font-size: 1.8rem;
 
 }
 
 /* Medium only */
 @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  
+  font-size: 2rem;
+  line-height: 2rem;
 
-  font-size: 2.4rem;
-  line-height: 2.2rem;
 }
-
+@media screen and (max-width: 63.9375em) and (min-width: 40em)
+{
+    font-size: 2rem;
+    line-height: 2.4rem;
+}
 /* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-
-}
-
 /* Portrait */
 @media only screen 
   and (min-device-width: 768px) 
@@ -718,7 +366,7 @@ font-size: 1.8rem;
   and (-webkit-min-device-pixel-ratio: 1) {
 
     font-size: 2.2rem;
-
+    line-height: 2.8rem;
 }
 
 /* Landscape */
@@ -727,29 +375,11 @@ font-size: 1.8rem;
   and (max-device-width: 1024px) 
   and (orientation: landscape) 
   and (-webkit-min-device-pixel-ratio: 1) {
-
+    font-size: 2.2rem;
+    line-height: 2.8rem;
 }
 
 /* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: portrait) { 
-
-   
-}
-
 /* Landscape */
 @media only screen 
   and (min-device-width: 375px) 
@@ -757,21 +387,47 @@ font-size: 1.8rem;
   and (-webkit-min-device-pixel-ratio: 1.5)
   and (orientation: landscape) { 
 
-      
+      line-height: 2.6rem;
 }
-
-
 /* Large and up */
 @media screen and (min-width: 64em) {
     
        font-size: 2.6rem;
-
+       line-height: 2.8rem;
 }
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) { 
   
        font-size: 2.4rem;
+       line-height: 2.6rem;
+}
+
+
+/* ----------- iPad Pro 10.5" ----------- */
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 834px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+      line-height: 2.8rem;
+
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen 
+  and (min-device-width: 1112px) 
+  and (max-device-width: 1112px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+       
+       line-height: 2.8rem;
 
 }
 
@@ -780,21 +436,18 @@ font-size: 1.8rem;
 p {
           
 font-size: 1.2rem;
-font-weight: 700;
 
 
-/* Small only */
-@media screen and (max-width: 39.9375em) {
-
-
-
+ @media screen and (max-width: 39.9375em) {
+   font-size: 1rem;
+   line-height: 1.4rem;
 }
 
 /* Medium and up */
 @media screen and (min-width: 40em) {  
 
-  font-size: 1.4rem;
-  line-height: 2.2rem;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
   margin-bottom: 1;
 
 }
@@ -805,25 +458,8 @@ font-weight: 700;
        font-size: 1.2rem;
 
 }
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
-
 /* Landscape */
 @media only screen 
   and (min-device-width: 375px) 
@@ -838,24 +474,6 @@ font-weight: 700;
 }
 
 /* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) { 
-
-}
-
 /* Landscape */
 @media only screen 
   and (min-device-width: 414px) 
@@ -871,16 +489,6 @@ font-weight: 700;
 
 
 /* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-
-}
-
 /* Portrait */
 @media only screen 
   and (min-device-width: 768px) 
@@ -912,7 +520,11 @@ font-weight: 700;
   margin-bottom: 20px;
 
 }
-
+@media screen and (max-width: 63.9375em) and (min-width: 40em)
+{
+     font-size: 1.2rem;
+     line-height: 1.8rem;
+}
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) { 
   
@@ -922,159 +534,34 @@ font-weight: 700;
 }
 
 }
-
-.button.primary {
-        
+.button.primary {     
     background-color: #964049;
     font-weight: 700;
-    font-size: 1rem;
-    padding: .5rem 1rem;
     border-radius: 15px;
-    margin: 0;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-top: 10px;
 
     &:hover {
       background-color: $secondary;
     }
+ 
+@media screen and (max-width: 39.9375em) {
+    font-size: 1rem;
+ }
 
-/* ----------- iPad 1, 2, Mini and Air ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-       margin-top: 1.2rem;
-       font-size: 1rem;
-       padding: 1rem 2rem;
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: portrait) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-       margin-top: 1rem;
-       font-size: 1rem;
-       padding: .5rem 1rem;
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (orientation: landscape) 
-  and (-webkit-min-device-pixel-ratio: 1) {
-
-}
-
-/* Medium only */
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
-
-       margin-top: 1rem;
-       font-size: 1rem;
-       padding: .5rem 1rem;
-
-}
-
-@media screen and (min-width: 40em) {
-
-       font-size: 1rem;
-       padding: .5rem 1rem;
-
-}
-
-/* ----------- iPhone 6+, 7+ and 8+ ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 1.5) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 1.5)
-  and (orientation: landscape) { 
-
-       margin-top: 1rem;
-       font-size: 1rem;
-       padding: 1rem;
-
-}
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 2) { 
-
-}
-
-/* Portrait */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
-
-}
-
-/* Landscape */
-@media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: landscape) { 
-
-
-       font-size: 1.4rem;
-       padding: 1.2rem;
-       margin-top: 20px;
-
-}
-
-/* Large and up */
-@media screen and (min-width: 64em) {
-  font-size: 1.4rem;
-       padding: 1.2rem;
-       margin-top: 20px;
-}
-
-/* Large only */
-@media screen and (min-width: 64em) and (max-width: 74.9375em) { 
-  
-       
-
-}
   }
 
   }
+}
+
 }
 
 }
 
 .owl-nav .owl-prev,
- .owl-nav .owl-next,
- .owl-dot {
+.owl-nav .owl-next,
+.owl-dot {
      font-family: 'fontAwesome';
  }
 
@@ -1085,7 +572,7 @@ font-weight: 700;
 
 @media screen and (max-width: 39.9375em) {
 
-top: 20px;
+bottom: 20px;
 right: 5px;
 
 }
@@ -1207,8 +694,6 @@ display: block;
     display: none;
 }
 
-
-
 /* ipad pro Portrait */
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
@@ -1232,8 +717,6 @@ display: block;
   and (-webkit-min-device-pixel-ratio: 2) {
 
     display: block;
-
-}
 
 }
 

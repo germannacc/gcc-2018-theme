@@ -21,29 +21,10 @@
 
       <div class="row latest-post">
       <div class="medium-12 columns">
-      <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+      
+       <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-      <p>
-
-        <?php the_excerpt(
-        sprintf(
-        			wp_kses(
-        				/* translators: %s: Name of current post. Only visible to screen readers */
-        				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-        				array(
-        					'span' => array(
-        						'class' => array(),
-        					),
-        				)
-        			),
-        			get_the_title()
-        		)
-
-      );
-      ?>
-
-    </p>
-
+       <p><?php the_date(); ?></p>
 
       </div>
       </div>
@@ -53,22 +34,7 @@
       <div class="row latest-post">
       <div class="medium-12 columns">
       <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-    <?php the_excerpt(
-
-        sprintf(
-        			wp_kses(
-        				/* translators: %s: Name of current post. Only visible to screen readers */
-        				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-        				array(
-        					'span' => array(
-        						'class' => array(),
-        					),
-        				)
-        			),
-        			get_the_title()
-        		)
-
-      ); ?>
+   <p><?php the_date(); ?></p>
 
       </div>
       </div>

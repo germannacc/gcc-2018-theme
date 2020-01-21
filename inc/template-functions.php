@@ -46,11 +46,9 @@ if ( ! function_exists( 'gcc_wp_2018_posted_on' ) ) :
 		echo '<span class="posted-on">' . $posted_on . '</span>'; // WPCS: XSS OK.
 }
 endif;
-
 /**
 * Removes or edits the 'Protected:' part from posts titles
 */
-
 add_filter( 'protected_title_format', 'remove_protected_text' );
 function remove_protected_text() {
 return __('%s');

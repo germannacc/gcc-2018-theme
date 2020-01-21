@@ -17,13 +17,13 @@ get_header(); ?>
    
     <div class="small-12 medium-12 large-9 float-left columns" >
 
-      <?php putRevSlider( 'workforce-slider' ); ?>
+      <?php putRevSlider( 'workforce-nov-4' ); ?>
 
       <div class="entry-content" id="main" tabindex="0">
       
       <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
 
-    <?php get_template_part( 'template-parts/content', 'workforce-newsletter' ); ?>
+    <?php //get_template_part( 'template-parts/content', 'workforce-newsletter' ); ?>
 
       <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
 

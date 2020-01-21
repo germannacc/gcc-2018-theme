@@ -144,27 +144,27 @@ $header-margin-bottom: 1rem;
 $header-styles: (
   small: (
     'h1': ('font-size': 28),
-    'h2': ('font-size': 26),
-    'h3': ('font-size': 24),
-    'h4': ('font-size': 22),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 18),
+    'h2': ('font-size': 24),
+    'h3': ('font-size': 22),
+    'h4': ('font-size': 18),
+    'h5': ('font-size': 14),
+    'h6': ('font-size': 12),
   ),
   medium: (
     'h1': ('font-size': 36),
-    'h2': ('font-size': 32),
+    'h2': ('font-size': 30),
     'h3': ('font-size': 24),
     'h4': ('font-size': 20),
-    'h5': ('font-size': 18),
-    'h6': ('font-size': 14),
+    'h5': ('font-size': 16),
+    'h6': ('font-size': 12),
   ),
   large: (
     'h1': ('font-size': 36),
-    'h2': ('font-size': 32),
-    'h3': ('font-size': 28),
-    'h4': ('font-size': 24),
-    'h5': ('font-size': 20),
-    'h6': ('font-size': 16),
+    'h2': ('font-size': 30),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 20),
+    'h5': ('font-size': 16),
+    'h6': ('font-size': 12),
   ),
 );
 $header-text-rendering: optimizeLegibility;
@@ -742,14 +742,14 @@ $responsive-embed-ratios: (
 // 47. Reveal
 // ----------
 
-$reveal-background: $white;
-$reveal-width: 600px;
-$reveal-max-width: $global-width;
-$reveal-padding: $global-padding;
-$reveal-border: 1px solid $medium-gray;
-$reveal-radius: $global-radius;
-$reveal-zindex: 1005;
-$reveal-overlay-background: rgba($black, 0.45);
+//$reveal-background: $white;
+//$reveal-width: 600px;
+//$reveal-max-width: $global-width;
+//$reveal-padding: $global-padding;
+//$reveal-border: none;
+//$reveal-radius: $global-radius;
+$reveal-zindex: 999999;
+//$reveal-overlay-background: rgba($black, 0.45);
 
 // 48. Slider
 // ----------
